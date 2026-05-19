@@ -55,6 +55,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -687,78 +689,78 @@
 
 <p><a id="refheading191902103626402"></a></p>
 <h1 id="6">6. <span style="color: #365f91">الملاحق</span></h1>
-<p><span style="color: #000000"><a id="refheading472751712028290"></a>نشرح هنا كيفية تثبيت الأدوات المستخدمة في هذا المستند على أجهزة تعمل بنظام التشغيل Windows 7 إلى 10. يجب على القارئ تكييف هذه التعليمات مع بيئته الخاصة.</span></p>
-<p><a id="annexes"></a>
-<a id="refheading397078041079301"></a></p>
-<h2 id="61-arduino-ide">6.1. <span style="color: #4f81bd">تثبيت Arduino IDE</span></h2>
-<p>الموقع الرسمي لـ Arduino هو [http://www.arduino.cc/]. هنا ستجد بيئة تطوير Arduino [http://arduino.cc/en/Main/Software]:</p>
+<p><span style="color: #000000"><a id="refheading472751712028290"></a>نشرح هنا كيفية تثبيت الأدوات المستخدمة في هذا المستند على أجهزة تعمل بنظام التشغيل <bdi dir="ltr" class="odt-ltr-term">Windows</bdi> 7 إلى 10. يجب على القارئ تكييف هذه التعليمات مع بيئته الخاصة.</span></p>
+<p><a id="refheading397078041079301"></a>
+<a id="annexes"></a></p>
+<h2 id="61-arduino-ide">6.1. <span style="color: #4f81bd">تثبيت <bdi dir="ltr" class="odt-ltr-term">Arduino IDE</bdi></span></h2>
+<p>الموقع الرسمي لـ <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> هو [<bdi dir="ltr" class="odt-ltr-term">http://www.arduino.cc/</bdi>]. هنا ستجد بيئة تطوير <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> [<bdi dir="ltr" class="odt-ltr-term">http://arduino.cc/en/Main/Software</bdi>]:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D9000000C288A7FBBA.png" width="152" height="136" style="display:inline-block; margin:4px;width:4.02cm;height:3.595cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D9000000C288A7FBBA.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000B200000172FAB58CD1.png" width="125" height="259" style="display:inline-block; margin:4px;width:3.3cm;height:6.86cm;" class="odt-zoomable" data-zoom-src="images/10000000000000B200000172FAB58CD1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>الملف الذي تم تنزيله [1] هو ملف ZIP، وبمجرد استخراجه، يتم إنشاء بنية الدليل [2]. يمكنك تشغيل بيئة التطوير (IDE) بالنقر المزدوج على الملف القابل للتنفيذ [3].</p>
+<p>الملف الذي تم تنزيله [1] هو ملف <bdi dir="ltr" class="odt-ltr-term">ZIP</bdi>، وبمجرد استخراجه، يتم إنشاء بنية الدليل [2]. يمكنك تشغيل بيئة التطوير (<bdi dir="ltr" class="odt-ltr-term">IDE</bdi>) بالنقر المزدوج على الملف القابل للتنفيذ [3].</p>
 <p><a id="refheading33719961377870"></a></p>
-<h2 id="62-arduino">6.2. <span style="color: #4f81bd">تثبيت برنامج تشغيل Arduino</span></h2>
-<p>لكي يتواصل IDE مع Arduino، يجب أن يتعرف الكمبيوتر المضيف على Arduino. للقيام بذلك، اتبع الخطوات التالية:</p>
+<h2 id="62-arduino">6.2. <span style="color: #4f81bd">تثبيت برنامج تشغيل <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi></span></h2>
+<p>لكي يتواصل <bdi dir="ltr" class="odt-ltr-term">IDE</bdi> مع <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>، يجب أن يتعرف الكمبيوتر المضيف على <bdi dir="ltr" class="odt-ltr-term">Arduino.</bdi> للقيام بذلك، اتبع الخطوات التالية:</p>
 <ul>
-  <li>قم بتوصيل Arduino بمنفذ USB على الكمبيوتر المضيف؛
+  <li>قم بتوصيل <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> بمنفذ <bdi dir="ltr" class="odt-ltr-term">USB</bdi> على الكمبيوتر المضيف؛
   </li>
-  <li>سيحاول النظام بعد ذلك العثور على برنامج تشغيل الجهاز USB الجديد. ولن يتمكن من العثور عليه. يجب عليك بعد ذلك تحديد أن برنامج التشغيل موجود على القرص في <b>&lt;arduino&gt;</b>/drivers، حيث &lt;arduino&gt; هو مجلد تثبيت Arduino IDE. 
+  <li>سيحاول النظام بعد ذلك العثور على برنامج تشغيل الجهاز <bdi dir="ltr" class="odt-ltr-term">USB</bdi> الجديد. ولن يتمكن من العثور عليه. يجب عليك بعد ذلك تحديد أن برنامج التشغيل موجود على القرص في <b>&lt;<bdi dir="ltr" class="odt-ltr-term">arduino</bdi>&gt;</b>/<bdi dir="ltr" class="odt-ltr-term">drivers</bdi>، حيث &lt;<bdi dir="ltr" class="odt-ltr-term">arduino</bdi>&gt; هو مجلد تثبيت <bdi dir="ltr" class="odt-ltr-term">Arduino IDE.</bdi> 
   </li>
 </ul>
 <p><a id="refheading33721961377870"></a></p>
-<h2 id="63-ide">6.3. <span style="color: #4f81bd">اختبار IDE</span></h2>
-<p>لاختبار IDE، اتبع الخطوات التالية:</p>
+<h2 id="63-ide">6.3. <span style="color: #4f81bd">اختبار <bdi dir="ltr" class="odt-ltr-term">IDE</bdi></span></h2>
+<p>لاختبار <bdi dir="ltr" class="odt-ltr-term">IDE</bdi>، اتبع الخطوات التالية:</p>
 <ul>
-  <li>قم بتشغيل IDE؛
+  <li>قم بتشغيل <bdi dir="ltr" class="odt-ltr-term">IDE</bdi>؛
   </li>
-  <li>قم بتوصيل Arduino بالكمبيوتر الشخصي عبر كابل USB الخاص به. في الوقت الحالي، لا تقم بتوصيل بطاقة الشبكة؛
+  <li>قم بتوصيل <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> بالكمبيوتر الشخصي عبر كابل <bdi dir="ltr" class="odt-ltr-term">USB</bdi> الخاص به. في الوقت الحالي، لا تقم بتوصيل بطاقة الشبكة؛
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000025F000000C2762AEE05.png" width="395" height="126" style="display:inline-block; margin:4px;width:10.44cm;height:3.337cm;" class="odt-zoomable" data-zoom-src="images/100000000000025F000000C2762AEE05.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000018D000000663E265D33.png" width="258" height="66" style="display:inline-block; margin:4px;width:6.83cm;height:1.755cm;" class="odt-zoomable" data-zoom-src="images/100000000000018D000000663E265D33.png" /></td></tr></table>
 
 <ul>
-  <li>في [1]، حدد نوع لوحة Arduino المتصلة بمنفذ USB؛
+  <li>في [1]، حدد نوع لوحة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> المتصلة بمنفذ <bdi dir="ltr" class="odt-ltr-term">USB</bdi>؛
   </li>
-  <li>في [2]، حدد منفذ USB الذي تم توصيل Arduino به. لمعرفة ذلك، افصل Arduino ولاحظ المنافذ. أعد توصيله وتحقق من المنافذ مرة أخرى: المنفذ الذي تمت إضافته هو منفذ Arduino؛
+  <li>في [2]، حدد منفذ <bdi dir="ltr" class="odt-ltr-term">USB</bdi> الذي تم توصيل <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> به. لمعرفة ذلك، افصل <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> ولاحظ المنافذ. أعد توصيله وتحقق من المنافذ مرة أخرى: المنفذ الذي تمت إضافته هو منفذ <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
   </li>
 </ul>
 
-<p>قم بتشغيل بعض الأمثلة المضمنة في IDE:</p>
+<p>قم بتشغيل بعض الأمثلة المضمنة في <bdi dir="ltr" class="odt-ltr-term">IDE:</bdi></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000263000000C949BE4591.png" width="397" height="131" style="display:inline-block; margin:4px;width:10.509cm;height:3.457cm;" class="odt-zoomable" data-zoom-src="images/1000000000000263000000C949BE4591.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p>يتم تحميل المثال وعرضه:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000217000001FA96EABE38.png" width="375" height="354" style="display:inline-block; margin:4px;width:9.91cm;height:9.373cm;" class="odt-zoomable" data-zoom-src="images/1000000000000217000001FA96EABE38.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>الأمثلة المضمنة في بيئة التطوير المتكاملة (IDE) تعليمية للغاية ومزودة بتعليقات مفيدة. كُتب كود Arduino بلغة C ويتكون من جزأين متميزين:</p>
+<p>الأمثلة المضمنة في بيئة التطوير المتكاملة (<bdi dir="ltr" class="odt-ltr-term">IDE</bdi>) تعليمية للغاية ومزودة بتعليقات مفيدة. كُتب كود <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> بلغة <bdi dir="ltr" class="odt-ltr-term">C</bdi> ويتكون من جزأين متميزين:</p>
 <ul>
-  <li>وظيفة [<b>setup</b>] التي تعمل مرة واحدة عند بدء تشغيل التطبيق، إما عند &quot;تحميله&quot; من الكمبيوتر المضيف إلى Arduino، أو عندما يكون التطبيق موجودًا بالفعل على Arduino ويتم الضغط على زر [Reset]. هذا هو المكان الذي تضع فيه كود تهيئة التطبيق؛
+  <li>وظيفة [<b><bdi dir="ltr" class="odt-ltr-term">setup</bdi></b>] التي تعمل مرة واحدة عند بدء تشغيل التطبيق، إما عند &quot;تحميله&quot; من الكمبيوتر المضيف إلى <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>، أو عندما يكون التطبيق موجودًا بالفعل على <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> ويتم الضغط على زر [<bdi dir="ltr" class="odt-ltr-term">Reset</bdi>]. هذا هو المكان الذي تضع فيه كود تهيئة التطبيق؛
   </li>
-  <li>وظيفة [<b>loop</b>] التي تعمل بشكل مستمر (حلقة لا نهائية). هذا هو المكان الذي يوضع فيه جوهر التطبيق.
+  <li>وظيفة [<b><bdi dir="ltr" class="odt-ltr-term">loop</bdi></b>] التي تعمل بشكل مستمر (حلقة لا نهائية). هذا هو المكان الذي يوضع فيه جوهر التطبيق.
   </li>
 </ul>
 
 <p>هنا،</p>
 <ul>
-  <li>تقوم وظيفة [setup] بتكوين الدبوس 13 كإخراج؛
+  <li>تقوم وظيفة [<bdi dir="ltr" class="odt-ltr-term">setup</bdi>] بتكوين الدبوس 13 كإخراج؛
   </li>
-  <li>تقوم وظيفة [loop] بتشغيله وإيقافه بشكل متكرر: يتم تشغيل وإيقاف LED كل ثانية.
+  <li>تقوم وظيفة [<bdi dir="ltr" class="odt-ltr-term">loop</bdi>] بتشغيله وإيقافه بشكل متكرر: يتم تشغيل وإيقاف <bdi dir="ltr" class="odt-ltr-term">LED</bdi> كل ثانية.
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000DB0000008DABE29F35.png" width="153" height="99" style="display:inline-block; margin:4px;width:4.06cm;height:2.614cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DB0000008DABE29F35.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>يتم تحميل البرنامج المعروض إلى Arduino باستخدام الزر [1]. وبمجرد تحميله، يتم تشغيله ويبدأ LED 13 في الوميض بشكل مستمر.</p>
+<p>يتم تحميل البرنامج المعروض إلى <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> باستخدام الزر [1]. وبمجرد تحميله، يتم تشغيله ويبدأ <bdi dir="ltr" class="odt-ltr-term">LED</bdi> 13 في الوميض بشكل مستمر.</p>
 <p><a id="refheading33723961377870"></a></p>
-<h2 id="64-arduino">6.4. <span style="color: #4f81bd">اتصال شبكة Arduino</span></h2>
-<p>يجب أن يكون جهاز (أجهزة) Arduino والكمبيوتر المضيف على نفس الشبكة الخاصة:</p>
+<h2 id="64-arduino">6.4. <span style="color: #4f81bd">اتصال شبكة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi></span></h2>
+<p>يجب أن يكون جهاز (أجهزة) <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> والكمبيوتر المضيف على نفس الشبكة الخاصة:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003A5000001079D693529.png" width="467" height="132" style="display:inline-block; margin:4px;width:12.344cm;height:3.48cm;" class="odt-zoomable" data-zoom-src="images/10000000000003A5000001079D693529.png" /></td></tr></table>
 
-<p>إذا كان هناك جهاز Arduino واحد فقط، فيمكن توصيله بالكمبيوتر المضيف باستخدام كابل RJ-45 بسيط. أما إذا كان هناك أكثر من جهاز واحد، فسيتم توصيل الكمبيوتر المضيف وأجهزة Arduino بنفس الشبكة عبر موزع صغير.</p>
-<p>سيتم وضع الكمبيوتر المضيف وأجهزة Arduino على الشبكة الخاصة <strong>192.168.2.x</strong>.</p>
+<p>إذا كان هناك جهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> واحد فقط، فيمكن توصيله بالكمبيوتر المضيف باستخدام كابل <bdi dir="ltr" class="odt-ltr-term">RJ-45</bdi> بسيط. أما إذا كان هناك أكثر من جهاز واحد، فسيتم توصيل الكمبيوتر المضيف وأجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> بنفس الشبكة عبر موزع صغير.</p>
+<p>سيتم وضع الكمبيوتر المضيف وأجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> على الشبكة الخاصة <strong>192.168.2.<bdi dir="ltr" class="odt-ltr-term">x</bdi></strong>.</p>
 <ul>
-  <li>يتم تعيين عناوين IP لأجهزة Arduino بواسطة شفرة المصدر. سنرى كيف؛
+  <li>يتم تعيين عناوين <bdi dir="ltr" class="odt-ltr-term">IP</bdi> لأجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> بواسطة شفرة المصدر. سنرى كيف؛
   </li>
-  <li>يمكن تعيين عنوان IP للكمبيوتر المضيف على النحو التالي:
+  <li>يمكن تعيين عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> للكمبيوتر المضيف على النحو التالي:
   </li>
 </ul>
 
@@ -779,14 +781,14 @@
 <ul>
   <li>في [2]، اعرض خصائص الاتصال؛
   </li>
-  <li>في [4]، اعرض خصائص IPv4 [3] للاتصال؛
+  <li>في [4]، اعرض خصائص <bdi dir="ltr" class="odt-ltr-term">IPv4</bdi> [3] للاتصال؛
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000197000001C87B84023F.png" width="285" height="319" style="display:inline-block; margin:4px;width:7.541cm;height:8.449cm;" class="odt-zoomable" data-zoom-src="images/1000000000000197000001C87B84023F.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-  <li>في [5]، قم بتعيين عنوان IP [192.168.2.1] للكمبيوتر المضيف؛
+  <li>في [5]، قم بتعيين عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> [192.168.2.1] للكمبيوتر المضيف؛
   </li>
   <li>في [6]، قم بتعيين قناع الشبكة الفرعية [255.255.255.0] للشبكة؛
   </li>
@@ -795,7 +797,7 @@
 </ul>
 <p><a id="refheading33725961377870"></a></p>
 <h2 id="65">6.5. <span style="color: #4f81bd">اختبار تطبيق شبكة</span></h2>
-<p>باستخدام IDE، قم بتحميل المثال [Examples / Ethernet / WebServer]:</p>
+<p>باستخدام <bdi dir="ltr" class="odt-ltr-term">IDE</bdi>، قم بتحميل المثال [<bdi dir="ltr" class="odt-ltr-term">Examples</bdi> / <bdi dir="ltr" class="odt-ltr-term">Ethernet</bdi> / <bdi dir="ltr" class="odt-ltr-term">WebServer</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span class="odt-code-line-content">/*</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  Web Server</span></span>
@@ -899,36 +901,36 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>يقوم هذا التطبيق بإنشاء خادم ويب على المنفذ 80 (السطر 30) على عنوان IP المحدد في السطر 25. عنوان MAC الموجود في السطر 23 هو عنوان MAC المحدد على لوحة الشبكة الخاصة بـ Arduino.</p>
-<p>تقوم الدالة [setup] بتهيئة خادم الويب:</p>
+<p>يقوم هذا التطبيق بإنشاء خادم ويب على المنفذ 80 (السطر 30) على عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> المحدد في السطر 25. عنوان <bdi dir="ltr" class="odt-ltr-term">MAC</bdi> الموجود في السطر 23 هو عنوان <bdi dir="ltr" class="odt-ltr-term">MAC</bdi> المحدد على لوحة الشبكة الخاصة بـ <bdi dir="ltr" class="odt-ltr-term">Arduino.</bdi></p>
+<p>تقوم الدالة [<bdi dir="ltr" class="odt-ltr-term">setup</bdi>] بتهيئة خادم الويب:</p>
 <ul>
   <li>السطر 34: تهيئ المنفذ التسلسلي الذي سيسجل عليه التطبيق البيانات. سنراقب هذه السجلات؛
   </li>
-  <li>السطر 41: يتم تهيئة عقدة TCP/IP (IP، المنفذ)؛
+  <li>السطر 41: يتم تهيئة عقدة <bdi dir="ltr" class="odt-ltr-term">TCP/IP</bdi> (<bdi dir="ltr" class="odt-ltr-term">IP</bdi>، المنفذ)؛
   </li>
   <li>السطر 42: يتم تشغيل الخادم من السطر 30 على عقدة الشبكة هذه؛
   </li>
-  <li>السطران 43-44: يسجل عنوان IP لخادم الويب؛
+  <li>السطران 43-44: يسجل عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> لخادم الويب؛
   </li>
 </ul>
 
-<p>تقوم الدالة [loop] بتنفيذ خادم الويب:</p>
+<p>تقوم الدالة [<bdi dir="ltr" class="odt-ltr-term">loop</bdi>] بتنفيذ خادم الويب:</p>
 <ul>
-  <li>السطر 50: إذا اتصل عميل بخادم الويب، فإن<i> [server].available </i>تُرجع ذلك العميل؛ وإلا، فإنها تُرجع <i>null</i>؛
+  <li>السطر 50: إذا اتصل عميل بخادم الويب، فإن<i> [<bdi dir="ltr" class="odt-ltr-term">server</bdi>].<bdi dir="ltr" class="odt-ltr-term">available</bdi> </i>تُرجع ذلك العميل؛ وإلا، فإنها تُرجع <i><bdi dir="ltr" class="odt-ltr-term">null</bdi></i>؛
   </li>
-  <li>السطر 51: إذا لم يكن العميل <i>null</i>؛
+  <li>السطر 51: إذا لم يكن العميل <i><bdi dir="ltr" class="odt-ltr-term">null</bdi></i>؛
   </li>
   <li>السطر 55: طالما أن العميل متصل؛
   </li>
-  <li>السطر 56: تكون<i> [client].available </i>صحيحة إذا أرسل العميل أحرفًا. يتم تخزين هذه الأحرف في مخزن مؤقت. ترجع<i> [client].available </i>القيمة true طالما أن هذا المخزن المؤقت غير فارغ؛
+  <li>السطر 56: تكون<i> [<bdi dir="ltr" class="odt-ltr-term">client</bdi>].<bdi dir="ltr" class="odt-ltr-term">available</bdi> </i>صحيحة إذا أرسل العميل أحرفًا. يتم تخزين هذه الأحرف في مخزن مؤقت. ترجع<i> [<bdi dir="ltr" class="odt-ltr-term">client</bdi>].<bdi dir="ltr" class="odt-ltr-term">available</bdi> </i>القيمة <bdi dir="ltr" class="odt-ltr-term">true</bdi> طالما أن هذا المخزن المؤقت غير فارغ؛
   </li>
   <li>السطر 57: تتم قراءة حرف أرسله العميل؛
   </li>
   <li>السطر 58: يتم إرجاع هذا الحرف إلى وحدة التحكم في السجل؛
   </li>
-  <li>السطر 62: في بروتوكول HTTP، يتبادل العميل والخادم أسطر النص. 
+  <li>السطر 62: في بروتوكول <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>، يتبادل العميل والخادم أسطر النص. 
     <ul>
-      <li>يرسل العميل طلب HTTP إلى خادم الويب عن طريق إرسال سلسلة من الأسطر النصية تنتهي بسطر فارغ؛
+      <li>يرسل العميل طلب <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> إلى خادم الويب عن طريق إرسال سلسلة من الأسطر النصية تنتهي بسطر فارغ؛
       </li>
       <li>ثم يرد الخادم على العميل بإرسال استجابة وإغلاق الاتصال؛
       </li>
@@ -936,38 +938,38 @@
   </li>
 </ul>
 
-<p>السطر 62: لا يقوم الخادم بأي شيء مع رؤوس HTTP التي يتلقاها من العميل. إنه ينتظر ببساطة السطر الفارغ: سطر يحتوي فقط على الحرف <strong>\</strong>n؛</p>
+<p>السطر 62: لا يقوم الخادم بأي شيء مع رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> التي يتلقاها من العميل. إنه ينتظر ببساطة السطر الفارغ: سطر يحتوي فقط على الحرف <strong>\</strong><bdi dir="ltr" class="odt-ltr-term">n</bdi>؛</p>
 <ul>
-  <li>الأسطر 64-67: يرسل الخادم إلى العميل أسطر النص القياسية لبروتوكول HTTP. تنتهي هذه الأسطر بسطر فارغ (السطر 67)؛
+  <li>الأسطر 64-67: يرسل الخادم إلى العميل أسطر النص القياسية لبروتوكول <bdi dir="ltr" class="odt-ltr-term">HTTP.</bdi> تنتهي هذه الأسطر بسطر فارغ (السطر 67)؛
   </li>
-  <li>ابتداءً من السطر 68، يرسل الخادم مستندًا إلى عميله. يتم إنشاء هذا المستند ديناميكيًا بواسطة الخادم وهو بتنسيق HTML (السطور 68-69)؛
+  <li>ابتداءً من السطر 68، يرسل الخادم مستندًا إلى عميله. يتم إنشاء هذا المستند ديناميكيًا بواسطة الخادم وهو بتنسيق <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> (السطور 68-69)؛
   </li>
-  <li>السطر 71: سطر HTML خاص يوجه متصفح العميل لتحديث الصفحة كل 5 ثوانٍ. وبالتالي، سيطلب المتصفح نفس الصفحة كل 5 ثوانٍ؛
+  <li>السطر 71: سطر <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> خاص يوجه متصفح العميل لتحديث الصفحة كل 5 ثوانٍ. وبالتالي، سيطلب المتصفح نفس الصفحة كل 5 ثوانٍ؛
   </li>
-  <li>الأسطر 73-80: يرسل الخادم قيم المدخلات التناظرية الستة لـ Arduino إلى متصفح العميل؛
+  <li>الأسطر 73-80: يرسل الخادم قيم المدخلات التناظرية الستة لـ <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> إلى متصفح العميل؛
   </li>
-  <li>السطر 81: يتم إغلاق مستند HTML؛
+  <li>السطر 81: يتم إغلاق مستند <bdi dir="ltr" class="odt-ltr-term">HTML</bdi>؛
   </li>
-  <li>السطر 82: نخرج من حلقة <i>while </i>من السطر 55؛
+  <li>السطر 82: نخرج من حلقة <i><bdi dir="ltr" class="odt-ltr-term">while</bdi> </i>من السطر 55؛
   </li>
   <li>السطر 97: يتم إغلاق الاتصال مع العميل؛
   </li>
   <li>السطر 98: يتم تسجيل الحدث في وحدة التحكم في السجل؛
   </li>
-  <li>السطر 100: نعود إلى بداية دالة <b>loop</b>: سيستأنف الخادم الاستماع للعملاء. ذكرنا أن متصفح العميل سيطلب نفس الصفحة كل 5 ثوانٍ. وسيكون الخادم جاهزًا للرد مرة أخرى.
+  <li>السطر 100: نعود إلى بداية دالة <b><bdi dir="ltr" class="odt-ltr-term">loop</bdi></b>: سيستأنف الخادم الاستماع للعملاء. ذكرنا أن متصفح العميل سيطلب نفس الصفحة كل 5 ثوانٍ. وسيكون الخادم جاهزًا للرد مرة أخرى.
   </li>
 </ul>
 
-<p>قم بتعديل الكود في السطر 25 لتضمين عنوان IP الخاص بـ Arduino الخاص بك، على سبيل المثال:</p>
+<p>قم بتعديل الكود في السطر 25 لتضمين عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> الخاص بك، على سبيل المثال:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>IPAddress ip(192,168,2,2);
 </code></pre></div>
-<p>قم بتحميل البرنامج إلى Arduino. قم بتشغيل وحدة التحكم في السجل (Ctrl-M) (M كبيرة):</p>
+<p>قم بتحميل البرنامج إلى <bdi dir="ltr" class="odt-ltr-term">Arduino.</bdi> قم بتشغيل وحدة التحكم في السجل (<bdi dir="ltr" class="odt-ltr-term">Ctrl-M</bdi>) (<bdi dir="ltr" class="odt-ltr-term">M</bdi> كبيرة):</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000CA00000075F4A99959.png" width="141" height="82" style="display:inline-block; margin:4px;width:3.739cm;height:2.166cm;" class="odt-zoomable" data-zoom-src="images/10000000000000CA00000075F4A99959.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000F5000000EA1755651A.png" width="172" height="164" style="display:inline-block; margin:4px;width:4.54cm;height:4.336cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F5000000EA1755651A.png" /></td></tr></table>
 
 <ul>
   <li>في [1]، وحدة تحكم السجل. تم تشغيل الخادم؛
   </li>
-  <li>في [2]، باستخدام متصفح، نطلب عنوان IP الخاص بـ Arduino. هنا، يتم ترجمة [192.168.2.2] افتراضيًا إلى [http://198.162.2.2:80]؛
+  <li>في [2]، باستخدام متصفح، نطلب عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Arduino.</bdi> هنا، يتم ترجمة [192.168.2.2] افتراضيًا إلى [<bdi dir="ltr" class="odt-ltr-term">http://198.162.2.2:80</bdi>]؛
   </li>
   <li>في [3]، المعلومات المرسلة من خادم الويب. إذا قمت بعرض شفرة المصدر لصفحة المتصفح، فستحصل على:
   </li>
@@ -993,7 +995,7 @@
 <a id="__codelineno-1-9" name="__codelineno-1-9"></a>analog input 5 is 310<span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
 <a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>هنا، يمكننا رؤية أسطر النص المرسلة من الخادم. على جانب Arduino، تعرض وحدة التحكم في السجل ما يرسله العميل إليها:</p>
+<p>هنا، يمكننا رؤية أسطر النص المرسلة من الخادم. على جانب <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>، تعرض وحدة التحكم في السجل ما يرسله العميل إليها:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
@@ -1017,55 +1019,55 @@
 <a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="n">client</span> <span class="n">disconnected</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>الأسطر 2–9: رؤوس HTTP القياسية؛
+  <li>الأسطر 2–9: رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> القياسية؛
   </li>
   <li>السطر 10: السطر الفارغ الذي ينهيها.
   </li>
 </ul>
 
-<p>ادرس هذا المثال بعناية. سيساعدك على فهم برمجة Arduino المستخدمة في المختبر.</p>
+<p>ادرس هذا المثال بعناية. سيساعدك على فهم برمجة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> المستخدمة في المختبر.</p>
 <p><a id="refheading34558350318798"></a></p>
-<h2 id="66-ajson">6.6. <span style="color: #4f81bd">مكتبة aJson</span></h2>
-<p>في المهمة المعملية التي ستقوم بكتابتها، ستقوم أجهزة Arduino بتبادل أسطر نصية بتنسيق JSON مع عملائها. بشكل افتراضي، لا تتضمن بيئة تطوير Arduino (Arduino IDE) مكتبة للتعامل مع JSON. سنقوم بتثبيت مكتبة <strong>aJson</strong> المتوفرة على [<a href="https://github.com/interactive-matter/aJson"><u><span style="color: #0563c1">https://github.com/interactive-matter/aJson</span></u></a>].</p>
+<h2 id="66-ajson">6.6. <span style="color: #4f81bd">مكتبة <bdi dir="ltr" class="odt-ltr-term">aJson</bdi></span></h2>
+<p>في المهمة المعملية التي ستقوم بكتابتها، ستقوم أجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> بتبادل أسطر نصية بتنسيق <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> مع عملائها. بشكل افتراضي، لا تتضمن بيئة تطوير <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> (<bdi dir="ltr" class="odt-ltr-term">Arduino IDE</bdi>) مكتبة للتعامل مع <bdi dir="ltr" class="odt-ltr-term">JSON.</bdi> سنقوم بتثبيت مكتبة <strong><bdi dir="ltr" class="odt-ltr-term">aJson</bdi></strong> المتوفرة على [<a href="https://github.com/interactive-matter/aJson"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">https://github.com/interactive-matter/aJson</bdi></span></u></a>].</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000016E0000006F477E7917.png" width="256" height="78" style="display:inline-block; margin:4px;width:6.78cm;height:2.057cm;" class="odt-zoomable" data-zoom-src="images/100000000000016E0000006F477E7917.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000075000000678E04B25D.png" width="82" height="72" style="display:inline-block; margin:4px;width:2.17cm;height:1.91cm;" class="odt-zoomable" data-zoom-src="images/1000000000000075000000678E04B25D.png" /></td></tr></table>
 
 <ul>
-  <li>في [1]، قم بتنزيل النسخة المضغوطة من مستودع GitHub؛
+  <li>في [1]، قم بتنزيل النسخة المضغوطة من مستودع <bdi dir="ltr" class="odt-ltr-term">GitHub</bdi>؛
   </li>
-  <li>قم بفك ضغط المجلد وانسخ مجلد [aJson-master] [2] إلى مجلد [&lt;arduino&gt;/libraries] [3]، حيث &lt;arduino&gt; هو مجلد تثبيت Arduino IDE؛
+  <li>قم بفك ضغط المجلد وانسخ مجلد [<bdi dir="ltr" class="odt-ltr-term">aJson-master</bdi>] [2] إلى مجلد [&lt;<bdi dir="ltr" class="odt-ltr-term">arduino</bdi>&gt;/<bdi dir="ltr" class="odt-ltr-term">libraries</bdi>] [3]، حيث &lt;<bdi dir="ltr" class="odt-ltr-term">arduino</bdi>&gt; هو مجلد تثبيت <bdi dir="ltr" class="odt-ltr-term">Arduino IDE</bdi>؛
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000008B000001181441084E.png" width="97" height="196" style="display:inline-block; margin:4px;width:2.57cm;height:5.177cm;" class="odt-zoomable" data-zoom-src="images/100000000000008B000001181441084E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000008F000001118289A2C0.png" width="100" height="191" style="display:inline-block; margin:4px;width:2.649cm;height:5.057cm;" class="odt-zoomable" data-zoom-src="images/100000000000008F000001118289A2C0.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000008A000000BF21167331.png" width="97" height="134" style="display:inline-block; margin:4px;width:2.559cm;height:3.542cm;" class="odt-zoomable" data-zoom-src="images/100000000000008A000000BF21167331.png" /></td></tr></table>
 
 <ul>
-  <li>في [4]، قم بتغيير اسم هذا المجلد إلى [aJson]؛
+  <li>في [4]، قم بتغيير اسم هذا المجلد إلى [<bdi dir="ltr" class="odt-ltr-term">aJson</bdi>]؛
   </li>
   <li>في [5]، محتوياته.
   </li>
 </ul>
 
-<p>الآن، قم بتشغيل Arduino IDE:</p>
+<p>الآن، قم بتشغيل <bdi dir="ltr" class="odt-ltr-term">Arduino IDE:</bdi></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002BE000001D7A9E9D87A.png" width="491" height="330" style="display:inline-block; margin:4px;width:13cm;height:8.722cm;" class="odt-zoomable" data-zoom-src="images/10000000000002BE000001D7A9E9D87A.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>تأكد من وجود أمثلة لمكتبة <strong>aJson</strong> ضمن الأمثلة. قم بتشغيل هذه الأمثلة وادرسها.</p>
+<p>تأكد من وجود أمثلة لمكتبة <strong><bdi dir="ltr" class="odt-ltr-term">aJson</bdi></strong> ضمن الأمثلة. قم بتشغيل هذه الأمثلة وادرسها.</p>
 <p><a id="refheading472731712028290"></a></p>
-<h2 id="67-android">6.7. <span style="color: #4f81bd">جهاز Android اللوحي</span></h2>
-<p>تم اختبار الأمثلة باستخدام جهاز Samsung Galaxy Tab 2.</p>
-<p>لاختبار الأمثلة على جهاز لوحي، يجب عليك أولاً تثبيت برنامج تشغيل الجهاز اللوحي على جهاز التطوير الخاص بك. يمكن العثور على برنامج تشغيل Samsung Galaxy Tab 2 على الرابط [<a href="http://www.samsung.com/fr/support/usefulsoftware/KIES/"><u><span style="color: #0563c1">http://www.samsung.com/fr/support/usefulsoftware/KIES/</span></u></a>]:</p>
+<h2 id="67-android">6.7. <span style="color: #4f81bd">جهاز <bdi dir="ltr" class="odt-ltr-term">Android</bdi> اللوحي</span></h2>
+<p>تم اختبار الأمثلة باستخدام جهاز <bdi dir="ltr" class="odt-ltr-term">Samsung Galaxy Tab</bdi> 2.</p>
+<p>لاختبار الأمثلة على جهاز لوحي، يجب عليك أولاً تثبيت برنامج تشغيل الجهاز اللوحي على جهاز التطوير الخاص بك. يمكن العثور على برنامج تشغيل <bdi dir="ltr" class="odt-ltr-term">Samsung Galaxy Tab</bdi> 2 على الرابط [<a href="http://www.samsung.com/fr/support/usefulsoftware/KIES/"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">http://www.samsung.com/fr/support/usefulsoftware/KIES/</bdi></span></u></a>]:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000290000001A457119558.png" width="435" height="279" style="display:inline-block; margin:4px;width:11.52cm;height:7.377cm;" class="odt-zoomable" data-zoom-src="images/1000000000000290000001A457119558.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p><a id="refheading16265013307711381"></a>لاختبار الأمثلة، ستحتاج إلى توصيل الجهاز اللوحي بشبكة (على الأرجح شبكة Wi-Fi) ومعرفة عنوان IP الخاص به على تلك الشبكة. وإليك كيفية القيام بذلك (Samsung Galaxy Tab 2):</p>
+<p><a id="refheading16265013307711381"></a>لاختبار الأمثلة، ستحتاج إلى توصيل الجهاز اللوحي بشبكة (على الأرجح شبكة <bdi dir="ltr" class="odt-ltr-term">Wi-Fi</bdi>) ومعرفة عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> الخاص به على تلك الشبكة. وإليك كيفية القيام بذلك (<bdi dir="ltr" class="odt-ltr-term">Samsung Galaxy Tab</bdi> 2):</p>
 <ul>
   <li>قم بتشغيل جهازك اللوحي؛
   </li>
   <li>ابحث بين التطبيقات المتوفرة على الجهاز اللوحي (أعلى اليمين) عن التطبيق المسمى [الإعدادات] الذي يحمل رمز الترس؛
   </li>
-  <li>في القسم الأيسر، قم بتشغيل Wi-Fi؛
+  <li>في القسم الأيسر، قم بتشغيل <bdi dir="ltr" class="odt-ltr-term">Wi-Fi</bdi>؛
   </li>
-  <li>في القسم الأيمن، حدد شبكة Wi-Fi؛
+  <li>في القسم الأيمن، حدد شبكة <bdi dir="ltr" class="odt-ltr-term">Wi-Fi</bdi>؛
   </li>
-  <li>بمجرد الاتصال بالشبكة، اضغط لفترة قصيرة على الشبكة المحددة. سيتم عرض عنوان IP الخاص بالجهاز اللوحي. قم بتدوينه. ستحتاج إليه؛
+  <li>بمجرد الاتصال بالشبكة، اضغط لفترة قصيرة على الشبكة المحددة. سيتم عرض عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> الخاص بالجهاز اللوحي. قم بتدوينه. ستحتاج إليه؛
   </li>
 </ul>
 
@@ -1073,7 +1075,7 @@
 <ul>
   <li>حدد خيار [خيارات المطور] على اليسار (في أسفل الخيارات)؛
   </li>
-  <li>تأكد من تحديد خيار [تصحيح أخطاء USB] على اليمين.
+  <li>تأكد من تحديد خيار [تصحيح أخطاء <bdi dir="ltr" class="odt-ltr-term">USB</bdi>] على اليمين.
   </li>
 </ul>
 
@@ -1085,8 +1087,8 @@
   </li>
 </ul>
 
-<p>قم بتوصيل جهازك اللوحي بالكمبيوتر الشخصي باستخدام كابل USB المرفق.</p>
-<p>قم بتوصيل جهاز Wi-Fi بأحد منافذ USB في الكمبيوتر الشخصي، ثم اتصل بشبكة Wi-Fi نفسها التي يتصل بها الجهاز اللوحي. بمجرد الانتهاء من ذلك، في نافذة DOS، اكتب الأمر [ipconfig]:</p>
+<p>قم بتوصيل جهازك اللوحي بالكمبيوتر الشخصي باستخدام كابل <bdi dir="ltr" class="odt-ltr-term">USB</bdi> المرفق.</p>
+<p>قم بتوصيل جهاز <bdi dir="ltr" class="odt-ltr-term">Wi-Fi</bdi> بأحد منافذ <bdi dir="ltr" class="odt-ltr-term">USB</bdi> في الكمبيوتر الشخصي، ثم اتصل بشبكة <bdi dir="ltr" class="odt-ltr-term">Wi-Fi</bdi> نفسها التي يتصل بها الجهاز اللوحي. بمجرد الانتهاء من ذلك، في نافذة <bdi dir="ltr" class="odt-ltr-term">DOS</bdi>، اكتب الأمر [<bdi dir="ltr" class="odt-ltr-term">ipconfig</bdi>]:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
@@ -1125,19 +1127,19 @@
 <a id="__codelineno-3-18" name="__codelineno-3-18"></a>   Masque de sous-réseau. . . . . . . . . : 255.255.255.0
 <a id="__codelineno-3-19" name="__codelineno-3-19"></a>Passerelle par défaut. . . . . . . . . : 192.168.1.1
 </code></pre></div></td></tr></table></div>
-<p>يحتوي جهاز الكمبيوتر الخاص بك على بطاقتي شبكة وبالتالي عنواني IP:</p>
+<p>يحتوي جهاز الكمبيوتر الخاص بك على بطاقتي شبكة وبالتالي عنواني <bdi dir="ltr" class="odt-ltr-term">IP:</bdi></p>
 <ul>
   <li>العنوان الموجود في السطر 9، وهو عنوان الكمبيوتر الشخصي على الشبكة السلكية؛
   </li>
-  <li>الذي يظهر في السطر 17، وهو عنوان الكمبيوتر الشخصي على شبكة Wi-Fi؛
+  <li>الذي يظهر في السطر 17، وهو عنوان الكمبيوتر الشخصي على شبكة <bdi dir="ltr" class="odt-ltr-term">Wi-Fi</bdi>؛
   </li>
 </ul>
 
 <p>دوّن هاتين المعلومتين. ستحتاج إليهما. أنت الآن في التكوين التالي:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000028C000001021B488ACB.png" width="326" height="129" style="display:inline-block; margin:4px;width:8.625cm;height:3.413cm;" class="odt-zoomable" data-zoom-src="images/100000000000028C000001021B488ACB.png" /></td></tr></table>
 
-<p>سيحتاج الجهاز اللوحي إلى الاتصال بجهاز الكمبيوتر الخاص بك. عادةً ما يكون جهاز الكمبيوتر الخاص بك محميًا بجدار حماية يمنع أي جهاز خارجي من إقامة اتصال به. لذلك ستحتاج إلى تعطيل جدار الحماية. قم بذلك باستخدام خيار [لوحة التحكم\النظام والأمان\جدار حماية Windows]. في بعض الأحيان، قد تحتاج أيضًا إلى تعطيل جدار الحماية الذي تم إعداده بواسطة برنامج مكافحة الفيروسات الخاص بك. وهذا يعتمد على برنامج مكافحة الفيروسات الذي تستخدمه.</p>
-<p>الآن، على جهاز الكمبيوتر الخاص بك، تحقق من اتصال الشبكة بالجهاز اللوحي باستخدام الأمر [ping 192.168.1.y]، حيث [192.168.1.y] هو عنوان IP للجهاز اللوحي. يجب أن ترى شيئًا مثل هذا:</p>
+<p>سيحتاج الجهاز اللوحي إلى الاتصال بجهاز الكمبيوتر الخاص بك. عادةً ما يكون جهاز الكمبيوتر الخاص بك محميًا بجدار حماية يمنع أي جهاز خارجي من إقامة اتصال به. لذلك ستحتاج إلى تعطيل جدار الحماية. قم بذلك باستخدام خيار [لوحة التحكم\النظام والأمان\جدار حماية <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>]. في بعض الأحيان، قد تحتاج أيضًا إلى تعطيل جدار الحماية الذي تم إعداده بواسطة برنامج مكافحة الفيروسات الخاص بك. وهذا يعتمد على برنامج مكافحة الفيروسات الذي تستخدمه.</p>
+<p>الآن، على جهاز الكمبيوتر الخاص بك، تحقق من اتصال الشبكة بالجهاز اللوحي باستخدام الأمر [<bdi dir="ltr" class="odt-ltr-term">ping 192.168.1</bdi>.<bdi dir="ltr" class="odt-ltr-term">y</bdi>]، حيث [192.168.1.<bdi dir="ltr" class="odt-ltr-term">y</bdi>] هو عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> للجهاز اللوحي. يجب أن ترى شيئًا مثل هذا:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
@@ -1162,18 +1164,18 @@
 <a id="__codelineno-4-11" name="__codelineno-4-11"></a>Durée approximative des boucles en millisecondes :
 <a id="__codelineno-4-12" name="__codelineno-4-12"></a>Minimum = 28ms, Maximum = 244ms, Moyenne = 139ms
 </code></pre></div></td></tr></table></div>
-<p>تشير الأسطر 4-7 إلى أن عنوان IP [192.168.1.y] استجاب لأمر [ping].</p>
+<p>تشير الأسطر 4-7 إلى أن عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> [192.168.1.<bdi dir="ltr" class="odt-ltr-term">y</bdi>] استجاب لأمر [<bdi dir="ltr" class="odt-ltr-term">ping</bdi>].</p>
 <p><a id="refheading104224374082361"></a></p>
-<h2 id="68-jdk">6.8. <span style="color: #4f81bd">تثبيت JDK</span></h2>
-<p><a id="refheading1633352067866943"></a>يمكن العثور على أحدث إصدار من JDK على الرابط [<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"><u><span style="color: #0563c1">http://www.oracle.com/technetwork/java/javase/downloads/index.html</span></u></a>] (يونيو 2016). سنشير إلى مجلد تثبيت JDK باسم &lt;jdk-install&gt; من الآن فصاعدًا.</p>
+<h2 id="68-jdk">6.8. <span style="color: #4f81bd">تثبيت <bdi dir="ltr" class="odt-ltr-term">JDK</bdi></span></h2>
+<p><a id="refheading1633352067866943"></a>يمكن العثور على أحدث إصدار من <bdi dir="ltr" class="odt-ltr-term">JDK</bdi> على الرابط [<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">http://www.oracle.com/technetwork/java/javase/downloads/index.html</bdi></span></u></a>] (يونيو 2016). سنشير إلى مجلد تثبيت <bdi dir="ltr" class="odt-ltr-term">JDK</bdi> باسم &lt;<bdi dir="ltr" class="odt-ltr-term">jdk-install</bdi>&gt; من الآن فصاعدًا.</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002430000019EB3E42FAD.png" width="405" height="290" style="display:inline-block; margin:4px;width:10.719cm;height:7.664cm;" class="odt-zoomable" data-zoom-src="images/10000000000002430000019EB3E42FAD.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p><a id="refheading454551405398942"></a></p>
-<h2 id="69-genymotion">6.9. <span style="color: #4f81bd">تثبيت برنامج إدارة المحاكي Genymotion</span></h2>
-<p>تقدم شركة [<a href="http://www.genymotion.com/features/"><u><span style="color: #0563c1">Genymotion</span></u></a>] محاكي Android عالي الأداء. وهو متاح على الرابط [<a href="https://cloud.genymotion.com/page/launchpad/download/"><u><span style="color: #0563c1">https://cloud.genymotion.com/page/launchpad/download/</span></u></a>] (يونيو 2016).</p>
-<p>ستحتاج إلى التسجيل للحصول على نسخة للاستخدام الشخصي. قم بتنزيل منتج [Genymotion] مع الجهاز الظاهري VirtualBox:</p>
+<h2 id="69-genymotion">6.9. <span style="color: #4f81bd">تثبيت برنامج إدارة المحاكي <bdi dir="ltr" class="odt-ltr-term">Genymotion</bdi></span></h2>
+<p>تقدم شركة [<a href="http://www.genymotion.com/features/"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">Genymotion</bdi></span></u></a>] محاكي <bdi dir="ltr" class="odt-ltr-term">Android</bdi> عالي الأداء. وهو متاح على الرابط [<a href="https://cloud.genymotion.com/page/launchpad/download/"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">https://cloud.genymotion.com/page/launchpad/download/</bdi></span></u></a>] (يونيو 2016).</p>
+<p>ستحتاج إلى التسجيل للحصول على نسخة للاستخدام الشخصي. قم بتنزيل منتج [<bdi dir="ltr" class="odt-ltr-term">Genymotion</bdi>] مع الجهاز الظاهري <bdi dir="ltr" class="odt-ltr-term">VirtualBox:</bdi></p>
 <p><img src="images/10000000000001BF0000013FB3663995.png" width="313" height="223" style="width:8.28cm;height:5.909cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001BF0000013FB3663995.png" /></p>
-<p>سنشير إلى مجلد تثبيت [Genymotion] باسم &lt;genymotion-install&gt; من الآن فصاعدًا. قم بتشغيل [Genymotion]. ثم قم بتنزيل صورة لجهاز لوحي:</p>
+<p>سنشير إلى مجلد تثبيت [<bdi dir="ltr" class="odt-ltr-term">Genymotion</bdi>] باسم &lt;<bdi dir="ltr" class="odt-ltr-term">genymotion-install</bdi>&gt; من الآن فصاعدًا. قم بتشغيل [<bdi dir="ltr" class="odt-ltr-term">Genymotion</bdi>]. ثم قم بتنزيل صورة لجهاز لوحي:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001B500000104CE528C5B.png" width="306" height="182" style="display:inline-block; margin:4px;width:8.089cm;height:4.814cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B500000104CE528C5B.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
@@ -1197,11 +1199,11 @@
   </li>
 </ul>
 
-<p>إذا سارت الأمور على ما يرام، سترى نافذة محاكي Android:</p>
+<p>إذا سارت الأمور على ما يرام، سترى نافذة محاكي <bdi dir="ltr" class="odt-ltr-term">Android:</bdi></p>
 <p><img src="images/10000000000007800000043847A1FBD5.png" width="670" height="377" style="width:17.729cm;height:9.973cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007800000043847A1FBD5.png" /></p>
-<p>في بعض الأحيان، لا يتم تشغيل محاكي Android. على جهاز يعمل بنظام Windows، يمكنك التحقق من النقطتين التاليتين:</p>
+<p>في بعض الأحيان، لا يتم تشغيل محاكي <bdi dir="ltr" class="odt-ltr-term">Android.</bdi> على جهاز يعمل بنظام <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، يمكنك التحقق من النقطتين التاليتين:</p>
 <ul>
-  <li>تأكد من أن الجهاز الظاهري [Hyper-V] غير مثبت. إذا لزم الأمر، قم بإلغاء تثبيته [1-2]؛
+  <li>تأكد من أن الجهاز الظاهري [<bdi dir="ltr" class="odt-ltr-term">Hyper-V</bdi>] غير مثبت. إذا لزم الأمر، قم بإلغاء تثبيته [1-2]؛
   </li>
 </ul>
 
@@ -1217,26 +1219,26 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000024A0000019E95E46960.png" width="351" height="248" style="display:inline-block; margin:4px;width:9.299cm;height:6.57cm;" class="odt-zoomable" data-zoom-src="images/100000000000024A0000019E95E46960.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001550000015D64D8AC7B.png" width="223" height="228" style="display:inline-block; margin:4px;width:5.89cm;height:6.027cm;" class="odt-zoomable" data-zoom-src="images/10000000000001550000015D64D8AC7B.png" /></td></tr></table>
 
 <ul>
-  <li>في [3]، حدد محول (محولات) الشبكة المرتبط بالجهاز الظاهري VirtualBox؛
+  <li>في [3]، حدد محول (محولات) الشبكة المرتبط بالجهاز الظاهري <bdi dir="ltr" class="odt-ltr-term">VirtualBox</bdi>؛
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001890000008CBD16090A.png" width="275" height="98" style="display:inline-block; margin:4px;width:7.28cm;height:2.593cm;" class="odt-zoomable" data-zoom-src="images/10000000000001890000008CBD16090A.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-  <li>تأكد من تحديد خيار برنامج تشغيل VirtualBox في [6]. كرر هذه الخطوة لجميع محولات الشبكة المرتبطة بالجهاز الظاهري VirtualBox؛
+  <li>تأكد من تحديد خيار برنامج تشغيل <bdi dir="ltr" class="odt-ltr-term">VirtualBox</bdi> في [6]. كرر هذه الخطوة لجميع محولات الشبكة المرتبطة بالجهاز الظاهري <bdi dir="ltr" class="odt-ltr-term">VirtualBox</bdi>؛
   </li>
 </ul>
 <p><a id="refheading463261712028290"></a></p>
-<h2 id="610-maven">6.10. <span style="color: #4f81bd">تثبيت Maven</span></h2>
-<p>Maven هي أداة لإدارة التبعيات في مشروع Java وغير ذلك. وهي متاحة على الرابط [<a href="http://maven.apache.org/download.cgi"><u><span style="color: #0563c1">http://maven.apache.org/download.cgi</span></u></a>].</p>
+<h2 id="610-maven">6.10. <span style="color: #4f81bd">تثبيت <bdi dir="ltr" class="odt-ltr-term">Maven</bdi></span></h2>
+<p><bdi dir="ltr" class="odt-ltr-term">Maven</bdi> هي أداة لإدارة التبعيات في مشروع <bdi dir="ltr" class="odt-ltr-term">Java</bdi> وغير ذلك. وهي متاحة على الرابط [<a href="http://maven.apache.org/download.cgi"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">http://maven.apache.org/download.cgi</bdi></span></u></a>].</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001FD000000CC03B4BFB5.png" width="356" height="143" style="display:inline-block; margin:4px;width:9.419cm;height:3.775cm;" class="odt-zoomable" data-zoom-src="images/10000000000001FD000000CC03B4BFB5.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>قم بتنزيل الملف المضغوط وفك ضغطه. سنشير إلى مجلد تثبيت Maven باسم &lt;maven-install&gt;.</p>
+<p>قم بتنزيل الملف المضغوط وفك ضغطه. سنشير إلى مجلد تثبيت <bdi dir="ltr" class="odt-ltr-term">Maven</bdi> باسم &lt;<bdi dir="ltr" class="odt-ltr-term">maven-install</bdi>&gt;.</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001130000009C5AD23345.png" width="192" height="109" style="display:inline-block; margin:4px;width:5.091cm;height:2.887cm;" class="odt-zoomable" data-zoom-src="images/10000000000001130000009C5AD23345.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-  <li>في [1]، يقوم ملف [conf/settings.xml] بتكوين Maven؛
+  <li>في [1]، يقوم ملف [<bdi dir="ltr" class="odt-ltr-term">conf/settings.xml</bdi>] بتكوين <bdi dir="ltr" class="odt-ltr-term">Maven</bdi>؛
   </li>
 </ul>
 
@@ -1250,7 +1252,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">--&gt;</span></span>
 </code></pre></div>
 
-<p>القيمة الافتراضية في السطر 4، إذا كان مسار {user.home} الخاص بك يحتوي على مسافة (على سبيل المثال، [C:\Users\Serge Tahé])، كما في حالتي، فقد يتسبب ذلك في مشاكل مع بعض البرامج. في هذه الحالة، يجب عليك كتابة شيء مثل:</p>
+<p>القيمة الافتراضية في السطر 4، إذا كان مسار {<bdi dir="ltr" class="odt-ltr-term">user.home</bdi>} الخاص بك يحتوي على مسافة (على سبيل المثال، [<bdi dir="ltr" class="odt-ltr-term">C:</bdi>\<bdi dir="ltr" class="odt-ltr-term">Users</bdi>\<bdi dir="ltr" class="odt-ltr-term">Serge Tahé</bdi>])، كما في حالتي، فقد يتسبب ذلك في مشاكل مع بعض البرامج. في هذه الحالة، يجب عليك كتابة شيء مثل:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- localRepository</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">   | The path to the local repository maven will use to store artifacts.</span></span>
@@ -1263,11 +1265,11 @@
 
 <p>وفي السطر 7، سنتجنب المسار الذي يحتوي على مسافات.</p>
 <p><a id="refheading2088641855421712"></a></p>
-<h2 id="611-android-studio">6.11. <span style="color: #4f81bd">تثبيت بيئة تطوير Android Studio</span></h2>
-<p>يتوفر بيئة تطوير Android Studio Community Edition على [<a href="https://developer.android.com/studio/index.html"><u><span style="color: #0563c1">https://developer.android.com/studio/index.html</span></u></a>] (يونيو 2016):</p>
+<h2 id="611-android-studio">6.11. <span style="color: #4f81bd">تثبيت بيئة تطوير <bdi dir="ltr" class="odt-ltr-term">Android Studio</bdi></span></h2>
+<p>يتوفر بيئة تطوير <bdi dir="ltr" class="odt-ltr-term">Android Studio Community Edition</bdi> على [<a href="https://developer.android.com/studio/index.html"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">https://developer.android.com/studio/index.html</bdi></span></u></a>] (يونيو 2016):</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001DF000001975C35AD5C.png" width="335" height="285" style="display:inline-block; margin:4px;width:8.871cm;height:7.539cm;" class="odt-zoomable" data-zoom-src="images/10000000000001DF000001975C35AD5C.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>قم بتثبيت IDE ثم قم بتشغيله. اتبع الخطوات [1-8] لتثبيت مكونات SDK Manager المستخدمة في الأمثلة التالية. إذا قررت تثبيت مكونات أحدث، فمن المحتمل أن تتلقى تحذيرات من Android Studio تفيد بأن تكوين المثال يشير إلى مكونات SDK غير موجودة في بيئتك. يمكنك بعد ذلك اتباع الاقتراحات المقدمة من IDE.</p>
+<p>قم بتثبيت <bdi dir="ltr" class="odt-ltr-term">IDE</bdi> ثم قم بتشغيله. اتبع الخطوات [1-8] لتثبيت مكونات <bdi dir="ltr" class="odt-ltr-term">SDK Manager</bdi> المستخدمة في الأمثلة التالية. إذا قررت تثبيت مكونات أحدث، فمن المحتمل أن تتلقى تحذيرات من <bdi dir="ltr" class="odt-ltr-term">Android Studio</bdi> تفيد بأن تكوين المثال يشير إلى مكونات <bdi dir="ltr" class="odt-ltr-term">SDK</bdi> غير موجودة في بيئتك. يمكنك بعد ذلك اتباع الاقتراحات المقدمة من <bdi dir="ltr" class="odt-ltr-term">IDE.</bdi></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002C60000020165457C1D.png" width="497" height="359" style="display:inline-block; margin:4px;width:13.15cm;height:9.5cm;" class="odt-zoomable" data-zoom-src="images/10000000000002C60000020165457C1D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002CC0000011F747B0639.png" width="501" height="201" style="display:inline-block; margin:4px;width:13.259cm;height:5.315cm;" class="odt-zoomable" data-zoom-src="images/10000000000002CC0000011F747B0639.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
@@ -1282,9 +1284,9 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001A9000001A36EDCB210.png" width="297" height="293" style="display:inline-block; margin:4px;width:7.87cm;height:7.759cm;" class="odt-zoomable" data-zoom-src="images/10000000000001A9000001A36EDCB210.png" /></td></tr></table>
 
 <ul>
-  <li>في [11] أعلاه، استخدمت الأمثلة SDK Build-Tools 23.0.3؛
+  <li>في [11] أعلاه، استخدمت الأمثلة <bdi dir="ltr" class="odt-ltr-term">SDK Build-Tools 23.0.3</bdi>؛
   </li>
-  <li>في [9-12] أدناه، حدد المجلد الذي قمت بتثبيت مدير المحاكي [Genymotion] فيه؛
+  <li>في [9-12] أدناه، حدد المجلد الذي قمت بتثبيت مدير المحاكي [<bdi dir="ltr" class="odt-ltr-term">Genymotion</bdi>] فيه؛
   </li>
 </ul>
 
@@ -1300,7 +1302,7 @@
 <ul>
   <li>في [17]، عادةً ما تكون القيمة الافتراضية صحيحة؛
   </li>
-  <li>في [18]، تأكد من أن لديك JDK 1.8؛
+  <li>في [18]، تأكد من أن لديك <bdi dir="ltr" class="odt-ltr-term">JDK 1.8</bdi>؛
   </li>
 </ul>
 
@@ -1310,7 +1312,7 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000286000001B2EE916F3D.png" width="452" height="304" style="display:inline-block; margin:4px;width:11.959cm;height:8.035cm;" class="odt-zoomable" data-zoom-src="images/1000000000000286000001B2EE916F3D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-  <li>أدناه، في [27-28]، اختر نوع اختصارات لوحة المفاتيح التي تريدها. يمكنك الاحتفاظ بالإعدادات الافتراضية لـ IntelliJ أو اختيار تلك الموجودة في بيئة تطوير متكاملة (IDE) أخرى أكثر اعتيادًا عليها؛
+  <li>أدناه، في [27-28]، اختر نوع اختصارات لوحة المفاتيح التي تريدها. يمكنك الاحتفاظ بالإعدادات الافتراضية لـ <bdi dir="ltr" class="odt-ltr-term">IntelliJ</bdi> أو اختيار تلك الموجودة في بيئة تطوير متكاملة (<bdi dir="ltr" class="odt-ltr-term">IDE</bdi>) أخرى أكثر اعتيادًا عليها؛
   </li>
 </ul>
 
@@ -1324,13 +1326,13 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000328000001D464C39428.png" width="565" height="327" style="display:inline-block; margin:4px;width:14.96cm;height:8.664cm;" class="odt-zoomable" data-zoom-src="images/1000000000000328000001D464C39428.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-  <li>أدناه، في [31-34]، حدد كيف تريد التعامل مع المشروع الأول عند تشغيل IDE والمشاريع اللاحقة؛
+  <li>أدناه، في [31-34]، حدد كيف تريد التعامل مع المشروع الأول عند تشغيل <bdi dir="ltr" class="odt-ltr-term">IDE</bdi> والمشاريع اللاحقة؛
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000023E00000133000D1C1A.png" width="402" height="215" style="display:inline-block; margin:4px;width:10.629cm;height:5.685cm;" class="odt-zoomable" data-zoom-src="images/100000000000023E00000133000D1C1A.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>مع نظام Android 2.1 (مايو 2016)، تتسبب ميزة [Instant Run] أحيانًا في حدوث مشكلات. في هذا المستند، قمنا بتعطيلها:</p>
+<p>مع نظام <bdi dir="ltr" class="odt-ltr-term">Android 2.1</bdi> (مايو 2016)، تتسبب ميزة [<bdi dir="ltr" class="odt-ltr-term">Instant Run</bdi>] أحيانًا في حدوث مشكلات. في هذا المستند، قمنا بتعطيلها:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000AD000000D15DA6F047.png" width="121" height="146" style="display:inline-block; margin:4px;width:3.2cm;height:3.866cm;" class="odt-zoomable" data-zoom-src="images/10000000000000AD000000D15DA6F047.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000027500000159C10481FB.png" width="431" height="237" style="display:inline-block; margin:4px;width:11.416cm;height:6.262cm;" class="odt-zoomable" data-zoom-src="images/100000000000027500000159C10481FB.png" /></td></tr></table>
 
 <ul>
@@ -1339,46 +1341,46 @@
 </ul>
 <p><a id="refheading90386104415204"></a></p>
 <h2 id="612">6.12. <span style="color: #4f81bd">استخدام الأمثلة</span></h2>
-<p>مشاريع Android Studio الخاصة بالأمثلة متاحة هنا|. قم بتنزيلها.</p>
+<p>مشاريع <bdi dir="ltr" class="odt-ltr-term">Android Studio</bdi> الخاصة بالأمثلة متاحة هنا|. قم بتنزيلها.</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000CB000000D922536AB3.png" width="143" height="153" style="display:inline-block; margin:4px;width:3.78cm;height:4.041cm;" class="odt-zoomable" data-zoom-src="images/10000000000000CB000000D922536AB3.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p>تم إنشاء الأمثلة باستخدام المكونات المحددة سابقًا:</p>
 <ul>
-  <li>JDK 1.8؛
+  <li><bdi dir="ltr" class="odt-ltr-term">JDK 1.8</bdi>؛
   </li>
-  <li>منصة Android SDK 23 لوقت التشغيل؛
+  <li>منصة <bdi dir="ltr" class="odt-ltr-term">Android SDK</bdi> 23 لوقت التشغيل؛
   </li>
 </ul>
 
-<p>أدوات SDK التالية:</p>
+<p>أدوات <bdi dir="ltr" class="odt-ltr-term">SDK</bdi> التالية:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000245000000ECB2E0B2B3.png" width="407" height="165" style="display:inline-block; margin:4px;width:10.76cm;height:4.371cm;" class="odt-zoomable" data-zoom-src="images/1000000000000245000000ECB2E0B2B3.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p>إذا كانت بيئتك لا تتطابق مع تلك الموضحة أعلاه، فستحتاج إلى تغيير تكوين المشروع. وقد يكون هذا الأمر مملًا للغاية. في البداية، من الأسهل على الأرجح إعداد بيئة عمل مشابهة لتلك الموضحة أعلاه.</p>
-<p>قم بتشغيل Android Studio ثم افتح مشروع [example-07]، على سبيل المثال:</p>
+<p>قم بتشغيل <bdi dir="ltr" class="odt-ltr-term">Android Studio</bdi> ثم افتح مشروع [<bdi dir="ltr" class="odt-ltr-term">example-07</bdi>]، على سبيل المثال:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001380000010D153E4CA0.png" width="218" height="188" style="display:inline-block; margin:4px;width:5.78cm;height:4.983cm;" class="odt-zoomable" data-zoom-src="images/10000000000001380000010D153E4CA0.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000012A000000F419EBE79C.png" width="209" height="171" style="display:inline-block; margin:4px;width:5.519cm;height:4.519cm;" class="odt-zoomable" data-zoom-src="images/100000000000012A000000F419EBE79C.png" /></td></tr></table>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000011D00000119FF833463.png" width="200" height="197" style="display:inline-block; margin:4px;width:5.279cm;height:5.205cm;" class="odt-zoomable" data-zoom-src="images/100000000000011D00000119FF833463.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-  <li>في [1-3]، افتح مشروع [Example-07]؛
+  <li>في [1-3]، افتح مشروع [<bdi dir="ltr" class="odt-ltr-term">Example-07</bdi>]؛
   </li>
-  <li>في [4]، تحقق من ملف [local.properties]؛
+  <li>في [4]، تحقق من ملف [<bdi dir="ltr" class="odt-ltr-term">local.properties</bdi>]؛
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000024E000000ECC40257B1.png" width="413" height="165" style="display:inline-block; margin:4px;width:10.931cm;height:4.373cm;" class="odt-zoomable" data-zoom-src="images/100000000000024E000000ECC40257B1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000A6000000CCCC109706.png" width="116" height="143" style="display:inline-block; margin:4px;width:3.069cm;height:3.771cm;" class="odt-zoomable" data-zoom-src="images/10000000000000A6000000CCCC109706.png" /></td></tr></table>
 
 <ul>
-  <li>في السطر 11 أعلاه، أدخل موقع Android SDK Manager &lt;sdk-manager-install&gt;. يمكنك العثور عليه باتباع الخطوات [1-4]:
+  <li>في السطر 11 أعلاه، أدخل موقع <bdi dir="ltr" class="odt-ltr-term">Android SDK Manager</bdi> &lt;<bdi dir="ltr" class="odt-ltr-term">sdk-manager-install</bdi>&gt;. يمكنك العثور عليه باتباع الخطوات [1-4]:
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002A70000011482D83565.png" width="475" height="193" style="display:inline-block; margin:4px;width:12.569cm;height:5.108cm;" class="odt-zoomable" data-zoom-src="images/10000000000002A70000011482D83565.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>جميع الأمثلة الواردة في هذا المستند هي مشاريع Gradle تم تكوينها بواسطة ملف [build.gradle] [1-2]:</p>
+<p>جميع الأمثلة الواردة في هذا المستند هي مشاريع <bdi dir="ltr" class="odt-ltr-term">Gradle</bdi> تم تكوينها بواسطة ملف [<bdi dir="ltr" class="odt-ltr-term">build.gradle</bdi>] [1-2]:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000014F00000125830029DB.png" width="234" height="205" style="display:inline-block; margin:4px;width:6.2cm;height:5.422cm;" class="odt-zoomable" data-zoom-src="images/100000000000014F00000125830029DB.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>فيما يلي ملف [build.gradle] الخاص بالمثال 07:</p>
+<p>فيما يلي ملف [<bdi dir="ltr" class="odt-ltr-term">build.gradle</bdi>] الخاص بالمثال 07:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span class="odt-code-line-content">buildscript {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  repositories {</span></span>
@@ -1441,20 +1443,20 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>اعتمادًا على بيئة Android (SDK والأدوات) التي قمت بإعدادها، قد تحتاج إلى تغيير الإصدارات في الأسطر 8 و21 و22 و38 و39. يساعدك Android Studio من خلال تقديم اقتراحات. وأسهل طريقة هي اتباع هذه الاقتراحات.</p>
-<p>يمكن الوصول إلى عناصر ملف [build.gradle] بطريقة أخرى:</p>
+<p>اعتمادًا على بيئة <bdi dir="ltr" class="odt-ltr-term">Android</bdi> (<bdi dir="ltr" class="odt-ltr-term">SDK</bdi> والأدوات) التي قمت بإعدادها، قد تحتاج إلى تغيير الإصدارات في الأسطر 8 و21 و22 و38 و39. يساعدك <bdi dir="ltr" class="odt-ltr-term">Android Studio</bdi> من خلال تقديم اقتراحات. وأسهل طريقة هي اتباع هذه الاقتراحات.</p>
+<p>يمكن الوصول إلى عناصر ملف [<bdi dir="ltr" class="odt-ltr-term">build.gradle</bdi>] بطريقة أخرى:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000121000000792FB49FF3.png" width="202" height="85" style="display:inline-block; margin:4px;width:5.35cm;height:2.24cm;" class="odt-zoomable" data-zoom-src="images/1000000000000121000000792FB49FF3.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000243000001726A68236F.png" width="405" height="259" style="display:inline-block; margin:4px;width:10.719cm;height:6.849cm;" class="odt-zoomable" data-zoom-src="images/1000000000000243000001726A68236F.png" /></td></tr></table>
 
 <ul>
-  <li>تعكس علامات التبويب المختلفة في [3] القيم المختلفة في ملف [build.gradle]. يمكنك بالتالي تكوينه بهذه الطريقة، مما يتيح لك تجنب مشاكل بناء الجملة في ملف [build.gradle]؛
+  <li>تعكس علامات التبويب المختلفة في [3] القيم المختلفة في ملف [<bdi dir="ltr" class="odt-ltr-term">build.gradle</bdi>]. يمكنك بالتالي تكوينه بهذه الطريقة، مما يتيح لك تجنب مشاكل بناء الجملة في ملف [<bdi dir="ltr" class="odt-ltr-term">build.gradle</bdi>]؛
   </li>
 </ul>
 
-<p>نقطة أخرى يجب التحقق منها هي JDK المستخدم من قبل IDE [5]:</p>
+<p>نقطة أخرى يجب التحقق منها هي <bdi dir="ltr" class="odt-ltr-term">JDK</bdi> المستخدم من قبل <bdi dir="ltr" class="odt-ltr-term">IDE</bdi> [5]:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002090000010D9E14BD90.png" width="365" height="188" style="display:inline-block; margin:4px;width:9.65cm;height:4.981cm;" class="odt-zoomable" data-zoom-src="images/10000000000002090000010D9E14BD90.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>في [6]، تحقق من JDK.</p>
-<p>جميع الأمثلة عبارة عن مشاريع Gradle تحتوي على تبعيات يجب تنزيلها. للقيام بذلك، اتبع الخطوات التالية:</p>
+<p>في [6]، تحقق من <bdi dir="ltr" class="odt-ltr-term">JDK.</bdi></p>
+<p>جميع الأمثلة عبارة عن مشاريع <bdi dir="ltr" class="odt-ltr-term">Gradle</bdi> تحتوي على تبعيات يجب تنزيلها. للقيام بذلك، اتبع الخطوات التالية:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002510000019D67133862.png" width="415" height="289" style="display:inline-block; margin:4px;width:10.98cm;height:7.646cm;" class="odt-zoomable" data-zoom-src="images/10000000000002510000019D67133862.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000013C0000009DC85FE3D4.png" width="221" height="110" style="display:inline-block; margin:4px;width:5.851cm;height:2.907cm;" class="odt-zoomable" data-zoom-src="images/100000000000013C0000009DC85FE3D4.png" /><img src="images/10000000000000D40000008CC0EF1C54.png" width="149" height="98" style="display:inline-block; margin:4px;width:3.93cm;height:2.595cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D40000008CC0EF1C54.png" /></td></tr></table>
 
 <ul>
@@ -1466,16 +1468,16 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000B9000000ACF4E99A72.png" width="130" height="121" style="display:inline-block; margin:4px;width:3.431cm;height:3.191cm;" class="odt-zoomable" data-zoom-src="images/10000000000000B9000000ACF4E99A72.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002A2000001AC48716E99.png" width="472" height="300" style="display:inline-block; margin:4px;width:12.48cm;height:7.925cm;" class="odt-zoomable" data-zoom-src="images/10000000000002A2000001AC48716E99.png" /></td></tr></table>
 
 <ul>
-  <li>في [8]، يمكنك تحديد أنك تريد دائمًا استخدام نفس المحطة الطرفية للتنفيذ. بشكل عام، يتم تحديد هذا الخيار لتجنب الحاجة إلى تحديد المحطة الطرفية التي سيتم استخدامها لكل عملية تنفيذ جديدة. هنا، نتركه غير محدد لأننا سنقوم باختبار أجهزة Android مختلفة؛
+  <li>في [8]، يمكنك تحديد أنك تريد دائمًا استخدام نفس المحطة الطرفية للتنفيذ. بشكل عام، يتم تحديد هذا الخيار لتجنب الحاجة إلى تحديد المحطة الطرفية التي سيتم استخدامها لكل عملية تنفيذ جديدة. هنا، نتركه غير محدد لأننا سنقوم باختبار أجهزة <bdi dir="ltr" class="odt-ltr-term">Android</bdi> مختلفة؛
   </li>
-  <li>بمجرد إنشاء تكوين التشغيل، قم بتشغيل Android Emulator Manager [1-3]؛
+  <li>بمجرد إنشاء تكوين التشغيل، قم بتشغيل <bdi dir="ltr" class="odt-ltr-term">Android Emulator Manager</bdi> [1-3]؛
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000F800000087D77359A5.png" width="173" height="94" style="display:inline-block; margin:4px;width:4.59cm;height:2.499cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F800000087D77359A5.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002200000015677631F39.png" width="381" height="239" style="display:inline-block; margin:4px;width:10.07cm;height:6.331cm;" class="odt-zoomable" data-zoom-src="images/10000000000002200000015677631F39.png" /></td></tr></table>
 
 <ul>
-  <li>إذا لم يتم تشغيل محاكي Android، فراجع النقاط المذكورة في القسم<a href="#refheading2088641855421712"><u><span style="color: #0563c1"> 6.1</span></u></a>1؛
+  <li>إذا لم يتم تشغيل محاكي <bdi dir="ltr" class="odt-ltr-term">Android</bdi>، فراجع النقاط المذكورة في القسم<a href="#refheading2088641855421712"><u><span style="color: #0563c1"> 6.1</span></u></a>1؛
   </li>
 </ul>
 
@@ -1494,11 +1496,11 @@
   </li>
 </ul>
 
-<p>الآن قم بتوصيل جهاز لوحي يعمل بنظام Android بمنفذ USB في الكمبيوتر الشخصي وقم بتشغيل التطبيق عليه:</p>
+<p>الآن قم بتوصيل جهاز لوحي يعمل بنظام <bdi dir="ltr" class="odt-ltr-term">Android</bdi> بمنفذ <bdi dir="ltr" class="odt-ltr-term">USB</bdi> في الكمبيوتر الشخصي وقم بتشغيل التطبيق عليه:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002720000013D5BE4320E.png" width="438" height="222" style="display:inline-block; margin:4px;width:11.591cm;height:5.87cm;" class="odt-zoomable" data-zoom-src="images/10000000000002720000013D5BE4320E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-  <li>في [6]، حدد جهاز Android اللوحي واختبر التطبيق.
+  <li>في [6]، حدد جهاز <bdi dir="ltr" class="odt-ltr-term">Android</bdi> اللوحي واختبر التطبيق.
   </li>
 </ul>
 
@@ -1507,7 +1509,7 @@
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003ED000001A3061C34B0.png" width="603" height="251" style="display:inline-block; margin:4px;width:15.951cm;height:6.65cm;" class="odt-zoomable" data-zoom-src="images/10000000000003ED000001A3061C34B0.png" /></td></tr></table>
 
-<p>في لقطة الشاشة أعلاه، تعمل جميع الأجهزة المدرجة بنسخة API 22. سنقوم بإزالتها جميعًا لأننا نريد استخدام API 23. نتبع الإجراء [2-3] لإزالة الأجهزة.</p>
+<p>في لقطة الشاشة أعلاه، تعمل جميع الأجهزة المدرجة بنسخة <bdi dir="ltr" class="odt-ltr-term">API</bdi> 22. سنقوم بإزالتها جميعًا لأننا نريد استخدام <bdi dir="ltr" class="odt-ltr-term">API</bdi> 23. نتبع الإجراء [2-3] لإزالة الأجهزة.</p>
 <p><img src="images/1000000000000378000002CF7B354E3C.png" width="533" height="431" style="width:14.09cm;height:11.409cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000378000002CF7B354E3C.png" /></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002AE00000195848D4D13.png" width="480" height="283" style="display:inline-block; margin:4px;width:12.7cm;height:7.498cm;" class="odt-zoomable" data-zoom-src="images/10000000000002AE00000195848D4D13.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
@@ -1519,7 +1521,7 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000028F000000E4D326DD8F.png" width="458" height="160" style="display:inline-block; margin:4px;width:12.13cm;height:4.223cm;" class="odt-zoomable" data-zoom-src="images/100000000000028F000000E4D326DD8F.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-  <li>في [6]، نختار واجهة برمجة تطبيقات (API). أعلاه، نختار واجهة برمجة التطبيقات 23 لنظام التشغيل Windows 64 بت؛
+  <li>في [6]، نختار واجهة برمجة تطبيقات (<bdi dir="ltr" class="odt-ltr-term">API</bdi>). أعلاه، نختار واجهة برمجة التطبيقات 23 لنظام التشغيل <bdi dir="ltr" class="odt-ltr-term">Windows</bdi> 64 بت؛
   </li>
 </ul>
 
@@ -1535,7 +1537,7 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000375000000D2EB2AAEFE.png" width="619" height="147" style="display:inline-block; margin:4px;width:16.39cm;height:3.889cm;" class="odt-zoomable" data-zoom-src="images/1000000000000375000000D2EB2AAEFE.png" /></td></tr></table>
 
 <p>بمجرد اكتمال المعالج، تظهر المحطة التي تم إنشاؤها في [9].</p>
-<p>بمجرد الانتهاء من ذلك، إذا أعدت تشغيل [Example-07]، فسترى الآن النافذة التالية:</p>
+<p>بمجرد الانتهاء من ذلك، إذا أعدت تشغيل [<bdi dir="ltr" class="odt-ltr-term">Example-07</bdi>]، فسترى الآن النافذة التالية:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002720000013D4D2C805D.png" width="438" height="222" style="display:inline-block; margin:4px;width:11.591cm;height:5.87cm;" class="odt-zoomable" data-zoom-src="images/10000000000002720000013D4D2C805D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
@@ -1545,8 +1547,8 @@
   </li>
 </ul>
 
-<p>جرب لتحديد المحطة الطرفية الافتراضية الأنسب لنظامك. في هذا المستند، تم اختبار الأمثلة بشكل أساسي باستخدام محاكي Genymotion.</p>
-<p>بغض النظر عن المحطة الطرفية الافتراضية المختارة، يتم عرض السجلات في النافذة المسماة [Logcat] [1-2]:</p>
+<p>جرب لتحديد المحطة الطرفية الافتراضية الأنسب لنظامك. في هذا المستند، تم اختبار الأمثلة بشكل أساسي باستخدام محاكي <bdi dir="ltr" class="odt-ltr-term">Genymotion.</bdi></p>
+<p>بغض النظر عن المحطة الطرفية الافتراضية المختارة، يتم عرض السجلات في النافذة المسماة [<bdi dir="ltr" class="odt-ltr-term">Logcat</bdi>] [1-2]:</p>
 <p><img src="images/1000000000000196000001527803F3E2.png" width="284" height="237" style="width:7.519cm;height:6.26cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000196000001527803F3E2.png" /></p>
 <p>تحقق من هذه السجلات بانتظام. فهنا يتم الإبلاغ عن الاستثناءات التي تسببت في تعطل برنامجك.</p>
 <p>يمكنك أيضًا تصحيح أخطاء برنامجك باستخدام أدوات التصحيح القياسية:</p>
@@ -1562,22 +1564,22 @@
 <ul>
   <li>في [3]، عند نقطة التوقف، اضغط على:
   </li>
-  <li>[F6] لتنفيذ السطر دون الدخول إلى الطرق إذا كان السطر يحتوي على استدعاءات للطرق،
+  <li>[<bdi dir="ltr" class="odt-ltr-term">F6</bdi>] لتنفيذ السطر دون الدخول إلى الطرق إذا كان السطر يحتوي على استدعاءات للطرق،
   </li>
-  <li>[F5] لتنفيذ السطر عن طريق الدخول إلى الطرق إذا كان السطر يحتوي على استدعاءات للطرق،
+  <li>[<bdi dir="ltr" class="odt-ltr-term">F5</bdi>] لتنفيذ السطر عن طريق الدخول إلى الطرق إذا كان السطر يحتوي على استدعاءات للطرق،
   </li>
-  <li>[F8] للمتابعة إلى نقطة التوقف التالية؛
+  <li>[<bdi dir="ltr" class="odt-ltr-term">F8</bdi>] للمتابعة إلى نقطة التوقف التالية؛
   </li>
-  <li>[Ctrl-F2] لإيقاف التصحيح؛
+  <li>[<bdi dir="ltr" class="odt-ltr-term">Ctrl-F2</bdi>] لإيقاف التصحيح؛
   </li>
 </ul>
 <p><a id="refheading2334521890746156"></a></p>
-<h2 id="613-chrome-advanced-rest-client">6.13. <span style="color: #4f81bd">تثبيت المكون الإضافي لمتصفح Chrome [Advanced Rest Client]</span></h2>
-<p>في هذا المستند، نستخدم متصفح <strong>Chrome</strong> من Google (<a href="http://www.google.fr/intl/fr/chrome/browser/"><u><span style="color: #0563c1">http://www.google.fr/intl/fr/chrome/browser/</span></u></a>). سنقوم بإضافة ملحق [<a id="advanced-rest-client"></a> Advanced Rest Client] إليه. وإليك كيفية القيام بذلك:</p>
+<h2 id="613-chrome-advanced-rest-client">6.13. <span style="color: #4f81bd">تثبيت المكون الإضافي لمتصفح <bdi dir="ltr" class="odt-ltr-term">Chrome</bdi> [<bdi dir="ltr" class="odt-ltr-term">Advanced Rest Client</bdi>]</span></h2>
+<p>في هذا المستند، نستخدم متصفح <strong><bdi dir="ltr" class="odt-ltr-term">Chrome</bdi></strong> من <bdi dir="ltr" class="odt-ltr-term">Google</bdi> (<a href="http://www.google.fr/intl/fr/chrome/browser/"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">http://www.google.fr/intl/fr/chrome/browser/</bdi></span></u></a>). سنقوم بإضافة ملحق [<a id="advanced-rest-client"></a> <bdi dir="ltr" class="odt-ltr-term">Advanced Rest Client</bdi>] إليه. وإليك كيفية القيام بذلك:</p>
 <ul>
-  <li>انتقل إلى [متجر Google الإلكتروني] (<a href="https://chrome.google.com/webstore"><u><span style="color: #0563c1">https://chrome.google.com/webstore</span></u></a>) باستخدام متصفح Chrome؛
+  <li>انتقل إلى [متجر <bdi dir="ltr" class="odt-ltr-term">Google</bdi> الإلكتروني] (<a href="https://chrome.google.com/webstore"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">https://chrome.google.com/webstore</bdi></span></u></a>) باستخدام متصفح <bdi dir="ltr" class="odt-ltr-term">Chrome</bdi>؛
   </li>
-  <li>ابحث عن تطبيق [Advanced Rest Client]:
+  <li>ابحث عن تطبيق [<bdi dir="ltr" class="odt-ltr-term">Advanced Rest Client</bdi>]:
   </li>
 </ul>
 
@@ -1591,32 +1593,32 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003BB000000AE1112526C.png" width="661" height="120" style="display:inline-block; margin:4px;width:17.48cm;height:3.186cm;" class="odt-zoomable" data-zoom-src="images/10000000000003BB000000AE1112526C.png" /></td></tr></table>
 
 <ul>
-  <li>للحصول عليه، ستحتاج إلى إنشاء حساب Google. سيطلب منك [متجر Google الإلكتروني] بعد ذلك تأكيدًا [1]:
+  <li>للحصول عليه، ستحتاج إلى إنشاء حساب <bdi dir="ltr" class="odt-ltr-term">Google.</bdi> سيطلب منك [متجر <bdi dir="ltr" class="odt-ltr-term">Google</bdi> الإلكتروني] بعد ذلك تأكيدًا [1]:
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001880000010483433BD4.png" width="274" height="182" style="display:inline-block; margin:4px;width:7.26cm;height:4.815cm;" class="odt-zoomable" data-zoom-src="images/10000000000001880000010483433BD4.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000021F000001B6AC8B88FF.png" width="334" height="269" style="display:inline-block; margin:4px;width:8.839cm;height:7.13cm;" class="odt-zoomable" data-zoom-src="images/100000000000021F000001B6AC8B88FF.png" /></td></tr></table>
 
 <ul>
-  <li>في [2]، يتوفر الملحق المضاف في خيار [التطبيقات] [3]. يظهر هذا الخيار في كل علامة تبويب جديدة تنشئها (CTRL-T) في المتصفح.
+  <li>في [2]، يتوفر الملحق المضاف في خيار [التطبيقات] [3]. يظهر هذا الخيار في كل علامة تبويب جديدة تنشئها (<bdi dir="ltr" class="odt-ltr-term">CTRL-T</bdi>) في المتصفح.
   </li>
 </ul>
-<p><a id="refheading191922103626402"></a>
-<a id="json"></a></p>
-<h2 id="614-json-java">6.14. <span style="color: #4f81bd">إدارة كائنات JSON في Java</span></h2>
-<p>بشكل شفاف للمطور، يستخدم إطار عمل [Spring MVC] مكتبة [Jackson] JSON. لتوضيح ماهية JSON (ترميز كائنات JavaScript)، نقدم هنا برنامجًا يقوم بتسلسل الكائنات إلى JSON ويقوم بالعكس عن طريق فك تسلسل سلاسل JSON التي تم إنشاؤها لإعادة إنشاء الكائنات الأصلية.</p>
-<p>تسمح لك مكتبة &quot;Jackson&quot; بإنشاء:</p>
+<p><a id="json"></a>
+<a id="refheading191922103626402"></a></p>
+<h2 id="614-json-java">6.14. <span style="color: #4f81bd">إدارة كائنات <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> في <bdi dir="ltr" class="odt-ltr-term">Java</bdi></span></h2>
+<p>بشكل شفاف للمطور، يستخدم إطار عمل [<bdi dir="ltr" class="odt-ltr-term">Spring MVC</bdi>] مكتبة [<bdi dir="ltr" class="odt-ltr-term">Jackson</bdi>] <bdi dir="ltr" class="odt-ltr-term">JSON.</bdi> لتوضيح ماهية <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> (ترميز كائنات <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi>)، نقدم هنا برنامجًا يقوم بتسلسل الكائنات إلى <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> ويقوم بالعكس عن طريق فك تسلسل سلاسل <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> التي تم إنشاؤها لإعادة إنشاء الكائنات الأصلية.</p>
+<p>تسمح لك مكتبة &quot;<bdi dir="ltr" class="odt-ltr-term">Jackson</bdi>&quot; بإنشاء:</p>
 <ul>
-  <li>سلسلة JSON لكائن: <i>new ObjectMapper().writeValueAsString(object)</i>;
+  <li>سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> لكائن: <i><bdi dir="ltr" class="odt-ltr-term">new ObjectMapper</bdi>().<bdi dir="ltr" class="odt-ltr-term">writeValueAsString</bdi>(<bdi dir="ltr" class="odt-ltr-term">object</bdi>)</i>;
   </li>
-  <li>إنشاء كائن من سلسلة JSON: <i>new ObjectMapper().readValue(jsonString, Object.class)</i>.
+  <li>إنشاء كائن من سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON:</bdi> <i><bdi dir="ltr" class="odt-ltr-term">new ObjectMapper</bdi>().<bdi dir="ltr" class="odt-ltr-term">readValue</bdi>(<bdi dir="ltr" class="odt-ltr-term">jsonString</bdi>, <bdi dir="ltr" class="odt-ltr-term">Object.class</bdi>)</i>.
   </li>
 </ul>
 
-<p>قد ترمي كلتا الطريقتين استثناء <em>IOException</em>. إليك مثال على ذلك.</p>
+<p>قد ترمي كلتا الطريقتين استثناء <em><bdi dir="ltr" class="odt-ltr-term">IOException</bdi></em>. إليك مثال على ذلك.</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D5000000EFB3DEB6F9.png" width="149" height="167" style="display:inline-block; margin:4px;width:3.941cm;height:4.422cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D5000000EFB3DEB6F9.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>المشروع أعلاه هو مشروع Maven يحتوي على ملف [pom.xml] التالي؛</p>
+<p>المشروع أعلاه هو مشروع <bdi dir="ltr" class="odt-ltr-term">Maven</bdi> يحتوي على ملف [<bdi dir="ltr" class="odt-ltr-term">pom.xml</bdi>] التالي؛</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;1.0&quot;</span> <span style="color:#7f007f">encoding</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;UTF-8&quot;</span><span style="color:#008080">?&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">project</span> <span style="color:#7f007f">xmlns</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://maven.apache.org/POM/4.0.0&quot;</span></span></span>
@@ -1639,11 +1641,11 @@
 </code></pre></div>
 
 <ul>
-  <li>الأسطر 12–16: التبعية التي تتضمن مكتبة &#x27;Jackson&#x27;؛
+  <li>الأسطر 12–16: التبعية التي تتضمن مكتبة &#x27;<bdi dir="ltr" class="odt-ltr-term">Jackson</bdi>&#x27;؛
   </li>
 </ul>
 
-<p>فئة [Person] هي كما يلي:</p>
+<p>فئة [<bdi dir="ltr" class="odt-ltr-term">Person</bdi>] هي كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> istia.st.json;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1674,7 +1676,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>فئة [Main] هي كما يلي:</p>
+<p>فئة [<bdi dir="ltr" class="odt-ltr-term">Main</bdi>] هي كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> istia.st.json;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1726,42 +1728,42 @@
 </code></pre></div></td></tr></table></div>
 <p>النقاط الرئيسية المستفادة من المثال:</p>
 <ul>
-  <li>كائن [ObjectMapper] المطلوب لتحويلات JSON/Object: السطر 11؛
+  <li>كائن [<bdi dir="ltr" class="odt-ltr-term">ObjectMapper</bdi>] المطلوب لتحويلات <bdi dir="ltr" class="odt-ltr-term">JSON/Object:</bdi> السطر 11؛
   </li>
-  <li>تحويل [Person] --&gt; JSON: السطر 17؛
+  <li>تحويل [<bdi dir="ltr" class="odt-ltr-term">Person</bdi>] --&gt; <bdi dir="ltr" class="odt-ltr-term">JSON:</bdi> السطر 17؛
   </li>
-  <li>تحويل JSON --&gt; [Person]: السطر 20؛
+  <li>تحويل <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> --&gt; [<bdi dir="ltr" class="odt-ltr-term">Person</bdi>]: السطر 20؛
   </li>
-  <li>استثناء [IOException] الذي تم إلقائه بواسطة كلتا الطريقتين: السطر 13.
+  <li>استثناء [<bdi dir="ltr" class="odt-ltr-term">IOException</bdi>] الذي تم إلقائه بواسطة كلتا الطريقتين: السطر 13.
   </li>
 </ul>
 
 <p><a id="refheading1315181394789306"></a>
 <a id="wampserver"></a></p>
-<h2 id="615-wampserver">6.15. <span style="color: #4f81bd">تثبيت [ WampServer]</span></h2>
-<p>[WampServer] هو مجموعة برامج لتطوير PHP / MySQL / Apache على جهاز يعمل بنظام Windows. سنستخدمه حصريًا لنظام إدارة قواعد البيانات MySQL.</p>
+<h2 id="615-wampserver">6.15. <span style="color: #4f81bd">تثبيت [ <bdi dir="ltr" class="odt-ltr-term">WampServer</bdi>]</span></h2>
+<p>[<bdi dir="ltr" class="odt-ltr-term">WampServer</bdi>] هو مجموعة برامج لتطوير <bdi dir="ltr" class="odt-ltr-term">PHP</bdi> / <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> / <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> على جهاز يعمل بنظام <bdi dir="ltr" class="odt-ltr-term">Windows.</bdi> سنستخدمه حصريًا لنظام إدارة قواعد البيانات <bdi dir="ltr" class="odt-ltr-term">MySQL.</bdi></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001B800000143AA2F6C9E.png" width="264" height="194" style="display:inline-block; margin:4px;width:6.99cm;height:5.131cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B800000143AA2F6C9E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001DE0000012785F93F1B.png" width="334" height="206" style="display:inline-block; margin:4px;width:8.849cm;height:5.461cm;" class="odt-zoomable" data-zoom-src="images/10000000000001DE0000012785F93F1B.png" /></td></tr></table>
 
 <ul>
-  <li>على موقع [WampServer] [1]، اختر الإصدار المناسب [2]،
+  <li>على موقع [<bdi dir="ltr" class="odt-ltr-term">WampServer</bdi>] [1]، اختر الإصدار المناسب [2]،
   </li>
-  <li>الملف القابل للتنفيذ الذي تم تنزيله هو برنامج تثبيت. سيُطلب منك إدخال معلومات مختلفة أثناء التثبيت. هذه المعلومات لا تتعلق بـ MySQL، لذا يمكنك تجاهلها. تظهر النافذة [3] في نهاية التثبيت. قم بتشغيل [WampServer]،
+  <li>الملف القابل للتنفيذ الذي تم تنزيله هو برنامج تثبيت. سيُطلب منك إدخال معلومات مختلفة أثناء التثبيت. هذه المعلومات لا تتعلق بـ <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi>، لذا يمكنك تجاهلها. تظهر النافذة [3] في نهاية التثبيت. قم بتشغيل [<bdi dir="ltr" class="odt-ltr-term">WampServer</bdi>]،
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000A100000087786C9D26.png" width="113" height="94" style="display:inline-block; margin:4px;width:2.979cm;height:2.498cm;" class="odt-zoomable" data-zoom-src="images/10000000000000A100000087786C9D26.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D700000130F483B199.png" width="150" height="213" style="display:inline-block; margin:4px;width:3.979cm;height:5.627cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D700000130F483B199.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-  <li>في [4]، يظهر رمز [WampServer] في شريط المهام أسفل يمين الشاشة [4]،
+  <li>في [4]، يظهر رمز [<bdi dir="ltr" class="odt-ltr-term">WampServer</bdi>] في شريط المهام أسفل يمين الشاشة [4]،
   </li>
-  <li>وعند النقر عليه، تظهر قائمة [5]. تتيح لك هذه القائمة إدارة خادم Apache ونظام إدارة قواعد البيانات MySQL. لإدارة هذا الأخير، استخدم خيار [PhpMyAdmin]،
+  <li>وعند النقر عليه، تظهر قائمة [5]. تتيح لك هذه القائمة إدارة خادم <bdi dir="ltr" class="odt-ltr-term">Apache</bdi> ونظام إدارة قواعد البيانات <bdi dir="ltr" class="odt-ltr-term">MySQL.</bdi> لإدارة هذا الأخير، استخدم خيار [<bdi dir="ltr" class="odt-ltr-term">PhpMyAdmin</bdi>]،
   </li>
   <li>الذي يفتح النافذة الموضحة أدناه،
   </li>
 </ul>
 
 <p><img src="images/10000000000003C600000186DE03B7E4.png" width="580" height="234" style="width:15.341cm;height:6.195cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003C600000186DE03B7E4.png" /></p>
-<p>سنقدم بعض التفاصيل حول استخدام [PhpMyAdmin]. ونوضح كيفية استخدامه في الوثيقة.</p>
+<p>سنقدم بعض التفاصيل حول استخدام [<bdi dir="ltr" class="odt-ltr-term">PhpMyAdmin</bdi>]. ونوضح كيفية استخدامه في الوثيقة.</p>
 
 
 

@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1174,24 +1176,24 @@
 <h1 id="3-">3. <span style="color: #222222">دراسة حالة - إدارة المواعيد</span></h1>
 <p><a id="refheading2087661855421712"></a></p>
 <h2 id="31">3.1. <span style="color: #222222">المشروع</span></h2>
-<p>في المستند [<a href="http://tahe.developpez.com/angularjs-spring4/"><u><span style="color: #0563c1">AngularJS / Spring 4 Tutorial</span></u></a>]، تم تطوير تطبيق عميل/خادم لإدارة مواعيد الأطباء. سنشير إلى هذا المستند باسم [<strong>rdvmedecins-angular</strong>] فيما بعد. كان للتطبيق نوعان من العملاء:</p>
+<p>في المستند [<a href="http://tahe.developpez.com/angularjs-spring4/"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">AngularJS</bdi> / <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> 4 <bdi dir="ltr" class="odt-ltr-term">Tutorial</bdi></span></u></a>]، تم تطوير تطبيق عميل/خادم لإدارة مواعيد الأطباء. سنشير إلى هذا المستند باسم [<strong><bdi dir="ltr" class="odt-ltr-term">rdvmedecins-angular</bdi></strong>] فيما بعد. كان للتطبيق نوعان من العملاء:</p>
 <ul>
-  <li>عميل HTML/CSS/JS؛
+  <li>عميل <bdi dir="ltr" class="odt-ltr-term">HTML/CSS/JS</bdi>؛
   </li>
-  <li>عميل Android؛
+  <li>عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi>؛
   </li>
 </ul>
 
-<p>تم إنشاء عميل Android تلقائيًا من الإصدار HTML للعميل باستخدام أداة [<a href="http://cordova.apache.org/"><u><span style="color: #0563c1">Cordova</span></u></a>]. الهدف من هذا المشروع هو إعادة إنشاء عميل Android هذا يدويًا باستخدام المعرفة المكتسبة في الفصول السابقة.</p>
+<p>تم إنشاء عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> تلقائيًا من الإصدار <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> للعميل باستخدام أداة [<a href="http://cordova.apache.org/"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">Cordova</bdi></span></u></a>]. الهدف من هذا المشروع هو إعادة إنشاء عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> هذا يدويًا باستخدام المعرفة المكتسبة في الفصول السابقة.</p>
 <p>لاحظ الفرق المهم بين الحلين:</p>
 <ul>
-  <li>الحل الذي سنقوم بإنشائه سيعمل فقط على أجهزة Android اللوحية؛
+  <li>الحل الذي سنقوم بإنشائه سيعمل فقط على أجهزة <bdi dir="ltr" class="odt-ltr-term">Android</bdi> اللوحية؛
   </li>
-  <li>في إصدار [<b>rdvmedecins-angular</b>]، يعمل عميل الويب للجوال (HTML/CSS/JS) على أي نظام أساسي (Android، iOS، Windows)؛
+  <li>في إصدار [<b><bdi dir="ltr" class="odt-ltr-term">rdvmedecins-angular</bdi></b>]، يعمل عميل الويب للجوال (<bdi dir="ltr" class="odt-ltr-term">HTML/CSS/JS</bdi>) على أي نظام أساسي (<bdi dir="ltr" class="odt-ltr-term">Android</bdi>، <bdi dir="ltr" class="odt-ltr-term">iOS</bdi>، <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>)؛
   </li>
 </ul>
 <p><a id="refheading20549782760734"></a></p>
-<h2 id="32-android">3.2. <span style="color: #4f81bd">طرق عرض عميل Android</span></h2>
+<h2 id="32-android">3.2. <span style="color: #4f81bd">طرق عرض عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi></span></h2>
 <p>هناك أربع وجهات نظر.</p>
 <p><u><strong>طريقة عرض التكوين</strong></u></p>
 <p><img src="images/1000000000000402000002A03CFDED85.png" width="641" height="420" style="width:16.96cm;height:11.107cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000402000002A03CFDED85.png" /></p>
@@ -1205,119 +1207,119 @@
 <h2 id="33">3.3. <span style="color: #4f81bd">بنية المشروع</span></h2>
 <p>سنستخدم بنية عميل/خادم مشابهة لتلك الموجودة في المثال [مثال-15] (انظر القسم<a href="#refheading103310375245054"><u><span style="color: #0563c1"> 1.16</span></u></a>) من هذا المستند:</p>
 <p><img src="images/100000000000035C0000026E84D169AC.png" width="602" height="435" style="width:15.921cm;height:11.515cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000035C0000026E84D169AC.png" /></p>
-<p>سيتم التعامل مع الاتصال غير المتزامن بين العميل والخادم باستخدام مكتبة RxAndroid.</p>
+<p>سيتم التعامل مع الاتصال غير المتزامن بين العميل والخادم باستخدام مكتبة <bdi dir="ltr" class="odt-ltr-term">RxAndroid.</bdi></p>
 <p><a id="refheading2087701855421712"></a></p>
 <h2 id="34">3.4. <span style="color: #4f81bd">قاعدة البيانات</span></h2>
-<p>لا تلعب قاعدة البيانات دورًا أساسيًا في هذا المستند. نحن نقدمها لأغراض إعلامية. سنسميها [<a id="dbrdvmedecins"></a> dbrdvmedecins]. وهي قاعدة بيانات MySQL5 تحتوي على أربعة جداول:</p>
+<p>لا تلعب قاعدة البيانات دورًا أساسيًا في هذا المستند. نحن نقدمها لأغراض إعلامية. سنسميها [<a id="dbrdvmedecins"></a> <bdi dir="ltr" class="odt-ltr-term">dbrdvmedecins</bdi>]. وهي قاعدة بيانات <bdi dir="ltr" class="odt-ltr-term">MySQL5</bdi> تحتوي على أربعة جداول:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000CE0000006EB8CE00C1.png" width="165" height="88" style="display:inline-block; margin:4px;width:4.36cm;height:2.328cm;" class="odt-zoomable" data-zoom-src="images/10000000000000CE0000006EB8CE00C1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p><a id="refheading73508604163464"></a></p>
-<h3 id="341-medecins">3.4.1. <span style="color: #4f81bd">جدول [MEDECINS]</span></h3>
-<p>يحتوي على معلومات حول الأطباء الذين يديرهم تطبيق [RdvMedecins].</p>
+<h3 id="341-medecins">3.4.1. <span style="color: #4f81bd">جدول [<bdi dir="ltr" class="odt-ltr-term">MEDECINS</bdi>]</span></h3>
+<p>يحتوي على معلومات حول الأطباء الذين يديرهم تطبيق [<bdi dir="ltr" class="odt-ltr-term">RdvMedecins</bdi>].</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000013B0000009140E8B0E1.png" width="220" height="101" style="display:inline-block; margin:4px;width:5.83cm;height:2.685cm;" class="odt-zoomable" data-zoom-src="images/100000000000013B0000009140E8B0E1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001830000006A63E8B6FD.png" width="271" height="74" style="display:inline-block; margin:4px;width:7.17cm;height:1.963cm;" class="odt-zoomable" data-zoom-src="images/10000000000001830000006A63E8B6FD.png" /></td></tr></table>
 
 <ul>
-  <li>ID: رقم تعريف الطبيب — المفتاح الأساسي للجدول
+  <li><bdi dir="ltr" class="odt-ltr-term">ID:</bdi> رقم تعريف الطبيب — المفتاح الأساسي للجدول
   </li>
-  <li>VERSION: رقم يحدد إصدار الصف في الجدول. يزداد هذا الرقم بمقدار 1 في كل مرة يتم فيها إجراء تغيير على الصف.
+  <li><bdi dir="ltr" class="odt-ltr-term">VERSION:</bdi> رقم يحدد إصدار الصف في الجدول. يزداد هذا الرقم بمقدار 1 في كل مرة يتم فيها إجراء تغيير على الصف.
   </li>
-  <li>LAST_NAME: لقب الطبيب
+  <li><bdi dir="ltr" class="odt-ltr-term">LAST_NAME:</bdi> لقب الطبيب
   </li>
-  <li>FIRST_NAME: الاسم الأول للطبيب
+  <li><bdi dir="ltr" class="odt-ltr-term">FIRST_NAME:</bdi> الاسم الأول للطبيب
   </li>
-  <li>TITLE: لقبهم (السيدة، السيدة، السيد)
+  <li><bdi dir="ltr" class="odt-ltr-term">TITLE:</bdi> لقبهم (السيدة، السيدة، السيد)
   </li>
 </ul>
 <p><a id="refheading73510604163464"></a></p>
-<h3 id="342-clients">3.4.2. <span style="color: #4f81bd">جدول [CLIENTS]</span></h3>
-<p>يتم تخزين عملاء الأطباء المختلفين في جدول [CLIENTS]:</p>
+<h3 id="342-clients">3.4.2. <span style="color: #4f81bd">جدول [<bdi dir="ltr" class="odt-ltr-term">CLIENTS</bdi>]</span></h3>
+<p>يتم تخزين عملاء الأطباء المختلفين في جدول [<bdi dir="ltr" class="odt-ltr-term">CLIENTS</bdi>]:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000015C0000009211F9EF53.png" width="244" height="102" style="display:inline-block; margin:4px;width:6.451cm;height:2.706cm;" class="odt-zoomable" data-zoom-src="images/100000000000015C0000009211F9EF53.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001720000006D8D331F7F.png" width="259" height="76" style="display:inline-block; margin:4px;width:6.849cm;height:2.018cm;" class="odt-zoomable" data-zoom-src="images/10000000000001720000006D8D331F7F.png" /></td></tr></table>
 
 <ul>
-  <li>ID: رقم تعريف العميل — المفتاح الأساسي للجدول
+  <li><bdi dir="ltr" class="odt-ltr-term">ID:</bdi> رقم تعريف العميل — المفتاح الأساسي للجدول
   </li>
-  <li>VERSION: الرقم الذي يحدد إصدار الصف في الجدول. يزداد هذا الرقم بمقدار 1 في كل مرة يتم فيها إجراء تغيير على الصف.
+  <li><bdi dir="ltr" class="odt-ltr-term">VERSION:</bdi> الرقم الذي يحدد إصدار الصف في الجدول. يزداد هذا الرقم بمقدار 1 في كل مرة يتم فيها إجراء تغيير على الصف.
   </li>
-  <li>LAST NAME: اسم عائلة العميل
+  <li><bdi dir="ltr" class="odt-ltr-term">LAST NAME:</bdi> اسم عائلة العميل
   </li>
-  <li>FIRST NAME: الاسم الأول للعميل
+  <li><bdi dir="ltr" class="odt-ltr-term">FIRST NAME:</bdi> الاسم الأول للعميل
   </li>
-  <li>TITLE: لقبهم (السيدة، السيدة، السيد)
+  <li><bdi dir="ltr" class="odt-ltr-term">TITLE:</bdi> لقبهم (السيدة، السيدة، السيد)
   </li>
 </ul>
 <p><a id="refheading73512604163464"></a></p>
-<h3 id="343-slots">3.4.3. <span style="color: #4f81bd">جدول [SLOTS]</span></h3>
+<h3 id="343-slots">3.4.3. <span style="color: #4f81bd">جدول [<bdi dir="ltr" class="odt-ltr-term">SLOTS</bdi>]</span></h3>
 <p>يسرد هذا الجدول الفترات الزمنية المتاحة للمواعيد: </p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000170000000B33347BA3C.png" width="258" height="125" style="display:inline-block; margin:4px;width:6.819cm;height:3.318cm;" class="odt-zoomable" data-zoom-src="images/1000000000000170000000B33347BA3C.png" /></td></tr></table>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001970000011131007AAF.png" width="203" height="136" style="display:inline-block; margin:4px;width:5.38cm;height:3.609cm;" class="odt-zoomable" data-zoom-src="images/10000000000001970000011131007AAF.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000019800000112338312CD.png" width="204" height="137" style="display:inline-block; margin:4px;width:5.399cm;height:3.627cm;" class="odt-zoomable" data-zoom-src="images/100000000000019800000112338312CD.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001A2000001021ABEAD48.png" width="209" height="129" style="display:inline-block; margin:4px;width:5.53cm;height:3.413cm;" class="odt-zoomable" data-zoom-src="images/10000000000001A2000001021ABEAD48.png" /></td></tr></table>
 
 <ul>
-  <li>ID: رقم تعريف الفترة الزمنية - المفتاح الأساسي للجدول (الصف 8)
+  <li><bdi dir="ltr" class="odt-ltr-term">ID:</bdi> رقم تعريف الفترة الزمنية - المفتاح الأساسي للجدول (الصف 8)
   </li>
-  <li>VERSION: الرقم الذي يحدد إصدار الصف في الجدول. يزداد هذا الرقم بمقدار 1 في كل مرة يتم فيها إجراء تغيير على الصف.
+  <li><bdi dir="ltr" class="odt-ltr-term">VERSION:</bdi> الرقم الذي يحدد إصدار الصف في الجدول. يزداد هذا الرقم بمقدار 1 في كل مرة يتم فيها إجراء تغيير على الصف.
   </li>
-  <li>DOCTOR_ID: رقم التعريف الذي يحدد الطبيب الذي تنتمي إليه هذه الفترة الزمنية – مفتاح خارجي في عمود DOCTORS(ID).
+  <li><bdi dir="ltr" class="odt-ltr-term">DOCTOR_ID:</bdi> رقم التعريف الذي يحدد الطبيب الذي تنتمي إليه هذه الفترة الزمنية – مفتاح خارجي في عمود <bdi dir="ltr" class="odt-ltr-term">DOCTORS</bdi>(<bdi dir="ltr" class="odt-ltr-term">ID</bdi>).
   </li>
-  <li>START_TIME: وقت بدء الفترة الزمنية
+  <li><bdi dir="ltr" class="odt-ltr-term">START_TIME:</bdi> وقت بدء الفترة الزمنية
   </li>
-  <li>MSTART: دقيقة بدء الفترة الزمنية
+  <li><bdi dir="ltr" class="odt-ltr-term">MSTART:</bdi> دقيقة بدء الفترة الزمنية
   </li>
-  <li>HFIN: وقت انتهاء الفترة الزمنية
+  <li><bdi dir="ltr" class="odt-ltr-term">HFIN:</bdi> وقت انتهاء الفترة الزمنية
   </li>
-  <li>MFIN: دقائق نهاية الفترة الزمنية
+  <li><bdi dir="ltr" class="odt-ltr-term">MFIN:</bdi> دقائق نهاية الفترة الزمنية
   </li>
 </ul>
 
-<p>يشير الصف الثاني من جدول [SLOTS] (انظر [1] أعلاه)، على سبيل المثال، إلى أن الفترة رقم 2 تبدأ في الساعة 8:20 صباحًا وتنتهي في الساعة 8:40 صباحًا، وهي مخصصة للطبيبة رقم 1 (السيدة ماري بيليسييه).</p>
+<p>يشير الصف الثاني من جدول [<bdi dir="ltr" class="odt-ltr-term">SLOTS</bdi>] (انظر [1] أعلاه)، على سبيل المثال، إلى أن الفترة رقم 2 تبدأ في الساعة 8:20 صباحًا وتنتهي في الساعة 8:40 صباحًا، وهي مخصصة للطبيبة رقم 1 (السيدة ماري بيليسييه).</p>
 <p><a id="refheading73514604163464"></a></p>
-<h3 id="344-rv">3.4.4. <span style="color: #4f81bd">جدول [RV]</span></h3>
+<h3 id="344-rv">3.4.4. <span style="color: #4f81bd">جدول [<bdi dir="ltr" class="odt-ltr-term">RV</bdi>]</span></h3>
 <p>يُدرج المواعيد المحددة لكل طبيب:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000018300000082F456EF1C.png" width="271" height="91" style="display:inline-block; margin:4px;width:7.17cm;height:2.409cm;" class="odt-zoomable" data-zoom-src="images/100000000000018300000082F456EF1C.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000018C0000007B1B41E555.png" width="277" height="86" style="display:inline-block; margin:4px;width:7.331cm;height:2.277cm;" class="odt-zoomable" data-zoom-src="images/100000000000018C0000007B1B41E555.png" /></td></tr></table>
 
 <ul>
-  <li>ID: معرف فريد للموعد – المفتاح الأساسي
+  <li><bdi dir="ltr" class="odt-ltr-term">ID:</bdi> معرف فريد للموعد – المفتاح الأساسي
   </li>
-  <li>DAY: يوم الموعد
+  <li><bdi dir="ltr" class="odt-ltr-term">DAY:</bdi> يوم الموعد
   </li>
-  <li>SLOT_ID: الفترة الزمنية للموعد – مفتاح خارجي في حقل [ID] في جدول [SLOTS] – يحدد كل من الفترة الزمنية والطبيب المعني.
+  <li><bdi dir="ltr" class="odt-ltr-term">SLOT_ID:</bdi> الفترة الزمنية للموعد – مفتاح خارجي في حقل [<bdi dir="ltr" class="odt-ltr-term">ID</bdi>] في جدول [<bdi dir="ltr" class="odt-ltr-term">SLOTS</bdi>] – يحدد كل من الفترة الزمنية والطبيب المعني.
   </li>
-  <li>CUSTOMER_ID: معرف العميل الذي تم الحجز لصالحه – مفتاح خارجي في حقل [ID] في جدول [CUSTOMERS]
+  <li><bdi dir="ltr" class="odt-ltr-term">CUSTOMER_ID:</bdi> معرف العميل الذي تم الحجز لصالحه – مفتاح خارجي في حقل [<bdi dir="ltr" class="odt-ltr-term">ID</bdi>] في جدول [<bdi dir="ltr" class="odt-ltr-term">CUSTOMERS</bdi>]
   </li>
 </ul>
 
-<p><a id="unicitejourcreneau"></a>يحتوي هذا الجدول على قيد تفرد على قيم الأعمدة المرتبطة (DAY، SLOT_ID):</p>
+<p><a id="unicitejourcreneau"></a>يحتوي هذا الجدول على قيد تفرد على قيم الأعمدة المرتبطة (<bdi dir="ltr" class="odt-ltr-term">DAY</bdi>، <bdi dir="ltr" class="odt-ltr-term">SLOT</bdi>_ID):</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">RV</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">UNQ1_RV</span><span class="w"> </span><span class="k">UNIQUE</span><span class="w"> </span><span class="p">(</span><span class="n">JOUR</span><span class="p">,</span><span class="w"> </span><span class="n">ID_CRENEAU</span><span class="p">);</span>
 </code></pre></div>
-<p>إذا كان أحد الصفوف في الجدول [RV] يحتوي على القيمة (DAY1، SLOT_ID1) للأعمدة (DAY، SLOT_ID)، فلا يمكن أن تظهر هذه القيمة في أي مكان آخر. وإلا، فهذا يعني أنه تم حجز موعدين في نفس الوقت لنفس الطبيب. من منظور برمجة Java، يقوم برنامج تشغيل JDBC الخاص بقاعدة البيانات بإصدار استثناء <em>SQLException</em> عند حدوث ذلك.</p>
-<p>الصف <em>الذي</em> يحمل الرقم التعريفي 3 (انظر [1] أعلاه) يعني أنه تم حجز موعد للفترة رقم 20 والعميل رقم 4 في 23/08/2006. يوضح لنا جدول [SLOTS] أن الفترة رقم 20 تتوافق مع الفترة الزمنية 4:20 مساءً – 4:40 مساءً وتخص الطبيبة رقم 1 (السيدة ماري بيليسييه). يخبرنا الجدول [CLIENTS] أن العميل رقم 4 هو السيدة بريجيت بيسترو.</p>
-<p><a id="creation-bd"></a>
-<a id="refheading2087721855421712"></a></p>
+<p>إذا كان أحد الصفوف في الجدول [<bdi dir="ltr" class="odt-ltr-term">RV</bdi>] يحتوي على القيمة (<bdi dir="ltr" class="odt-ltr-term">DAY1</bdi>، <bdi dir="ltr" class="odt-ltr-term">SLOT</bdi>_ID1) للأعمدة (<bdi dir="ltr" class="odt-ltr-term">DAY</bdi>، <bdi dir="ltr" class="odt-ltr-term">SLOT</bdi>_ID)، فلا يمكن أن تظهر هذه القيمة في أي مكان آخر. وإلا، فهذا يعني أنه تم حجز موعدين في نفس الوقت لنفس الطبيب. من منظور برمجة <bdi dir="ltr" class="odt-ltr-term">Java</bdi>، يقوم برنامج تشغيل <bdi dir="ltr" class="odt-ltr-term">JDBC</bdi> الخاص بقاعدة البيانات بإصدار استثناء <em><bdi dir="ltr" class="odt-ltr-term">SQLException</bdi></em> عند حدوث ذلك.</p>
+<p>الصف <em>الذي</em> يحمل الرقم التعريفي 3 (انظر [1] أعلاه) يعني أنه تم حجز موعد للفترة رقم 20 والعميل رقم 4 في 23/08/2006. يوضح لنا جدول [<bdi dir="ltr" class="odt-ltr-term">SLOTS</bdi>] أن الفترة رقم 20 تتوافق مع الفترة الزمنية 4:20 مساءً – 4:40 مساءً وتخص الطبيبة رقم 1 (السيدة ماري بيليسييه). يخبرنا الجدول [<bdi dir="ltr" class="odt-ltr-term">CLIENTS</bdi>] أن العميل رقم 4 هو السيدة بريجيت بيسترو.</p>
+<p><a id="refheading2087721855421712"></a>
+<a id="creation-bd"></a></p>
 <h3 id="345">3.4.5. <span style="color: #4f81bd">إنشاء قاعدة البيانات</span></h3>
-<p>لإنشاء الجداول وتعبئتها، يمكنك استخدام البرنامج النصي [dbrdvmedecins.sql]، الذي يمكن العثور عليه في أرشيف الأمثلة |هنا|.</p>
+<p>لإنشاء الجداول وتعبئتها، يمكنك استخدام البرنامج النصي [<bdi dir="ltr" class="odt-ltr-term">dbrdvmedecins.sql</bdi>]، الذي يمكن العثور عليه في أرشيف الأمثلة |هنا|.</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000116000000AEE21872D0.png" width="195" height="122" style="display:inline-block; margin:4px;width:5.151cm;height:3.224cm;" class="odt-zoomable" data-zoom-src="images/1000000000000116000000AEE21872D0.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>باستخدام [WampServer] (انظر القسم<a href="#wampserver"><u><span style="color: #0563c1"> 6.15</span></u></a>)، اتبع الخطوات التالية:</p>
+<p>باستخدام [<bdi dir="ltr" class="odt-ltr-term">WampServer</bdi>] (انظر القسم<a href="#wampserver"><u><span style="color: #0563c1"> 6.15</span></u></a>)، اتبع الخطوات التالية:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000010200000135EF6C6B40.png" width="181" height="216" style="display:inline-block; margin:4px;width:4.78cm;height:5.726cm;" class="odt-zoomable" data-zoom-src="images/100000000000010200000135EF6C6B40.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001B1000000700CCE55DD.png" width="260" height="67" style="display:inline-block; margin:4px;width:6.87cm;height:1.776cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B1000000700CCE55DD.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-  <li>في [1]، انقر على أيقونة [WampServer] واختر خيار [PhpMyAdmin] [2]،
+  <li>في [1]، انقر على أيقونة [<bdi dir="ltr" class="odt-ltr-term">WampServer</bdi>] واختر خيار [<bdi dir="ltr" class="odt-ltr-term">PhpMyAdmin</bdi>] [2]،
   </li>
-  <li>في [3]، في النافذة التي تفتح، حدد رابط [Databases]،
+  <li>في [3]، في النافذة التي تفتح، حدد رابط [<bdi dir="ltr" class="odt-ltr-term">Databases</bdi>]،
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002B20000012F78BA9A1A.png" width="483" height="212" style="display:inline-block; margin:4px;width:12.779cm;height:5.613cm;" class="odt-zoomable" data-zoom-src="images/10000000000002B20000012F78BA9A1A.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-  <li>في [4-6]، قم باستيراد ملف SQL،
+  <li>في [4-6]، قم باستيراد ملف <bdi dir="ltr" class="odt-ltr-term">SQL</bdi>،
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000E2000000BBD7494094.png" width="158" height="131" style="display:inline-block; margin:4px;width:4.189cm;height:3.466cm;" class="odt-zoomable" data-zoom-src="images/10000000000000E2000000BBD7494094.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000009400000064A1957735.png" width="104" height="70" style="display:inline-block; margin:4px;width:2.739cm;height:1.85cm;" class="odt-zoomable" data-zoom-src="images/100000000000009400000064A1957735.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000A9000000B3B63F2959.png" width="118" height="125" style="display:inline-block; margin:4px;width:3.129cm;height:3.314cm;" class="odt-zoomable" data-zoom-src="images/10000000000000A9000000B3B63F2959.png" /></td></tr></table>
 
 <ul>
-  <li>في [7]، حدد البرنامج النصي SQL وفي [8] قم بتنفيذه،
+  <li>في [7]، حدد البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">SQL</bdi> وفي [8] قم بتنفيذه،
   </li>
   <li>في [9]، تم إنشاء جداول قاعدة البيانات. اتبع أحد الروابط،
   </li>
@@ -1332,13 +1334,13 @@
 
 <p>لن نعود إلى قاعدة البيانات هذه مرة أخرى، ولكن ندعو القارئ إلى متابعة تطورها خلال الاختبارات، خاصةً عندما لا يعمل التطبيق.</p>
 <p><a id="refheading20551782760734"></a></p>
-<h2 id="35-json">3.5. <span style="color: #4f81bd">خادم الويب / JSON</span></h2>
+<h2 id="35-json">3.5. <span style="color: #4f81bd">خادم الويب / <bdi dir="ltr" class="odt-ltr-term">JSON</bdi></span></h2>
 <p><img src="images/100000000000035C0000026E84D169AC.png" width="602" height="435" style="width:15.921cm;height:11.515cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000035C0000026E84D169AC.png" /></p>
-<p>نركز هنا على الخادم [1]. لن نتطرق إلى مزيد من التفاصيل حوله. فقد تم تفصيله في الوثيقة [<a href="http://tahe.developpez.com/tutoriels-cours/spring/spring-mvc-thymeleaf/serge-tahe-spring-mvc-thymeleaf-rest-security-cors-jQuery/"><u><span style="color: #0563c1">Spring MVC و Thymeleaf بالأمثلة</span></u></a>]. يمكن للقراء المهتمين الرجوع إليها. تم تطويره مثل الخادم في المثال 15. تم تضمين شفرة المصدر الخاصة به في الأمثلة. سنستخدم هنا ملفه الثنائي:</p>
+<p>نركز هنا على الخادم [1]. لن نتطرق إلى مزيد من التفاصيل حوله. فقد تم تفصيله في الوثيقة [<a href="http://tahe.developpez.com/tutoriels-cours/spring/spring-mvc-thymeleaf/serge-tahe-spring-mvc-thymeleaf-rest-security-cors-jQuery/"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">Spring MVC</bdi> و <bdi dir="ltr" class="odt-ltr-term">Thymeleaf</bdi> بالأمثلة</span></u></a>]. يمكن للقراء المهتمين الرجوع إليها. تم تطويره مثل الخادم في المثال 15. تم تضمين شفرة المصدر الخاصة به في الأمثلة. سنستخدم هنا ملفه الثنائي:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000116000000AEA1540D34.png" width="195" height="122" style="display:inline-block; margin:4px;width:5.151cm;height:3.224cm;" class="odt-zoomable" data-zoom-src="images/1000000000000116000000AEA1540D34.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-  <li><span style="color: #000000">[rdvmedecins-server-all-1.0.jar] هو الملف الثنائي للخادم؛</span>
+  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">rdvmedecins-server-all-1.0.jar</bdi>] هو الملف الثنائي للخادم؛</span>
   </li>
 </ul>
 <p><a id="refheading20553782760734"></a></p>
@@ -1359,7 +1361,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">08/06/2016  16:23        29 618 709 <span style="color:#ff0000">rdvmedecins-server-all-1.0</span>.jar</span></span>
 </code></pre></div>
 
-<p>ثم، لبدء تشغيل الخادم، أدخل الأمر التالي (يجب أن يكون نظام إدارة قواعد البيانات MySQL قيد التشغيل بالفعل):</p>
+<p>ثم، لبدء تشغيل الخادم، أدخل الأمر التالي (يجب أن يكون نظام إدارة قواعد البيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi> قيد التشغيل بالفعل):</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">...\rdvmedecins&gt;<span style="color:#ff0000">java -jar rdvmedecins-server-all-1.0.jar</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1412,43 +1414,43 @@
 
 <p>يعرض الخادم العديد من السجلات. وقد قمنا بتضمين السجلات ذات الصلة بفهم العملية المذكورة أعلاه فقط:</p>
 <ul>
-  <li>الأسطر 14-18: يتم تشغيل خادم Tomcat مدمج على المنفذ 8080 للجهاز. يقوم هذا الخادم بتشغيل تطبيق الويب لإدارة المواعيد. هذا التطبيق هو في الواقع خدمة ويب/JSON: يتم الاستعلام عنه عبر عناوين URL ويستجيب بإرسال سلسلة JSON؛
+  <li>الأسطر 14-18: يتم تشغيل خادم <bdi dir="ltr" class="odt-ltr-term">Tomcat</bdi> مدمج على المنفذ 8080 للجهاز. يقوم هذا الخادم بتشغيل تطبيق الويب لإدارة المواعيد. هذا التطبيق هو في الواقع خدمة ويب/<bdi dir="ltr" class="odt-ltr-term">JSON:</bdi> يتم الاستعلام عنه عبر عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> ويستجيب بإرسال سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi>؛
   </li>
-  <li>السطر 24: يتم تأمين خدمة الويب باستخدام إطار عمل [Spring Security]. يتم الوصول إلى عناوين URL لخدمة الويب عن طريق المصادقة؛
+  <li>السطر 24: يتم تأمين خدمة الويب باستخدام إطار عمل [<bdi dir="ltr" class="odt-ltr-term">Spring Security</bdi>]. يتم الوصول إلى عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لخدمة الويب عن طريق المصادقة؛
   </li>
-  <li>الأسطر 29-44: عناوين URL التي تعرضها خدمة الويب؛
+  <li>الأسطر 29-44: عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> التي تعرضها خدمة الويب؛
   </li>
 </ul>
 
 <p>سنتناول المزيد من التفاصيل حول هذه النقاط.</p>
 <p><a id="refheading20555782760734"></a></p>
 <h3 id="352">3.5.2. <span style="color: #4f81bd">تأمين خدمة الويب</span></h3>
-<p>عناوين URL التي توفرها خدمة الويب مؤمنة. ويتوقع الخادم وجود الرأس التالي في طلب HTTP الصادر عن العميل:</p>
+<p>عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> التي توفرها خدمة الويب مؤمنة. ويتوقع الخادم وجود الرأس التالي في طلب <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> الصادر عن العميل:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Authorization: Basic code
 </code></pre></div>
-<p>الرمز المتوقع هو ترميز Base64 [<a href="http://fr.wikipedia.org/wiki/Base64"><u><span style="color: #0563c1">http://fr.wikipedia.org/wiki/Base64</span></u></a>] للسلسلة &#x27;username<strong><span style="color: #ff0000">:</span></strong>password&#x27;. في حالتها الأولية، لا تقبل خدمة الويب سوى مستخدم باسم &#x27;admin&#x27; وكلمة مرور &#x27;admin&#x27;. بالنسبة لهذا المستخدم بالذات، يصبح الرأس أعلاه السطر التالي:</p>
+<p>الرمز المتوقع هو ترميز <bdi dir="ltr" class="odt-ltr-term">Base64</bdi> [<a href="http://fr.wikipedia.org/wiki/Base64"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">http://fr.wikipedia.org/wiki/Base64</bdi></span></u></a>] للسلسلة &#x27;<bdi dir="ltr" class="odt-ltr-term">username</bdi><strong><span style="color: #ff0000">:</span></strong><bdi dir="ltr" class="odt-ltr-term">password</bdi>&#x27;. في حالتها الأولية، لا تقبل خدمة الويب سوى مستخدم باسم &#x27;<bdi dir="ltr" class="odt-ltr-term">admin</bdi>&#x27; وكلمة مرور &#x27;<bdi dir="ltr" class="odt-ltr-term">admin</bdi>&#x27;. بالنسبة لهذا المستخدم بالذات، يصبح الرأس أعلاه السطر التالي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Authorization: Basic YWRtaW46YWRtaW4=
 </code></pre></div>
-<p>لإرسال رأس HTTP هذا، نستخدم عميل HTTP [<a href="https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo"><u><span style="color: #0563c1">Advanced Rest Client</span></u></a>]، وهو مكون إضافي لمتصفح Chrome (انظر القسم<a href="#refheading2334521890746156"><u><span style="color: #0563c1"> 6.13</span></u></a>). سنقوم باختبار مختلف عناوين URL التي تعرضها خدمة الويب يدويًا لفهم:</p>
+<p>لإرسال رأس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> هذا، نستخدم عميل <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> [<a href="https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">Advanced Rest Client</bdi></span></u></a>]، وهو مكون إضافي لمتصفح <bdi dir="ltr" class="odt-ltr-term">Chrome</bdi> (انظر القسم<a href="#refheading2334521890746156"><u><span style="color: #0563c1"> 6.13</span></u></a>). سنقوم باختبار مختلف عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> التي تعرضها خدمة الويب يدويًا لفهم:</p>
 <ul>
-  <li>المعلمات المتوقعة من عنوان URL؛
+  <li>المعلمات المتوقعة من عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi>؛
   </li>
   <li>الطبيعة الدقيقة لاستجابته؛
   </li>
 </ul>
 <p><a id="refheading20557782760734"></a></p>
 <h3 id="353">3.5.3. <span style="color: #4f81bd">قائمة الأطباء</span></h3>
-<p>يسترد عنوان URL [<strong>/getAllMedecins</strong>] قائمة الأطباء:</p>
+<p>يسترد عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<strong>/<bdi dir="ltr" class="odt-ltr-term">getAllMedecins</bdi></strong>] قائمة الأطباء:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003D10000016FC47519F4.png" width="586" height="220" style="display:inline-block; margin:4px;width:15.51cm;height:5.826cm;" class="odt-zoomable" data-zoom-src="images/10000000000003D10000016FC47519F4.png" /></td></tr></table>
 
 <ul>
-  <li>في [1]، عنوان URL الذي يتم الاستعلام عنه؛
+  <li>في [1]، عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي يتم الاستعلام عنه؛
   </li>
-  <li>في [2]، طريقة HTTP المستخدمة لهذا الطلب؛
+  <li>في [2]، طريقة <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> المستخدمة لهذا الطلب؛
   </li>
-  <li>في [3]، رأس أمان HTTP الخاص بالمستخدم (admin، admin)؛
+  <li>في [3]، رأس أمان <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> الخاص بالمستخدم (<bdi dir="ltr" class="odt-ltr-term">admin</bdi>، <bdi dir="ltr" class="odt-ltr-term">admin</bdi>)؛
   </li>
-  <li>في [4]، يتم إرسال طلب HTTP؛
+  <li>في [4]، يتم إرسال طلب <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>؛
   </li>
 </ul>
 
@@ -1456,7 +1458,7 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003140000022A472A6AE8.png" width="473" height="332" style="display:inline-block; margin:4px;width:12.51cm;height:8.795cm;" class="odt-zoomable" data-zoom-src="images/10000000000003140000022A472A6AE8.png" /></td></tr></table>
 
 <ul>
-  <li>في [5]، استجابة JSON المنسقة من الخادم؛
+  <li>في [5]، استجابة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> المنسقة من الخادم؛
   </li>
 </ul>
 
@@ -1467,7 +1469,7 @@
   </li>
 </ul>
 
-<p>يسهل النموذج الوارد في [5] رؤية بنية الاستجابة. جميع الاستجابات الواردة من خدمة الويب هي مثيلات لفئة [Response] التالية:</p>
+<p>يسهل النموذج الوارد في [5] رؤية بنية الاستجابة. جميع الاستجابات الواردة من خدمة الويب هي مثيلات لفئة [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>] التالية:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> rdvmedecins.android.dao.service;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1508,7 +1510,7 @@
   </li>
 </ul>
 
-<p>الاستجابة لعنوان URL [/getAllMedecins] هي سلسلة JSON لكائن من النوع [Response&lt;List&lt;Medecin&gt;&gt;]. فئة [Medecin] هي كما يلي:</p>
+<p>الاستجابة لعنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/<bdi dir="ltr" class="odt-ltr-term">getAllMedecins</bdi>] هي سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> لكائن من النوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Medecin</bdi>&gt;&gt;]. فئة [<bdi dir="ltr" class="odt-ltr-term">Medecin</bdi>] هي كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> rdvmedecins.android.dao.entities;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1530,7 +1532,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>السطر 3: تمتد فئة [Doctor] من فئة [Person] التالية:</p>
+<p>السطر 3: تمتد فئة [<bdi dir="ltr" class="odt-ltr-term">Doctor</bdi>] من فئة [<bdi dir="ltr" class="odt-ltr-term">Person</bdi>] التالية:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> rdvmedecins.android.dao.entities;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1561,7 +1563,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">السطر 3: تمتد فئة [Person] من فئة [AbstractEntity] التالية:</span></p>
+<p><span style="color: #000000">السطر 3: تمتد فئة [<bdi dir="ltr" class="odt-ltr-term">Person</bdi>] من فئة [<bdi dir="ltr" class="odt-ltr-term">AbstractEntity</bdi>] التالية:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> rdvmedecins.android.dao.entities;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1603,15 +1605,15 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">في النهاية، تكون بنية كائن [Doctor] كما يلي:</span></p>
+<p><span style="color: #000000">في النهاية، تكون بنية كائن [<bdi dir="ltr" class="odt-ltr-term">Doctor</bdi>] كما يلي:</span></p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">[Long id; Long version; String titre; </span><span style="color:#000000">String nom; </span><span style="color:#000000">String prenom;]</span></span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">وبنية [Response&lt;List&lt;Doctor&gt;&gt;] هي كما يلي:</span></p>
+<p><span style="color: #000000">وبنية [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Doctor</bdi>&gt;&gt;] هي كما يلي:</span></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>[int status; List&lt;String&gt; messages; List&lt;Medecin&gt; medecins]
 </code></pre></div>
-<p><span style="color: #000000">من الآن فصاعدًا، سنستخدم هذه التعريفات المختصرة لوصف استجابة الخادم. بالإضافة إلى ذلك، لن ندرج لقطات شاشة في الوقت الحالي. ما عليك سوى مراجعة ما تناولناه للتو. سنعود إلى لقطات الشاشة عندما يحين وقت إجراء طلب POST. كما سنقدم مثالاً على التنفيذ بالصيغة التالية:</span></p>
+<p><span style="color: #000000">من الآن فصاعدًا، سنستخدم هذه التعريفات المختصرة لوصف استجابة الخادم. بالإضافة إلى ذلك، لن ندرج لقطات شاشة في الوقت الحالي. ما عليك سوى مراجعة ما تناولناه للتو. سنعود إلى لقطات الشاشة عندما يحين وقت إجراء طلب <bdi dir="ltr" class="odt-ltr-term">POST.</bdi> كما سنقدم مثالاً على التنفيذ بالصيغة التالية:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>URL
 </code></pre></div>
@@ -1685,19 +1687,19 @@
 </code></pre></div></td></tr></table>
 
 <ul>
-  <li><span style="color: #000000">[idMedecin]: معرف الطبيب الذي تريد حجز مواعيد له؛</span>
+  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">idMedecin</bdi>]: معرف الطبيب الذي تريد حجز مواعيد له؛</span>
   </li>
-  <li><span style="color: #000000">[startTime]: وقت بدء الموعد؛</span>
+  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">startTime</bdi>]: وقت بدء الموعد؛</span>
   </li>
-  <li><span style="color: #000000">[start_time]: وقت بدء الاستشارة؛</span>
+  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">start_time</bdi>]: وقت بدء الاستشارة؛</span>
   </li>
-  <li><span style="color: #000000">[hfin]: وقت انتهاء الاستشارة؛</span>
+  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">hfin</bdi>]: وقت انتهاء الاستشارة؛</span>
   </li>
-  <li><span style="color: #000000">[endmin] : الدقائق المتبقية حتى نهاية الاستشارة؛</span>
+  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">endmin</bdi>] : الدقائق المتبقية حتى نهاية الاستشارة؛</span>
   </li>
 </ul>
 
-<p><span style="color: #000000">بالنسبة لفترة زمنية بين 10:20 و 10:40، يكون لدينا [starts, starts, ends, ends] = [10, 20, 10, 40].</span></p>
+<p><span style="color: #000000">بالنسبة لفترة زمنية بين 10:20 و 10:40، يكون لدينا [<bdi dir="ltr" class="odt-ltr-term">starts</bdi>, <bdi dir="ltr" class="odt-ltr-term">starts</bdi>, <bdi dir="ltr" class="odt-ltr-term">ends</bdi>, <bdi dir="ltr" class="odt-ltr-term">ends</bdi>] = [10, 20, 10, 40].</span></p>
 <p><span style="color: #000000">مثال:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>URL
@@ -1756,19 +1758,19 @@
 </code></pre></div></td></tr></table>
 
 <ul>
-  <li><span style="color: #000000">[idMedic] : معرف الطبيب الذي تم طلب مواعيده؛</span>
+  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">idMedic</bdi>] : معرف الطبيب الذي تم طلب مواعيده؛</span>
   </li>
-  <li><span style="color: #000000">URL [day]: يوم المواعيد بتنسيق &#x27;yyyy-mm-dd&#x27;؛</span>
+  <li><span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<bdi dir="ltr" class="odt-ltr-term">day</bdi>]: يوم المواعيد بتنسيق &#x27;<bdi dir="ltr" class="odt-ltr-term">yyyy-mm-dd</bdi>&#x27;؛</span>
   </li>
-  <li><span style="color: #000000">الاستجابة [اليوم]: كما هو مذكور أعلاه، ولكن في شكل تاريخ Java؛</span>
+  <li><span style="color: #000000">الاستجابة [اليوم]: كما هو مذكور أعلاه، ولكن في شكل تاريخ <bdi dir="ltr" class="odt-ltr-term">Java</bdi>؛</span>
   </li>
-  <li><span style="color: #000000">[client]: العميل الذي طلب الموعد. تم وصف هيكله سابقًا؛</span>
+  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">client</bdi>]: العميل الذي طلب الموعد. تم وصف هيكله سابقًا؛</span>
   </li>
-  <li><span style="color: #000000">[idClient]: معرف العميل؛</span>
+  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">idClient</bdi>]: معرف العميل؛</span>
   </li>
-  <li><span style="color: #000000">[slot]: موعد المراجعة. تم وصف هيكله سابقًا؛</span>
+  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">slot</bdi>]: موعد المراجعة. تم وصف هيكله سابقًا؛</span>
   </li>
-  <li><span style="color: #000000">[slotId]: معرف الفترة الزمنية؛</span>
+  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">slotId</bdi>]: معرف الفترة الزمنية؛</span>
   </li>
 </ul>
 
@@ -1811,19 +1813,19 @@
 </code></pre></div></td></tr></table>
 
 <ul>
-  <li><span style="color: #000000">[doctorId]: معرف الطبيب الذي تريد مواعيده؛</span>
+  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">doctorId</bdi>]: معرف الطبيب الذي تريد مواعيده؛</span>
   </li>
-  <li><span style="color: #000000">URL [day] : يوم المواعيد بالصيغة &#x27;yyyy-mm-dd&#x27; ;</span>
+  <li><span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<bdi dir="ltr" class="odt-ltr-term">day</bdi>] : يوم المواعيد بالصيغة &#x27;<bdi dir="ltr" class="odt-ltr-term">yyyy-mm-dd</bdi>&#x27; ;</span>
   </li>
-  <li><span style="color: #000000">[calendar]: تقويم الطبيب؛</span>
+  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">calendar</bdi>]: تقويم الطبيب؛</span>
   </li>
-  <li><span style="color: #000000">[doctor]: الطبيب المعني. تم تحديد هيكله مسبقًا؛</span>
+  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">doctor</bdi>]: الطبيب المعني. تم تحديد هيكله مسبقًا؛</span>
   </li>
-  <li><span style="color: #000000">Response [day]: يوم التقويم بتنسيق تاريخ Java؛</span>
+  <li><span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">Response</bdi> [<bdi dir="ltr" class="odt-ltr-term">day</bdi>]: يوم التقويم بتنسيق تاريخ <bdi dir="ltr" class="odt-ltr-term">Java</bdi>؛</span>
   </li>
-  <li>[doctorDaySlots]: مصفوفة من العناصر من النوع [DoctorDaySlot]؛
+  <li>[<bdi dir="ltr" class="odt-ltr-term">doctorDaySlots</bdi>]: مصفوفة من العناصر من النوع [<bdi dir="ltr" class="odt-ltr-term">DoctorDaySlot</bdi>]؛
   </li>
-  <li>[slot]: فتحة. تم وصف هيكلها سابقًا؛
+  <li>[<bdi dir="ltr" class="odt-ltr-term">slot</bdi>]: فتحة. تم وصف هيكلها سابقًا؛
   </li>
   <li>[موعد]: موعد. وقد تم وصف هيكله سابقًا؛
   </li>
@@ -1894,7 +1896,7 @@
 </code></pre></div></td></tr></table>
 
 <ul>
-  <li>[doctorId]: معرف الطبيب؛
+  <li>[<bdi dir="ltr" class="odt-ltr-term">doctorId</bdi>]: معرف الطبيب؛
   </li>
 </ul>
 
@@ -1948,7 +1950,7 @@
 </code></pre></div></td></tr></table>
 
 <ul>
-  <li>[idClient]: معرف العميل؛
+  <li>[<bdi dir="ltr" class="odt-ltr-term">idClient</bdi>]: معرف العميل؛
   </li>
 </ul>
 
@@ -1998,7 +2000,7 @@
 </code></pre></div></td></tr></table>
 
 <ul>
-  <li>[slotId]: معرف الفتحة؛
+  <li>[<bdi dir="ltr" class="odt-ltr-term">slotId</bdi>]: معرف الفتحة؛
   </li>
 </ul>
 
@@ -2052,7 +2054,7 @@
 </code></pre></div></td></tr></table>
 
 <ul>
-  <li>[idRv]: معرف الموعد؛
+  <li>[<bdi dir="ltr" class="odt-ltr-term">idRv</bdi>]: معرف الموعد؛
   </li>
 </ul>
 
@@ -2090,24 +2092,24 @@
 
 <p><a id="refheading20575782760734"></a></p>
 <h3 id="3512">3.5.12. <span style="color: #4f81bd">إضافة موعد</span></h3>
-<p>يتيح لك الرابط [/addAppointment] إضافة موعد. يتم إرسال المعلومات المطلوبة لإضافة هذا الموعد (اليوم، والفترة الزمنية، والعميل) عبر طلب HTTP POST. نعرض كيفية إجراء هذا الطلب باستخدام أداة [Advanced Rest Client].</p>
+<p>يتيح لك الرابط [/<bdi dir="ltr" class="odt-ltr-term">addAppointment</bdi>] إضافة موعد. يتم إرسال المعلومات المطلوبة لإضافة هذا الموعد (اليوم، والفترة الزمنية، والعميل) عبر طلب <bdi dir="ltr" class="odt-ltr-term">HTTP POST.</bdi> نعرض كيفية إجراء هذا الطلب باستخدام أداة [<bdi dir="ltr" class="odt-ltr-term">Advanced Rest Client</bdi>].</p>
 <p><img src="images/10000000000003CE000001E8EF72855E.png" width="588" height="295" style="width:15.57cm;height:7.802cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003CE000001E8EF72855E.png" /></p>
 <ul>
-  <li>في [1]، عنوان URL الذي يتم الاستعلام عنه؛
+  <li>في [1]، عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الذي يتم الاستعلام عنه؛
   </li>
-  <li>في [2]، يتم الاستعلام عنه عبر طلب POST؛
+  <li>في [2]، يتم الاستعلام عنه عبر طلب <bdi dir="ltr" class="odt-ltr-term">POST</bdi>؛
   </li>
-  <li>في [3-4]، نحدد للخادم أن القيم التي يتم نشرها بتنسيق JSON؛
+  <li>في [3-4]، نحدد للخادم أن القيم التي يتم نشرها بتنسيق <bdi dir="ltr" class="odt-ltr-term">JSON</bdi>؛
   </li>
-  <li>في [4]، رأس مصادقة HTTP؛
+  <li>في [4]، رأس مصادقة <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi>؛
   </li>
-  <li>في [5]، المعلومات المرسلة عبر طلب POST. هذه سلسلة JSON تحتوي على:
+  <li>في [5]، المعلومات المرسلة عبر طلب <bdi dir="ltr" class="odt-ltr-term">POST.</bdi> هذه سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> تحتوي على:
     <ul>
-      <li>[day]: يوم الموعد بتنسيق &#x27;yyyy-mm-dd&#x27;،
+      <li>[<bdi dir="ltr" class="odt-ltr-term">day</bdi>]: يوم الموعد بتنسيق &#x27;<bdi dir="ltr" class="odt-ltr-term">yyyy-mm-dd</bdi>&#x27;،
       </li>
-      <li>[idClient]: معرف العميل الذي يتم تحديد الموعد له،
+      <li>[<bdi dir="ltr" class="odt-ltr-term">idClient</bdi>]: معرف العميل الذي يتم تحديد الموعد له،
       </li>
-      <li>[idCreneau]: معرف فترة الموعد. نظرًا لأن فترة الموعد تخص طبيبًا معينًا، فإن هذا يشير أيضًا إلى الطبيب؛
+      <li>[<bdi dir="ltr" class="odt-ltr-term">idCreneau</bdi>]: معرف فترة الموعد. نظرًا لأن فترة الموعد تخص طبيبًا معينًا، فإن هذا يشير أيضًا إلى الطبيب؛
       </li>
     </ul>
   </li>
@@ -2115,7 +2117,7 @@
   </li>
 </ul>
 
-<p>سلسلة JSON التي يتم نشرها هي تلك الخاصة بالكائن<span style="color: #000000"> </span>[<span style="color: #000000">PostAjouterRv] التالي:</span></p>
+<p>سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> التي يتم نشرها هي تلك الخاصة بالكائن<span style="color: #000000"> </span>[<span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">PostAjouterRv</bdi>] التالي:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> PostAjouterRv {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -2140,14 +2142,14 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">استجابة الخادم من النوع [Response&lt;Rv&gt;] [int status; List&lt;String&gt; messages; Rv rv]، حيث [rv] هو الموعد المضاف.</span></p>
+<p><span style="color: #000000">استجابة الخادم من النوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Rv</bdi>&gt;] [<bdi dir="ltr" class="odt-ltr-term">int status</bdi>; <bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">String</bdi>&gt; <bdi dir="ltr" class="odt-ltr-term">messages</bdi>; <bdi dir="ltr" class="odt-ltr-term">Rv rv</bdi>]، حيث [<bdi dir="ltr" class="odt-ltr-term">rv</bdi>] هو الموعد المضاف.</span></p>
 <p><span style="color: #000000">استجابة الخادم للطلب أعلاه هي كما يلي:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001510000027D73A7CABB.png" width="202" height="382" style="display:inline-block; margin:4px;width:5.35cm;height:10.112cm;" class="odt-zoomable" data-zoom-src="images/10000000000001510000027D73A7CABB.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p><span style="color: #000000">يرجى ملاحظة أن بعض المعلومات غير مدرجة [idClient، idCreneau]، ولكن يمكن العثور عليها في الحقلين [client] و[creneau]. والمعلومة المهمة هي معرّف الموعد المضاف (209). وكان بإمكان خدمة الويب أن تكتفي بإرجاع هذه المعلومة الوحيدة.</span></p>
+<p><span style="color: #000000">يرجى ملاحظة أن بعض المعلومات غير مدرجة [<bdi dir="ltr" class="odt-ltr-term">idClient</bdi>، <bdi dir="ltr" class="odt-ltr-term">idCreneau</bdi>]، ولكن يمكن العثور عليها في الحقلين [<bdi dir="ltr" class="odt-ltr-term">client</bdi>] و[<bdi dir="ltr" class="odt-ltr-term">creneau</bdi>]. والمعلومة المهمة هي معرّف الموعد المضاف (209). وكان بإمكان خدمة الويب أن تكتفي بإرجاع هذه المعلومة الوحيدة.</span></p>
 <p><a id="refheading20577782760734"></a></p>
 <h3 id="3513">3.5.13. <span style="color: #4f81bd">حذف موعد</span></h3>
-<p><span style="color: #000000">يتم تنفيذ هذه العملية أيضًا عبر طلب POST:</span></p>
+<p><span style="color: #000000">يتم تنفيذ هذه العملية أيضًا عبر طلب <bdi dir="ltr" class="odt-ltr-term">POST:</bdi></span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-79-1" name="__codelineno-79-1" href="#__codelineno-79-1"></a>URL
 </code></pre></div>
@@ -2167,7 +2169,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">الاستجابة&lt;RV&gt; </span>:<span style="color:#000000">[int status; List&lt;String&gt; messages; Rv rv]</span></span></span>
 </code></pre></div></td></tr></table>
 
-<p><span style="color: #000000">القيمة المرسلة هي سلسلة JSON لكائن من النوع [PostSupprimerRv] على النحو التالي:</span></p>
+<p><span style="color: #000000">القيمة المرسلة هي سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> لكائن من النوع [<bdi dir="ltr" class="odt-ltr-term">PostSupprimerRv</bdi>] على النحو التالي:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> PostSupprimerRv {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -2189,7 +2191,7 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">السطر 4: [idRv] هو معرف الموعد المراد حذفه.</span>
+  <li><span style="color: #000000">السطر 4: [<bdi dir="ltr" class="odt-ltr-term">idRv</bdi>] هو معرف الموعد المراد حذفه.</span>
   </li>
 </ul>
 
@@ -2214,7 +2216,7 @@
 </code></pre></div>
 </div></td></tr></table>
 
-<p><span style="color: #000000">تم حذف الموعد رقم 209 بنجاح بسبب [status=0].</span></p>
+<p><span style="color: #000000">تم حذف الموعد رقم 209 بنجاح بسبب [<bdi dir="ltr" class="odt-ltr-term">status</bdi>=0].</span></p>
 <p><span style="color: #000000">المثال 2:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-90-1" name="__codelineno-90-1" href="#__codelineno-90-1"></a>URL
@@ -2237,40 +2239,40 @@
 </div></td></tr></table>
 
 <p><a id="refheading722151954521739"></a></p>
-<h2 id="36-android">3.6. <span style="color: #4f81bd">عميل Android</span></h2>
+<h2 id="36-android">3.6. <span style="color: #4f81bd">عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi></span></h2>
 <p><img src="images/100000000000035C0000026E84D169AC.png" width="602" height="435" style="width:15.921cm;height:11.515cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000035C0000026E84D169AC.png" /></p>
-<p>الآن بعد أن تم وصف الخادم [1] بالتفصيل وأصبح جاهزًا للعمل، سنقوم بفحص عميل Android [2].</p>
+<p>الآن بعد أن تم وصف الخادم [1] بالتفصيل وأصبح جاهزًا للعمل، سنقوم بفحص عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> [2].</p>
 <p><a id="refheading722171954521739"></a></p>
-<h3 id="361-android-studio">3.6.1. <span style="color: #4f81bd">بنية مشروع Android Studio</span></h3>
-<p>يستخدم المشروع بنية مشروع [client-android-skel] (انظر القسم<a href="#refheading949421723138940"><u><span style="color: #0563c1"> 1.17</span></u></a>). في بنية عميل أندرويد الموضحة أعلاه، توجد ثلاث طبقات متميزة:</p>
+<h3 id="361-android-studio">3.6.1. <span style="color: #4f81bd">بنية مشروع <bdi dir="ltr" class="odt-ltr-term">Android Studio</bdi></span></h3>
+<p>يستخدم المشروع بنية مشروع [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>] (انظر القسم<a href="#refheading949421723138940"><u><span style="color: #0563c1"> 1.17</span></u></a>). في بنية عميل أندرويد الموضحة أعلاه، توجد ثلاث طبقات متميزة:</p>
 <ul>
-  <li>طبقة [DAO] المسؤولة عن الاتصال بخدمة الويب؛
+  <li>طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] المسؤولة عن الاتصال بخدمة الويب؛
   </li>
   <li>[الطرق] المسؤولة عن التواصل مع المستخدم؛
   </li>
-  <li>[النشاط] الذي يعمل كحلقة وصل بين المجموعتين السابقتين. لا تعرف العروض طبقة [DAO]. فهي تتواصل فقط مع النشاط.
+  <li>[النشاط] الذي يعمل كحلقة وصل بين المجموعتين السابقتين. لا تعرف العروض طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]. فهي تتواصل فقط مع النشاط.
   </li>
 </ul>
 
-<p>تنعكس هذه البنية في مشروع Android Studio الخاص بعميل Android:</p>
+<p>تنعكس هذه البنية في مشروع <bdi dir="ltr" class="odt-ltr-term">Android Studio</bdi> الخاص بعميل <bdi dir="ltr" class="odt-ltr-term">Android:</bdi></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000CB000000F7313A3ED0.png" width="142" height="173" style="display:inline-block; margin:4px;width:3.761cm;height:4.576cm;" class="odt-zoomable" data-zoom-src="images/10000000000000CB000000F7313A3ED0.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-  <li>تقوم حزمة [activity] بتنفيذ النشاط؛
+  <li>تقوم حزمة [<bdi dir="ltr" class="odt-ltr-term">activity</bdi>] بتنفيذ النشاط؛
   </li>
-  <li>تتضمن حزمة [architecture] العناصر المعمارية التي طورناها سابقًا؛
+  <li>تتضمن حزمة [<bdi dir="ltr" class="odt-ltr-term">architecture</bdi>] العناصر المعمارية التي طورناها سابقًا؛
   </li>
-  <li>حزمة [dao] تنفذ طبقة [DAO]؛
+  <li>حزمة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] تنفذ طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]؛
   </li>
-  <li>حزمة [fragments] تنفذ [views]؛
+  <li>حزمة [<bdi dir="ltr" class="odt-ltr-term">fragments</bdi>] تنفذ [<bdi dir="ltr" class="odt-ltr-term">views</bdi>]؛
   </li>
 </ul>
 <p><a id="refheading1314561394789306"></a></p>
 <h3 id="362">3.6.2. <span style="color: #4f81bd">تخصيص المشروع</span></h3>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000012A0000014CF46CBB9A.png" width="209" height="232" style="display:inline-block; margin:4px;width:5.519cm;height:6.149cm;" class="odt-zoomable" data-zoom-src="images/100000000000012A0000014CF46CBB9A.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>يحتوي المجلد [architecture/custom] على العناصر القابلة للتخصيص في البنية.</p>
-<p>واجهة [IMainActivity] هي كما يلي:</p>
+<p>يحتوي المجلد [<bdi dir="ltr" class="odt-ltr-term">architecture/custom</bdi>] على العناصر القابلة للتخصيص في البنية.</p>
+<p>واجهة [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>] هي كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.architecture.custom;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -2325,7 +2327,7 @@
 </code></pre></div>
 
 <ul>
-  <li>السطران 25 و28: تخصيص طبقة [DAO]؛
+  <li>السطران 25 و28: تخصيص طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]؛
   </li>
   <li>السطر 31: يقوم هذا التطبيق بإرسال طلبات مصادق عليها إلى الخادم؛
   </li>
@@ -2339,7 +2341,7 @@
   </li>
 </ul>
 
-<p>ستكون الفئة الأساسية [CoreState] لحالات الأجزاء كما يلي:</p>
+<p>ستكون الفئة الأساسية [<bdi dir="ltr" class="odt-ltr-term">CoreState</bdi>] لحالات الأجزاء كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.architecture.custom;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -2420,7 +2422,7 @@
   </li>
 </ul>
 <p><a id="refheading722211954521739"></a></p>
-<h3 id="363-dao">3.6.3. <span style="color: #4f81bd">طبقة [DAO]</span></h3>
+<h3 id="363-dao">3.6.3. <span style="color: #4f81bd">طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]</span></h3>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000060C000001BE831DB51E.png" width="680" height="196" style="display:inline-block; margin:4px;width:17.999cm;height:5.186cm;" class="odt-zoomable" data-zoom-src="images/100000000000060C000001BE831DB51E.png" /></td></tr></table>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000100000000F5E3E62EAC.png" width="179" height="171" style="display:inline-block; margin:4px;width:4.74cm;height:4.537cm;" class="odt-zoomable" data-zoom-src="images/1000000000000100000000F5E3E62EAC.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000F2000000F397DB7C6B.png" width="169" height="170" style="display:inline-block; margin:4px;width:4.48cm;height:4.5cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F2000000F397DB7C6B.png" /></td></tr></table>
@@ -2432,14 +2434,14 @@
   </li>
 </ul>
 
-<p><span style="color: #000000">لن نعيد النظر في المكونات الواردة في [1]. فقد تم عرضها بالفعل. وندعو القارئ إلى الرجوع إلى القسم</span><a href="#refheading20551782760734"><u><span style="color: #0563c1"> 3.5</span></u></a><span style="color: #000000"> إذا لزم الأمر. وسنقوم بفحص تنفيذ حزمة [service]. وسيقودنا هذا أيضًا إلى مناقشة تنفيذ الاتصال الآمن بين العميل والخادم.</span></p>
+<p><span style="color: #000000">لن نعيد النظر في المكونات الواردة في [1]. فقد تم عرضها بالفعل. وندعو القارئ إلى الرجوع إلى القسم</span><a href="#refheading20551782760734"><u><span style="color: #0563c1"> 3.5</span></u></a><span style="color: #000000"> إذا لزم الأمر. وسنقوم بفحص تنفيذ حزمة [<bdi dir="ltr" class="odt-ltr-term">service</bdi>]. وسيقودنا هذا أيضًا إلى مناقشة تنفيذ الاتصال الآمن بين العميل والخادم.</span></p>
 <p><a id="refheading722231954521739"></a></p>
 <h4 id="3631">3.6.3.1. <span style="color: #4f81bd">تنفيذ الاتصال بين العميل والخادم</span></h4>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C8000000C694C5A5A1.png" width="140" height="138" style="display:inline-block; margin:4px;width:3.701cm;height:3.664cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C8000000C694C5A5A1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p><span style="color: #000000">فئة [WebClient] هي مكون AA يصف:</span></p>
+<p><span style="color: #000000">فئة [<bdi dir="ltr" class="odt-ltr-term">WebClient</bdi>] هي مكون <bdi dir="ltr" class="odt-ltr-term">AA</bdi> يصف:</span></p>
 <ul>
-  <li><span style="color: #000000">عناوين URL التي تعرضها خدمة الويب؛</span>
+  <li><span style="color: #000000">عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> التي تعرضها خدمة الويب؛</span>
   </li>
   <li><span style="color: #000000">معلماتها؛</span>
   </li>
@@ -2513,16 +2515,16 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">الأسطر 19–60: جميع عناوين URL التي تمت مناقشتها في القسم</span><a href="#refheading20551782760734"><u><span style="color: #0563c1"> 3.5</span></u></a><span style="color: #000000"> موجودة؛</span>
+  <li><span style="color: #000000">الأسطر 19–60: جميع عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> التي تمت مناقشتها في القسم</span><a href="#refheading20551782760734"><u><span style="color: #0563c1"> 3.5</span></u></a><span style="color: #000000"> موجودة؛</span>
   </li>
-  <li><span style="color: #000000">السطر 16: مكون [RestTemplate] من [Spring Android] الذي تستند إليه الاتصالات بين العميل والخادم؛</span>
+  <li><span style="color: #000000">السطر 16: مكون [<bdi dir="ltr" class="odt-ltr-term">RestTemplate</bdi>] من [<bdi dir="ltr" class="odt-ltr-term">Spring Android</bdi>] الذي تستند إليه الاتصالات بين العميل والخادم؛</span>
   </li>
 </ul>
 <p><a id="refheading1314581394789306"></a></p>
-<h4 id="3632-idao">3.6.3.2. <span style="color: #4f81bd">واجهة [IDao]</span></h4>
+<h4 id="3632-idao">3.6.3.2. <span style="color: #4f81bd">واجهة [<bdi dir="ltr" class="odt-ltr-term">IDao</bdi>]</span></h4>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C8000000C64CE120F2.png" width="140" height="138" style="display:inline-block; margin:4px;width:3.701cm;height:3.664cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C8000000C64CE120F2.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p><span style="color: #000000">واجهة [IDao] لطبقة [DAO] هي كما يلي:</span></p>
+<p><span style="color: #000000">واجهة [<bdi dir="ltr" class="odt-ltr-term">IDao</bdi>] لطبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] هي كما يلي:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span> rdvmedecins.android.dao.service;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -2580,22 +2582,22 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">السطر 10: لتعيين عنوان URL لخدمة الويب / JSON؛</span>
+  <li><span style="color: #000000">السطر 10: لتعيين عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لخدمة الويب / <bdi dir="ltr" class="odt-ltr-term">JSON</bdi>؛</span>
   </li>
-  <li><span style="color: #000000">السطر 13: لتعيين المستخدم للاتصال بين العميل والخادم. [user] هو معرف المستخدم، و[password] هي كلمة المرور؛</span>
+  <li><span style="color: #000000">السطر 13: لتعيين المستخدم للاتصال بين العميل والخادم. [<bdi dir="ltr" class="odt-ltr-term">user</bdi>] هو معرف المستخدم، و[<bdi dir="ltr" class="odt-ltr-term">password</bdi>] هي كلمة المرور؛</span>
   </li>
   <li><span style="color: #000000">السطر 16: لتعيين الحد الأقصى لوقت انتظار استجابة الخادم؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 18–49: كل عنوان URL تعرضه خدمة الويب يتوافق مع طريقة. وهي تستخدم نفس توقيعات الطرق مثل مكون AA [WebClient]؛</span>
+  <li><span style="color: #000000">الأسطر 18–49: كل عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> تعرضه خدمة الويب يتوافق مع طريقة. وهي تستخدم نفس توقيعات الطرق مثل مكون <bdi dir="ltr" class="odt-ltr-term">AA</bdi> [<bdi dir="ltr" class="odt-ltr-term">WebClient</bdi>]؛</span>
   </li>
-  <li><span style="color: #000000">السطر 52: للتحكم في وضع </span><i>التصحيح </i><span style="color: #000000">لطبقة [DAO]؛</span>
+  <li><span style="color: #000000">السطر 52: للتحكم في وضع </span><i>التصحيح </i><span style="color: #000000">لطبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]؛</span>
   </li>
 </ul>
 <p><a id="refheading1314601394789306"></a></p>
-<h4 id="3633-dao">3.6.3.3. <span style="color: #4f81bd">فئة [Dao]</span></h4>
+<h4 id="3633-dao">3.6.3.3. <span style="color: #4f81bd">فئة [<bdi dir="ltr" class="odt-ltr-term">Dao</bdi>]</span></h4>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C8000000C663EB0C1C.png" width="140" height="138" style="display:inline-block; margin:4px;width:3.701cm;height:3.664cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C8000000C663EB0C1C.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p><span style="color: #000000">فيما يلي تطبيق [DAO] للواجهة [IDao] السابقة:</span></p>
+<p><span style="color: #000000">فيما يلي تطبيق [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] للواجهة [<bdi dir="ltr" class="odt-ltr-term">IDao</bdi>] السابقة:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span> client.android.dao.service;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -2818,15 +2820,15 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">الأسطر 18–72: هذه هي الأسطر الافتراضية في فئة [Dao] لمشروع [client-android-skel]؛</span>
+  <li><span style="color: #000000">الأسطر 18–72: هذه هي الأسطر الافتراضية في فئة [<bdi dir="ltr" class="odt-ltr-term">Dao</bdi>] لمشروع [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>]؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 74–216: تنفيذ واجهة [IDao]. تقوم الطرق التي تستعلم عن عناوين URL التي تكشفها خدمة الويب بتفويض هذا الاستعلام إلى مكون AA [WebClient] (الأسطر 22–23)؛</span>
+  <li><span style="color: #000000">الأسطر 74–216: تنفيذ واجهة [<bdi dir="ltr" class="odt-ltr-term">IDao</bdi>]. تقوم الطرق التي تستعلم عن عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> التي تكشفها خدمة الويب بتفويض هذا الاستعلام إلى مكون <bdi dir="ltr" class="odt-ltr-term">AA</bdi> [<bdi dir="ltr" class="odt-ltr-term">WebClient</bdi>] (الأسطر 22–23)؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 58–63: إذا تمت مصادقة التبادلات بين العميل والخادم باستخدام المصادقة الأساسية، تتم إضافة معترض إلى مكون [RestTemplate]. سيؤدي هذا إلى اعتراض أي طلب HTTP مرسَل من مكون [RestTemplate] بواسطة فئة [MyAuthInterceptor] (الأسطر 25–26)؛</span>
+  <li><span style="color: #000000">الأسطر 58–63: إذا تمت مصادقة التبادلات بين العميل والخادم باستخدام المصادقة الأساسية، تتم إضافة معترض إلى مكون [<bdi dir="ltr" class="odt-ltr-term">RestTemplate</bdi>]. سيؤدي هذا إلى اعتراض أي طلب <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> مرسَل من مكون [<bdi dir="ltr" class="odt-ltr-term">RestTemplate</bdi>] بواسطة فئة [<bdi dir="ltr" class="odt-ltr-term">MyAuthInterceptor</bdi>] (الأسطر 25–26)؛</span>
   </li>
 </ul>
 
-<p><span style="color: #000000">فئة [MyAuthInterceptor] هي كما يلي:</span></p>
+<p><span style="color: #000000">فئة [<bdi dir="ltr" class="odt-ltr-term">MyAuthInterceptor</bdi>] هي كما يلي:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span> rdvmedecins.android.dao.security;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -2864,25 +2866,25 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">السطر 15: فئة [MyAuthInterceptor] هي مكون AA من النوع [singleton]؛</span>
+  <li><span style="color: #000000">السطر 15: فئة [<bdi dir="ltr" class="odt-ltr-term">MyAuthInterceptor</bdi>] هي مكون <bdi dir="ltr" class="odt-ltr-term">AA</bdi> من النوع [<bdi dir="ltr" class="odt-ltr-term">singleton</bdi>]؛</span>
   </li>
-  <li><span style="color: #000000">السطر 16: تمتد فئة [MyAuthInterceptor] واجهة Spring [ClientHttpRequestInterceptor]. تحتوي هذه الواجهة على طريقة واحدة، وهي طريقة [intercept] في السطر 22. نقوم بتمديد هذه الواجهة لاعتراض أي طلب HTTP من العميل. تأخذ طريقة [intercept] ثلاثة معلمات؛</span>
+  <li><span style="color: #000000">السطر 16: تمتد فئة [<bdi dir="ltr" class="odt-ltr-term">MyAuthInterceptor</bdi>] واجهة <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> [<bdi dir="ltr" class="odt-ltr-term">ClientHttpRequestInterceptor</bdi>]. تحتوي هذه الواجهة على طريقة واحدة، وهي طريقة [<bdi dir="ltr" class="odt-ltr-term">intercept</bdi>] في السطر 22. نقوم بتمديد هذه الواجهة لاعتراض أي طلب <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> من العميل. تأخذ طريقة [<bdi dir="ltr" class="odt-ltr-term">intercept</bdi>] ثلاثة معلمات؛</span>
     <ul>
-      <li><span style="color: #000000">[HttpRequest request]: طلب HTTP المعترض،</span>
+      <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">HttpRequest request</bdi>]: طلب <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> المعترض،</span>
       </li>
-      <li><span style="color: #000000">[byte[] body]: نصه، إن وجد (القيم المنشورة، على سبيل المثال)،</span>
+      <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">byte</bdi>[] <bdi dir="ltr" class="odt-ltr-term">body</bdi>]: نصه، إن وجد (القيم المنشورة، على سبيل المثال)،</span>
       </li>
-      <li><span style="color: #000000">[ClientHttpRequestExecution execution]: مكون Spring الذي ينفذ الطلب؛</span>
+      <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">ClientHttpRequestExecution execution</bdi>]: مكون <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> الذي ينفذ الطلب؛</span>
       </li>
     </ul>
   </li>
 </ul>
 
-<p><span style="color: #000000">نقوم باعتراض جميع طلبات HTTP الواردة من عميل Android لإضافة رأس مصادقة HTTP الموضح في القسم</span><a href="#refheading20551782760734"><u><span style="color: #0563c1"> 3.5</span></u></a>.</p>
+<p><span style="color: #000000">نقوم باعتراض جميع طلبات <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> الواردة من عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> لإضافة رأس مصادقة <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> الموضح في القسم</span><a href="#refheading20551782760734"><u><span style="color: #0563c1"> 3.5</span></u></a>.</p>
 <ul>
-  <li><span style="color: #000000">السطر 23: نسترد رؤوس HTTP للطلب المعترض؛</span>
+  <li><span style="color: #000000">السطر 23: نسترد رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> للطلب المعترض؛</span>
   </li>
-  <li><span style="color: #000000">السطر 24: نقوم بإنشاء رأس مصادقة HTTP. يتم توفير طريقة المصادقة المستخدمة (ترميز Base64 للسلسلة &#x27;user:mdp&#x27;) بواسطة فئة Spring [HttpBasicAuthentication]؛</span>
+  <li><span style="color: #000000">السطر 24: نقوم بإنشاء رأس مصادقة <bdi dir="ltr" class="odt-ltr-term">HTTP.</bdi> يتم توفير طريقة المصادقة المستخدمة (ترميز <bdi dir="ltr" class="odt-ltr-term">Base64</bdi> للسلسلة &#x27;<bdi dir="ltr" class="odt-ltr-term">user:mdp</bdi>&#x27;) بواسطة فئة <bdi dir="ltr" class="odt-ltr-term">Spring</bdi> [<bdi dir="ltr" class="odt-ltr-term">HttpBasicAuthentication</bdi>]؛</span>
   </li>
   <li><span style="color: #000000">السطر 25: يتم إضافة رأس المصادقة الذي أنشأناه للتو إلى الرؤوس الحالية للطلب المعترض؛</span>
   </li>
@@ -2890,7 +2892,7 @@
   </li>
 </ul>
 
-<p><span style="color: #000000">تتبع جميع تطبيقات الطرق في واجهة [IDao] نفس النمط. لنأخذ مثالاً على طريقة [getAgendaMedecinJour]:</span></p>
+<p><span style="color: #000000">تتبع جميع تطبيقات الطرق في واجهة [<bdi dir="ltr" class="odt-ltr-term">IDao</bdi>] نفس النمط. لنأخذ مثالاً على طريقة [<bdi dir="ltr" class="odt-ltr-term">getAgendaMedecinJour</bdi>]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#646464">@</span><span style="color:#000000">Override</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Observable&lt;Response&lt;AgendaMedecinJour&gt;&gt; getAgendaMedecinJour(</span><span style="font-weight:bold;color:#7f0055">final</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">long</span><span style="color:#000000"> idMedecin, </span><span style="font-weight:bold;color:#7f0055">final</span><span style="color:#000000"> String jour) {</span></span></span>
@@ -2909,17 +2911,17 @@
 <ul>
   <li><span style="color: #000000">السطر 2: تتوقع الطريقة معلمتين:</span>
     <ul>
-      <li><span style="color: #000000">[idMedecin]: معرف الطبيب الذي نريد جدول مواعيده؛</span>
+      <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">idMedecin</bdi>]: معرف الطبيب الذي نريد جدول مواعيده؛</span>
       </li>
-      <li><span style="color: #000000">[day]: اليوم الذي نريد جدول مواعيده؛</span>
+      <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">day</bdi>]: اليوم الذي نريد جدول مواعيده؛</span>
       </li>
     </ul>
   </li>
-  <li><span style="color: #000000">السطر 6: نستدعي طريقة [getResponse] للفئة الأم [AbstractDao]. تتوقع هذه الطريقة معلمة من النوع [IRequest&lt;T&gt;]، حيث T هو النوع الذي تعيده طريقة [getAgendaMedecinJour] في السطر 2، وهو في هذه الحالة [Response&lt;AgendaMedecinJour&gt;]. تحتوي واجهة [IRequest] على طريقة واحدة فقط: [getResponse] (السطر 8)؛</span>
+  <li><span style="color: #000000">السطر 6: نستدعي طريقة [<bdi dir="ltr" class="odt-ltr-term">getResponse</bdi>] للفئة الأم [<bdi dir="ltr" class="odt-ltr-term">AbstractDao</bdi>]. تتوقع هذه الطريقة معلمة من النوع [<bdi dir="ltr" class="odt-ltr-term">IRequest</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">T</bdi>&gt;]، حيث <bdi dir="ltr" class="odt-ltr-term">T</bdi> هو النوع الذي تعيده طريقة [<bdi dir="ltr" class="odt-ltr-term">getAgendaMedecinJour</bdi>] في السطر 2، وهو في هذه الحالة [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">AgendaMedecinJour</bdi>&gt;]. تحتوي واجهة [<bdi dir="ltr" class="odt-ltr-term">IRequest</bdi>] على طريقة واحدة فقط: [<bdi dir="ltr" class="odt-ltr-term">getResponse</bdi>] (السطر 8)؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 8-10: تنفيذ طريقة [IRequest.getResponse]. يجب أن تُرجع هذه الطريقة النتيجة المتوقعة من طريقة [getAgendaMedecinJour] في السطر 2، من النوع [Response&lt;AgendaMedecinJour&gt;]؛</span>
+  <li><span style="color: #000000">الأسطر 8-10: تنفيذ طريقة [<bdi dir="ltr" class="odt-ltr-term">IRequest.getResponse</bdi>]. يجب أن تُرجع هذه الطريقة النتيجة المتوقعة من طريقة [<bdi dir="ltr" class="odt-ltr-term">getAgendaMedecinJour</bdi>] في السطر 2، من النوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">AgendaMedecinJour</bdi>&gt;]؛</span>
   </li>
-  <li><span style="color: #000000">السطر 9: يتم إرجاع الاستجابة بواسطة طريقة [webClient.getAgendaMedecinJour]:</span>
+  <li><span style="color: #000000">السطر 9: يتم إرجاع الاستجابة بواسطة طريقة [<bdi dir="ltr" class="odt-ltr-term">webClient.getAgendaMedecinJour</bdi>]:</span>
   </li>
 </ul>
 
@@ -2929,14 +2931,14 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">Response&lt;AgendaMedecinJour&gt; getAgendaMedecinJour(</span><span style="color:#646464">@</span><span style="color:#000000">Path </span><span style="font-weight:bold;color:#7f0055">long</span><span style="color:#000000"> idMedecin, </span><span style="color:#646464">@</span><span style="color:#000000">Path String jour);</span></span></span>
 </code></pre></div>
 
-<p>المعلمات المستخدمة في السطر 9 هي تلك التي تم تمريرها إلى طريقة [getAgendaMedecinJour] في السطر 2. ولهذا السبب، يجب أن تحتوي هذه المعلمات على السمة final؛</p>
+<p>المعلمات المستخدمة في السطر 9 هي تلك التي تم تمريرها إلى طريقة [<bdi dir="ltr" class="odt-ltr-term">getAgendaMedecinJour</bdi>] في السطر 2. ولهذا السبب، يجب أن تحتوي هذه المعلمات على السمة <bdi dir="ltr" class="odt-ltr-term">final</bdi>؛</p>
 <p><a id="refheading722251954521739"></a></p>
-<h3 id="364-mainactivity">3.6.4. <span style="color: #4f81bd">[MainActivity]</span></h3>
+<h3 id="364-mainactivity">3.6.4. <span style="color: #4f81bd">[<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>]</span></h3>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">الخادم</div><img src="images/10000000000001F6000000E6863B7925.png" width="351" height="161" style="display:inline-block; margin:4px;width:9.299cm;height:4.26cm;" class="odt-zoomable" data-zoom-src="images/10000000000001F6000000E6863B7925.png" /></td></tr></table>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000EB000000E808E54F58.png" width="164" height="162" style="display:inline-block; margin:4px;width:4.35cm;height:4.293cm;" class="odt-zoomable" data-zoom-src="images/10000000000000EB000000E808E54F58.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p><span style="color: #000000">فيما يلي فئة [MainActivity]:</span></p>
+<p><span style="color: #000000">فيما يلي فئة [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span> client.android.activity;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -3061,11 +3063,11 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">الأسطر 21–66: هذه الأسطر موجودة بشكل افتراضي في القالب [client-android-skel]؛</span>
+  <li><span style="color: #000000">الأسطر 21–66: هذه الأسطر موجودة بشكل افتراضي في القالب [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>]؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 66–119: تنفيذ واجهة [IDao]. تفوض جميع الطرق العمل إلى طبقة [DAO] في السطر 26؛</span>
+  <li><span style="color: #000000">الأسطر 66–119: تنفيذ واجهة [<bdi dir="ltr" class="odt-ltr-term">IDao</bdi>]. تفوض جميع الطرق العمل إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] في السطر 26؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 42-46: تُرجع طريقة [getFragments] مصفوفة الأجزاء الأربعة للتطبيق؛</span>
+  <li><span style="color: #000000">الأسطر 42-46: تُرجع طريقة [<bdi dir="ltr" class="odt-ltr-term">getFragments</bdi>] مصفوفة الأجزاء الأربعة للتطبيق؛</span>
   </li>
   <li><span style="color: #000000">الأسطر 58-61: عرض التكوين هو أول عرض يتم عرضه عند بدء تشغيل التطبيق؛</span>
   </li>
@@ -3074,7 +3076,7 @@
 <h3 id="365">3.6.5. <span style="color: #4f81bd">الجلسة</span></h3>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000011E00000149BF0F3A7A.png" width="200" height="230" style="display:inline-block; margin:4px;width:5.3cm;height:6.098cm;" class="odt-zoomable" data-zoom-src="images/100000000000011E00000149BF0F3A7A.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p><span style="color: #000000">تُستخدم فئة [Session] لتخزين المعلومات التي يجب تمريرها بين الأجزاء. وهي كما يلي:</span></p>
+<p><span style="color: #000000">تُستخدم فئة [<bdi dir="ltr" class="odt-ltr-term">Session</bdi>] لتخزين المعلومات التي يجب تمريرها بين الأجزاء. وهي كما يلي:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span> rdvmedecins.android.architecture;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -3107,11 +3109,11 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">السطر 10: فئة [Session] هي مكون AA تم إنشاء مثيل واحد له؛</span>
+  <li><span style="color: #000000">السطر 10: فئة [<bdi dir="ltr" class="odt-ltr-term">Session</bdi>] هي مكون <bdi dir="ltr" class="odt-ltr-term">AA</bdi> تم إنشاء مثيل واحد له؛</span>
   </li>
   <li><span style="color: #000000">الأسطر 12-15: في هذه الدراسة الحالة، سنفترض أن قوائم الأطباء والعملاء لا تتغير. سنقوم باستردادها عند بدء تشغيل التطبيق وتخزينها في الجلسة حتى تتمكن الأجزاء من استخدامها؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 20-23: التاريخ المطلوب للموعد. يتم التعامل معه بتنسيقين: بالتنسيق الفرنسي (السطر 23) داخل عميل Android، وبالتنسيق الإنجليزي (السطر 21) للتواصل مع الخادم؛</span>
+  <li><span style="color: #000000">الأسطر 20-23: التاريخ المطلوب للموعد. يتم التعامل معه بتنسيقين: بالتنسيق الفرنسي (السطر 23) داخل عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi>، وبالتنسيق الإنجليزي (السطر 21) للتواصل مع الخادم؛</span>
   </li>
   <li><span style="color: #000000">السطر 19: موضع العنصر الذي تم النقر عليه (رابط الإضافة/الحذف) في التقويم؛</span>
   </li>
@@ -3181,7 +3183,7 @@
 
 <p><a id="refheading1314641394789306"></a></p>
 <h4 id="3662">3.6.6.2. <span style="color: #4f81bd">الجزء</span></h4>
-<p><span style="color: #000000">يتم إدارة عرض التكوين بواسطة الجزء التالي [ConfigFragment]:</span></p>
+<p><span style="color: #000000">يتم إدارة عرض التكوين بواسطة الجزء التالي [<bdi dir="ltr" class="odt-ltr-term">ConfigFragment</bdi>]:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000015000000194FDBE69A9.png" width="235" height="283" style="display:inline-block; margin:4px;width:6.219cm;height:7.477cm;" class="odt-zoomable" data-zoom-src="images/100000000000015000000194FDBE69A9.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -3242,7 +3244,7 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">السطر 25: ترتبط هذه المقتطفات بقائمة [menu_config] التالية:</span>
+  <li><span style="color: #000000">السطر 25: ترتبط هذه المقتطفات بقائمة [<bdi dir="ltr" class="odt-ltr-term">menu_config</bdi>] التالية:</span>
   </li>
 </ul>
 
@@ -3277,7 +3279,7 @@
   </li>
 </ul>
 
-<p><span style="color: #000000">يتم التعامل مع النقر على خيار القائمة [التحقق من الصحة] بواسطة الأسلوب [doValidate]:</span></p>
+<p><span style="color: #000000">يتم التعامل مع النقر على خيار القائمة [التحقق من الصحة] بواسطة الأسلوب [<bdi dir="ltr" class="odt-ltr-term">doValidate</bdi>]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">// validation page</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#646464">@</span><span style="color:#000000">OptionsItem(R.id.actionValider)</span></span></span>
@@ -3354,29 +3356,29 @@
 <ul>
   <li><span style="color: #000000">الأسطر 8–10: يتم التحقق من صحة إدخالات النموذج الثلاثة. إذا كان النموذج غير صالح، تتوقف العملية عند هذا الحد؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 11–14: يتم تمرير المدخلات المطلوبة من قبل طبقة [DAO] إلى النشاط؛</span>
+  <li><span style="color: #000000">الأسطر 11–14: يتم تمرير المدخلات المطلوبة من قبل طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] إلى النشاط؛</span>
   </li>
   <li><span style="color: #000000">السطر 16: يتم إخطار الفئة الأم بأن مهمتين غير متزامنتين سيتم إطلاقهما، ويتم إعداد الانتظار؛</span>
   </li>
   <li><span style="color: #000000">الأسطر 17–24: يتم طلب قائمة الأطباء؛</span>
   </li>
-  <li><span style="color: #000000">السطر 18: تتوقع طريقة [executeInBackground] معلمتين:</span>
+  <li><span style="color: #000000">السطر 18: تتوقع طريقة [<bdi dir="ltr" class="odt-ltr-term">executeInBackground</bdi>] معلمتين:</span>
     <ul>
-      <li><span style="color: #000000">السطر 18: يتم توفير العملية المراد تنفيذها ومراقبتها بواسطة طريقة [</span><b>mainActivity.getAllMedecins()</b><span style="color: #000000">]؛</span>
+      <li><span style="color: #000000">السطر 18: يتم توفير العملية المراد تنفيذها ومراقبتها بواسطة طريقة [</span><b><bdi dir="ltr" class="odt-ltr-term">mainActivity.getAllMedecins</bdi>()</b><span style="color: #000000">]؛</span>
       </li>
-      <li><span style="color: #000000">الأسطر 18-24: المعلمة الثانية هي مثيل من النوع [Action1&lt;T&gt;]، حيث T هو النوع الذي ترجعه العملية المراقبة، وهنا [</span><b>Response&lt;List&lt;Medecin&gt;&gt;</b><span style="color: #000000">]</span>
+      <li><span style="color: #000000">الأسطر 18-24: المعلمة الثانية هي مثيل من النوع [<bdi dir="ltr" class="odt-ltr-term">Action1</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">T</bdi>&gt;]، حيث <bdi dir="ltr" class="odt-ltr-term">T</bdi> هو النوع الذي ترجعه العملية المراقبة، وهنا [</span><b><bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Medecin</bdi>&gt;&gt;</b><span style="color: #000000">]</span>
       </li>
     </ul>
   </li>
-  <li><span style="color: #000000">السطر 22: عند استلام الاستجابة، يتم تمريرها إلى طريقة [consumeMedecins] في السطر 36؛</span>
+  <li><span style="color: #000000">السطر 22: عند استلام الاستجابة، يتم تمريرها إلى طريقة [<bdi dir="ltr" class="odt-ltr-term">consumeMedecins</bdi>] في السطر 36؛</span>
   </li>
   <li><span style="color: #000000">الأسطر 25-33: بعد تشغيل المهمة غير المتزامنة الأولى، نقوم بتشغيل مهمة ثانية لطلب قائمة العملاء. وبالتالي، سيكون لدينا مهمتان تعملان بالتوازي؛</span>
   </li>
   <li><span style="color: #000000">الأسطر 36-52: تلقينا الاستجابة من مهمة الأطباء. نقوم بمعالجتها؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 42-49: أولاً، نتحقق مما إذا كان الخادم قد أبلغ عن خطأ في حقل [status] في الرد؛</span>
+  <li><span style="color: #000000">الأسطر 42-49: أولاً، نتحقق مما إذا كان الخادم قد أبلغ عن خطأ في حقل [<bdi dir="ltr" class="odt-ltr-term">status</bdi>] في الرد؛</span>
   </li>
-  <li><span style="color: #000000">السطر 44: إذا كان هناك خطأ، نعرض الرسائل التي وضعها الخادم في حقل [messages] من الرد؛</span>
+  <li><span style="color: #000000">السطر 44: إذا كان هناك خطأ، نعرض الرسائل التي وضعها الخادم في حقل [<bdi dir="ltr" class="odt-ltr-term">messages</bdi>] من الرد؛</span>
   </li>
   <li><span style="color: #000000">السطر 46: نقوم بإلغاء جميع المهام؛</span>
   </li>
@@ -3420,7 +3422,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>طريقة [beginWaiting] (السطر 16) هي كما يلي:</p>
+<p>طريقة [<bdi dir="ltr" class="odt-ltr-term">beginWaiting</bdi>] (السطر 16) هي كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">   // beginning of waiting</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> beginWaiting(</span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> numberOfRunningTasks) {</span></span></span>
@@ -3434,15 +3436,15 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 4: نخبر المهمة الأم أننا سنقوم بتشغيل [numberOfRunningTasks] مهمة؛
+  <li>السطر 4: نخبر المهمة الأم أننا سنقوم بتشغيل [<bdi dir="ltr" class="odt-ltr-term">numberOfRunningTasks</bdi>] مهمة؛
   </li>
   <li>السطر 6: يتم إخفاء جميع خيارات القائمة؛
   </li>
-  <li>السطر 7: ثم نجعل خيار [Actions/Cancel] مرئيًا؛
+  <li>السطر 7: ثم نجعل خيار [<bdi dir="ltr" class="odt-ltr-term">Actions/Cancel</bdi>] مرئيًا؛
   </li>
 </ul>
 
-<p><span style="color: #000000">يتم التعامل مع النقر على خيار القائمة [Cancel] بواسطة الطريقة [doCancel]:</span></p>
+<p><span style="color: #000000">يتم التعامل مع النقر على خيار القائمة [<bdi dir="ltr" class="odt-ltr-term">Cancel</bdi>] بواسطة الطريقة [<bdi dir="ltr" class="odt-ltr-term">doCancel</bdi>]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#646464">@</span>OptionsItem(R.id.actionAnnuler)</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> doAnnuler() {</span></span></span>
@@ -3460,7 +3462,7 @@
 </ul>
 <p><a id="refheading1314661394789306"></a></p>
 <h4 id="3663">3.6.6.3. <span style="color: #4f81bd">إدارة دورة حياة المقتطف</span></h4>
-<p>يحتوي الجزء على الحالة [ConfigFragmentState] التالية:</p>
+<p>يحتوي الجزء على الحالة [<bdi dir="ltr" class="odt-ltr-term">ConfigFragmentState</bdi>] التالية:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.fragments.state;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -3555,19 +3557,19 @@
 <ul>
   <li>الأسطر 2–9: عند طلب الفئة الأم، يحفظ الجزء حالة رسالتي الخطأ الخاصتين به؛
   </li>
-  <li>الأسطر 11-14: معرف الجزء هو [IMainActivity.VUE_CONFIG]؛
+  <li>الأسطر 11-14: معرف الجزء هو [<bdi dir="ltr" class="odt-ltr-term">IMainActivity.VUE_CONFIG</bdi>]؛
   </li>
-  <li>الأسطر 16–19: يتم تنفيذها عند إنشاء الجزء لأول مرة (previousState == null) أو إعادة إنشائه في المرات اللاحقة (previousState != null). هنا، لا يوجد ما يجب فعله؛
+  <li>الأسطر 16–19: يتم تنفيذها عند إنشاء الجزء لأول مرة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> == <bdi dir="ltr" class="odt-ltr-term">null</bdi>) أو إعادة إنشائه في المرات اللاحقة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> != <bdi dir="ltr" class="odt-ltr-term">null</bdi>). هنا، لا يوجد ما يجب فعله؛
   </li>
-  <li>الأسطر 21–31: يتم تنفيذها عند إنشاء العرض المرتبط بالجزء لأول مرة (previousState == null) أو إعادة إنشائه في المرات اللاحقة (previousState != null)؛
+  <li>الأسطر 21–31: يتم تنفيذها عند إنشاء العرض المرتبط بالجزء لأول مرة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> == <bdi dir="ltr" class="odt-ltr-term">null</bdi>) أو إعادة إنشائه في المرات اللاحقة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> != <bdi dir="ltr" class="odt-ltr-term">null</bdi>)؛
     <ul>
-      <li>الأسطر 24-29: عند الزيارة الأولى، يتم إخفاء رسائل الخطأ وعرض القائمة بدون الإجراء [Cancel] (الأسطر 62-66)؛
+      <li>الأسطر 24-29: عند الزيارة الأولى، يتم إخفاء رسائل الخطأ وعرض القائمة بدون الإجراء [<bdi dir="ltr" class="odt-ltr-term">Cancel</bdi>] (الأسطر 62-66)؛
       </li>
     </ul>
   </li>
-  <li>الأسطر 33-35: يتم تنفيذها عند الوصول إلى الجزء عبر عملية [SUBMIT]. لا يحدث هذا أبدًا هنا؛
+  <li>الأسطر 33-35: يتم تنفيذها عند الوصول إلى الجزء عبر عملية [<bdi dir="ltr" class="odt-ltr-term">SUBMIT</bdi>]. لا يحدث هذا أبدًا هنا؛
   </li>
-  <li>الأسطر 37-44: يتم تنفيذها عند الوصول إلى الجزء عبر عملية [NAVIGATION] أو [RESTORE]. يتم استعادة حالة رسائل الخطأ من الحالة السابقة؛
+  <li>الأسطر 37-44: يتم تنفيذها عند الوصول إلى الجزء عبر عملية [<bdi dir="ltr" class="odt-ltr-term">NAVIGATION</bdi>] أو [<bdi dir="ltr" class="odt-ltr-term">RESTORE</bdi>]. يتم استعادة حالة رسائل الخطأ من الحالة السابقة؛
   </li>
   <li>الأسطر 47-49: يتم تنفيذها عند إجراء جميع التحديثات السابقة. لا يوجد شيء آخر للقيام به؛
   </li>
@@ -3618,7 +3620,7 @@
 
 <p><a id="refheading1314701394789306"></a></p>
 <h4 id="3672">3.6.7.2. <span style="color: #4f81bd">الجزء</span></h4>
-<p><span style="color: #000000">تتم إدارة الشاشة الرئيسية بواسطة الجزء التالي [HomeFragment]:</span></p>
+<p><span style="color: #000000">تتم إدارة الشاشة الرئيسية بواسطة الجزء التالي [<bdi dir="ltr" class="odt-ltr-term">HomeFragment</bdi>]:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000150000001946755C16D.png" width="235" height="283" style="display:inline-block; margin:4px;width:6.219cm;height:7.477cm;" class="odt-zoomable" data-zoom-src="images/1000000000000150000001946755C16D.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -3675,7 +3677,7 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">السطر 26: ترتبط القطعة بالقائمة التالية [menu_accueil]:</span>
+  <li><span style="color: #000000">السطر 26: ترتبط القطعة بالقائمة التالية [<bdi dir="ltr" class="odt-ltr-term">menu_accueil</bdi>]:</span>
   </li>
 </ul>
 
@@ -3723,7 +3725,7 @@
   </li>
 </ul>
 
-<p><span style="color: #000000">يتم التعامل مع النقر على رابط [التحقق من الصحة] بواسطة الطريقة [doValidate] التالية:</span></p>
+<p><span style="color: #000000">يتم التعامل مع النقر على رابط [التحقق من الصحة] بواسطة الطريقة [<bdi dir="ltr" class="odt-ltr-term">doValidate</bdi>] التالية:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">// validation page</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#646464">@</span><span style="color:#000000">OptionsItem(R.id.actionValider)</span></span></span>
@@ -3775,23 +3777,23 @@
   </li>
   <li><span style="color: #000000">الأسطر 15-22: يتم استرداد جدول مواعيد الطبيب؛</span>
     <ul>
-      <li><span style="color: #000000">السطر 15: تتوقع طريقة [executeInBackground] معلمتين:</span>
+      <li><span style="color: #000000">السطر 15: تتوقع طريقة [<bdi dir="ltr" class="odt-ltr-term">executeInBackground</bdi>] معلمتين:</span>
         <ul>
-          <li><span style="color: #000000">السطر 15: يتم توفير العملية المراد تنفيذها ومراقبتها بواسطة طريقة [</span><b>mainActivity.getAgendaMedecinJour(idMedecin, dayRv)</b><span style="color: #000000">]؛</span>
+          <li><span style="color: #000000">السطر 15: يتم توفير العملية المراد تنفيذها ومراقبتها بواسطة طريقة [</span><b><bdi dir="ltr" class="odt-ltr-term">mainActivity.getAgendaMedecinJour</bdi>(<bdi dir="ltr" class="odt-ltr-term">idMedecin</bdi>, <bdi dir="ltr" class="odt-ltr-term">dayRv</bdi>)</b><span style="color: #000000">]؛</span>
           </li>
-          <li><span style="color: #000000">الأسطر 15-22: المعلمة الثانية هي مثيل من النوع [Action1&lt;T&gt;]، حيث T هو النوع الذي ترجعه العملية المراقبة، وهنا [</span><b>Response&lt;AgendaMedecinJour&gt;</b><span style="color: #000000">]</span>
+          <li><span style="color: #000000">الأسطر 15-22: المعلمة الثانية هي مثيل من النوع [<bdi dir="ltr" class="odt-ltr-term">Action1</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">T</bdi>&gt;]، حيث <bdi dir="ltr" class="odt-ltr-term">T</bdi> هو النوع الذي ترجعه العملية المراقبة، وهنا [</span><b><bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">AgendaMedecinJour</bdi>&gt;</b><span style="color: #000000">]</span>
           </li>
         </ul>
       </li>
-      <li><span style="color: #000000">السطر 20: عند استلام الاستجابة، يتم تمريرها إلى طريقة [consumeAgenda] في السطر 25؛</span>
+      <li><span style="color: #000000">السطر 20: عند استلام الاستجابة، يتم تمريرها إلى طريقة [<bdi dir="ltr" class="odt-ltr-term">consumeAgenda</bdi>] في السطر 25؛</span>
       </li>
     </ul>
   </li>
   <li><span style="color: #000000">الأسطر 25-37: لقد تلقينا جدول مواعيد الطبيب. نقوم بمعالجته؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 27-34: أولاً، نتحقق مما إذا كان الخادم قد أبلغ عن خطأ في حقل [status] في الاستجابة؛</span>
+  <li><span style="color: #000000">الأسطر 27-34: أولاً، نتحقق مما إذا كان الخادم قد أبلغ عن خطأ في حقل [<bdi dir="ltr" class="odt-ltr-term">status</bdi>] في الاستجابة؛</span>
   </li>
-  <li><span style="color: #000000">السطر 29: إذا كان هناك خطأ، نعرض الرسائل التي وضعها الخادم في حقل [messages] من الاستجابة؛</span>
+  <li><span style="color: #000000">السطر 29: إذا كان هناك خطأ، نعرض الرسائل التي وضعها الخادم في حقل [<bdi dir="ltr" class="odt-ltr-term">messages</bdi>] من الاستجابة؛</span>
   </li>
   <li><span style="color: #000000">السطر 31: إلغاء جميع المهام؛</span>
   </li>
@@ -3801,7 +3803,7 @@
   </li>
 </ul>
 
-<p>طريقة [beginWaiting] (السطر 13) هي كما يلي:</p>
+<p>طريقة [<bdi dir="ltr" class="odt-ltr-term">beginWaiting</bdi>] (السطر 13) هي كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">   // beginning of waiting</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> beginWaiting(</span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> numberOfRunningTasks) {</span></span></span>
@@ -3815,15 +3817,15 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 4: نخبر المهمة الأم أننا سنقوم بتشغيل [numberOfRunningTasks] مهمة؛
+  <li>السطر 4: نخبر المهمة الأم أننا سنقوم بتشغيل [<bdi dir="ltr" class="odt-ltr-term">numberOfRunningTasks</bdi>] مهمة؛
   </li>
   <li>السطر 6: يتم إخفاء جميع خيارات القائمة؛
   </li>
-  <li>السطر 7: ثم نجعل خيار [Actions/Cancel] مرئيًا؛
+  <li>السطر 7: ثم نجعل خيار [<bdi dir="ltr" class="odt-ltr-term">Actions/Cancel</bdi>] مرئيًا؛
   </li>
 </ul>
 
-<p><span style="color: #000000">يتم التعامل مع النقر على خيار القائمة [Cancel] بواسطة الطريقة [doCancel]:</span></p>
+<p><span style="color: #000000">يتم التعامل مع النقر على خيار القائمة [<bdi dir="ltr" class="odt-ltr-term">Cancel</bdi>] بواسطة الطريقة [<bdi dir="ltr" class="odt-ltr-term">doCancel</bdi>]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#646464">@</span>OptionsItem(R.id.actionAnnuler)</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> doAnnuler() {</span></span></span>
@@ -3850,12 +3852,12 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">السطر 4: ننتقل إلى عرض التكوين باستخدام الإجراء [NAVIGATION]. وهذا يعني أننا نريد استعادة عرض التكوين إلى الحالة التي تركناه عليها؛</span>
+  <li><span style="color: #000000">السطر 4: ننتقل إلى عرض التكوين باستخدام الإجراء [<bdi dir="ltr" class="odt-ltr-term">NAVIGATION</bdi>]. وهذا يعني أننا نريد استعادة عرض التكوين إلى الحالة التي تركناه عليها؛</span>
   </li>
 </ul>
 <p><a id="refheading1314721394789306"></a></p>
 <h4 id="3673">3.6.7.3. <span style="color: #4f81bd">إدارة دورة حياة الأجزاء</span></h4>
-<p>يحتوي الجزء على [HomeFragmentState] التالي:</p>
+<p>يحتوي الجزء على [<bdi dir="ltr" class="odt-ltr-term">HomeFragmentState</bdi>] التالي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.fragments.state;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -4001,9 +4003,9 @@
       </li>
     </ul>
   </li>
-  <li>الأسطر 14-17: معرف الجزء هو [IMainActivity.VUE_ACCUEIL]؛
+  <li>الأسطر 14-17: معرف الجزء هو [<bdi dir="ltr" class="odt-ltr-term">IMainActivity.VUE_ACCUEIL</bdi>]؛
   </li>
-  <li>الأسطر 19-39: يتم تنفيذها عند إنشاء الجزء لأول مرة (previousState == null) أو إعادة إنشائه في المرات اللاحقة (previousState != null)؛
+  <li>الأسطر 19-39: يتم تنفيذها عند إنشاء الجزء لأول مرة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> == <bdi dir="ltr" class="odt-ltr-term">null</bdi>) أو إعادة إنشائه في المرات اللاحقة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> != <bdi dir="ltr" class="odt-ltr-term">null</bdi>)؛
     <ul>
       <li>الأسطر 25–31: بالنسبة للزيارة الأولى، يتم إنشاء مصدر البيانات لقائمة الأطباء الدوارة؛
       </li>
@@ -4011,17 +4013,17 @@
       </li>
     </ul>
   </li>
-  <li>الأسطر 41-54: يتم تنفيذها عند إنشاء العرض المرتبط بالجزء لأول مرة (previousState==null) أو إعادة إنشائه في الزيارات اللاحقة (previousState !=null)؛
+  <li>الأسطر 41-54: يتم تنفيذها عند إنشاء العرض المرتبط بالجزء لأول مرة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi>==<bdi dir="ltr" class="odt-ltr-term">null</bdi>) أو إعادة إنشائه في الزيارات اللاحقة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> !=<bdi dir="ltr" class="odt-ltr-term">null</bdi>)؛
     <ul>
-      <li>الأسطر 50–53: بالنسبة للزيارة الأولى، يتم عرض القائمة بدون الإجراء [Cancel] (الأسطر 88–92)؛
+      <li>الأسطر 50–53: بالنسبة للزيارة الأولى، يتم عرض القائمة بدون الإجراء [<bdi dir="ltr" class="odt-ltr-term">Cancel</bdi>] (الأسطر 88–92)؛
       </li>
       <li>الأسطر 43–48: بالنسبة لجميع الزيارات، سواء كانت الأولى أم لا، يرتبط العجلة الدوارة الخاصة بالأطباء بمصدرها (الأسطر 44–46) ويتم تعيين التاريخ الأدنى في التقويم على تاريخ اليوم (السطر 48)؛
       </li>
     </ul>
   </li>
-  <li>الأسطر 56-60: يتم تنفيذها عند الوصول إلى الجزء عبر عملية [SUBMIT]. يأتي المستخدم من عرض [CONFIG]. تتم إعادة تعيين القائمة إلى حالتها الأولية؛
+  <li>الأسطر 56-60: يتم تنفيذها عند الوصول إلى الجزء عبر عملية [<bdi dir="ltr" class="odt-ltr-term">SUBMIT</bdi>]. يأتي المستخدم من عرض [<bdi dir="ltr" class="odt-ltr-term">CONFIG</bdi>]. تتم إعادة تعيين القائمة إلى حالتها الأولية؛
   </li>
-  <li>الأسطر 62-70: يتم تنفيذها عند الوصول إلى الجزء عبر عملية [NAVIGATION] أو [RESTORE]؛
+  <li>الأسطر 62-70: يتم تنفيذها عند الوصول إلى الجزء عبر عملية [<bdi dir="ltr" class="odt-ltr-term">NAVIGATION</bdi>] أو [<bdi dir="ltr" class="odt-ltr-term">RESTORE</bdi>]؛
     <ul>
       <li>السطر 67: يتم إعادة تعيين قائمة الأطباء إلى آخر طبيب تم اختياره؛
       </li>
@@ -4078,7 +4080,7 @@
 
 <p><a id="refheading1314781394789306"></a></p>
 <h4 id="3682">3.6.8.2. <span style="color: #4f81bd">الجزء</span></h4>
-<p><span style="color: #000000">يتم إدارة عرض التقويم بواسطة الجزء التالي [AgendaFragment]:</span></p>
+<p><span style="color: #000000">يتم إدارة عرض التقويم بواسطة الجزء التالي [<bdi dir="ltr" class="odt-ltr-term">AgendaFragment</bdi>]:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000015000000194F50DBBCA.png" width="235" height="283" style="display:inline-block; margin:4px;width:6.219cm;height:7.477cm;" class="odt-zoomable" data-zoom-src="images/100000000000015000000194F50DBBCA.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -4141,7 +4143,7 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">السطر 27: ترتبط القطعة بالقائمة [menu_agenda] التالية:</span>
+  <li><span style="color: #000000">السطر 27: ترتبط القطعة بالقائمة [<bdi dir="ltr" class="odt-ltr-term">menu_agenda</bdi>] التالية:</span>
   </li>
 </ul>
 
@@ -4188,8 +4190,8 @@
   </li>
 </ul>
 <p><a id="refheading1314801394789306"></a></p>
-<h5 id="36821-updateagenda">3.6.8.2.1. <span style="color: #243f60">الطريقة [updateAgenda]</span></h5>
-<p><span style="color: #000000">يلزم (إعادة) إنشاء قائمة فترات التقويم في عدة أماكن في الكود. وقد تم تضمين ذلك في الطريقة الخاصة التالية [updateAgenda]:</span></p>
+<h5 id="36821-updateagenda">3.6.8.2.1. <span style="color: #243f60">الطريقة [<bdi dir="ltr" class="odt-ltr-term">updateAgenda</bdi>]</span></h5>
+<p><span style="color: #000000">يلزم (إعادة) إنشاء قائمة فترات التقويم في عدة أماكن في الكود. وقد تم تضمين ذلك في الطريقة الخاصة التالية [<bdi dir="ltr" class="odt-ltr-term">updateAgenda</bdi>]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#3f7f5f">// update schedule after adding/deleting</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> updateAgenda() {</span></span></span>
@@ -4206,17 +4208,17 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">السطر 5: يتم استرداد التقويم من الجلسة وتخزينه في حقل [calendar] الخاص بالجزء؛</span>
+  <li><span style="color: #000000">السطر 5: يتم استرداد التقويم من الجلسة وتخزينه في حقل [<bdi dir="ltr" class="odt-ltr-term">calendar</bdi>] الخاص بالجزء؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 7-9: نحدد المحول لمكون [ListView]. يحدد هذا المحول كل من مصدر البيانات لـ [ListView] ونموذج العرض لكل عنصر من عناصره. سنقدم هذا المحول بعد قليل؛</span>
+  <li><span style="color: #000000">الأسطر 7-9: نحدد المحول لمكون [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>]. يحدد هذا المحول كل من مصدر البيانات لـ [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>] ونموذج العرض لكل عنصر من عناصره. سنقدم هذا المحول بعد قليل؛</span>
   </li>
-  <li><span style="color: #000000">السطر 11: نعود إلى الموضع السابق في التقويم. وذلك لأننا لا نرى سوى جزء من فترات اليوم الزمنية. إذا أضفنا أو أزلنا موعدًا في الفترة الأخيرة، فسيقوم الكود أعلاه بتحديث الصفحة لعرض التقويم الجديد. يؤدي هذا التحديث إلى عودة العرض إلى الفترة</span> الأولى<span style="color: #000000">، وهو أمر غير مرغوب فيه. السطر 5 يحل هذه المشكلة. يمكن العثور على وصف لهذا الحل على الرابط [</span><a href="http://stackoverflow.com/questions/3014089/maintain-save-restore-scroll-position-when-returning-to-a-listview"><u><span style="color: #0563c1">http://stackoverflow.com/questions/3014089/maintain-save-restore-scroll-position-when-returning-to-a-listview</span></u></a><span style="color: #000000">]؛</span>
+  <li><span style="color: #000000">السطر 11: نعود إلى الموضع السابق في التقويم. وذلك لأننا لا نرى سوى جزء من فترات اليوم الزمنية. إذا أضفنا أو أزلنا موعدًا في الفترة الأخيرة، فسيقوم الكود أعلاه بتحديث الصفحة لعرض التقويم الجديد. يؤدي هذا التحديث إلى عودة العرض إلى الفترة</span> الأولى<span style="color: #000000">، وهو أمر غير مرغوب فيه. السطر 5 يحل هذه المشكلة. يمكن العثور على وصف لهذا الحل على الرابط [</span><a href="http://stackoverflow.com/questions/3014089/maintain-save-restore-scroll-position-when-returning-to-a-listview"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">http://stackoverflow.com/questions/3014089/maintain-save-restore-scroll-position-when-returning-to-a-listview</bdi></span></u></a><span style="color: #000000">]؛</span>
   </li>
 </ul>
 
-<p><span style="color: #000000">تُستخدم فئة [ListCreneauxAdapter] لتعريف صف في [ListView]:</span></p>
+<p><span style="color: #000000">تُستخدم فئة [<bdi dir="ltr" class="odt-ltr-term">ListCreneauxAdapter</bdi>] لتعريف صف في [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>]:</span></p>
 <p><img src="images/100000000000029E00000218F5CF5E2A.png" width="402" height="321" style="width:10.629cm;height:8.504cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000029E00000218F5CF5E2A.png" /></p>
-<p><span style="color: #000000">كما هو موضح أعلاه، يختلف العرض اعتمادًا على ما إذا كان الفاصل الزمني يحتوي على موعد أم لا. فيما يلي كود فئة [ListCreneauxAdapter]:</span></p>
+<p><span style="color: #000000">كما هو موضح أعلاه، يختلف العرض اعتمادًا على ما إذا كان الفاصل الزمني يحتوي على موعد أم لا. فيما يلي كود فئة [<bdi dir="ltr" class="odt-ltr-term">ListCreneauxAdapter</bdi>]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -4257,7 +4259,7 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 3: يجب أن تمتد فئة [ListCreneauxAdapter] إلى محول محدد مسبقًا لـ [ListView]s، وفي هذه الحالة فئة [ArrayAdapter]، والتي، كما يوحي اسمها، تملأ [ListView] بمصفوفة من الكائنات، وفي هذه الحالة من النوع [CreneauMedecinJour]. دعونا نراجع كود هذه الكيان:
+  <li>السطر 3: يجب أن تمتد فئة [<bdi dir="ltr" class="odt-ltr-term">ListCreneauxAdapter</bdi>] إلى محول محدد مسبقًا لـ [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>]<bdi dir="ltr" class="odt-ltr-term">s</bdi>، وفي هذه الحالة فئة [<bdi dir="ltr" class="odt-ltr-term">ArrayAdapter</bdi>]، والتي، كما يوحي اسمها، تملأ [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>] بمصفوفة من الكائنات، وفي هذه الحالة من النوع [<bdi dir="ltr" class="odt-ltr-term">CreneauMedecinJour</bdi>]. دعونا نراجع كود هذه الكيان:
   </li>
 </ul>
 
@@ -4273,17 +4275,17 @@
 </code></pre></div>
 
 <ul>
-  <li>تحتوي فئة [CreneauMedecinJour] على فترة زمنية (السطر 5) وموعد محتمل (السطر 6) أو <i>قيمة null </i>في حالة عدم وجود موعد؛
+  <li>تحتوي فئة [<bdi dir="ltr" class="odt-ltr-term">CreneauMedecinJour</bdi>] على فترة زمنية (السطر 5) وموعد محتمل (السطر 6) أو <i>قيمة <bdi dir="ltr" class="odt-ltr-term">null</bdi> </i>في حالة عدم وجود موعد؛
   </li>
 </ul>
 
-<p>العودة إلى كود فئة [ListCreneauxAdapter]:</p>
+<p>العودة إلى كود فئة [<bdi dir="ltr" class="odt-ltr-term">ListCreneauxAdapter</bdi>]:</p>
 <ul>
   <li>السطر 15: يأخذ المنشئ أربعة معلمات:
     <ol>
-      <li><span style="color: #000000">نشاط Android الحالي،</span>
+      <li><span style="color: #000000">نشاط <bdi dir="ltr" class="odt-ltr-term">Android</bdi> الحالي،</span>
       </li>
-      <li><span style="color: #000000">ملف XML الذي يحدد محتوى كل عنصر [ListView]،</span>
+      <li><span style="color: #000000">ملف <bdi dir="ltr" class="odt-ltr-term">XML</bdi> الذي يحدد محتوى كل عنصر [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>]،</span>
       </li>
       <li><span style="color: #000000">مصفوفة فترات عمل الطبيب،</span>
       </li>
@@ -4295,7 +4297,7 @@
   </li>
 </ul>
 
-<p><span style="color: #000000">طريقة [getView] مسؤولة عن إنشاء العرض المطابق لصف في [ListView]. يتكون هذا العرض من ثلاثة عناصر:</span></p>
+<p><span style="color: #000000">طريقة [<bdi dir="ltr" class="odt-ltr-term">getView</bdi>] مسؤولة عن إنشاء العرض المطابق لصف في [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>]. يتكون هذا العرض من ثلاثة عناصر:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001BE0000002A424F6AE8.png" width="327" height="31" style="display:inline-block; margin:4px;width:8.64cm;height:0.813cm;" class="odt-zoomable" data-zoom-src="images/10000000000001BE0000002A424F6AE8.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
@@ -4348,7 +4350,7 @@
 </code></pre></div>
 </div></td></tr></table>
 
-<p><span style="color: #000000">فيما يلي كود طريقة [getView]:</span></p>
+<p><span style="color: #000000">فيما يلي كود طريقة [<bdi dir="ltr" class="odt-ltr-term">getView</bdi>]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">@Override</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> View getView(</span><span style="font-weight:bold;color:#7f0055">final</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> position, View convertView, ViewGroup parent) {</span></span></span>
@@ -4396,17 +4398,17 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 2: <b>position </b>هو رقم الصف الذي سيتم إنشاؤه في [ListView]. وهو أيضًا رقم الخانة في المصفوفة [creneauxMedecinJour]. نتجاهل المعلمتين الأخريين؛
+  <li>السطر 2: <b><bdi dir="ltr" class="odt-ltr-term">position</bdi> </b>هو رقم الصف الذي سيتم إنشاؤه في [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>]. وهو أيضًا رقم الخانة في المصفوفة [<bdi dir="ltr" class="odt-ltr-term">creneauxMedecinJour</bdi>]. نتجاهل المعلمتين الأخريين؛
   </li>
-  <li><span style="color: #000000">السطر 4: نسترد الفتحة الزمنية لعرضها في صف [ListView]؛</span>
+  <li><span style="color: #000000">السطر 4: نسترد الفتحة الزمنية لعرضها في صف [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>]؛</span>
   </li>
-  <li><span style="color: #000000">السطر 6: يتم إنشاء الصف بناءً على تعريفه في XML </span>
+  <li><span style="color: #000000">السطر 6: يتم إنشاء الصف بناءً على تعريفه في <bdi dir="ltr" class="odt-ltr-term">XML</bdi> </span>
   </li>
 </ul>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000F000000135551E0162.png" width="168" height="217" style="display:inline-block; margin:4px;width:4.45cm;height:5.729cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F000000135551E0162.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p><span style="color: #000000">فيما يلي كود ملف [creneau_medecin.xml]:</span></p>
+<p><span style="color: #000000">فيما يلي كود ملف [<bdi dir="ltr" class="odt-ltr-term">creneau</bdi>_medecin.<bdi dir="ltr" class="odt-ltr-term">xml</bdi>]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span>=<span style="font-style:italic;color:#2a00ff">&quot;1.0&quot;</span> <span style="color:#7f007f">encoding</span>=<span style="font-style:italic;color:#2a00ff">&quot;utf-8&quot;</span><span style="color:#008080">?&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">RelativeLayout</span> <span style="color:#7f007f">xmlns:android</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://schemas.android.com/apk/res/android&quot;</span></span></span>
@@ -4458,7 +4460,7 @@
   </li>
   <li><span style="color: #000000">السطور 29-30: خلاف ذلك، يتم إنشاء الرابط الأحمر [حذف]؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 33-40: بغض النظر عن نوع الرابط [إضافة / حذف]، ستتولى طريقة [doValider] الخاصة بالعرض معالجة النقر على الرابط. ستتلقى الطريقة حجتين:</span>
+  <li><span style="color: #000000">الأسطر 33-40: بغض النظر عن نوع الرابط [إضافة / حذف]، ستتولى طريقة [<bdi dir="ltr" class="odt-ltr-term">doValider</bdi>] الخاصة بالعرض معالجة النقر على الرابط. ستتلقى الطريقة حجتين:</span>
     <ol>
       <li><span style="color: #000000">رقم الفترة الزمنية التي تم النقر عليها،</span>
       </li>
@@ -4470,7 +4472,7 @@
   </li>
 </ul>
 
-<p><span style="color: #000000">لاحظ أن طريقة [doValider] الخاصة بجزء [AgendaFragment] هي التي تتعامل مع الروابط. وهي كما يلي:</span></p>
+<p><span style="color: #000000">لاحظ أن طريقة [<bdi dir="ltr" class="odt-ltr-term">doValider</bdi>] الخاصة بجزء [<bdi dir="ltr" class="odt-ltr-term">AgendaFragment</bdi>] هي التي تتعامل مع الروابط. وهي كما يلي:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#3f7f5f">// click on a link [Add / Remove]</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> doValider(</span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> numCréneau, String texte) {</span></span></span>
@@ -4499,7 +4501,7 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">تستقبل طريقة [doValider] معلومتين:</span>
+  <li><span style="color: #000000">تستقبل طريقة [<bdi dir="ltr" class="odt-ltr-term">doValider</bdi>] معلومتين:</span>
     <ul>
       <li><span style="color: #000000">رقم الخانة التي تم النقر عليها؛</span>
       </li>
@@ -4509,7 +4511,7 @@
   </li>
   <li><span style="color: #000000">الأسطر 4–7: يتم تعطيل النقر على روابط [حذف / إضافة] إذا كانت هناك مهام غير متزامنة قيد التنفيذ. هذا خيار تصميمي يبسط كتابة الكود. وهو قابل للنقاش؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 11-15: نقوم بتخزين المعلومات (firstPosition، top) من قائمة العرض </span><i>ListView </i><span style="color: #000000">في حقول داخل الجزء بحيث يمكن للطريقة الخاصة [updateAgenda] إعادة إنشائها بنفس موضع التمرير؛</span>
+  <li><span style="color: #000000">الأسطر 11-15: نقوم بتخزين المعلومات (<bdi dir="ltr" class="odt-ltr-term">firstPosition</bdi>، <bdi dir="ltr" class="odt-ltr-term">top</bdi>) من قائمة العرض </span><i><bdi dir="ltr" class="odt-ltr-term">ListView</bdi> </i><span style="color: #000000">في حقول داخل الجزء بحيث يمكن للطريقة الخاصة [<bdi dir="ltr" class="odt-ltr-term">updateAgenda</bdi>] إعادة إنشائها بنفس موضع التمرير؛</span>
   </li>
   <li><span style="color: #000000">السطر 17: نقوم بتخزين رقم الخانة التي تم النقر عليها؛</span>
   </li>
@@ -4517,8 +4519,8 @@
   </li>
 </ul>
 <p><a id="refheading1314821394789306"></a></p>
-<h5 id="36822-dodelete">3.6.8.2.2. <span style="color: #243f60">الطريقة [doDelete]</span></h5>
-<p><span style="color: #000000">تضمن الطريقة [doSupprimer] إزالة الموعد من الخانة التي تم النقر عليها:</span></p>
+<h5 id="36822-dodelete">3.6.8.2.2. <span style="color: #243f60">الطريقة [<bdi dir="ltr" class="odt-ltr-term">doDelete</bdi>]</span></h5>
+<p><span style="color: #000000">تضمن الطريقة [<bdi dir="ltr" class="odt-ltr-term">doSupprimer</bdi>] إزالة الموعد من الخانة التي تم النقر عليها:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">// deleting an appointment</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> doSupprimer() {</span></span></span>
@@ -4590,23 +4592,23 @@
   </li>
   <li><span style="color: #000000">الأسطر 9-18: نطلب حذف الموعد عبر مهمة غير متزامنة؛</span>
     <ul>
-      <li><span style="color: #000000">السطر 10: تتوقع طريقة [executeInBackground] معلمتين:</span>
+      <li><span style="color: #000000">السطر 10: تتوقع طريقة [<bdi dir="ltr" class="odt-ltr-term">executeInBackground</bdi>] معلمتين:</span>
         <ul>
-          <li><span style="color: #000000">السطر 10: يتم توفير العملية المراد تنفيذها ومراقبتها بواسطة طريقة [</span><b>mainActivity.deleteRv(idRv)</b><span style="color: #000000">]؛</span>
+          <li><span style="color: #000000">السطر 10: يتم توفير العملية المراد تنفيذها ومراقبتها بواسطة طريقة [</span><b><bdi dir="ltr" class="odt-ltr-term">mainActivity.deleteRv</bdi>(<bdi dir="ltr" class="odt-ltr-term">idRv</bdi>)</b><span style="color: #000000">]؛</span>
           </li>
-          <li><span style="color: #000000">الأسطر 10-17: المعلمة الثانية هي مثيل من النوع [Action1&lt;T&gt;]، حيث T هو النوع الذي ترجعه العملية المراقبة، وهنا [</span><b>Response&lt;Rv&gt;</b><span style="color: #000000">]</span>
+          <li><span style="color: #000000">الأسطر 10-17: المعلمة الثانية هي مثيل من النوع [<bdi dir="ltr" class="odt-ltr-term">Action1</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">T</bdi>&gt;]، حيث <bdi dir="ltr" class="odt-ltr-term">T</bdi> هو النوع الذي ترجعه العملية المراقبة، وهنا [</span><b><bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Rv</bdi>&gt;</b><span style="color: #000000">]</span>
           </li>
         </ul>
       </li>
-      <li><span style="color: #000000">السطر 15: عند استلام الاستجابة، يتم تمريرها إلى طريقة [consumeRv] في السطر 21؛</span>
+      <li><span style="color: #000000">السطر 15: عند استلام الاستجابة، يتم تمريرها إلى طريقة [<bdi dir="ltr" class="odt-ltr-term">consumeRv</bdi>] في السطر 21؛</span>
       </li>
     </ul>
   </li>
   <li><span style="color: #000000">الأسطر 21-44: لقد تلقينا الاستجابة من المهمة غير المتزامنة. نقوم بمعالجتها؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 23-30: أولاً، نتحقق مما إذا كان الخادم قد أبلغ عن خطأ في حقل [status] في الاستجابة؛</span>
+  <li><span style="color: #000000">الأسطر 23-30: أولاً، نتحقق مما إذا كان الخادم قد أبلغ عن خطأ في حقل [<bdi dir="ltr" class="odt-ltr-term">status</bdi>] في الاستجابة؛</span>
     <ul>
-      <li><span style="color: #000000">السطر 25: إذا كان هناك خطأ، نعرض الرسائل التي وضعها الخادم في حقل [messages] من الاستجابة؛</span>
+      <li><span style="color: #000000">السطر 25: إذا كان هناك خطأ، نعرض الرسائل التي وضعها الخادم في حقل [<bdi dir="ltr" class="odt-ltr-term">messages</bdi>] من الاستجابة؛</span>
       </li>
       <li><span style="color: #000000">السطر 27: نقوم بإلغاء جميع المهام؛</span>
       </li>
@@ -4618,11 +4620,11 @@
   </li>
   <li><span style="color: #000000">الأسطر 34–43: بدلاً من مجرد حذف الموعد من التقويم المعروض حاليًا بواسطة المقتطف، نطلب التقويم الجديد للطبيب. نظرًا لأن التطبيق متعدد المستخدمين، فقد يكون مستخدمون آخرون قد قاموا أيضًا بتعديل تقويم الطبيب. لذلك، من الأفضل استخدام أحدث إصدار؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 34–43، 47–61: نكرر ما تم في جزء [AccueilFragment]، هذه المرة باستخدام المعلومات المسترجعة من الجلسة؛</span>
+  <li><span style="color: #000000">الأسطر 34–43، 47–61: نكرر ما تم في جزء [<bdi dir="ltr" class="odt-ltr-term">AccueilFragment</bdi>]، هذه المرة باستخدام المعلومات المسترجعة من الجلسة؛</span>
   </li>
 </ul>
 
-<p>طريقة [beginWaiting] (السطر 4) هي كما يلي:</p>
+<p>طريقة [<bdi dir="ltr" class="odt-ltr-term">beginWaiting</bdi>] (السطر 4) هي كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">   // beginning of waiting</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> beginWaiting(</span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> numberOfRunningTasks) {</span></span></span>
@@ -4636,16 +4638,16 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 4: نخبر المهمة الأم أننا سنقوم بتشغيل [numberOfRunningTasks] مهمة؛
+  <li>السطر 4: نخبر المهمة الأم أننا سنقوم بتشغيل [<bdi dir="ltr" class="odt-ltr-term">numberOfRunningTasks</bdi>] مهمة؛
   </li>
   <li>السطر 6: يتم إخفاء جميع خيارات القائمة؛
   </li>
-  <li>السطر 7: ثم نجعل خيار [Actions/Cancel] مرئيًا؛
+  <li>السطر 7: ثم نجعل خيار [<bdi dir="ltr" class="odt-ltr-term">Actions/Cancel</bdi>] مرئيًا؛
   </li>
 </ul>
 <p><a id="refheading1314841394789306"></a></p>
-<h5 id="36823-docancel">3.6.8.2.3. <span style="color: #243f60">الطريقة [doCancel]</span></h5>
-<p><span style="color: #000000">يتم التعامل مع النقر على خيار القائمة [Cancel] بواسطة الطريقة [doAnnuler]:</span></p>
+<h5 id="36823-docancel">3.6.8.2.3. <span style="color: #243f60">الطريقة [<bdi dir="ltr" class="odt-ltr-term">doCancel</bdi>]</span></h5>
+<p><span style="color: #000000">يتم التعامل مع النقر على خيار القائمة [<bdi dir="ltr" class="odt-ltr-term">Cancel</bdi>] بواسطة الطريقة [<bdi dir="ltr" class="odt-ltr-term">doAnnuler</bdi>]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#646464">@</span>OptionsItem(R.id.actionAnnuler)</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> doAnnuler() {</span></span></span>
@@ -4673,7 +4675,7 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">السطر 4: ننتقل إلى عرض التكوين باستخدام الإجراء [NAVIGATION]. وهذا يعني أننا نريد إعادة عرض التكوين إلى الحالة التي تركناه عليها؛</span>
+  <li><span style="color: #000000">السطر 4: ننتقل إلى عرض التكوين باستخدام الإجراء [<bdi dir="ltr" class="odt-ltr-term">NAVIGATION</bdi>]. وهذا يعني أننا نريد إعادة عرض التكوين إلى الحالة التي تركناه عليها؛</span>
   </li>
 </ul>
 <p><a id="refheading1314881394789306"></a></p>
@@ -4689,7 +4691,7 @@
 
 <p><a id="refheading1314901394789306"></a></p>
 <h4 id="3683">3.6.8.3. <span style="color: #4f81bd">إدارة دورة حياة المقتطفات</span></h4>
-<p>تتخذ القطعة الحالة التالية [AgendaFragmentState]:</p>
+<p>تتخذ القطعة الحالة التالية [<bdi dir="ltr" class="odt-ltr-term">AgendaFragmentState</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.fragments.state;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -4722,7 +4724,7 @@
 <ul>
   <li>السطر 10: العنوان المعروض في أعلى العرض؛
   </li>
-  <li>السطران 12-13: يتيح <i>التمرير </i>في <i>ListView </i>لعرض المواعيد المتاحة للطبيب؛
+  <li>السطران 12-13: يتيح <i>التمرير </i>في <i><bdi dir="ltr" class="odt-ltr-term">ListView</bdi> </i>لعرض المواعيد المتاحة للطبيب؛
   </li>
 </ul>
 
@@ -4821,35 +4823,35 @@
     <ul>
       <li>السطر 6: العنوان المعروض في أعلى العرض؛
       </li>
-      <li>الأسطر 7–17: المعلومات (top، firstPosition) التي ستسمح باستعادة <i>التمرير في </i>ListView؛
+      <li>الأسطر 7–17: المعلومات (<bdi dir="ltr" class="odt-ltr-term">top</bdi>، <bdi dir="ltr" class="odt-ltr-term">firstPosition</bdi>) التي ستسمح باستعادة <i>التمرير في </i><bdi dir="ltr" class="odt-ltr-term">ListView</bdi>؛
       </li>
     </ul>
   </li>
-  <li>الأسطر 21–24: معرف الجزء هو [IMainActivity.VUE_AGENDA]؛
+  <li>الأسطر 21–24: معرف الجزء هو [<bdi dir="ltr" class="odt-ltr-term">IMainActivity.VUE_AGENDA</bdi>]؛
   </li>
-  <li>الأسطر 26-35: يتم تنفيذها عند إنشاء الجزء لأول مرة (previousState == null) أو إعادة إنشائه في الزيارات اللاحقة (previousState != null)؛
+  <li>الأسطر 26-35: يتم تنفيذها عند إنشاء الجزء لأول مرة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> == <bdi dir="ltr" class="odt-ltr-term">null</bdi>) أو إعادة إنشائه في الزيارات اللاحقة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> != <bdi dir="ltr" class="odt-ltr-term">null</bdi>)؛
     <ul>
-      <li>الأسطر 30-34: إذا لم تكن هذه هي الزيارة الأولى للجزء، فإننا نسترد المعلومات (top، firstPosition) اللازمة لاستعادة <i>حالة التمرير في ListView</i>؛
+      <li>الأسطر 30-34: إذا لم تكن هذه هي الزيارة الأولى للجزء، فإننا نسترد المعلومات (<bdi dir="ltr" class="odt-ltr-term">top</bdi>، <bdi dir="ltr" class="odt-ltr-term">firstPosition</bdi>) اللازمة لاستعادة <i>حالة التمرير في <bdi dir="ltr" class="odt-ltr-term">ListView</bdi></i>؛
       </li>
     </ul>
   </li>
-  <li>الأسطر 38–40: يتم تنفيذها عند إنشاء العرض المرتبط بالجزء لأول مرة (previousState == null) أو إعادة إنشائه في الزيارات اللاحقة (previousState != null). لا يوجد ما يجب فعله هنا لأن <i>ListView </i>للفتحات سيتم إنشاؤه بواسطة الطريقة الخاصة [updateAgenda] (الأسطر 61-65)؛
+  <li>الأسطر 38–40: يتم تنفيذها عند إنشاء العرض المرتبط بالجزء لأول مرة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> == <bdi dir="ltr" class="odt-ltr-term">null</bdi>) أو إعادة إنشائه في الزيارات اللاحقة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> != <bdi dir="ltr" class="odt-ltr-term">null</bdi>). لا يوجد ما يجب فعله هنا لأن <i><bdi dir="ltr" class="odt-ltr-term">ListView</bdi> </i>للفتحات سيتم إنشاؤه بواسطة الطريقة الخاصة [<bdi dir="ltr" class="odt-ltr-term">updateAgenda</bdi>] (الأسطر 61-65)؛
   </li>
-  <li>الأسطر 42-52: يتم تنفيذها عند الوصول إلى الجزء عبر عملية [SUBMIT]. نحن قادمون من عرض [HOME]؛
+  <li>الأسطر 42-52: يتم تنفيذها عند الوصول إلى الجزء عبر عملية [<bdi dir="ltr" class="odt-ltr-term">SUBMIT</bdi>]. نحن قادمون من عرض [<bdi dir="ltr" class="odt-ltr-term">HOME</bdi>]؛
     <ul>
-      <li>السطر 45: نسترد جدول الأعمال الذي تم تعيينه بواسطة [AccueilFragment]؛
+      <li>السطر 45: نسترد جدول الأعمال الذي تم تعيينه بواسطة [<bdi dir="ltr" class="odt-ltr-term">AccueilFragment</bdi>]؛
       </li>
       <li>الأسطر 47–49: يتم إنشاء عنوان العرض؛
       </li>
-      <li>سيتم إنشاء <i>قائمة </i>عرض الفترات الزمنية بواسطة الطريقة الخاصة [updateAgenda] (الأسطر 61-65)؛
+      <li>سيتم إنشاء <i>قائمة </i>عرض الفترات الزمنية بواسطة الطريقة الخاصة [<bdi dir="ltr" class="odt-ltr-term">updateAgenda</bdi>] (الأسطر 61-65)؛
       </li>
     </ul>
   </li>
-  <li>الأسطر 54-59: يتم تنفيذها عند الوصول إلى المقطع عبر عملية [NAVIGATION] أو [RESTORE]؛
+  <li>الأسطر 54-59: يتم تنفيذها عند الوصول إلى المقطع عبر عملية [<bdi dir="ltr" class="odt-ltr-term">NAVIGATION</bdi>] أو [<bdi dir="ltr" class="odt-ltr-term">RESTORE</bdi>]؛
     <ul>
       <li>السطران 57-58: يتم إعادة إنشاء عنوان العرض؛
       </li>
-      <li>سيتم إنشاء عرض<i> قائمة </i>الفترات الزمنية بواسطة الطريقة الخاصة [updateAgenda] (الأسطر 61–65)؛
+      <li>سيتم إنشاء عرض<i> قائمة </i>الفترات الزمنية بواسطة الطريقة الخاصة [<bdi dir="ltr" class="odt-ltr-term">updateAgenda</bdi>] (الأسطر 61–65)؛
       </li>
     </ul>
   </li>
@@ -4906,7 +4908,7 @@
 
 <p><a id="refheading1314961394789306"></a></p>
 <h4 id="3692">3.6.9.2. <span style="color: #4f81bd">الجزء</span></h4>
-<p><span style="color: #000000">يتم إدارة عرض إضافة موعد بواسطة الجزء التالي [AjoutRvFragment]:</span></p>
+<p><span style="color: #000000">يتم إدارة عرض إضافة موعد بواسطة الجزء التالي [<bdi dir="ltr" class="odt-ltr-term">AjoutRvFragment</bdi>]:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000015000000194B28E2B55.png" width="235" height="283" style="display:inline-block; margin:4px;width:6.219cm;height:7.477cm;" class="odt-zoomable" data-zoom-src="images/100000000000015000000194B28E2B55.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -4967,7 +4969,7 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">السطر 26: ترتبط القطعة بالقائمة التالية [menu_ajout_rv]:</span>
+  <li><span style="color: #000000">السطر 26: ترتبط القطعة بالقائمة التالية [<bdi dir="ltr" class="odt-ltr-term">menu_ajout_rv</bdi>]:</span>
   </li>
 </ul>
 
@@ -5019,7 +5021,7 @@
   </li>
 </ul>
 
-<p><span style="color: #000000">يتم التعامل مع النقر على رابط [التحقق من الصحة] بواسطة الطريقة [doValidate] التالية:</span></p>
+<p><span style="color: #000000">يتم التعامل مع النقر على رابط [التحقق من الصحة] بواسطة الطريقة [<bdi dir="ltr" class="odt-ltr-term">doValidate</bdi>] التالية:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#3f7f5f">// our customers</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> List&lt;Client&gt; clients;</span></span></span>
@@ -5095,9 +5097,9 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">السطر 13: عند بدء طريقة [doValider]، تكون الحقول 2 و5 و6 و9 قد تم تهيئتها خلال دورة حياة الجزء. سنرى كيف؛</span>
+  <li><span style="color: #000000">السطر 13: عند بدء طريقة [<bdi dir="ltr" class="odt-ltr-term">doValider</bdi>]، تكون الحقول 2 و5 و6 و9 قد تم تهيئتها خلال دورة حياة الجزء. سنرى كيف؛</span>
   </li>
-  <li><span style="color: #000000">السطر 15: نسترد كيان [Client] المطابق للعنصر المحدد في عجلة التمرير الخاصة بالعميل؛</span>
+  <li><span style="color: #000000">السطر 15: نسترد كيان [<bdi dir="ltr" class="odt-ltr-term">Client</bdi>] المطابق للعنصر المحدد في عجلة التمرير الخاصة بالعميل؛</span>
   </li>
   <li><span style="color: #000000">السطر 17: نُعلم الفئة الأم بأننا سنقوم بتشغيل مهمتين غير متزامنتين ونستعد للانتظار؛</span>
   </li>
@@ -5105,23 +5107,23 @@
   </li>
   <li><span style="color: #000000">الأسطر 20-30: نطلب من الخادم إضافة موعد؛</span>
     <ul>
-      <li><span style="color: #000000">السطر 20: تتوقع طريقة [executeInBackground] معلمتين:</span>
+      <li><span style="color: #000000">السطر 20: تتوقع طريقة [<bdi dir="ltr" class="odt-ltr-term">executeInBackground</bdi>] معلمتين:</span>
         <ul>
-          <li><span style="color: #000000">السطر 20: يتم توفير العملية المراد تنفيذها ومراقبتها بواسطة الطريقة [</span><b>mainActivity.addRv(session.getDayRv(), slot.getId(), client.getId())</b><span style="color: #000000">]؛</span>
+          <li><span style="color: #000000">السطر 20: يتم توفير العملية المراد تنفيذها ومراقبتها بواسطة الطريقة [</span><b><bdi dir="ltr" class="odt-ltr-term">mainActivity.addRv</bdi>(<bdi dir="ltr" class="odt-ltr-term">session.getDayRv</bdi>(), <bdi dir="ltr" class="odt-ltr-term">slot.getId</bdi>(), <bdi dir="ltr" class="odt-ltr-term">client.getId</bdi>())</b><span style="color: #000000">]؛</span>
           </li>
-          <li><span style="color: #000000">الأسطر 22-29: المعلمة الثانية هي مثيل من النوع [Action1&lt;T&gt;]، حيث T هو النوع الذي ترجعه العملية المراقبة، وهنا [</span><b>Response&lt;Rv&gt;</b><span style="color: #000000">]</span>
+          <li><span style="color: #000000">الأسطر 22-29: المعلمة الثانية هي مثيل من النوع [<bdi dir="ltr" class="odt-ltr-term">Action1</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">T</bdi>&gt;]، حيث <bdi dir="ltr" class="odt-ltr-term">T</bdi> هو النوع الذي ترجعه العملية المراقبة، وهنا [</span><b><bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Rv</bdi>&gt;</b><span style="color: #000000">]</span>
           </li>
         </ul>
       </li>
-      <li><span style="color: #000000">السطر 27: عند استلام الاستجابة، يتم تمريرها إلى طريقة [consumeRV] في السطر 33؛</span>
+      <li><span style="color: #000000">السطر 27: عند استلام الاستجابة، يتم تمريرها إلى طريقة [<bdi dir="ltr" class="odt-ltr-term">consumeRV</bdi>] في السطر 33؛</span>
       </li>
     </ul>
   </li>
   <li><span style="color: #000000">الأسطر 33-56: لقد تلقينا الاستجابة من الخادم. نقوم بمعالجتها؛</span>
     <ul>
-      <li><span style="color: #000000">الأسطر 35-42: أولاً، نتحقق مما إذا كان الخادم قد أبلغ عن خطأ في حقل [status] بالاستجابة؛</span>
+      <li><span style="color: #000000">الأسطر 35-42: أولاً، نتحقق مما إذا كان الخادم قد أبلغ عن خطأ في حقل [<bdi dir="ltr" class="odt-ltr-term">status</bdi>] بالاستجابة؛</span>
       </li>
-      <li><span style="color: #000000">السطر 37: إذا كان هناك خطأ، نعرض الرسائل التي وضعها الخادم في حقل [messages] من الاستجابة؛</span>
+      <li><span style="color: #000000">السطر 37: إذا كان هناك خطأ، نعرض الرسائل التي وضعها الخادم في حقل [<bdi dir="ltr" class="odt-ltr-term">messages</bdi>] من الاستجابة؛</span>
       </li>
       <li><span style="color: #000000">السطر 39: نقوم بإلغاء جميع المهام؛</span>
       </li>
@@ -5139,7 +5141,7 @@
   </li>
 </ul>
 
-<p>طريقة [beginWaiting] (السطر 17) هي كما يلي:</p>
+<p>طريقة [<bdi dir="ltr" class="odt-ltr-term">beginWaiting</bdi>] (السطر 17) هي كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">   // beginning of waiting</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> beginWaiting(</span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> numberOfRunningTasks) {</span></span></span>
@@ -5153,15 +5155,15 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 4: نخبر المهمة الأم أننا سنقوم بتشغيل [numberOfRunningTasks] مهمة؛
+  <li>السطر 4: نخبر المهمة الأم أننا سنقوم بتشغيل [<bdi dir="ltr" class="odt-ltr-term">numberOfRunningTasks</bdi>] مهمة؛
   </li>
   <li>السطر 6: يتم إخفاء جميع خيارات القائمة؛
   </li>
-  <li>السطر 7: ثم نجعل خيار [Actions/Cancel] مرئيًا؛
+  <li>السطر 7: ثم نجعل خيار [<bdi dir="ltr" class="odt-ltr-term">Actions/Cancel</bdi>] مرئيًا؛
   </li>
 </ul>
 
-<p><span style="color: #000000">يتم التعامل مع النقر على خيار القائمة [Cancel] بواسطة الطريقة [doCancel]:</span></p>
+<p><span style="color: #000000">يتم التعامل مع النقر على خيار القائمة [<bdi dir="ltr" class="odt-ltr-term">Cancel</bdi>] بواسطة الطريقة [<bdi dir="ltr" class="odt-ltr-term">doCancel</bdi>]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#646464">@</span>OptionsItem(R.id.actionAnnuler)</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> doAnnuler() {</span></span></span>
@@ -5201,7 +5203,7 @@
 
 <p><a id="refheading1314981394789306"></a></p>
 <h4 id="3693">3.6.9.3. <span style="color: #4f81bd">إدارة دورة حياة الجزء</span></h4>
-<p>يحتوي الجزء على الحالة التالية [AjoutRvFragmentState]:</p>
+<p>يحتوي الجزء على الحالة التالية [<bdi dir="ltr" class="odt-ltr-term">AjoutRvFragmentState</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.fragments.state;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -5349,41 +5351,41 @@
       </li>
     </ul>
   </li>
-  <li>الأسطر 12-15: معرف الجزء هو [IMainActivity.VUE_AJOUT_RV]؛
+  <li>الأسطر 12-15: معرف الجزء هو [<bdi dir="ltr" class="odt-ltr-term">IMainActivity.VUE_AJOUT_RV</bdi>]؛
   </li>
-  <li>الأسطر 17-35: يتم تنفيذها عند إنشاء الجزء لأول مرة (previousState == null) أو إعادة إنشائه في المرات اللاحقة (previousState != null)؛
+  <li>الأسطر 17-35: يتم تنفيذها عند إنشاء الجزء لأول مرة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> == <bdi dir="ltr" class="odt-ltr-term">null</bdi>) أو إعادة إنشائه في المرات اللاحقة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> != <bdi dir="ltr" class="odt-ltr-term">null</bdi>)؛
     <ul>
       <li>السطر 20: يتم استرداد قائمة العملاء من الجلسة ووضعها في حقل الجزء؛
       </li>
       <li>الأسطر 22-30: في الزيارة الأولى، يتم إنشاء مصدر البيانات لمؤشر العملاء؛
       </li>
-      <li>الأسطر 32-33: بالنسبة للزيارات اللاحقة، يتم استرداد مصدر البيانات الخاص بـ spinner العميل من الحالة السابقة للجزء؛
+      <li>الأسطر 32-33: بالنسبة للزيارات اللاحقة، يتم استرداد مصدر البيانات الخاص بـ <bdi dir="ltr" class="odt-ltr-term">spinner</bdi> العميل من الحالة السابقة للجزء؛
       </li>
     </ul>
   </li>
-  <li>الأسطر 37-49: يتم تنفيذها عند إنشاء العرض المرتبط بالجزء لأول مرة (previousState == null) أو إعادة إنشائه في المرات اللاحقة (previousState != null)؛
+  <li>الأسطر 37-49: يتم تنفيذها عند إنشاء العرض المرتبط بالجزء لأول مرة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> == <bdi dir="ltr" class="odt-ltr-term">null</bdi>) أو إعادة إنشائه في المرات اللاحقة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> != <bdi dir="ltr" class="odt-ltr-term">null</bdi>)؛
     <ul>
       <li>الأسطر 40-43: في جميع الحالات، يتم ربط مؤشر العميل بمصدر البيانات الخاص به؛
       </li>
-      <li>الأسطر 45-48: بالنسبة للزيارة الأولى، يتم عرض القائمة بدون الإجراء [Cancel] (الأسطر 107-111)؛
+      <li>الأسطر 45-48: بالنسبة للزيارة الأولى، يتم عرض القائمة بدون الإجراء [<bdi dir="ltr" class="odt-ltr-term">Cancel</bdi>] (الأسطر 107-111)؛
       </li>
     </ul>
   </li>
-  <li>الأسطر 51-70: يتم تنفيذها عند الوصول إلى الجزء عبر عملية [SUBMIT]. نحن قادمون من عرض [CALENDAR]؛
+  <li>الأسطر 51-70: يتم تنفيذها عند الوصول إلى الجزء عبر عملية [<bdi dir="ltr" class="odt-ltr-term">SUBMIT</bdi>]. نحن قادمون من عرض [<bdi dir="ltr" class="odt-ltr-term">CALENDAR</bdi>]؛
     <ul>
       <li>السطر 54: نسترد رقم الفتحة التي سنحدد فيها موعدًا؛
       </li>
-      <li>الأسطر 56-59: نسترد كيانات [Doctor] و [Time Slot] المطلوبة لإضافة هذا الموعد ونضعها في الحقول داخل الجزء؛
+      <li>الأسطر 56-59: نسترد كيانات [<bdi dir="ltr" class="odt-ltr-term">Doctor</bdi>] و [<bdi dir="ltr" class="odt-ltr-term">Time Slot</bdi>] المطلوبة لإضافة هذا الموعد ونضعها في الحقول داخل الجزء؛
       </li>
       <li>الأسطر 61–65: باستخدام هذه المعلومات، يمكننا إنشاء عنوان العرض؛
       </li>
       <li>السطر 67: يتم تعيين عجلة التمرير الخاصة بالعميل على العنصر الأول؛
       </li>
-      <li>السطر 69: يتم تعيين القائمة على حالتها الأولية (بدون خيار [Cancel])؛
+      <li>السطر 69: يتم تعيين القائمة على حالتها الأولية (بدون خيار [<bdi dir="ltr" class="odt-ltr-term">Cancel</bdi>])؛
       </li>
     </ul>
   </li>
-  <li>الأسطر 72-80: يتم تنفيذها عند الوصول إلى الجزء عبر عملية [NAVIGATION] أو [RESTORE]؛
+  <li>الأسطر 72-80: يتم تنفيذها عند الوصول إلى الجزء عبر عملية [<bdi dir="ltr" class="odt-ltr-term">NAVIGATION</bdi>] أو [<bdi dir="ltr" class="odt-ltr-term">RESTORE</bdi>]؛
     <ul>
       <li>السطر 77: يتم إعادة إنشاء عنوان العرض؛
       </li>
@@ -5397,7 +5399,7 @@
     <ul>
       <li>السطر 89: يتم إعادة تعيين القائمة إلى حالتها الافتراضية؛
       </li>
-      <li>الأسطر 91-94: إذا اكتملت المهام بشكل طبيعي، يتم العودة إلى عرض [CALENDAR] عبر [SUBMIT] (هنا، كان من الممكن أن يكون هذا أيضًا إجراء NAVIGATION)؛
+      <li>الأسطر 91-94: إذا اكتملت المهام بشكل طبيعي، يتم العودة إلى عرض [<bdi dir="ltr" class="odt-ltr-term">CALENDAR</bdi>] عبر [<bdi dir="ltr" class="odt-ltr-term">SUBMIT</bdi>] (هنا، كان من الممكن أن يكون هذا أيضًا إجراء <bdi dir="ltr" class="odt-ltr-term">NAVIGATION</bdi>)؛
       </li>
       <li>الأسطر 96–103: إذا انتهت المهام بالإلغاء، فإننا لا نزال نتحقق مما إذا كان الموعد قد تمت إضافته (وهذا يعني أن استرداد التقويم الجديد قد فشل)؛
       </li>
@@ -5405,7 +5407,7 @@
         <ul>
           <li>السطور 98-99: يتم إضافة الموعد الذي أعاده الخادم إلى التقويم الحالي، وهو التقويم النشط؛
           </li>
-          <li>السطر 101: نعود إلى عرض [AGENDA] عبر [SUBMIT] (هنا، كان من الممكن أن يكون هذا إجراءً من نوع NAVIGATION)؛
+          <li>السطر 101: نعود إلى عرض [<bdi dir="ltr" class="odt-ltr-term">AGENDA</bdi>] عبر [<bdi dir="ltr" class="odt-ltr-term">SUBMIT</bdi>] (هنا، كان من الممكن أن يكون هذا إجراءً من نوع <bdi dir="ltr" class="odt-ltr-term">NAVIGATION</bdi>)؛
           </li>
         </ul>
       </li>
@@ -5420,13 +5422,13 @@
   </li>
   <li>قم بتدوير الجهاز لكل عرض وتحقق من استعادة كل عرض بشكل صحيح؛
   </li>
-  <li>أضف فترة انتظار لبضع ثوانٍ في [IMainActivity]؛
+  <li>أضف فترة انتظار لبضع ثوانٍ في [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>]؛
   </li>
   <li>بعد ذلك، قم بإلغاء المهام وتأكد من أن النتيجة تتطابق مع النتيجة المتوقعة؛
   </li>
   <li>قم بتدوير الجهاز خلال فترات الانتظار وتأكد من إلغاء المهام بشكل صحيح وعدم حدوث أي أعطال؛
   </li>
-  <li>قم بتغيير ترتيب الأجزاء في [IMainActivity] وتأكد من أن التطبيق يستمر في العمل؛
+  <li>قم بتغيير ترتيب الأجزاء في [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>] وتأكد من أن التطبيق يستمر في العمل؛
   </li>
 </ul>
 

@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -659,21 +661,21 @@
 <h1 id="4-1">4. <span style="color: #365f91">المهمة 1: إدارة كشوف الرواتب الأساسية</span></h1>
 <p><a id="refheading61956428607977"></a></p>
 <h2 id="41">4.1. <span style="color: #4f81bd">مقدمة</span></h2>
-<p>لتطبيق ما تناولناه سابقًا، نقترح الآن مهمة تتضمن تطوير عميل Android للأجهزة اللوحية، مصمم لمحاكاة حسابات الرواتب لموظفي إحدى الجمعيات.</p>
+<p>لتطبيق ما تناولناه سابقًا، نقترح الآن مهمة تتضمن تطوير عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> للأجهزة اللوحية، مصمم لمحاكاة حسابات الرواتب لموظفي إحدى الجمعيات.</p>
 <p>سيكون للتطبيق بنية عميل/خادم:</p>
 <p><img src="images/100000000000035C0000026E84D169AC.png" width="602" height="435" style="width:15.921cm;height:11.515cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000035C0000026E84D169AC.png" /></p>
 <ul>
   <li>الخادم [1] متوفر؛
   </li>
-  <li>يجب عليك إنشاء عميل Android [2].
+  <li>يجب عليك إنشاء عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> [2].
   </li>
 </ul>
 <p><a id="refheading154461029747953"></a></p>
 <h2 id="42">4.2. <span style="color: #4f81bd">قاعدة البيانات</span></h2>
 <p><a id="refheading154481029747953"></a></p>
 <h3 id="421">4.2.1. <span style="color: #4f81bd">التعريف</span></h3>
-<p>سيتم تخزين البيانات الثابتة اللازمة لإنشاء كشف الراتب في قاعدة بيانات سنشير إليها فيما بعد باسم<a id="dbpam"></a> <strong>dbpam</strong>. تحتوي قاعدة البيانات هذه على الجداول التالية:</p>
-<div style="margin:0 0 0.75em 0; background-color:#cccccc; padding:0.35em 0.6em">جدول <b>EMPLOYEES</b>: يحتوي على معلومات حول مختلف مقدمي خدمات رعاية الأطفال</div>
+<p>سيتم تخزين البيانات الثابتة اللازمة لإنشاء كشف الراتب في قاعدة بيانات سنشير إليها فيما بعد باسم<a id="dbpam"></a> <strong><bdi dir="ltr" class="odt-ltr-term">dbpam</bdi></strong>. تحتوي قاعدة البيانات هذه على الجداول التالية:</p>
+<div style="margin:0 0 0.75em 0; background-color:#cccccc; padding:0.35em 0.6em">جدول <b><bdi dir="ltr" class="odt-ltr-term">EMPLOYEES</bdi></b>: يحتوي على معلومات حول مختلف مقدمي خدمات رعاية الأطفال</div>
 
 <p><strong>الهيكل</strong>:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
@@ -703,11 +705,11 @@
 </div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">الرمز البريدي الخاص به/بها</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>رقم التعويض
 </code></pre></div>
-</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">مفتاح خارجي في حقل [ID] في جدول [INDEMNITES]</div></td></tr></table>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">مفتاح خارجي في حقل [<bdi dir="ltr" class="odt-ltr-term">ID</bdi>] في جدول [<bdi dir="ltr" class="odt-ltr-term">INDEMNITES</bdi>]</div></td></tr></table>
 
 <p>قد يكون محتواه كما يلي:</p>
 <p><img src="images/10000000000003290000005A7A2F8F71.png" width="566" height="63" style="width:14.981cm;height:1.667cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003290000005A7A2F8F71.png" /></p>
-<div style="margin:0 0 0.75em 0; background-color:#cccccc; padding:0.35em 0.6em">جدول <b>COTISATIONS</b>: يحتوي على النسب المئوية اللازمة لحساب اشتراكات الضمان الاجتماعي</div>
+<div style="margin:0 0 0.75em 0; background-color:#cccccc; padding:0.35em 0.6em">جدول <b><bdi dir="ltr" class="odt-ltr-term">COTISATIONS</bdi></b>: يحتوي على النسب المئوية اللازمة لحساب اشتراكات الضمان الاجتماعي</div>
 
 <p><strong>الهيكل</strong>:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
@@ -733,7 +735,7 @@
 <p>يمكن أن يكون محتواه كما يلي:</p>
 <p><img src="images/10000000000001820000004455B7B537.png" width="270" height="48" style="width:7.151cm;height:1.259cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001820000004455B7B537.png" /></p>
 <p>معدلات اشتراكات الضمان الاجتماعي مستقلة عن الموظف. يحتوي الجدول السابق على صف واحد فقط.</p>
-<div style="margin:0 0 0.75em 0; background-color:#cccccc; padding:0.35em 0.6em">جدول <b>ALLOWANCES</b>: يحتوي على العناصر المستخدمة لحساب الراتب المقرر دفعه.</div>
+<div style="margin:0 0 0.75em 0; background-color:#cccccc; padding:0.35em 0.6em">جدول <b><bdi dir="ltr" class="odt-ltr-term">ALLOWANCES</bdi></b>: يحتوي على العناصر المستخدمة لحساب الراتب المقرر دفعه.</div>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>رقم التعريف
@@ -763,21 +765,21 @@
 <p>يرجى ملاحظة أن البدلات قد تختلف من مقدم رعاية أطفال لآخر. وهي مرتبطة بمقدم رعاية أطفال معين من خلال رتبته الوظيفية. على سبيل المثال، السيدة ماري جوفينال، التي تبلغ رتبتها الوظيفية 2 (جدول الموظفين)، يتقاضى أجرًا بالساعة قدره 2.1 يورو (جدول التعويضات).</p>
 <p><a id="refheading154501029747953"></a></p>
 <h3 id="422">4.2.2. <span style="color: #4f81bd">التوليد</span></h3>
-<p>يتم توفير البرنامج النصي لإنشاء قاعدة البيانات [dbpam_hibernate.sql]:</p>
+<p>يتم توفير البرنامج النصي لإنشاء قاعدة البيانات [<bdi dir="ltr" class="odt-ltr-term">dbpam</bdi>_hibernate.<bdi dir="ltr" class="odt-ltr-term">sql</bdi>]:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000BF000000932F0E0E55.png" width="134" height="103" style="display:inline-block; margin:4px;width:3.54cm;height:2.725cm;" class="odt-zoomable" data-zoom-src="images/10000000000000BF000000932F0E0E55.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>قم بإنشاء قاعدة البيانات [dbpam_hibernate] (وهذا هو اسم قاعدة البيانات التي يستخدمها خادم الويب/jSON) وتأكد من أن حساب <em>root</em> (بدون كلمة مرور) يمكنه الوصول إليها. يمكنك القيام بذلك على النحو التالي:</p>
-<p>قم بتشغيل MySQL، ثم [PhpMyAdmin]:</p>
+<p>قم بإنشاء قاعدة البيانات [<bdi dir="ltr" class="odt-ltr-term">dbpam</bdi>_hibernate] (وهذا هو اسم قاعدة البيانات التي يستخدمها خادم الويب/<bdi dir="ltr" class="odt-ltr-term">jSON</bdi>) وتأكد من أن حساب <em><bdi dir="ltr" class="odt-ltr-term">root</bdi></em> (بدون كلمة مرور) يمكنه الوصول إليها. يمكنك القيام بذلك على النحو التالي:</p>
+<p>قم بتشغيل <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi>، ثم [<bdi dir="ltr" class="odt-ltr-term">PhpMyAdmin</bdi>]:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000DA0000008A8AEE8CA8.png" width="153" height="97" style="display:inline-block; margin:4px;width:4.039cm;height:2.558cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DA0000008A8AEE8CA8.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000028C0000014124DD40FA.png" width="401" height="197" style="display:inline-block; margin:4px;width:10.601cm;height:5.219cm;" class="odt-zoomable" data-zoom-src="images/100000000000028C0000014124DD40FA.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-  <li>[1-2]: قم باستيراد البرنامج النصي [dbpam_hibernate.sql] ثم قم بتنفيذه؛
+  <li>[1-2]: قم باستيراد البرنامج النصي [<bdi dir="ltr" class="odt-ltr-term">dbpam_hibernate.sql</bdi>] ثم قم بتنفيذه؛
   </li>
 </ul>
 <p><a id="refheading154521029747953"></a></p>
-<h3 id="423-java">4.2.3. <span style="color: #4f81bd">نمذجة قاعدة البيانات بلغة Java</span></h3>
-<p>يتم نمذجة عناصر الجداول [EMPLOYEES] و[ALLOWANCES] و[CONTRIBUTIONS] بواسطة الفئات التالية:</p>
-<p><u><strong>[</strong></u><a id="employe"></a><u> <strong>Employee]</strong></u></p>
+<h3 id="423-java">4.2.3. <span style="color: #4f81bd">نمذجة قاعدة البيانات بلغة <bdi dir="ltr" class="odt-ltr-term">Java</bdi></span></h3>
+<p>يتم نمذجة عناصر الجداول [<bdi dir="ltr" class="odt-ltr-term">EMPLOYEES</bdi>] و[<bdi dir="ltr" class="odt-ltr-term">ALLOWANCES</bdi>] و[<bdi dir="ltr" class="odt-ltr-term">CONTRIBUTIONS</bdi>] بواسطة الفئات التالية:</p>
+<p><u><strong>[</strong></u><a id="employe"></a><u> <strong><bdi dir="ltr" class="odt-ltr-term">Employee</bdi>]</strong></u></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> pam.entities;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -809,21 +811,21 @@
 </code></pre></div>
 
 <ul>
-  <li>الأسطر 8–15: تتوافق هذه الحقول مع الأعمدة في جدول [EMPLOYEES]؛
+  <li>الأسطر 8–15: تتوافق هذه الحقول مع الأعمدة في جدول [<bdi dir="ltr" class="odt-ltr-term">EMPLOYEES</bdi>]؛
   </li>
-  <li>السطر 16: يتوافق حقل [indemniteId] مع عمود [INDEMNITE_ID]، وهو المفتاح الخارجي لجدول [EMPLOYEES]؛
+  <li>السطر 16: يتوافق حقل [<bdi dir="ltr" class="odt-ltr-term">indemniteId</bdi>] مع عمود [<bdi dir="ltr" class="odt-ltr-term">INDEMNITE_ID</bdi>]، وهو المفتاح الخارجي لجدول [<bdi dir="ltr" class="odt-ltr-term">EMPLOYEES</bdi>]؛
   </li>
   <li>السطر 17: بدل الموظف. لا يتم ملء هذا الحقل دائمًا:
     <ul>
-      <li>لا يتم ملؤه عند طلب عنوان URL [/employees]،
+      <li>لا يتم ملؤه عند طلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/<bdi dir="ltr" class="odt-ltr-term">employees</bdi>]،
       </li>
-      <li>يتم ملؤه عند طلب عنوان URL [/salary]؛
+      <li>يتم ملؤه عند طلب عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [/<bdi dir="ltr" class="odt-ltr-term">salary</bdi>]؛
       </li>
     </ul>
   </li>
 </ul>
 
-<p>[<a id="indemnite"></a><u> <strong>Indemnite</strong></u>]</p>
+<p>[<a id="indemnite"></a><u> <strong><bdi dir="ltr" class="odt-ltr-term">Indemnite</bdi></strong></u>]</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> pam.entities;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -853,11 +855,11 @@
 </code></pre></div>
 
 <ul>
-  <li>الأسطر 8-14: الحقول تتوافق مع أعمدة جدول [INDEMNITES]؛
+  <li>الأسطر 8-14: الحقول تتوافق مع أعمدة جدول [<bdi dir="ltr" class="odt-ltr-term">INDEMNITES</bdi>]؛
   </li>
 </ul>
 
-<p>[<a id="cotisation"></a><u> <strong>Contribution</strong></u>]</p>
+<p>[<a id="cotisation"></a><u> <strong><bdi dir="ltr" class="odt-ltr-term">Contribution</bdi></strong></u>]</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> pam.entities;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -885,27 +887,27 @@
 </code></pre></div>
 
 <ul>
-  <li>الأسطر 8-13: الحقول تتوافق مع أعمدة جدول [COTISATIONS]؛
+  <li>الأسطر 8-13: الحقول تتوافق مع أعمدة جدول [<bdi dir="ltr" class="odt-ltr-term">COTISATIONS</bdi>]؛
   </li>
 </ul>
 <p><a id="refheading61958428607977"></a></p>
-<h2 id="43-json">4.3. <span style="color: #4f81bd">خادم الويب / تثبيت JSON</span></h2>
+<h2 id="43-json">4.3. <span style="color: #4f81bd">خادم الويب / تثبيت <bdi dir="ltr" class="odt-ltr-term">JSON</bdi></span></h2>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004BE0000018FD9EFE949.png" width="607" height="199" style="display:inline-block; margin:4px;width:16.06cm;height:5.278cm;" class="odt-zoomable" data-zoom-src="images/10000000000004BE0000018FD9EFE949.png" /></td></tr></table>
 
 <p><a id="refheading154541029747953"></a></p>
 <h3 id="431">4.3.1. <span style="color: #4f81bd">التثبيت</span></h3>
-<p>يتم توفير ملف Java الثنائي لخادم الويب/JSON:</p>
+<p>يتم توفير ملف <bdi dir="ltr" class="odt-ltr-term">Java</bdi> الثنائي لخادم الويب/<bdi dir="ltr" class="odt-ltr-term">JSON:</bdi></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000DA0000007B701CC163.png" width="153" height="86" style="display:inline-block; margin:4px;width:4.039cm;height:2.279cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DA0000007B701CC163.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>لبدء تشغيل خادم web/JSON، اتبع الخطوات التالية:</p>
+<p>لبدء تشغيل خادم <bdi dir="ltr" class="odt-ltr-term">web/JSON</bdi>، اتبع الخطوات التالية:</p>
 <ul>
-  <li>قم بتشغيل نظام إدارة قواعد البيانات MySQL؛
+  <li>قم بتشغيل نظام إدارة قواعد البيانات <bdi dir="ltr" class="odt-ltr-term">MySQL</bdi>؛
   </li>
-  <li>تأكد من وجود قاعدة البيانات [dbpam_hibernate]؛
+  <li>تأكد من وجود قاعدة البيانات [<bdi dir="ltr" class="odt-ltr-term">dbpam_hibernate</bdi>]؛
   </li>
   <li>افتح نافذة موجه الأوامر؛
   </li>
-  <li>انتقل إلى مجلد jar؛
+  <li>انتقل إلى مجلد <bdi dir="ltr" class="odt-ltr-term">jar</bdi>؛
   </li>
   <li>اكتب الأمر:
   </li>
@@ -913,7 +915,7 @@
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>java -jar pam-server-01-all-1.0.jar
 </code></pre></div>
-<p>هذا يفترض أن الملف القابل للتنفيذ [java.exe] موجود في مسار PATH بجهازك. إذا لم يكن الأمر كذلك، اكتب المسار الكامل لـ [java.exe]، على سبيل المثال:</p>
+<p>هذا يفترض أن الملف القابل للتنفيذ [<bdi dir="ltr" class="odt-ltr-term">java.exe</bdi>] موجود في مسار <bdi dir="ltr" class="odt-ltr-term">PATH</bdi> بجهازك. إذا لم يكن الأمر كذلك، اكتب المسار الكامل لـ [<bdi dir="ltr" class="odt-ltr-term">java.exe</bdi>]، على سبيل المثال:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>D:\Programs\devjava\java\jdk1.8\bin\java -jar pam-server-01-all-1.0.jar
 </code></pre></div>
 <p>يتم عرض السجلات:</p>
@@ -972,16 +974,16 @@
 <a id="__codelineno-24-27" name="__codelineno-24-27"></a>2014-10-22 16:45:39.333  INFO 1868 --- [       Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit &#39;default&#39;
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>السطر 16: تم تحليل عنوان URL [<b>/salary/{SS}/{ht}/{jt}</b>]؛
+  <li>السطر 16: تم تحليل عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<b>/<bdi dir="ltr" class="odt-ltr-term">salary/</bdi>{<bdi dir="ltr" class="odt-ltr-term">SS</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">ht</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">jt</bdi>}</b>]؛
   </li>
-  <li>السطر 17: تم اكتشاف عنوان URL [<b>/employees</b>]؛
+  <li>السطر 17: تم اكتشاف عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<b>/<bdi dir="ltr" class="odt-ltr-term">employees</bdi></b>]؛
   </li>
 </ul>
 <p><a id="refheading8099721530162"></a></p>
-<h3 id="432-url-json">4.3.2. <span style="color: #4f81bd">عناوين URL لخدمة الويب/JSON</span></h3>
+<h3 id="432-url-json">4.3.2. <span style="color: #4f81bd">عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لخدمة الويب/<bdi dir="ltr" class="odt-ltr-term">JSON</bdi></span></h3>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000047C0000015BE373E46D.png" width="574" height="173" style="display:inline-block; margin:4px;width:15.187cm;height:4.59cm;" class="odt-zoomable" data-zoom-src="images/100000000000047C0000015BE373E46D.png" /></td></tr></table>
 
-<p>يتم تنفيذ خدمة الويب / JSON بواسطة Spring MVC وتكشف عن عنواني URL:</p>
+<p>يتم تنفيذ خدمة الويب / <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> بواسطة <bdi dir="ltr" class="odt-ltr-term">Spring MVC</bdi> وتكشف عن عنواني <bdi dir="ltr" class="odt-ltr-term">URL:</bdi></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#646464">@</span><span style="color:#000000">RequestMapping(value = </span><span style="color:#2a00ff">&quot;/employes&quot;</span><span style="color:#000000">, method = RequestMethod.GET</span><span style="color:#000000">, produces = </span><span style="color:#2a00ff">&quot;application/json; charset=UTF-8&quot;</span><span style="color:#000000">)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> EmployesResponse getEmployes() {</span></span></span>
@@ -990,11 +992,11 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> FeuilleSalaireResponse getFeuilleSalaire(</span><span style="color:#646464">@</span><span style="color:#000000">PathVariable(</span><span style="color:#2a00ff">&quot;SS&quot;</span><span style="color:#000000">) String SS, </span><span style="color:#646464">@</span><span style="color:#000000">PathVariable(</span><span style="color:#2a00ff">&quot;ht&quot;</span><span style="color:#000000">) </span><span style="font-weight:bold;color:#7f0055">double</span><span style="color:#000000"> ht, </span><span style="color:#646464">@</span><span style="color:#000000">PathVariable(</span><span style="color:#2a00ff">&quot;jt&quot;</span><span style="color:#000000">) </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> jt) {</span></span></span>
 </code></pre></div>
 
-<p>تقبل خدمة الويب عنواني URL التاليين:</p>
+<p>تقبل خدمة الويب عنواني <bdi dir="ltr" class="odt-ltr-term">URL</bdi> التاليين:</p>
 <ul>
-  <li>السطر 1: <b>/employees</b>: لاسترداد قائمة الموظفين؛
+  <li>السطر 1: <b>/<bdi dir="ltr" class="odt-ltr-term">employees</bdi></b>: لاسترداد قائمة الموظفين؛
   </li>
-  <li>السطر 4: <b>/salary/SS/ht/jt</b>: لاسترداد كشف الراتب للموظف رقم [SS] الذي عمل [ht] ساعة على مدار [jt] يومًا؛
+  <li>السطر 4: <b>/<bdi dir="ltr" class="odt-ltr-term">salary/SS/ht/jt</bdi></b>: لاسترداد كشف الراتب للموظف رقم [<bdi dir="ltr" class="odt-ltr-term">SS</bdi>] الذي عمل [<bdi dir="ltr" class="odt-ltr-term">ht</bdi>] ساعة على مدار [<bdi dir="ltr" class="odt-ltr-term">jt</bdi>] يومًا؛
   </li>
 </ul>
 
@@ -1008,12 +1010,12 @@
 <p>نطلب راتب شخص غير موجود:</p>
 <p><img src="images/1000000000000234000000681AB9AB40.png" width="395" height="73" style="width:10.44cm;height:1.924cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000234000000681AB9AB40.png" /></p>
 <p><a id="refheading8099921530162"></a></p>
-<h3 id="433-json-json">4.3.3. <span style="color: #4f81bd">ردود JSON من خدمة الويب/JSON</span></h3>
+<h3 id="433-json-json">4.3.3. <span style="color: #4f81bd">ردود <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> من خدمة الويب/<bdi dir="ltr" class="odt-ltr-term">JSON</bdi></span></h3>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000047300000176CA966EB5.png" width="570" height="187" style="display:inline-block; margin:4px;width:15.069cm;height:4.948cm;" class="odt-zoomable" data-zoom-src="images/100000000000047300000176CA966EB5.png" /></td></tr></table>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C6000000A518D396C1.png" width="139" height="116" style="display:inline-block; margin:4px;width:3.671cm;height:3.059cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C6000000A518D396C1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>تُرجع عناوين URL الخاصة بخدمة الويب/jSON استجابات من النوع [Response&lt;T&gt;]:</p>
+<p>تُرجع عناوين <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الخاصة بخدمة الويب/<bdi dir="ltr" class="odt-ltr-term">jSON</bdi> استجابات من النوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">T</bdi>&gt;]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.dao.service;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1046,13 +1048,13 @@
 </code></pre></div>
 
 <ul>
-  <li>يعيد عنوان URL [<b>/employees</b>] استجابة <b>من نوع Response&lt;List&lt;Employee&gt;&gt;</b>؛
+  <li>يعيد عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<b>/<bdi dir="ltr" class="odt-ltr-term">employees</bdi></b>] استجابة <b>من نوع <bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Employee</bdi>&gt;&gt;</b>؛
   </li>
-  <li>يعرض عنوان URL [<b>/salary</b>] نوع<b> Response&lt;PayStub&gt;</b>؛
+  <li>يعرض عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<b>/<bdi dir="ltr" class="odt-ltr-term">salary</bdi></b>] نوع<b> <bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">PayStub</bdi>&gt;</b>؛
   </li>
 </ul>
 
-<p>فئة [PayrollSheet] هي كما يلي:</p>
+<p>فئة [<bdi dir="ltr" class="odt-ltr-term">PayrollSheet</bdi>] هي كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> pam.entities;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1080,13 +1082,13 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 9: تم تقديم فئة [Employee] في القسم<a href="#employe"><u><span style="color: #0563c1"> 4.2.3</span></u></a>؛
+  <li>السطر 9: تم تقديم فئة [<bdi dir="ltr" class="odt-ltr-term">Employee</bdi>] في القسم<a href="#employe"><u><span style="color: #0563c1"> 4.2.3</span></u></a>؛
   </li>
-  <li>السطر 10: تم تقديم فئة [Contribution] في القسم<a href="#cotisation"><u><span style="color: #0563c1"> 4.2.3</span></u></a>؛
+  <li>السطر 10: تم تقديم فئة [<bdi dir="ltr" class="odt-ltr-term">Contribution</bdi>] في القسم<a href="#cotisation"><u><span style="color: #0563c1"> 4.2.3</span></u></a>؛
   </li>
 </ul>
 
-<p>فيما يلي فئة [SalaryElements] (السطر 11):</p>
+<p>فيما يلي فئة [<bdi dir="ltr" class="odt-ltr-term">SalaryElements</bdi>] (السطر 11):</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> pam.entities;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1117,17 +1119,17 @@
 </code></pre></div>
 
 <p><a id="refheading61960428607977"></a></p>
-<h2 id="44-android">4.4. <span style="color: #4f81bd">اختبارات عميل Android</span></h2>
+<h2 id="44-android">4.4. <span style="color: #4f81bd">اختبارات عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi></span></h2>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000061700000116321EEDE2.png" width="680" height="121" style="display:inline-block; margin:4px;width:17.999cm;height:3.21cm;" class="odt-zoomable" data-zoom-src="images/100000000000061700000116321EEDE2.png" /></td></tr></table>
 
-<p>فيما يلي الملف الثنائي القابل للتنفيذ لعميل Android النهائي:</p>
+<p>فيما يلي الملف الثنائي القابل للتنفيذ لعميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> النهائي:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C1000000A28979742E.png" width="135" height="113" style="display:inline-block; margin:4px;width:3.57cm;height:2.997cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C1000000A28979742E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>استخدم الماوس لسحب ملف [pam-client.apk] الموجود أعلاه إلى محاكي الجهاز اللوحي [GenyMotion]. سيتم بعد ذلك حفظه وتشغيله. قم أيضًا بتشغيل خادم الويب/JSON إذا لم تكن قد قمت بذلك بعد. الغرض من عميل Android هو استرداد المعلومات التي يعيدها خادم الويب/JSON وتنسيقها. فيما يلي طرق العرض المختلفة لعميل Android:</p>
-<p>أولاً، يجب عليك الاتصال بخدمة الويب / JSON:</p>
+<p>استخدم الماوس لسحب ملف [<bdi dir="ltr" class="odt-ltr-term">pam-client.apk</bdi>] الموجود أعلاه إلى محاكي الجهاز اللوحي [<bdi dir="ltr" class="odt-ltr-term">GenyMotion</bdi>]. سيتم بعد ذلك حفظه وتشغيله. قم أيضًا بتشغيل خادم الويب/<bdi dir="ltr" class="odt-ltr-term">JSON</bdi> إذا لم تكن قد قمت بذلك بعد. الغرض من عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> هو استرداد المعلومات التي يعيدها خادم الويب/<bdi dir="ltr" class="odt-ltr-term">JSON</bdi> وتنسيقها. فيما يلي طرق العرض المختلفة لعميل <bdi dir="ltr" class="odt-ltr-term">Android:</bdi></p>
+<p>أولاً، يجب عليك الاتصال بخدمة الويب / <bdi dir="ltr" class="odt-ltr-term">JSON:</bdi></p>
 <p><img src="images/10000000000004FD0000015BE18A84BE.png" width="638" height="173" style="width:16.88cm;height:4.588cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000004FD0000015BE18A84BE.png" /></p>
 <ul>
-  <li>في [1]، أدخل عنوان URL لخدمة الويب/JSON. مع المحاكي، أدخل أحد عناوين IP للكمبيوتر الشخصي (ولكن ليس 127.0.0.1). مع جهاز لوحي، أدخل عنوان Wi-Fi لجهاز خادم الويب/JSON وقم بتعطيل جدار الحماية الخاص بالخادم إن كان موجودًا، حيث قد يحجب المكالمات الواردة؛
+  <li>في [1]، أدخل عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لخدمة الويب/<bdi dir="ltr" class="odt-ltr-term">JSON.</bdi> مع المحاكي، أدخل أحد عناوين <bdi dir="ltr" class="odt-ltr-term">IP</bdi> للكمبيوتر الشخصي (ولكن ليس 127.0.0.1). مع جهاز لوحي، أدخل عنوان <bdi dir="ltr" class="odt-ltr-term">Wi-Fi</bdi> لجهاز خادم الويب/<bdi dir="ltr" class="odt-ltr-term">JSON</bdi> وقم بتعطيل جدار الحماية الخاص بالخادم إن كان موجودًا، حيث قد يحجب المكالمات الواردة؛
   </li>
   <li>في [2]، قم بتسجيل الدخول؛
   </li>
@@ -1187,7 +1189,7 @@
 
 <p><a id="refheading61962428607977"></a></p>
 <h2 id="45">4.5. <span style="color: #4f81bd">المهام المطلوب إنجازها</span></h2>
-<p>يتم توفير هيكل عميل Android الذي تم عرضه سابقًا لك. وقد تم إنشاؤه من مشروع [client-android-skel] الموصوف في القسم<a href="#refheading1083471369936500"><u><span style="color: #0563c1"> 2</span></u></a>.</p>
+<p>يتم توفير هيكل عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> الذي تم عرضه سابقًا لك. وقد تم إنشاؤه من مشروع [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>] الموصوف في القسم<a href="#refheading1083471369936500"><u><span style="color: #0563c1"> 2</span></u></a>.</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C60000009F32DA1ED2.png" width="139" height="111" style="display:inline-block; margin:4px;width:3.671cm;height:2.947cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C60000009F32DA1ED2.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p>المشروع جاهز للتشغيل ويحتوي بالفعل على طرق العرض اللازمة. ما عليك سوى إضافة التعليمات البرمجية حتى يقوم التطبيق بوظيفته المطلوبة. الإجراء هو كما يلي:</p>
