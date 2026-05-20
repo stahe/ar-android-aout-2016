@@ -1157,11 +1157,11 @@
 </code></pre></div>
 <p>هذه سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> تصف جهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> الذي يتصل:</p>
 <ul>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">id</bdi></b>: معرف جهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
+  <li><b>id</b>: معرف جهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
   </li>
   <li><b><bdi dir="ltr" class="odt-ltr-term">desc</bdi></b>: وصف لما يمكن أن يفعله <bdi dir="ltr" class="odt-ltr-term">Arduino.</bdi> هنا، قمنا ببساطة بتحديد طراز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">mac</bdi></b>: عنوان <bdi dir="ltr" class="odt-ltr-term">MAC</bdi> لجهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
+  <li><b>mac</b>: عنوان <bdi dir="ltr" class="odt-ltr-term">MAC</bdi> لجهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
   </li>
   <li><b>المنفذ</b>: رقم المنفذ الذي سينتظر عليه جهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> الأوامر الواردة من طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>].
   </li>
@@ -1177,17 +1177,17 @@
 </code></pre></div>
 <p>هذه سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> تحتوي على العناصر التالية:</p>
 <ul>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">id</bdi></b>: معرف للأمر. يمكن أن يكون أي شيء؛
+  <li><b>id</b>: معرف للأمر. يمكن أن يكون أي شيء؛
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">ac</bdi></b>: إجراء. هناك ثلاثة إجراءات:
+  <li><b>ac</b>: إجراء. هناك ثلاثة إجراءات:
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">pw</bdi> </b>(<b>كتابة الدبوس</b>) لكتابة قيمة على دبوس،
+  <li><b>pw </b>(<b>كتابة الدبوس</b>) لكتابة قيمة على دبوس،
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">pr</bdi> </b>(<b>قراءة الدبوس</b>) لقراءة القيمة من دبوس،
+  <li><b>pr </b>(<b>قراءة الدبوس</b>) لقراءة القيمة من دبوس،
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">cl</bdi> </b>(<b>الوميض</b>) لجعل مصباح <bdi dir="ltr" class="odt-ltr-term">LED</bdi> يومض؛
+  <li><b>cl </b>(<b>الوميض</b>) لجعل مصباح <bdi dir="ltr" class="odt-ltr-term">LED</bdi> يومض؛
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">pa</bdi></b>: معلمات الإجراء. تعتمد هذه على الإجراء.
+  <li><b>pa</b>: معلمات الإجراء. تعتمد هذه على الإجراء.
   </li>
 </ul>
 
@@ -1200,11 +1200,11 @@
 </code></pre></div>
 <p>حيث </p>
 <ul>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">id</bdi></b>: معرف الأمر الذي يتم الرد عليه؛
+  <li><b>id</b>: معرف الأمر الذي يتم الرد عليه؛
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">er</bdi> (خطأ)</b>: رمز خطأ في حالة حدوث خطأ، وإلا فإنه يساوي 0؛
+  <li><b>er (خطأ)</b>: رمز خطأ في حالة حدوث خطأ، وإلا فإنه يساوي 0؛
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">et</bdi> (الحالة)</b>: قاموس يظل فارغًا دائمًا باستثناء الأمر القراءة <b><bdi dir="ltr" class="odt-ltr-term">pr</bdi></b>. عندئذٍ يحتوي القاموس على قيمة رقم الدبوس <b><bdi dir="ltr" class="odt-ltr-term">x</bdi> </b>الذي تم طلبه.
+  <li><b>et (الحالة)</b>: قاموس يظل فارغًا دائمًا باستثناء الأمر القراءة <b>pr</b>. عندئذٍ يحتوي القاموس على قيمة رقم الدبوس <b>x </b>الذي تم طلبه.
   </li>
 </ul>
 
@@ -1218,7 +1218,7 @@
 </code></pre></div>
 </div></td></tr></table>
 
-<p>معلمات الأمر <strong><bdi dir="ltr" class="odt-ltr-term">cl</bdi></strong> هي: مدة <strong>(<bdi dir="ltr" class="odt-ltr-term">dur</bdi>)</strong> الوميض بالمللي ثانية، وعدد (<strong><bdi dir="ltr" class="odt-ltr-term">nb</bdi>)</strong> الومضات، ورقم <strong>دبوس</strong> <bdi dir="ltr" class="odt-ltr-term">LED.</bdi></p>
+<p>معلمات الأمر <strong>cl</strong> هي: مدة <strong>(dur)</strong> الوميض بالمللي ثانية، وعدد (<strong>nb)</strong> الومضات، ورقم <strong>دبوس</strong> <bdi dir="ltr" class="odt-ltr-term">LED.</bdi></p>
 <p>اكتب القيمة الثنائية 1 في الدبوس 7:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>الأمر</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>{&quot;id&quot;:&quot;2&quot;,&quot;ac&quot;:&quot;pw&quot;,&quot;pa&quot;:{&quot;pin&quot;:&quot;7&quot;,&quot;mod&quot;:&quot;b&quot;,&quot;val&quot;:&quot;1&quot;}}
@@ -1228,7 +1228,7 @@
 </code></pre></div>
 </div></td></tr></table>
 
-<p>معلمات <strong><bdi dir="ltr" class="odt-ltr-term">pa</bdi></strong> للأمر <strong><bdi dir="ltr" class="odt-ltr-term">pw</bdi></strong> هي: وضع الكتابة <strong><bdi dir="ltr" class="odt-ltr-term">mod</bdi></strong> (<strong><em><bdi dir="ltr" class="odt-ltr-term">b</bdi></em></strong> للثنائي أو <strong><em><bdi dir="ltr" class="odt-ltr-term">a</bdi></em></strong> للتناظري)، والقيمة <strong><bdi dir="ltr" class="odt-ltr-term">val</bdi></strong> المراد كتابتها، ورقم <strong>الدبوس</strong>. بالنسبة للكتابة الثنائية، تكون <strong><bdi dir="ltr" class="odt-ltr-term">val</bdi></strong> هي 0 أو 1. بالنسبة للكتابة التناظرية، تكون <strong><bdi dir="ltr" class="odt-ltr-term">val</bdi></strong> في النطاق [0,255].</p>
+<p>معلمات <strong>pa</strong> للأمر <strong>pw</strong> هي: وضع الكتابة <strong>mod</strong> (<strong><em>b</em></strong> للثنائي أو <strong><em>a</em></strong> للتناظري)، والقيمة <strong>val</strong> المراد كتابتها، ورقم <strong>الدبوس</strong>. بالنسبة للكتابة الثنائية، تكون <strong>val</strong> هي 0 أو 1. بالنسبة للكتابة التناظرية، تكون <strong>val</strong> في النطاق [0,255].</p>
 <p>اكتب القيمة التناظرية 120 في الدبوس 2:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>الأمر</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>{&quot;id&quot;:&quot;3&quot;,&quot;ac&quot;:&quot;pw&quot;,&quot;pa&quot;:{&quot;pin&quot;:&quot;2&quot;,&quot;mod&quot;:&quot;a&quot;,&quot;val&quot;:&quot;120&quot;}}
@@ -1247,8 +1247,8 @@
 </code></pre></div>
 </div></td></tr></table>
 
-<p>معلمات <strong><bdi dir="ltr" class="odt-ltr-term">pa</bdi></strong> للأمر <strong><bdi dir="ltr" class="odt-ltr-term">pr</bdi></strong> هي: <strong>وضع</strong> القراءة (ثنائي أو تناظري)، ورقم <strong>الدبوس</strong>. إذا لم يكن هناك خطأ، يضع <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> قيمة الدبوس المطلوب في مفتاح &quot;<strong><bdi dir="ltr" class="odt-ltr-term">et</bdi>&quot;</strong> في استجابته. هنا، يشير <strong><bdi dir="ltr" class="odt-ltr-term">pin0</bdi></strong> إلى أنه تم طلب قيمة الدبوس 0، <strong>و1023</strong> هي تلك القيمة. في وضع القراءة، ستكون القيمة التناظرية في النطاق [0، 1024].</p>
-<p>لقد قدمنا الأوامر الثلاثة <strong><bdi dir="ltr" class="odt-ltr-term">cl</bdi></strong> و <strong><bdi dir="ltr" class="odt-ltr-term">pw</bdi></strong> و <strong><bdi dir="ltr" class="odt-ltr-term">pr</bdi></strong>. قد يتساءل المرء عن سبب عدم استخدامنا لحقول أكثر وضوحًا في سلاسل <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> — مثل <strong><bdi dir="ltr" class="odt-ltr-term">action</bdi></strong> بدلاً من <strong><bdi dir="ltr" class="odt-ltr-term">ac</bdi></strong>، <strong>و <bdi dir="ltr" class="odt-ltr-term">pinwrite</bdi></strong> بدلاً من <strong><bdi dir="ltr" class="odt-ltr-term">pw</bdi></strong>، و <strong><bdi dir="ltr" class="odt-ltr-term">parameters</bdi></strong> بدلاً من <strong><bdi dir="ltr" class="odt-ltr-term">pa</bdi></strong>. تتمتع <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> بذاكرة محدودة للغاية. ومع ذلك، فإن سلاسل <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> المتبادلة مع <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> تساهم في استخدام الذاكرة. لذلك اخترنا تقصيرها قدر الإمكان.</p>
+<p>معلمات <strong>pa</strong> للأمر <strong>pr</strong> هي: <strong>وضع</strong> القراءة (ثنائي أو تناظري)، ورقم <strong>الدبوس</strong>. إذا لم يكن هناك خطأ، يضع <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> قيمة الدبوس المطلوب في مفتاح &quot;<strong>et&quot;</strong> في استجابته. هنا، يشير <strong><bdi dir="ltr" class="odt-ltr-term">pin0</bdi></strong> إلى أنه تم طلب قيمة الدبوس 0، <strong>و1023</strong> هي تلك القيمة. في وضع القراءة، ستكون القيمة التناظرية في النطاق [0، 1024].</p>
+<p>لقد قدمنا الأوامر الثلاثة <strong>cl</strong> و <strong>pw</strong> و <strong>pr</strong>. قد يتساءل المرء عن سبب عدم استخدامنا لحقول أكثر وضوحًا في سلاسل <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> — مثل <strong><bdi dir="ltr" class="odt-ltr-term">action</bdi></strong> بدلاً من <strong>ac</strong>، <strong>و <bdi dir="ltr" class="odt-ltr-term">pinwrite</bdi></strong> بدلاً من <strong>pw</strong>، و <strong><bdi dir="ltr" class="odt-ltr-term">parameters</bdi></strong> بدلاً من <strong>pa</strong>. تتمتع <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> بذاكرة محدودة للغاية. ومع ذلك، فإن سلاسل <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> المتبادلة مع <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> تساهم في استخدام الذاكرة. لذلك اخترنا تقصيرها قدر الإمكان.</p>
 <p>الآن دعونا نلقي نظرة على بعض حالات الخطأ:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>الأمر</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>xx
@@ -1267,7 +1267,7 @@
 </code></pre></div>
 </div></td></tr></table>
 
-<p>تم إرسال أمر <strong><bdi dir="ltr" class="odt-ltr-term">pr</bdi></strong> بدون معلمة <strong><bdi dir="ltr" class="odt-ltr-term">pin</bdi></strong>. أرجع <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> رمز الخطأ 302.</p>
+<p>تم إرسال أمر <strong>pr</strong> بدون معلمة <strong>pin</strong>. أرجع <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> رمز الخطأ 302.</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>الأمر</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>{&quot;id&quot;:&quot;4&quot;,&quot;ac&quot;:&quot;pinread&quot;,&quot;pa&quot;:{&quot;pin&quot;:&quot;0&quot;,&quot;mod&quot;:&quot;a&quot;}}
 </code></pre></div>
@@ -1276,7 +1276,7 @@
 </code></pre></div>
 </div></td></tr></table>
 
-<p>أرسلنا أمر <strong>قراءة دبوس</strong> غير معروف (<bdi dir="ltr" class="odt-ltr-term">pr</bdi>). أرجع <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> رمز الخطأ 104.</p>
+<p>أرسلنا أمر <strong>قراءة دبوس</strong> غير معروف (pr). أرجع <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> رمز الخطأ 104.</p>
 <p>لن نواصل الأمثلة. القاعدة بسيطة. <strong>يجب ألا يتعطل</strong> <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>، بغض النظر عن الأمر المرسل إليه. قبل تنفيذ أمر <bdi dir="ltr" class="odt-ltr-term">JSON</bdi>، يتأكد من صحة الأمر. بمجرد حدوث خطأ، يتوقف <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> عن تنفيذ الأمر ويعيد سلسلة خطأ <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> إلى عميله. مرة أخرى، نظرًا لأن مساحة الذاكرة محدودة، فإننا نعيد رمز خطأ بدلاً من رسالة كاملة.</p>
 <p>يتم توفير كود البرنامج الذي يعمل على <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> في الأمثلة الواردة في هذا المستند:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C1000000777765F5FA.png" width="135" height="83" style="display:inline-block; margin:4px;width:3.57cm;height:2.201cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C1000000777765F5FA.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
@@ -1294,7 +1294,7 @@
   </li>
 </ul>
 
-<p><strong>ملاحظة</strong>: تم إنشاء هذا البرنامج واختباره في الأصل باستخدام <bdi dir="ltr" class="odt-ltr-term">Arduino IDE</bdi> <strong>1.5.<bdi dir="ltr" class="odt-ltr-term">x</bdi></strong>. ومنذ ذلك الحين، تم إصدار إصدارات أخرى من بيئة التطوير هذه. <strong>ولم يعمل البرنامج مع <bdi dir="ltr" class="odt-ltr-term">Arduino IDE 1.6</bdi>.<bdi dir="ltr" class="odt-ltr-term">x</bdi></strong>. ويبدو أن هناك مشكلة في التوافق مع الإصدارات السابقة بين الإصدارين 1.6 و1.5.</p>
+<p><strong>ملاحظة</strong>: تم إنشاء هذا البرنامج واختباره في الأصل باستخدام <bdi dir="ltr" class="odt-ltr-term">Arduino IDE</bdi> <strong>1.5.x</strong>. ومنذ ذلك الحين، تم إصدار إصدارات أخرى من بيئة التطوير هذه. <strong>ولم يعمل البرنامج مع <bdi dir="ltr" class="odt-ltr-term">Arduino IDE 1.6</bdi>.x</strong>. ويبدو أن هناك مشكلة في التوافق مع الإصدارات السابقة بين الإصدارين 1.6 و1.5.</p>
 <ul>
   <li>في [2-4]، حدد نوع <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> المستخدم؛
   </li>
@@ -1362,7 +1362,7 @@
 <ul>
   <li>السطر 8: عنوان <bdi dir="ltr" class="odt-ltr-term">MAC</bdi> الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Arduino.</bdi> لا يهم ذلك كثيرًا هنا لأن <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> سيكون على شبكة خاصة مع جهاز كمبيوتر شخصي ووحدة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> واحدة أو أكثر. يجب أن يكون عنوان <bdi dir="ltr" class="odt-ltr-term">MAC</bdi> فريدًا على هذه الشبكة الخاصة. عادةً ما تحتوي لوحة شبكة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> على ملصق يشير إلى عنوان <bdi dir="ltr" class="odt-ltr-term">MAC</bdi> للوحة. إذا كان هذا الملصق مفقودًا ولا تعرف عنوان <bdi dir="ltr" class="odt-ltr-term">MAC</bdi> للوحة، يمكنك إدخال ما تريد في السطر 8 طالما تم اتباع قاعدة تفرد عنوان <bdi dir="ltr" class="odt-ltr-term">MAC</bdi> على الشبكة الخاصة؛
   </li>
-  <li>السطر 11: عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> للبطاقة. مرة أخرى، يمكنك إدخال أي قيمة بالشكل [192.168.2.<bdi dir="ltr" class="odt-ltr-term">x</bdi>] وتغيير <bdi dir="ltr" class="odt-ltr-term">x</bdi> لتناسب أجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> المختلفة على الشبكة الخاصة؛
+  <li>السطر 11: عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> للبطاقة. مرة أخرى، يمكنك إدخال أي قيمة بالشكل [192.168.2.x] وتغيير x لتناسب أجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> المختلفة على الشبكة الخاصة؛
   </li>
   <li>السطر 13: معرف <bdi dir="ltr" class="odt-ltr-term">Arduino.</bdi> يجب أن يكون فريدًا بين معرفات أجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> الموجودة على نفس الشبكة الخاصة؛
   </li>
@@ -1425,15 +1425,15 @@
   </li>
   <li>السطر 15: تم تحميل وتنفيذ برنامج <bdi dir="ltr" class="odt-ltr-term">Spring MVC</bdi> [<bdi dir="ltr" class="odt-ltr-term">dispatcherServlet</bdi>]؛
   </li>
-  <li>السطر 18: تم الكشف عن عنوان <bdi dir="ltr" class="odt-ltr-term">URL REST</bdi> [<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/blink/</bdi>{<bdi dir="ltr" class="odt-ltr-term">commandId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">ArduinoId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">pin</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">duration</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">count</bdi>}</b>]؛
+  <li>السطر 18: تم الكشف عن عنوان <bdi dir="ltr" class="odt-ltr-term">URL REST</bdi> [<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/blink/</bdi>{<bdi dir="ltr" class="odt-ltr-term">commandId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">ArduinoId</bdi>}/{pin}/{<bdi dir="ltr" class="odt-ltr-term">duration</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">count</bdi>}</b>]؛
   </li>
   <li>السطر 19: يتم الكشف عن عنوان <bdi dir="ltr" class="odt-ltr-term">URL REST</bdi> [<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/commands/</bdi>{<bdi dir="ltr" class="odt-ltr-term">idArduino</bdi>}</b>]؛
   </li>
   <li>السطر 20: يتم الكشف عن عنوان <bdi dir="ltr" class="odt-ltr-term">URL REST</bdi> [<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/</bdi></b>]؛
   </li>
-  <li>السطر 21: تم الكشف عن عنوان <bdi dir="ltr" class="odt-ltr-term">URL REST</bdi> [<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/pinRead/</bdi>{<bdi dir="ltr" class="odt-ltr-term">commandId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">ArduinoId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">pin</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">mode</bdi>}</b>]؛
+  <li>السطر 21: تم الكشف عن عنوان <bdi dir="ltr" class="odt-ltr-term">URL REST</bdi> [<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/pinRead/</bdi>{<bdi dir="ltr" class="odt-ltr-term">commandId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">ArduinoId</bdi>}/{pin}/{<bdi dir="ltr" class="odt-ltr-term">mode</bdi>}</b>]؛
   </li>
-  <li>السطر 22: تم الكشف عن عنوان <bdi dir="ltr" class="odt-ltr-term">URL REST</bdi> [<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/pinWrite/</bdi>{<bdi dir="ltr" class="odt-ltr-term">commandId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">ArduinoId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">pin</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">mode</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">value</bdi>}</b>]؛
+  <li>السطر 22: تم الكشف عن عنوان <bdi dir="ltr" class="odt-ltr-term">URL REST</bdi> [<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/pinWrite/</bdi>{<bdi dir="ltr" class="odt-ltr-term">commandId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">ArduinoId</bdi>}/{pin}/{<bdi dir="ltr" class="odt-ltr-term">mode</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">value</bdi>}</b>]؛
   </li>
   <li>السطر 26: تم تشغيل خادم تسجيل <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
   </li>
@@ -1545,7 +1545,7 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 7: [<bdi dir="ltr" class="odt-ltr-term">id</bdi>] هو معرف <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
+  <li>السطر 7: [id] هو معرف <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
   </li>
   <li>السطر 8: وصفه؛
   </li>
@@ -1559,11 +1559,11 @@
 
 <p>عناوين <bdi dir="ltr" class="odt-ltr-term">URL:</bdi></p>
 <ul>
-  <li>[<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/blink/</bdi>{<bdi dir="ltr" class="odt-ltr-term">commandId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">ArduinoId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">pin</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">duration</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">count</bdi>}</b>];
+  <li>[<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/blink/</bdi>{<bdi dir="ltr" class="odt-ltr-term">commandId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">ArduinoId</bdi>}/{pin}/{<bdi dir="ltr" class="odt-ltr-term">duration</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">count</bdi>}</b>];
   </li>
-  <li>[<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/pinRead/</bdi>{<bdi dir="ltr" class="odt-ltr-term">commandId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">ArduinoId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">pin</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">mode</bdi>}</b>] ;
+  <li>[<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/pinRead/</bdi>{<bdi dir="ltr" class="odt-ltr-term">commandId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">ArduinoId</bdi>}/{pin}/{<bdi dir="ltr" class="odt-ltr-term">mode</bdi>}</b>] ;
   </li>
-  <li>[<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/pinWrite/</bdi>{<bdi dir="ltr" class="odt-ltr-term">commandId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">ArduinoId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">pin</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">mode</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">value</bdi>}</b>] ;
+  <li>[<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/pinWrite/</bdi>{<bdi dir="ltr" class="odt-ltr-term">commandId</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">ArduinoId</bdi>}/{pin}/{<bdi dir="ltr" class="odt-ltr-term">mode</bdi>}/{<bdi dir="ltr" class="odt-ltr-term">value</bdi>}</b>] ;
   </li>
   <li>[<b>/<bdi dir="ltr" class="odt-ltr-term">arduinos/commands/</bdi>{<bdi dir="ltr" class="odt-ltr-term">ArduinoID</bdi>}</b>];
   </li>
@@ -1586,7 +1586,7 @@
 <ul>
   <li>[<bdi dir="ltr" class="odt-ltr-term">json</bdi>]: سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> المرسلة من <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> والتي تعذر فك تشفيرها (في حالة حدوث خطأ)، وإلا<i> تكون </i><bdi dir="ltr" class="odt-ltr-term">null</bdi>؛
   </li>
-  <li>[<bdi dir="ltr" class="odt-ltr-term">id</bdi>]: معرف الأمر الذي يستجيب له <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
+  <li>[id]: معرف الأمر الذي يستجيب له <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
   </li>
   <li>[<bdi dir="ltr" class="odt-ltr-term">error</bdi>]: رمز خطأ، 0 إذا كان كل شيء على ما يرام، وإلا يكون شيئًا آخر؛
   </li>
@@ -1663,13 +1663,13 @@
   </li>
   <li>[<bdi dir="ltr" class="odt-ltr-term">body</bdi>]: قائمة أجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> في حالة عدم حدوث خطأ. يتم بعد ذلك وصف كل جهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> بواسطة كائن يحتوي على الحقول التالية:
     <ul>
-      <li>[<bdi dir="ltr" class="odt-ltr-term">id</bdi>]: معرف <bdi dir="ltr" class="odt-ltr-term">Arduino.</bdi> لا يمكن أن يكون هناك جهازان <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> لهما نفس المعرف؛
+      <li>[id]: معرف <bdi dir="ltr" class="odt-ltr-term">Arduino.</bdi> لا يمكن أن يكون هناك جهازان <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> لهما نفس المعرف؛
       </li>
       <li>[<bdi dir="ltr" class="odt-ltr-term">description</bdi>]: وصف موجز لوظائف <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
       </li>
-      <li>[<bdi dir="ltr" class="odt-ltr-term">mac</bdi>]: عنوان <bdi dir="ltr" class="odt-ltr-term">MAC</bdi> لجهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
+      <li>[mac]: عنوان <bdi dir="ltr" class="odt-ltr-term">MAC</bdi> لجهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
       </li>
-      <li>[<bdi dir="ltr" class="odt-ltr-term">ip</bdi>]: عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> لجهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
+      <li>[ip]: عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> لجهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
       </li>
       <li>[<bdi dir="ltr" class="odt-ltr-term">port</bdi>]: المنفذ الذي يستقبل الأوامر من خلاله؛
       </li>
@@ -1688,7 +1688,7 @@
   </li>
   <li>[<bdi dir="ltr" class="odt-ltr-term">body</bdi>]: استجابة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> في حالة عدم وجود خطأ:
     <ul>
-      <li>[<bdi dir="ltr" class="odt-ltr-term">id</bdi>]: معرف الأمر. هذا المعرف هو الرقم<b> 1 </b>في [<b>/<bdi dir="ltr" class="odt-ltr-term">blink/1</bdi></b>]. يضم <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> معرف الأمر هذا في استجابته؛
+      <li>[id]: معرف الأمر. هذا المعرف هو الرقم<b> 1 </b>في [<b>/<bdi dir="ltr" class="odt-ltr-term">blink/1</bdi></b>]. يضم <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> معرف الأمر هذا في استجابته؛
       </li>
       <li>[<bdi dir="ltr" class="odt-ltr-term">error</bdi>]: رقم الخطأ. تشير أي قيمة غير 0 إلى وجود خطأ؛
       </li>
@@ -1741,7 +1741,7 @@
 <p>ثم نتلقى الرد التالي:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000026D0000009A80BAE895.png" width="435" height="108" style="display:inline-block; margin:4px;width:11.501cm;height:2.852cm;" class="odt-zoomable" data-zoom-src="images/100000000000026D0000009A80BAE895.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p>يمكننا أن نلاحظ أن رمز الخطأ في استجابة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> هو [104]، مما يشير إلى أن الأمر [<bdi dir="ltr" class="odt-ltr-term">xx</bdi>] لم يتم التعرف عليه.</p>
+<p>يمكننا أن نلاحظ أن رمز الخطأ في استجابة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> هو [104]، مما يشير إلى أن الأمر [xx] لم يتم التعرف عليه.</p>
 <p><a id="refheading100309791917881"></a></p>
 <h2 id="55-android">5.5. <span style="color: #4f81bd">اختبار عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi></span></h2>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000054A000000FA39C8C3BF.png" width="677" height="125" style="display:inline-block; margin:4px;width:17.912cm;height:3.307cm;" class="odt-zoomable" data-zoom-src="images/100000000000054A000000FA39C8C3BF.png" /></td></tr></table>
@@ -2577,7 +2577,7 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 7: [<bdi dir="ltr" class="odt-ltr-term">id</bdi>] هو معرف <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
+  <li>السطر 7: [id] هو معرف <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
   </li>
   <li>السطر 8: وصفه؛
   </li>
@@ -2863,7 +2863,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">string</span> <span style="color:#7f007f">name</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;txt_arduino_description&quot;</span><span style="color:#008080">&gt;</span><span style="color:#000000">Description : </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">string</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
-<p>تستخدم طريقة العرض أيضًا لونًا (السطران 33 و53) محددًا في [<bdi dir="ltr" class="odt-ltr-term">res</bdi> / <bdi dir="ltr" class="odt-ltr-term">values</bdi> / <bdi dir="ltr" class="odt-ltr-term">colors.xml</bdi>]:</p>
+<p>تستخدم طريقة العرض أيضًا لونًا (السطران 33 و53) محددًا في [res / <bdi dir="ltr" class="odt-ltr-term">values</bdi> / <bdi dir="ltr" class="odt-ltr-term">colors.xml</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;1.0&quot;</span> <span style="color:#7f007f">encoding</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;utf-8&quot;</span><span style="color:#008080">?&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">resources</span><span style="color:#008080">&gt;</span></span></span>
@@ -2962,7 +2962,7 @@
   </li>
   <li><span style="color: #000000">السطر 6: يتم إنشاء الصف الحالي من عرض [<bdi dir="ltr" class="odt-ltr-term">listarduinos_item.xml</bdi>]؛</span>
   </li>
-  <li><span style="color: #000000">السطران 8-9: يتم استرداد الإشارات إلى [<bdi dir="ltr" class="odt-ltr-term">TextView</bdi>]<bdi dir="ltr" class="odt-ltr-term">s</bdi>؛</span>
+  <li><span style="color: #000000">السطران 8-9: يتم استرداد الإشارات إلى [<bdi dir="ltr" class="odt-ltr-term">TextView</bdi>]s؛</span>
   </li>
   <li><span style="color: #000000">السطران 11-12: يتم تعيين قيمتي [<bdi dir="ltr" class="odt-ltr-term">TextView</bdi>]؛</span>
   </li>
@@ -3613,7 +3613,7 @@
 <ul>
   <li>الأسطر 11–15: إذا تم تحديد مربع اختيار في علامة التبويب <bdi dir="ltr" class="odt-ltr-term">X</bdi>، يتم تعيين الخاصية [<bdi dir="ltr" class="odt-ltr-term">checked</bdi>] لـ <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> في الصف 2 إلى <i><bdi dir="ltr" class="odt-ltr-term">true</bdi> </i>(السطر 14)؛
   </li>
-  <li>عند الانتقال إلى علامة التبويب <bdi dir="ltr" class="odt-ltr-term">Y</bdi>، يتم عرض [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>] لأجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> الموجودة في تلك العلامة. في السطر 9، نلاحظ أنه إذا كانت الخاصية [<bdi dir="ltr" class="odt-ltr-term">checked</bdi>] لجهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> في الصف 2 مضبوطة على <i>&quot;<bdi dir="ltr" class="odt-ltr-term">true</bdi></i>&quot;، فسيتم تحديد مربع الاختيار [<bdi dir="ltr" class="odt-ltr-term">ck</bdi>] في الصف 5؛
+  <li>عند الانتقال إلى علامة التبويب <bdi dir="ltr" class="odt-ltr-term">Y</bdi>، يتم عرض [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>] لأجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> الموجودة في تلك العلامة. في السطر 9، نلاحظ أنه إذا كانت الخاصية [<bdi dir="ltr" class="odt-ltr-term">checked</bdi>] لجهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> في الصف 2 مضبوطة على <i>&quot;<bdi dir="ltr" class="odt-ltr-term">true</bdi></i>&quot;، فسيتم تحديد مربع الاختيار [ck] في الصف 5؛
   </li>
 </ul>
 <p><a id="refheading80471807515049"></a></p>

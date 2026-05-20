@@ -1688,7 +1688,7 @@
   </li>
   <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">fragments</bdi>] يجمع أجزاء التطبيق أو طرق العرض؛</span>
   </li>
-  <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] يجمع عناصر الاتصال بخادم الويب / <bdi dir="ltr" class="odt-ltr-term">JSON</bdi>؛</span>
+  <li><span style="color: #000000">[dao] يجمع عناصر الاتصال بخادم الويب / <bdi dir="ltr" class="odt-ltr-term">JSON</bdi>؛</span>
   </li>
 </ul>
 <p><a id="refheading1313061394789306"></a></p>
@@ -1698,7 +1698,7 @@
 <p><img src="images/10000000000003B5000000B1DC923D8D.png" width="680" height="127" style="width:17.999cm;height:3.357cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003B5000000B1DC923D8D.png" /></p>
 <p><a id="refheading1173561938318812"></a></p>
 <h3 id="251">2.5.1. <span style="color: #4f81bd">طريقة العرض المرتبطة بالنشاط</span></h3>
-<p>عرض [<bdi dir="ltr" class="odt-ltr-term">activity</bdi>_main.<bdi dir="ltr" class="odt-ltr-term">xml</bdi>] المرتبط بالنشاط هو كما يلي:</p>
+<p>عرض [<bdi dir="ltr" class="odt-ltr-term">activity</bdi>_main.xml] المرتبط بالنشاط هو كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;1.0&quot;</span> <span style="color:#7f007f">encoding</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;utf-8&quot;</span><span style="color:#008080">?&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">android.support.design.widget.CoordinatorLayout</span> <span style="color:#7f007f">xmlns:android</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://schemas.android.com/apk/res/android&quot;</span></span></span>
@@ -1744,7 +1744,7 @@
   </li>
 </ul>
 
-<p>يحتوي النشاط أيضًا على قائمة [<bdi dir="ltr" class="odt-ltr-term">res/menu/menu</bdi>_main.<bdi dir="ltr" class="odt-ltr-term">xml</bdi>] لعرضه:</p>
+<p>يحتوي النشاط أيضًا على قائمة [<bdi dir="ltr" class="odt-ltr-term">res/menu/menu</bdi>_main.xml] لعرضه:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">menu</span> <span style="color:#7f007f">xmlns:android</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://schemas.android.com/apk/res/android&quot;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#7f007f">xmlns:app</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://schemas.android.com/apk/res-auto&quot;</span></span></span>
@@ -2994,7 +2994,7 @@
   </li>
   <li><span style="color: #000000">السطر 16: تمتد الفئة إلى فئة [<bdi dir="ltr" class="odt-ltr-term">AbstractActivity</bdi>]؛</span>
   </li>
-  <li><span style="color: #000000">السطران 19–20: إشارة إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]. سيتم إنشاء مثيل لها بواسطة مكتبة <bdi dir="ltr" class="odt-ltr-term">AA</bdi> قبل تهيئة هذا الحقل. وهذا يعني أن حبة <bdi dir="ltr" class="odt-ltr-term">AA</bdi> [<bdi dir="ltr" class="odt-ltr-term">Dao</bdi>] يجب أن تكون موجودة. وهذا هو الحال دائمًا مع التطبيق الهيكلي الذي نقدمه. حتى في تطبيق بدون طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]، يمكنك ترك حزمة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] في مكانها. وهذا لا يسبب أي تعقيدات؛</span>
+  <li><span style="color: #000000">السطران 19–20: إشارة إلى طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]. سيتم إنشاء مثيل لها بواسطة مكتبة <bdi dir="ltr" class="odt-ltr-term">AA</bdi> قبل تهيئة هذا الحقل. وهذا يعني أن حبة <bdi dir="ltr" class="odt-ltr-term">AA</bdi> [<bdi dir="ltr" class="odt-ltr-term">Dao</bdi>] يجب أن تكون موجودة. وهذا هو الحال دائمًا مع التطبيق الهيكلي الذي نقدمه. حتى في تطبيق بدون طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]، يمكنك ترك حزمة [dao] في مكانها. وهذا لا يسبب أي تعقيدات؛</span>
   </li>
   <li><span style="color: #000000">السطر 22: الجلسة كمثيل من النوع [<bdi dir="ltr" class="odt-ltr-term">Session</bdi>]. توجد الجلسة في الفئة الأصلية [<bdi dir="ltr" class="odt-ltr-term">AbstractActivity</bdi>] ولكن كمثيل للواجهة [<bdi dir="ltr" class="odt-ltr-term">ISession</bdi>] (السطر 32)؛</span>
   </li>
@@ -5252,11 +5252,11 @@
 <h3 id="282-23">2.8.2. <span style="color: #4f81bd">مثال-23: عميل الطقس</span></h3>
 <p><span style="color: #000000">تقدم بعض مواقع الويب معلومات الطقس في شكل سلاسل <bdi dir="ltr" class="odt-ltr-term">JSON.</bdi> وإليك مثال على ذلك:</span></p>
 <p><img src="images/10000000000003A6000000B3C89FB4C0.png" width="670" height="128" style="width:17.729cm;height:3.397cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003A6000000B3C89FB4C0.png" /></p>
-<p><span style="color: #000000">عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> هو على الشكل: <bdi dir="ltr" class="odt-ltr-term">http://api.openweathermap.org/data/2.5/weather</bdi>?<bdi dir="ltr" class="odt-ltr-term">q</bdi>={</span><strong><bdi dir="ltr" class="odt-ltr-term">city</bdi></strong><span style="color: #000000">},{</span><strong><bdi dir="ltr" class="odt-ltr-term">country</bdi></strong><span style="color: #000000">}&amp;<bdi dir="ltr" class="odt-ltr-term">APPID</bdi>={</span><strong><bdi dir="ltr" class="odt-ltr-term">APPID</bdi></strong><span style="color: #000000">} حيث:</span></p>
+<p><span style="color: #000000">عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> هو على الشكل: <bdi dir="ltr" class="odt-ltr-term">http://api.openweathermap.org/data/2.5/weather</bdi>?q={</span><strong><bdi dir="ltr" class="odt-ltr-term">city</bdi></strong><span style="color: #000000">},{</span><strong><bdi dir="ltr" class="odt-ltr-term">country</bdi></strong><span style="color: #000000">}&amp;<bdi dir="ltr" class="odt-ltr-term">APPID</bdi>={</span><strong><bdi dir="ltr" class="odt-ltr-term">APPID</bdi></strong><span style="color: #000000">} حيث:</span></p>
 <ul>
   <li><b><bdi dir="ltr" class="odt-ltr-term">city</bdi></b><span style="color: #000000">: المدينة التي تريد معرفة الطقس فيها، وهي هنا أنجيه؛</span>
   </li>
-  <li><b><bdi dir="ltr" class="odt-ltr-term">country</bdi></b><span style="color: #000000">: البلد الذي تقع فيه المدينة، في هذه الحالة فرنسا (<bdi dir="ltr" class="odt-ltr-term">fr</bdi>)؛</span>
+  <li><b><bdi dir="ltr" class="odt-ltr-term">country</bdi></b><span style="color: #000000">: البلد الذي تقع فيه المدينة، في هذه الحالة فرنسا (fr)؛</span>
   </li>
   <li><b><bdi dir="ltr" class="odt-ltr-term">APPID</bdi></b>: مفتاح يتم الحصول عليه من خلال التسجيل في الموقع [<bdi dir="ltr" class="odt-ltr-term">https://home.openweathermap.org/users/sign_up</bdi>]؛
   </li>
@@ -5717,7 +5717,7 @@
 
 <p>تعرض طريقة العرض النص من السطر 10 فقط؛</p>
 <ul>
-  <li>السطر 15: القائمة [<bdi dir="ltr" class="odt-ltr-term">res</bdi> / <bdi dir="ltr" class="odt-ltr-term">menu</bdi> / <bdi dir="ltr" class="odt-ltr-term">menu_meteo.xml</bdi>] هي كما يلي:
+  <li>السطر 15: القائمة [res / <bdi dir="ltr" class="odt-ltr-term">menu</bdi> / <bdi dir="ltr" class="odt-ltr-term">menu_meteo.xml</bdi>] هي كما يلي:
   </li>
 </ul>
 
@@ -6407,7 +6407,7 @@
 <ul>
   <li>لاحظ أن الطرق الموجودة في الأسطر 6–22 موجودة بشكل افتراضي في واجهة <bdi dir="ltr" class="odt-ltr-term">IDao</bdi> لمشروع [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>]؛
   </li>
-  <li>السطر 25: تُرجع الطريقة [<bdi dir="ltr" class="odt-ltr-term">getAlea</bdi>] رقمًا عشوائيًا في النطاق [<bdi dir="ltr" class="odt-ltr-term">a</bdi>,<bdi dir="ltr" class="odt-ltr-term">b</bdi>]. يتم إرجاع هذا الرقم في استجابة [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Integer</bdi>&gt;]، حيث يوجد الرقم العشوائي في حقل [<bdi dir="ltr" class="odt-ltr-term">body</bdi>] من هذا النوع؛
+  <li>السطر 25: تُرجع الطريقة [<bdi dir="ltr" class="odt-ltr-term">getAlea</bdi>] رقمًا عشوائيًا في النطاق [a,b]. يتم إرجاع هذا الرقم في استجابة [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Integer</bdi>&gt;]، حيث يوجد الرقم العشوائي في حقل [<bdi dir="ltr" class="odt-ltr-term">body</bdi>] من هذا النوع؛
   </li>
 </ul>
 
@@ -6931,7 +6931,7 @@
   </li>
   <li><span style="color: #000000">السطر 13: ظهور رسالة الخطأ المتعلقة بعنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لخدمة الويب / <bdi dir="ltr" class="odt-ltr-term">JSON</bdi>؛</span>
   </li>
-  <li><span style="color: #000000">السطر 14: يعرض رسالة الخطأ المتعلقة بنطاق [<bdi dir="ltr" class="odt-ltr-term">a</bdi>,<bdi dir="ltr" class="odt-ltr-term">b</bdi>] لتوليد الأرقام العشوائية؛</span>
+  <li><span style="color: #000000">السطر 14: يعرض رسالة الخطأ المتعلقة بنطاق [a,b] لتوليد الأرقام العشوائية؛</span>
   </li>
   <li><span style="color: #000000">السطر 15: ظهور زر [تشغيل]؛</span>
   </li>
@@ -6988,7 +6988,7 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D30000010E621B2D6E.png" width="148" height="189" style="display:inline-block; margin:4px;width:3.911cm;height:5.004cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D30000010E621B2D6E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">ثم ننسخ عناصر مختلفة من مشروع [<bdi dir="ltr" class="odt-ltr-term">Example-22</bdi>] إلى مشروع [<bdi dir="ltr" class="odt-ltr-term">Example-22B</bdi>].</span></p>
-<p><span style="color: #000000">أولاً، ننسخ العناصر من المجلد [<bdi dir="ltr" class="odt-ltr-term">res</bdi>]:</span></p>
+<p><span style="color: #000000">أولاً، ننسخ العناصر من المجلد [res]:</span></p>
 <ul>
   <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">layout/fragment_main.xml</bdi>، <bdi dir="ltr" class="odt-ltr-term">layout/view1.xml</bdi>، <bdi dir="ltr" class="odt-ltr-term">menu/menu_fragment.xml</bdi>، <bdi dir="ltr" class="odt-ltr-term">menu/menu_main.xml</bdi>، مجلد [<bdi dir="ltr" class="odt-ltr-term">values</bdi>]؛</span>
   </li>
@@ -7341,7 +7341,7 @@
 </ul>
 <p><a id="refheading1314441394789306"></a></p>
 <h5 id="28423">2.8.4.2.3. <span style="color: #243f60">إدارة القائمة</span></h5>
-<p>يرتبط النشاط بالقائمة التالية [<bdi dir="ltr" class="odt-ltr-term">menu</bdi>_main.<bdi dir="ltr" class="odt-ltr-term">xml</bdi>]:</p>
+<p>يرتبط النشاط بالقائمة التالية [<bdi dir="ltr" class="odt-ltr-term">menu</bdi>_main.xml]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">menu</span> <span style="color:#7f007f">xmlns:android</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://schemas.android.com/apk/res/android&quot;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#7f007f">xmlns:app</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://schemas.android.com/apk/res-auto&quot;</span></span></span>
@@ -7431,7 +7431,7 @@
 <ul>
   <li>الأسطر 16-31: معالجة النقر على خيار قائمة [<b><span style="color: #ff0000"><bdi dir="ltr" class="odt-ltr-term">Fragmenti</bdi></span></b>]؛
   </li>
-  <li>الأسطر 37–50: عرض الجزء #<bdi dir="ltr" class="odt-ltr-term">i</bdi> (هذه أجزاء من نوع <bdi dir="ltr" class="odt-ltr-term">PlaceHolderFragment</bdi>) في علامة التبويب #1 (علامة التبويب الثانية)؛
+  <li>الأسطر 37–50: عرض الجزء #i (هذه أجزاء من نوع <bdi dir="ltr" class="odt-ltr-term">PlaceHolderFragment</bdi>) في علامة التبويب #1 (علامة التبويب الثانية)؛
   </li>
   <li>الأسطر 42-44: قررنا إزالة علامات التبويب الموجودة لإنشاء علامتي تبويب جديدتين. تم اتخاذ هذا القرار للتغلب على المشكلة التالية: عندما نعرض المقتطف ببساطة في علامة التبويب 1 الموجودة (دون حذفها)، يظهر عنوانه (الخط والحجم) بشكل غريب مختلفًا عن عنوان علامة التبويب 0؛
   </li>

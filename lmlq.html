@@ -756,7 +756,7 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003A5000001079D693529.png" width="467" height="132" style="display:inline-block; margin:4px;width:12.344cm;height:3.48cm;" class="odt-zoomable" data-zoom-src="images/10000000000003A5000001079D693529.png" /></td></tr></table>
 
 <p>إذا كان هناك جهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> واحد فقط، فيمكن توصيله بالكمبيوتر المضيف باستخدام كابل <bdi dir="ltr" class="odt-ltr-term">RJ-45</bdi> بسيط. أما إذا كان هناك أكثر من جهاز واحد، فسيتم توصيل الكمبيوتر المضيف وأجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> بنفس الشبكة عبر موزع صغير.</p>
-<p>سيتم وضع الكمبيوتر المضيف وأجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> على الشبكة الخاصة <strong>192.168.2.<bdi dir="ltr" class="odt-ltr-term">x</bdi></strong>.</p>
+<p>سيتم وضع الكمبيوتر المضيف وأجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> على الشبكة الخاصة <strong>192.168.2.x</strong>.</p>
 <ul>
   <li>يتم تعيين عناوين <bdi dir="ltr" class="odt-ltr-term">IP</bdi> لأجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> بواسطة شفرة المصدر. سنرى كيف؛
   </li>
@@ -938,7 +938,7 @@
   </li>
 </ul>
 
-<p>السطر 62: لا يقوم الخادم بأي شيء مع رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> التي يتلقاها من العميل. إنه ينتظر ببساطة السطر الفارغ: سطر يحتوي فقط على الحرف <strong>\</strong><bdi dir="ltr" class="odt-ltr-term">n</bdi>؛</p>
+<p>السطر 62: لا يقوم الخادم بأي شيء مع رؤوس <bdi dir="ltr" class="odt-ltr-term">HTTP</bdi> التي يتلقاها من العميل. إنه ينتظر ببساطة السطر الفارغ: سطر يحتوي فقط على الحرف <strong>\</strong>n؛</p>
 <ul>
   <li>الأسطر 64-67: يرسل الخادم إلى العميل أسطر النص القياسية لبروتوكول <bdi dir="ltr" class="odt-ltr-term">HTTP.</bdi> تنتهي هذه الأسطر بسطر فارغ (السطر 67)؛
   </li>
@@ -1139,7 +1139,7 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000028C000001021B488ACB.png" width="326" height="129" style="display:inline-block; margin:4px;width:8.625cm;height:3.413cm;" class="odt-zoomable" data-zoom-src="images/100000000000028C000001021B488ACB.png" /></td></tr></table>
 
 <p>سيحتاج الجهاز اللوحي إلى الاتصال بجهاز الكمبيوتر الخاص بك. عادةً ما يكون جهاز الكمبيوتر الخاص بك محميًا بجدار حماية يمنع أي جهاز خارجي من إقامة اتصال به. لذلك ستحتاج إلى تعطيل جدار الحماية. قم بذلك باستخدام خيار [لوحة التحكم\النظام والأمان\جدار حماية <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>]. في بعض الأحيان، قد تحتاج أيضًا إلى تعطيل جدار الحماية الذي تم إعداده بواسطة برنامج مكافحة الفيروسات الخاص بك. وهذا يعتمد على برنامج مكافحة الفيروسات الذي تستخدمه.</p>
-<p>الآن، على جهاز الكمبيوتر الخاص بك، تحقق من اتصال الشبكة بالجهاز اللوحي باستخدام الأمر [<bdi dir="ltr" class="odt-ltr-term">ping 192.168.1</bdi>.<bdi dir="ltr" class="odt-ltr-term">y</bdi>]، حيث [192.168.1.<bdi dir="ltr" class="odt-ltr-term">y</bdi>] هو عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> للجهاز اللوحي. يجب أن ترى شيئًا مثل هذا:</p>
+<p>الآن، على جهاز الكمبيوتر الخاص بك، تحقق من اتصال الشبكة بالجهاز اللوحي باستخدام الأمر [<bdi dir="ltr" class="odt-ltr-term">ping 192.168.1</bdi>.y]، حيث [192.168.1.y] هو عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> للجهاز اللوحي. يجب أن ترى شيئًا مثل هذا:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
@@ -1164,7 +1164,7 @@
 <a id="__codelineno-4-11" name="__codelineno-4-11"></a>Durée approximative des boucles en millisecondes :
 <a id="__codelineno-4-12" name="__codelineno-4-12"></a>Minimum = 28ms, Maximum = 244ms, Moyenne = 139ms
 </code></pre></div></td></tr></table></div>
-<p>تشير الأسطر 4-7 إلى أن عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> [192.168.1.<bdi dir="ltr" class="odt-ltr-term">y</bdi>] استجاب لأمر [<bdi dir="ltr" class="odt-ltr-term">ping</bdi>].</p>
+<p>تشير الأسطر 4-7 إلى أن عنوان <bdi dir="ltr" class="odt-ltr-term">IP</bdi> [192.168.1.y] استجاب لأمر [<bdi dir="ltr" class="odt-ltr-term">ping</bdi>].</p>
 <p><a id="refheading104224374082361"></a></p>
 <h2 id="68-jdk">6.8. <span style="color: #4f81bd">تثبيت <bdi dir="ltr" class="odt-ltr-term">JDK</bdi></span></h2>
 <p><a id="refheading1633352067866943"></a>يمكن العثور على أحدث إصدار من <bdi dir="ltr" class="odt-ltr-term">JDK</bdi> على الرابط [<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"><u><span style="color: #0563c1"><bdi dir="ltr" class="odt-ltr-term">http://www.oracle.com/technetwork/java/javase/downloads/index.html</bdi></span></u></a>] (يونيو 2016). سنشير إلى مجلد تثبيت <bdi dir="ltr" class="odt-ltr-term">JDK</bdi> باسم &lt;<bdi dir="ltr" class="odt-ltr-term">jdk-install</bdi>&gt; من الآن فصاعدًا.</p>

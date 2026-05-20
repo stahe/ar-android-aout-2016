@@ -1760,7 +1760,7 @@
 <ul>
   <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">idMedic</bdi>] : معرف الطبيب الذي تم طلب مواعيده؛</span>
   </li>
-  <li><span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<bdi dir="ltr" class="odt-ltr-term">day</bdi>]: يوم المواعيد بتنسيق &#x27;<bdi dir="ltr" class="odt-ltr-term">yyyy-mm-dd</bdi>&#x27;؛</span>
+  <li><span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">URL</bdi> [day]: يوم المواعيد بتنسيق &#x27;<bdi dir="ltr" class="odt-ltr-term">yyyy-mm-dd</bdi>&#x27;؛</span>
   </li>
   <li><span style="color: #000000">الاستجابة [اليوم]: كما هو مذكور أعلاه، ولكن في شكل تاريخ <bdi dir="ltr" class="odt-ltr-term">Java</bdi>؛</span>
   </li>
@@ -1815,13 +1815,13 @@
 <ul>
   <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">doctorId</bdi>]: معرف الطبيب الذي تريد مواعيده؛</span>
   </li>
-  <li><span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<bdi dir="ltr" class="odt-ltr-term">day</bdi>] : يوم المواعيد بالصيغة &#x27;<bdi dir="ltr" class="odt-ltr-term">yyyy-mm-dd</bdi>&#x27; ;</span>
+  <li><span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">URL</bdi> [day] : يوم المواعيد بالصيغة &#x27;<bdi dir="ltr" class="odt-ltr-term">yyyy-mm-dd</bdi>&#x27; ;</span>
   </li>
   <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">calendar</bdi>]: تقويم الطبيب؛</span>
   </li>
   <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">doctor</bdi>]: الطبيب المعني. تم تحديد هيكله مسبقًا؛</span>
   </li>
-  <li><span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">Response</bdi> [<bdi dir="ltr" class="odt-ltr-term">day</bdi>]: يوم التقويم بتنسيق تاريخ <bdi dir="ltr" class="odt-ltr-term">Java</bdi>؛</span>
+  <li><span style="color: #000000"><bdi dir="ltr" class="odt-ltr-term">Response</bdi> [day]: يوم التقويم بتنسيق تاريخ <bdi dir="ltr" class="odt-ltr-term">Java</bdi>؛</span>
   </li>
   <li>[<bdi dir="ltr" class="odt-ltr-term">doctorDaySlots</bdi>]: مصفوفة من العناصر من النوع [<bdi dir="ltr" class="odt-ltr-term">DoctorDaySlot</bdi>]؛
   </li>
@@ -2105,7 +2105,7 @@
   </li>
   <li>في [5]، المعلومات المرسلة عبر طلب <bdi dir="ltr" class="odt-ltr-term">POST.</bdi> هذه سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> تحتوي على:
     <ul>
-      <li>[<bdi dir="ltr" class="odt-ltr-term">day</bdi>]: يوم الموعد بتنسيق &#x27;<bdi dir="ltr" class="odt-ltr-term">yyyy-mm-dd</bdi>&#x27;،
+      <li>[day]: يوم الموعد بتنسيق &#x27;<bdi dir="ltr" class="odt-ltr-term">yyyy-mm-dd</bdi>&#x27;،
       </li>
       <li>[<bdi dir="ltr" class="odt-ltr-term">idClient</bdi>]: معرف العميل الذي يتم تحديد الموعد له،
       </li>
@@ -2142,7 +2142,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">استجابة الخادم من النوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Rv</bdi>&gt;] [<bdi dir="ltr" class="odt-ltr-term">int status</bdi>; <bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">String</bdi>&gt; <bdi dir="ltr" class="odt-ltr-term">messages</bdi>; <bdi dir="ltr" class="odt-ltr-term">Rv rv</bdi>]، حيث [<bdi dir="ltr" class="odt-ltr-term">rv</bdi>] هو الموعد المضاف.</span></p>
+<p><span style="color: #000000">استجابة الخادم من النوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Rv</bdi>&gt;] [<bdi dir="ltr" class="odt-ltr-term">int status</bdi>; <bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">String</bdi>&gt; <bdi dir="ltr" class="odt-ltr-term">messages</bdi>; <bdi dir="ltr" class="odt-ltr-term">Rv rv</bdi>]، حيث [rv] هو الموعد المضاف.</span></p>
 <p><span style="color: #000000">استجابة الخادم للطلب أعلاه هي كما يلي:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001510000027D73A7CABB.png" width="202" height="382" style="display:inline-block; margin:4px;width:5.35cm;height:10.112cm;" class="odt-zoomable" data-zoom-src="images/10000000000001510000027D73A7CABB.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
@@ -2262,7 +2262,7 @@
   </li>
   <li>تتضمن حزمة [<bdi dir="ltr" class="odt-ltr-term">architecture</bdi>] العناصر المعمارية التي طورناها سابقًا؛
   </li>
-  <li>حزمة [<bdi dir="ltr" class="odt-ltr-term">dao</bdi>] تنفذ طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]؛
+  <li>حزمة [dao] تنفذ طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]؛
   </li>
   <li>حزمة [<bdi dir="ltr" class="odt-ltr-term">fragments</bdi>] تنفذ [<bdi dir="ltr" class="odt-ltr-term">views</bdi>]؛
   </li>
@@ -2913,7 +2913,7 @@
     <ul>
       <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">idMedecin</bdi>]: معرف الطبيب الذي نريد جدول مواعيده؛</span>
       </li>
-      <li><span style="color: #000000">[<bdi dir="ltr" class="odt-ltr-term">day</bdi>]: اليوم الذي نريد جدول مواعيده؛</span>
+      <li><span style="color: #000000">[day]: اليوم الذي نريد جدول مواعيده؛</span>
       </li>
     </ul>
   </li>
@@ -4259,7 +4259,7 @@
 </code></pre></div>
 
 <ul>
-  <li>السطر 3: يجب أن تمتد فئة [<bdi dir="ltr" class="odt-ltr-term">ListCreneauxAdapter</bdi>] إلى محول محدد مسبقًا لـ [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>]<bdi dir="ltr" class="odt-ltr-term">s</bdi>، وفي هذه الحالة فئة [<bdi dir="ltr" class="odt-ltr-term">ArrayAdapter</bdi>]، والتي، كما يوحي اسمها، تملأ [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>] بمصفوفة من الكائنات، وفي هذه الحالة من النوع [<bdi dir="ltr" class="odt-ltr-term">CreneauMedecinJour</bdi>]. دعونا نراجع كود هذه الكيان:
+  <li>السطر 3: يجب أن تمتد فئة [<bdi dir="ltr" class="odt-ltr-term">ListCreneauxAdapter</bdi>] إلى محول محدد مسبقًا لـ [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>]s، وفي هذه الحالة فئة [<bdi dir="ltr" class="odt-ltr-term">ArrayAdapter</bdi>]، والتي، كما يوحي اسمها، تملأ [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>] بمصفوفة من الكائنات، وفي هذه الحالة من النوع [<bdi dir="ltr" class="odt-ltr-term">CreneauMedecinJour</bdi>]. دعونا نراجع كود هذه الكيان:
   </li>
 </ul>
 
@@ -4408,7 +4408,7 @@
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000F000000135551E0162.png" width="168" height="217" style="display:inline-block; margin:4px;width:4.45cm;height:5.729cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F000000135551E0162.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
-<p><span style="color: #000000">فيما يلي كود ملف [<bdi dir="ltr" class="odt-ltr-term">creneau</bdi>_medecin.<bdi dir="ltr" class="odt-ltr-term">xml</bdi>]:</span></p>
+<p><span style="color: #000000">فيما يلي كود ملف [<bdi dir="ltr" class="odt-ltr-term">creneau</bdi>_medecin.xml]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span>=<span style="font-style:italic;color:#2a00ff">&quot;1.0&quot;</span> <span style="color:#7f007f">encoding</span>=<span style="font-style:italic;color:#2a00ff">&quot;utf-8&quot;</span><span style="color:#008080">?&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">RelativeLayout</span> <span style="color:#7f007f">xmlns:android</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://schemas.android.com/apk/res/android&quot;</span></span></span>
@@ -4511,7 +4511,7 @@
   </li>
   <li><span style="color: #000000">الأسطر 4–7: يتم تعطيل النقر على روابط [حذف / إضافة] إذا كانت هناك مهام غير متزامنة قيد التنفيذ. هذا خيار تصميمي يبسط كتابة الكود. وهو قابل للنقاش؛</span>
   </li>
-  <li><span style="color: #000000">الأسطر 11-15: نقوم بتخزين المعلومات (<bdi dir="ltr" class="odt-ltr-term">firstPosition</bdi>، <bdi dir="ltr" class="odt-ltr-term">top</bdi>) من قائمة العرض </span><i><bdi dir="ltr" class="odt-ltr-term">ListView</bdi> </i><span style="color: #000000">في حقول داخل الجزء بحيث يمكن للطريقة الخاصة [<bdi dir="ltr" class="odt-ltr-term">updateAgenda</bdi>] إعادة إنشائها بنفس موضع التمرير؛</span>
+  <li><span style="color: #000000">الأسطر 11-15: نقوم بتخزين المعلومات (<bdi dir="ltr" class="odt-ltr-term">firstPosition</bdi>، top) من قائمة العرض </span><i><bdi dir="ltr" class="odt-ltr-term">ListView</bdi> </i><span style="color: #000000">في حقول داخل الجزء بحيث يمكن للطريقة الخاصة [<bdi dir="ltr" class="odt-ltr-term">updateAgenda</bdi>] إعادة إنشائها بنفس موضع التمرير؛</span>
   </li>
   <li><span style="color: #000000">السطر 17: نقوم بتخزين رقم الخانة التي تم النقر عليها؛</span>
   </li>
@@ -4823,7 +4823,7 @@
     <ul>
       <li>السطر 6: العنوان المعروض في أعلى العرض؛
       </li>
-      <li>الأسطر 7–17: المعلومات (<bdi dir="ltr" class="odt-ltr-term">top</bdi>، <bdi dir="ltr" class="odt-ltr-term">firstPosition</bdi>) التي ستسمح باستعادة <i>التمرير في </i><bdi dir="ltr" class="odt-ltr-term">ListView</bdi>؛
+      <li>الأسطر 7–17: المعلومات (top، <bdi dir="ltr" class="odt-ltr-term">firstPosition</bdi>) التي ستسمح باستعادة <i>التمرير في </i><bdi dir="ltr" class="odt-ltr-term">ListView</bdi>؛
       </li>
     </ul>
   </li>
@@ -4831,7 +4831,7 @@
   </li>
   <li>الأسطر 26-35: يتم تنفيذها عند إنشاء الجزء لأول مرة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> == <bdi dir="ltr" class="odt-ltr-term">null</bdi>) أو إعادة إنشائه في الزيارات اللاحقة (<bdi dir="ltr" class="odt-ltr-term">previousState</bdi> != <bdi dir="ltr" class="odt-ltr-term">null</bdi>)؛
     <ul>
-      <li>الأسطر 30-34: إذا لم تكن هذه هي الزيارة الأولى للجزء، فإننا نسترد المعلومات (<bdi dir="ltr" class="odt-ltr-term">top</bdi>، <bdi dir="ltr" class="odt-ltr-term">firstPosition</bdi>) اللازمة لاستعادة <i>حالة التمرير في <bdi dir="ltr" class="odt-ltr-term">ListView</bdi></i>؛
+      <li>الأسطر 30-34: إذا لم تكن هذه هي الزيارة الأولى للجزء، فإننا نسترد المعلومات (top، <bdi dir="ltr" class="odt-ltr-term">firstPosition</bdi>) اللازمة لاستعادة <i>حالة التمرير في <bdi dir="ltr" class="odt-ltr-term">ListView</bdi></i>؛
       </li>
     </ul>
   </li>
