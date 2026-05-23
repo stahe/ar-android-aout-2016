@@ -1493,7 +1493,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>الاستجابات المرسلة من الخادم هي تمثيلات <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> للفئة [<bdi dir="ltr" class="odt-ltr-term">Response&lt;T</bdi>&gt;] التالية:</p>
+<p>الاستجابات المرسلة من الخادم هي تمثيلات <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> للفئة [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">T</bdi>&gt;] التالية:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.dao.service;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1525,7 +1525,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>يعيد عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<strong>/<bdi dir="ltr" class="odt-ltr-term">arduinos</bdi></strong>] استجابة من النوع [<bdi dir="ltr" class="odt-ltr-term">Response&lt;List&lt;Arduino</bdi>&gt;&gt;]، حيث [<bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>] هي الفئة التالية:</p>
+<p>يعيد عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> [<strong>/<bdi dir="ltr" class="odt-ltr-term">arduinos</bdi></strong>] استجابة من النوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>&gt;&gt;]، حيث [<bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>] هي الفئة التالية:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> android.arduinos.entities;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1569,7 +1569,7 @@
   </li>
 </ul>
 
-<p>إرجاع استجابة من النوع [<bdi dir="ltr" class="odt-ltr-term">Response&lt;ArduinoResponse</bdi>&gt;]، حيث تمثل فئة [<bdi dir="ltr" class="odt-ltr-term">ArduinoResponse</bdi>] استجابة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> القياسية:</p>
+<p>إرجاع استجابة من النوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">ArduinoResponse</bdi>&gt;]، حيث تمثل فئة [<bdi dir="ltr" class="odt-ltr-term">ArduinoResponse</bdi>] استجابة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> القياسية:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> </span><span style="color:#000000">ArduinoResponse</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">implements</span><span style="color:#000000"> Serializable {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -2700,7 +2700,7 @@
 <ul>
   <li>الأسطر 3–6: ننشئ قائمة من 20 جهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>؛
   </li>
-  <li>السطور 8-9: نقوم بإنشاء استجابة من النوع [<bdi dir="ltr" class="odt-ltr-term">Response&lt;List&lt;Arduino</bdi>&gt;&gt;] (القسم<a href="#arduinos-response"><u><span style="color: #0563c1"> 5.4.2</span></u></a>) التي ستغلف قائمة أجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> التي تم إنشاؤها؛
+  <li>السطور 8-9: نقوم بإنشاء استجابة من النوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>&gt;&gt;] (القسم<a href="#arduinos-response"><u><span style="color: #0563c1"> 5.4.2</span></u></a>) التي ستغلف قائمة أجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> التي تم إنشاؤها؛
   </li>
   <li>السطر 11: إلغاء الانتظار؛
   </li>
@@ -2740,7 +2740,7 @@
   </li>
   <li>السطر 8: العودة إلى واجهة المستخدم؛
   </li>
-  <li>الأسطر 11-16: إذا لم تكن هناك أخطاء، اعرض قائمة أجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> المستلمة، بعد تحويلها إلى نوع<i> <bdi dir="ltr" class="odt-ltr-term">List&lt;CheckedArduino</bdi>&gt;</i>؛
+  <li>الأسطر 11-16: إذا لم تكن هناك أخطاء، اعرض قائمة أجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> المستلمة، بعد تحويلها إلى نوع<i> <bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">CheckedArduino</bdi>&gt;</i>؛
   </li>
 </ul>
 
@@ -3613,7 +3613,7 @@
 <ul>
   <li>الأسطر 11–15: إذا تم تحديد مربع اختيار في علامة التبويب <bdi dir="ltr" class="odt-ltr-term">X</bdi>، يتم تعيين الخاصية [<bdi dir="ltr" class="odt-ltr-term">checked</bdi>] لـ <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> في الصف 2 إلى <i><bdi dir="ltr" class="odt-ltr-term">true</bdi> </i>(السطر 14)؛
   </li>
-  <li>عند الانتقال إلى علامة التبويب <bdi dir="ltr" class="odt-ltr-term">Y</bdi>، يتم عرض [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>] لأجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> الموجودة في تلك العلامة. في السطر 9، نلاحظ أنه إذا كانت الخاصية [<bdi dir="ltr" class="odt-ltr-term">checked</bdi>] لجهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> في الصف 2 مضبوطة على <i>&<bdi dir="ltr" class="odt-ltr-term">quot;true</bdi></i>&quot;، فسيتم تحديد مربع الاختيار [ck] في الصف 5؛
+  <li>عند الانتقال إلى علامة التبويب <bdi dir="ltr" class="odt-ltr-term">Y</bdi>، يتم عرض [<bdi dir="ltr" class="odt-ltr-term">ListView</bdi>] لأجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> الموجودة في تلك العلامة. في السطر 9، نلاحظ أنه إذا كانت الخاصية [<bdi dir="ltr" class="odt-ltr-term">checked</bdi>] لجهاز <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> في الصف 2 مضبوطة على <i>&quot;<bdi dir="ltr" class="odt-ltr-term">true</bdi></i>&quot;، فسيتم تحديد مربع الاختيار [ck] في الصف 5؛
   </li>
 </ul>
 <p><a id="refheading80471807515049"></a></p>
@@ -3664,11 +3664,11 @@
 <ul>
   <li>الأسطر 11-26: هذه الأسطر موجودة بالفعل في واجهة [<bdi dir="ltr" class="odt-ltr-term">IDao</bdi>] لمشروع القالب [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>]؛
   </li>
-  <li>السطر 30: تُرجع طريقة [<bdi dir="ltr" class="odt-ltr-term">getArduinos</bdi>] قائمة بأجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> المتصلة كعنصر قابل للمراقبة من النوع <bdi dir="ltr" class="odt-ltr-term">Observable</bdi>&lt;[<bdi dir="ltr" class="odt-ltr-term">Response&lt;List&lt;Arduino</bdi>&gt;&gt;&gt;] ;
+  <li>السطر 30: تُرجع طريقة [<bdi dir="ltr" class="odt-ltr-term">getArduinos</bdi>] قائمة بأجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> المتصلة كعنصر قابل للمراقبة من النوع <bdi dir="ltr" class="odt-ltr-term">Observable</bdi>&lt;[<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>&gt;&gt;&gt;] ;
   </li>
 </ul>
 
-<p>لاحظ أن [<bdi dir="ltr" class="odt-ltr-term">Response&lt;T</bdi>&gt;] هو نوع جميع الاستجابات المرسلة من الخادم في شكل سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON:</bdi></p>
+<p>لاحظ أن [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">T</bdi>&gt;] هو نوع جميع الاستجابات المرسلة من الخادم في شكل سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON:</bdi></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.dao.entities;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -3738,7 +3738,7 @@
   </li>
   <li>السطر 23: عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> للخادم المستخدم لاسترداد قائمة أجهزة <bdi dir="ltr" class="odt-ltr-term">Arduino</bdi> عبر طلب <bdi dir="ltr" class="odt-ltr-term">GET.</bdi> لاحظ أن عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> هذا مرتبط بعنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الجذر [<bdi dir="ltr" class="odt-ltr-term">RestClientRootUrl</bdi>] في السطر 16؛
   </li>
-  <li>السطر 24: يُرجع الخادم سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> من النوع [<bdi dir="ltr" class="odt-ltr-term">Response&lt;List&lt;Arduino</bdi>&gt;&gt;]. يتم تحويل هذه السلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> تلقائيًا إلى النوع [<bdi dir="ltr" class="odt-ltr-term">Response&lt;List&lt;Arduino</bdi>&gt;&gt;] باستخدام محول <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> [<bdi dir="ltr" class="odt-ltr-term">MappingJackson2HttpMessageConverter</bdi>] المذكور في السطر 15؛
+  <li>السطر 24: يُرجع الخادم سلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> من النوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>&gt;&gt;]. يتم تحويل هذه السلسلة <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> تلقائيًا إلى النوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>&gt;&gt;] باستخدام محول <bdi dir="ltr" class="odt-ltr-term">JSON</bdi> [<bdi dir="ltr" class="odt-ltr-term">MappingJackson2HttpMessageConverter</bdi>] المذكور في السطر 15؛
   </li>
 </ul>
 <p><a id="refheading129385837583237"></a></p>
@@ -3853,11 +3853,11 @@
   </li>
   <li>الأسطر 91–100: تنفيذ طريقة [<bdi dir="ltr" class="odt-ltr-term">getArduinos</bdi>]؛
   </li>
-  <li>السطر 94: يتم استدعاء طريقة [<bdi dir="ltr" class="odt-ltr-term">getResponse</bdi>] للفئة الأصلية. المعلمة الوحيدة لهذه الطريقة هي مثيل لواجهة [<bdi dir="ltr" class="odt-ltr-term">IRequest&lt;T</bdi>&gt;]؛
+  <li>السطر 94: يتم استدعاء طريقة [<bdi dir="ltr" class="odt-ltr-term">getResponse</bdi>] للفئة الأصلية. المعلمة الوحيدة لهذه الطريقة هي مثيل لواجهة [<bdi dir="ltr" class="odt-ltr-term">IRequest</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">T</bdi>&gt;]؛
   </li>
-  <li>الأسطر 95-99: الطريقة الوحيدة لواجهة [<bdi dir="ltr" class="odt-ltr-term">IRequest&lt;T</bdi>&gt;] هي طريقة [<bdi dir="ltr" class="odt-ltr-term">T getResponse</bdi>()]؛
+  <li>الأسطر 95-99: الطريقة الوحيدة لواجهة [<bdi dir="ltr" class="odt-ltr-term">IRequest</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">T</bdi>&gt;] هي طريقة [<bdi dir="ltr" class="odt-ltr-term">T getResponse</bdi>()]؛
   </li>
-  <li>السطر 94: يجب أن يكون النوع <bdi dir="ltr" class="odt-ltr-term">T</bdi> لـ [<bdi dir="ltr" class="odt-ltr-term">IRequest&lt;T</bdi>&gt;] هو النوع <bdi dir="ltr" class="odt-ltr-term">T</bdi> لنتيجة<i> <bdi dir="ltr" class="odt-ltr-term">Observable&lt;T</bdi>&gt; </i>للطريقة في السطر 92، لذا هنا، نوع [<bdi dir="ltr" class="odt-ltr-term">Response&lt;List&lt;Arduino</bdi>&gt;&gt;]؛
+  <li>السطر 94: يجب أن يكون النوع <bdi dir="ltr" class="odt-ltr-term">T</bdi> لـ [<bdi dir="ltr" class="odt-ltr-term">IRequest</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">T</bdi>&gt;] هو النوع <bdi dir="ltr" class="odt-ltr-term">T</bdi> لنتيجة<i> <bdi dir="ltr" class="odt-ltr-term">Observable</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">T</bdi>&gt; </i>للطريقة في السطر 92، لذا هنا، نوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>&gt;&gt;]؛
   </li>
   <li>السطر 97: تفوض الطريقة [<bdi dir="ltr" class="odt-ltr-term">IRequest.getResponse</bdi>()] المهمة إلى الطريقة [<bdi dir="ltr" class="odt-ltr-term">webClient.getArduinos</bdi>()] التي قدمناها. يتم إنشاء مثيل [<bdi dir="ltr" class="odt-ltr-term">webClient</bdi>]، المُعرَّف في السطر 24، بواسطة مكتبة <bdi dir="ltr" class="odt-ltr-term">AA</bdi> وهو مثيل لواجهة [<bdi dir="ltr" class="odt-ltr-term">WebClient</bdi>] التي قدمناها؛
   </li>
@@ -3923,7 +3923,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>نحتاج إلى إعادة كتابة الأسطر 10–16، التي تم فيها ترميز استجابة من النوع [<bdi dir="ltr" class="odt-ltr-term">Response&lt;List&lt;Arduino</bdi>&gt;&gt;] بشكل ثابت. نحتاج الآن إلى طلب هذه القائمة من طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] عبر النشاط. يصبح الكود كما يلي:</p>
+<p>نحتاج إلى إعادة كتابة الأسطر 10–16، التي تم فيها ترميز استجابة من النوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>&gt;&gt;] بشكل ثابت. نحتاج الآن إلى طلب هذه القائمة من طبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] عبر النشاط. يصبح الكود كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#646464">@</span><span style="color:#000000">Click(R.id.btn_Rafraichir)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> doRafraichir() {</span></span></span>
@@ -3958,11 +3958,11 @@
     <ul>
       <li>السطر 12: العملية المراد مراقبة. يتم توفير هذه العملية هنا بواسطة طريقة [<bdi dir="ltr" class="odt-ltr-term">mainActivity.getArduinos</bdi>()]؛
       </li>
-      <li>الأسطر 12-19: مثيل لواجهة [<bdi dir="ltr" class="odt-ltr-term">Action1&lt;T</bdi>&gt;]، حيث النوع <bdi dir="ltr" class="odt-ltr-term">T</bdi> هو النوع المقدم من قبل العملية، وهنا نوع [<bdi dir="ltr" class="odt-ltr-term">Response&lt;List&lt;Arduino</bdi>&gt;&gt;]؛
+      <li>الأسطر 12-19: مثيل لواجهة [<bdi dir="ltr" class="odt-ltr-term">Action1</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">T</bdi>&gt;]، حيث النوع <bdi dir="ltr" class="odt-ltr-term">T</bdi> هو النوع المقدم من قبل العملية، وهنا نوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>&gt;&gt;]؛
       </li>
     </ul>
   </li>
-  <li>الأسطر 14-18: الطريقة التي يتم استدعاؤها عندما تُرجع المهمة غير المتزامنة نتيجتها من النوع [<bdi dir="ltr" class="odt-ltr-term">Response&lt;List&lt;Arduino</bdi>&gt;&gt;]؛
+  <li>الأسطر 14-18: الطريقة التي يتم استدعاؤها عندما تُرجع المهمة غير المتزامنة نتيجتها من النوع [<bdi dir="ltr" class="odt-ltr-term">Response</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">List</bdi>&lt;<bdi dir="ltr" class="odt-ltr-term">Arduino</bdi>&gt;&gt;]؛
   </li>
   <li>السطر 17: يتم تمرير الاستجابة المستلمة إلى طريقة [<bdi dir="ltr" class="odt-ltr-term">consumeArduinosResponse</bdi>] المكتوبة مسبقًا؛
   </li>
