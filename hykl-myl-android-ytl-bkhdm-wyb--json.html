@@ -1521,7 +1521,7 @@
 
 
 <p><span id="refheading1083471369936500" name="refheading1083471369936500" class="odt-bookmark-anchor"></span></p>
-<h1 id="2-android-json">2. <span style="color: #365f91"><strong>هيكل عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> يتصل بخدمة ويب / <bdi dir="ltr" class="odt-ltr-term">jSON</bdi></strong></span></h1>
+<h1 id="2-android-json">2. <span style="color: #365f91">هيكل عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> يتصل بخدمة ويب / <bdi dir="ltr" class="odt-ltr-term">jSON</bdi></span></h1>
 <p><span style="color: #000000">نقدم الآن هيكل تطبيق <bdi dir="ltr" class="odt-ltr-term">Android</bdi> يتصل بخدمة ويب واحدة أو أكثر / <bdi dir="ltr" class="odt-ltr-term">jSON.</bdi> هذا هو المشروع [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>] الذي يمكن العثور عليه في مجلد [<bdi dir="ltr" class="odt-ltr-term">architecture</bdi>] الخاص بالأمثلة:</span></p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000FC00000074F774CE32.png" width="177" height="81" style="display:inline-block; margin:4px;width:4.671cm;height:2.15cm;" class="odt-zoomable" data-zoom-src="images/10000000000000FC00000074F774CE32.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
@@ -1539,7 +1539,7 @@
 
 <p><span style="color: #000000">تم استخدام هذا الهيكل لجميع الأمثلة القادمة. ونظرًا لتنوع هذه الأمثلة، فإن ما كان يعمل في أحد الأمثلة قد لا يعمل في المثال التالي. وبما أن الهيكل قد استُخدم في سبعة أمثلة إجمالاً، فقد حدثت العديد من التكرارات. وإذا تم استخدامه في مثال ثامن، فمن المحتمل أن نجد مرة أخرى أن خصوصية هذا المثال الجديد تولد أخطاء جديدة. ومع ذلك، فإن استخدام هذا الهيكل سيبسط بشكل كبير كتابة الأمثلة القادمة. في الواقع، تعد إدارة دورة حياة المقطع (التحديث، الحفظ، الاستعادة) مقترنة بمفهوم تجاور المقاطع أمرًا معقدًا للغاية. وهنا، يتم إخفاؤها تمامًا في الفئة [<bdi dir="ltr" class="odt-ltr-term">AbstractFragment</bdi>].</span></p>
 <p><span id="refheading1312981394789306" name="refheading1312981394789306" class="odt-bookmark-anchor"></span></p>
-<h2 id="21-android">2.1. <span style="color: #4f81bd"><strong>بنية عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi></strong></span></h2>
+<h2 id="21-android">2.1. <span style="color: #4f81bd">بنية عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi></span></h2>
 <p><span style="color: #000000">يعتمد عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> المقترح على البنية التالية:</span></p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000068F000001362AA7D069.png" width="680" height="126" style="display:inline-block; margin:4px;width:17.999cm;height:3.321cm;" class="odt-zoomable" data-zoom-src="images/100000000000068F000001362AA7D069.png" /></td></tr></table>
 
@@ -1557,7 +1557,7 @@
 
 <p><span style="color: #000000">سنقدم العناصر المختلفة لهذا المشروع واحدة تلو الأخرى.</span></p>
 <p><span id="refheading1313001394789306" name="refheading1313001394789306" class="odt-bookmark-anchor"></span></p>
-<h2 id="22-gradle">2.2. <span style="color: #4f81bd"><strong>تكوين <bdi dir="ltr" class="odt-ltr-term">Gradle</bdi></strong></span></h2>
+<h2 id="22-gradle">2.2. <span style="color: #4f81bd">تكوين <bdi dir="ltr" class="odt-ltr-term">Gradle</bdi></span></h2>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000001420000010F2568E4CD.png" width="225" height="190" style="display:inline-block; margin:4px;width:5.96cm;height:5.02cm;" class="odt-zoomable" data-zoom-src="images/10000000000001420000010F2568E4CD.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
@@ -1629,7 +1629,7 @@
 </ul>
 
 <p><span id="refheading1313021394789306" name="refheading1313021394789306" class="odt-bookmark-anchor"></span></p>
-<h2 id="23">2.3. <span style="color: #4f81bd"><strong>بيان التطبيق</strong></span></h2>
+<h2 id="23">2.3. <span style="color: #4f81bd">بيان التطبيق</span></h2>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000C8000000A76198C4F3.png" width="140" height="117" style="display:inline-block; margin:4px;width:3.701cm;height:3.09cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C8000000A76198C4F3.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
@@ -1678,7 +1678,7 @@
 </code></pre></div>
 
 <p><span id="refheading1313041394789306" name="refheading1313041394789306" class="odt-bookmark-anchor"></span></p>
-<h2 id="24-java">2.4. <span style="color: #4f81bd"><strong>تنظيم كود <bdi dir="ltr" class="odt-ltr-term">Java</bdi></strong></span></h2>
+<h2 id="24-java">2.4. <span style="color: #4f81bd">تنظيم كود <bdi dir="ltr" class="odt-ltr-term">Java</bdi></span></h2>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000C1000000D3388F195C.png" width="135" height="148" style="display:inline-block; margin:4px;width:3.57cm;height:3.911cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C1000000D3388F195C.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <ul>
@@ -1698,7 +1698,7 @@
 
 <p><img src="images/10000000000003B5000000B1DC923D8D.png" width="680" height="127" style="width:17.999cm;height:3.357cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003B5000000B1DC923D8D.png" /></p>
 <p><span id="refheading1173561938318812" name="refheading1173561938318812" class="odt-bookmark-anchor"></span></p>
-<h3 id="251">2.5.1. <span style="color: #4f81bd"><strong>الطريقة المرتبطة بالنشاط</strong></span></h3>
+<h3 id="251">2.5.1. <span style="color: #4f81bd">الطريقة المرتبطة بالنشاط</span></h3>
 <p>الطريقة [<bdi dir="ltr" class="odt-ltr-term">activity</bdi>_main.xml] المرتبطة بالنشاط هي كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;1.0&quot;</span> <span style="color:#7f007f">encoding</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;utf-8&quot;</span><span style="color:#008080">?&gt;</span></span></span>
@@ -1756,7 +1756,7 @@
 
 <p>في الوقت الحالي، هي فارغة. سيقوم المطور بإكمالها إذا لزم الأمر.</p>
 <p><span id="refheading1313081394789306" name="refheading1313081394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="252-mypager">2.5.2. <span style="color: #4f81bd"><strong>حاوية الأجزاء [<bdi dir="ltr" class="odt-ltr-term">MyPager</bdi>]</strong></span></h3>
+<h3 id="252-mypager">2.5.2. <span style="color: #4f81bd">حاوية الأجزاء [<bdi dir="ltr" class="odt-ltr-term">MyPager</bdi>]</span></h3>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000D0000000DAA01E525A.png" width="146" height="153" style="display:inline-block; margin:4px;width:3.851cm;height:4.039cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D0000000DAA01E525A.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -1830,7 +1830,7 @@
 </ul>
 
 <p><span id="refheading1313101394789306" name="refheading1313101394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="253-corestate">2.5.3. <span style="color: #4f81bd"><strong>الفئة [<bdi dir="ltr" class="odt-ltr-term">CoreState</bdi>]</strong></span></h3>
+<h3 id="253-corestate">2.5.3. <span style="color: #4f81bd">الفئة [<bdi dir="ltr" class="odt-ltr-term">CoreState</bdi>]</span></h3>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000F300000097C7E8BEA5.png" width="170" height="106" style="display:inline-block; margin:4px;width:4.5cm;height:2.799cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F300000097C7E8BEA5.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p>الفئة [<bdi dir="ltr" class="odt-ltr-term">CoreState</bdi>] هي الفئة الأم لحالات الأجزاء المختلفة:</p>
@@ -1869,7 +1869,7 @@
 </ul>
 
 <p><span id="refheading1313121394789306" name="refheading1313121394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="254-imainactivity">2.5.4. <span style="color: #4f81bd"><strong>الواجهة [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>]</strong></span></h3>
+<h3 id="254-imainactivity">2.5.4. <span style="color: #4f81bd">الواجهة [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>]</span></h3>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000DC000000D02A1067A3.png" width="154" height="146" style="display:inline-block; margin:4px;width:4.069cm;height:3.851cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DC000000D02A1067A3.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">تحدد الواجهة [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>] ما يمكن أن تطلبه الأجزاء من النشاط في البنية التالية:</span></p>
@@ -1952,7 +1952,7 @@
 
 <p><span style="color: #000000">الواجهة [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>] هي العنصر الثاني في البنية الذي يجب على المطور إكماله (السطر 45).</span></p>
 <p><span id="refheading102688620392366" name="refheading102688620392366" class="odt-bookmark-anchor"></span></p>
-<h3 id="255-idao">2.5.5. <span style="color: #4f81bd"><strong>الواجهة [<bdi dir="ltr" class="odt-ltr-term">IDao</bdi>]</strong></span></h3>
+<h3 id="255-idao">2.5.5. <span style="color: #4f81bd">الواجهة [<bdi dir="ltr" class="odt-ltr-term">IDao</bdi>]</span></h3>
 <p>توسع واجهة [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>] واجهة [<bdi dir="ltr" class="odt-ltr-term">IDao</bdi>] التالية:</p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000F0000000BBED915784.png" width="168" height="131" style="display:inline-block; margin:4px;width:4.45cm;height:3.461cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F0000000BBED915784.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
@@ -1990,7 +1990,7 @@
 </ul>
 
 <p><span id="refheading1313141394789306" name="refheading1313141394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="256">2.5.6. <span style="color: #4f81bd"><strong>الجلسة</strong></span></h3>
+<h3 id="256">2.5.6. <span style="color: #4f81bd">الجلسة</span></h3>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000E800000119B289D3E9.png" width="163" height="197" style="display:inline-block; margin:4px;width:4.3cm;height:5.2cm;" class="odt-zoomable" data-zoom-src="images/10000000000000E800000119B289D3E9.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">تغلف الفئة [<bdi dir="ltr" class="odt-ltr-term">Session</bdi>] العناصر المشتركة بين النشاط والأجزاء. وهي تنفذ الواجهة [<bdi dir="ltr" class="odt-ltr-term">ISession</bdi>] التالية:</span></p>
@@ -2208,11 +2208,11 @@
 </ul>
 
 <p><span id="refheading1313161394789306" name="refheading1313161394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="257-abstractactivity">2.5.7. <span style="color: #4f81bd"><strong>الفئة المجردة [<bdi dir="ltr" class="odt-ltr-term">AbstractActivity</bdi>]</strong></span></h3>
+<h3 id="257-abstractactivity">2.5.7. <span style="color: #4f81bd">الفئة المجردة [<bdi dir="ltr" class="odt-ltr-term">AbstractActivity</bdi>]</span></h3>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000DC000000D0CA82C43A.png" width="154" height="146" style="display:inline-block; margin:4px;width:4.069cm;height:3.851cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DC000000D0CA82C43A.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span id="refheading1313181394789306" name="refheading1313181394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2571-squelette">2.5.7.1. <span style="color: #4f81bd"><em><bdi dir="ltr" class="odt-ltr-term">Squelette</bdi></em></span></h4>
+<h4 id="2571-squelette">2.5.7.1. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">Squelette</bdi></span></h4>
 <p>الفئة [<bdi dir="ltr" class="odt-ltr-term">AbstractActivity</bdi>] هي فئة تتكون من أكثر من 300 سطر. سنقوم بدراستها على مراحل. هيكلها الأساسي هو كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.architecture;</span></span></span>
@@ -2317,7 +2317,7 @@
 </ul>
 
 <p><span id="refheading1313201394789306" name="refheading1313201394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2572-imainactivity">2.5.7.2. <span style="color: #4f81bd"><em>تنفيذ واجهة [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>]</em></span></h4>
+<h4 id="2572-imainactivity">2.5.7.2. <span style="color: #4f81bd">تنفيذ واجهة [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>]</span></h4>
 <p>تنفيذ واجهة [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>] (انظر الفقرة<a href="#refheading1313121394789306"><u><span style="color: #0563c1"> 2.5.4</span></u></a>) هو كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// تنفيذ IMainActivity --------------------------------------------------------------------</span></span></span>
@@ -2339,7 +2339,7 @@
 </code></pre></div>
 
 <p><span id="refheading1313221394789306" name="refheading1313221394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2573">2.5.7.3. <span style="color: #4f81bd"><em>حفظ حالة النشاط وأجزائه</em></span></h4>
+<h4 id="2573">2.5.7.3. <span style="color: #4f81bd">حفظ حالة النشاط وأجزائه</span></h4>
 <p>يوجد حالة النشاط وأجزائه بالكامل في الجلسة. لذا، يتعين حفظ هذه الجلسة. نستأنف هنا ما تم تنفيذه في المشروع [<bdi dir="ltr" class="odt-ltr-term">Exemple-22</bdi>] (انظر الفقرة<a href="tlm-brmj-android.html#refheading1312801394789306"><u><span style="color: #0563c1"> 1.23</span></u></a>):</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// إدارة حفظ/استعادة النشاط ------------------------------------</span></span></span>
@@ -2365,7 +2365,7 @@
 </code></pre></div>
 
 <p><span id="refheading1313241394789306" name="refheading1313241394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2574">2.5.7.4. <span style="color: #4f81bd"><em>استعادة حالة النشاط وأجزائه</em></span></h4>
+<h4 id="2574">2.5.7.4. <span style="color: #4f81bd">استعادة حالة النشاط وأجزائه</span></h4>
 <p>يتعلق الأمر باستعادة الجلسة. نقوم بذلك كما هو موضح في [<bdi dir="ltr" class="odt-ltr-term">Exemple-22</bdi>]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#646464">@</span><span style="color:#000000">Override</span></span></span>
@@ -2408,7 +2408,7 @@
 </ul>
 
 <p><span id="refheading1313261394789306" name="refheading1313261394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2575-dao">2.5.7.5. <span style="color: #4f81bd"><em>تهيئة الطبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]</em></span></h4>
+<h4 id="2575-dao">2.5.7.5. <span style="color: #4f81bd">تهيئة الطبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]</span></h4>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#646464">@</span><span style="color:#000000">Override</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> onCreate(Bundle savedInstanceState) {</span></span></span>
@@ -2443,7 +2443,7 @@
 </ul>
 
 <p><span id="refheading1313281394789306" name="refheading1313281394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2576">2.5.7.6. <span style="color: #4f81bd"><em>تهيئة العرض المرتبط بالنشاط</em></span></h4>
+<h4 id="2576">2.5.7.6. <span style="color: #4f81bd">تهيئة العرض المرتبط بالنشاط</span></h4>
 <p>تم عرض العرض المرتبط بالنشاط في الفقرة<a href="#refheading1173561938318812"><u><span style="color: #0563c1"> 2.5.1</span></u></a>:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;1.0&quot;</span> <span style="color:#7f007f">encoding</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;utf-8&quot;</span><span style="color:#008080">?&gt;</span></span></span>
@@ -2533,7 +2533,7 @@
 </ul>
 
 <p><span id="refheading1313301394789306" name="refheading1313301394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2577">2.5.7.7. <span style="color: #4f81bd"><em>إدارة علامات التبويب</em></span></h4>
+<h4 id="2577">2.5.7.7. <span style="color: #4f81bd">إدارة علامات التبويب</span></h4>
 <p>قد تتطلب واجهة [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>] شريط علامات تبويب. يتم إضافة هذا الشريط وإدارته بالطريقة التالية:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">// شريط علامات التبويب</span></span>
@@ -2640,7 +2640,7 @@
 </ul>
 
 <p><span id="refheading1313321394789306" name="refheading1313321394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2578-customtablayout">2.5.7.8. <span style="color: #4f81bd"><em>مدير علامات التبويب [<bdi dir="ltr" class="odt-ltr-term">CustomTabLayout</bdi>]</em></span></h4>
+<h4 id="2578-customtablayout">2.5.7.8. <span style="color: #4f81bd">مدير علامات التبويب [<bdi dir="ltr" class="odt-ltr-term">CustomTabLayout</bdi>]</span></h4>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000C90000007167E1E9C9.png" width="141" height="79" style="display:inline-block; margin:4px;width:3.72cm;height:2.09cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C90000007167E1E9C9.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p>نستخدم مدير علامات تبويب مخصصًا لنتمكن من عرض عناوين علامات التبويب بخطوط مختلفة. الفئة [<bdi dir="ltr" class="odt-ltr-term">CustomTabLayout</bdi>] هي كما يلي:</p>
@@ -2713,7 +2713,7 @@
 </ul>
 
 <p><span id="refheading1313341394789306" name="refheading1313341394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2579">2.5.7.9. <span style="color: #4f81bd"><em>أحدث عمليات التهيئة</em></span></h4>
+<h4 id="2579">2.5.7.9. <span style="color: #4f81bd">أحدث عمليات التهيئة</span></h4>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#646464">@</span><span style="color:#000000">Override</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> onCreate(Bundle savedInstanceState) {</span></span></span>
@@ -2760,7 +2760,7 @@
 </ul>
 
 <p><span id="refheading1313361394789306" name="refheading1313361394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="25710">2.5.7.10. <span style="color: #4f81bd"><em>إدارة صورة الانتظار</em></span></h4>
+<h4 id="25710">2.5.7.10. <span style="color: #4f81bd">إدارة صورة الانتظار</span></h4>
 <p>في الفئة [<bdi dir="ltr" class="odt-ltr-term">AbstractActivity</bdi>]، تتم إدارة صورة الانتظار بواسطة الطريقتين التاليتين:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// إدارة صورة الانتظار ---------------------------------</span></span></span>
@@ -2778,7 +2778,7 @@
 </code></pre></div>
 
 <p><span id="refheading1313381394789306" name="refheading1313381394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="25711-idao">2.5.7.11. <span style="color: #4f81bd"><em>تنفيذ واجهة [<bdi dir="ltr" class="odt-ltr-term">IDao</bdi>]</em></span></h4>
+<h4 id="25711-idao">2.5.7.11. <span style="color: #4f81bd">تنفيذ واجهة [<bdi dir="ltr" class="odt-ltr-term">IDao</bdi>]</span></h4>
 <p>في الفئة [<bdi dir="ltr" class="odt-ltr-term">AbstractActivity</bdi>]، يتم تنفيذ الواجهة [<bdi dir="ltr" class="odt-ltr-term">IDao</bdi>] (انظر الفقرة<a href="#refheading102688620392366"><u><span style="color: #0563c1"> 2.5.5</span></u></a>) بالطريقة التالية:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">abstract</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> AbstractActivity </span><span style="font-weight:bold;color:#7f0055">extends</span><span style="color:#000000"> AppCompatActivity </span><span style="font-weight:bold;color:#7f0055">implements</span><span style="color:#000000"> IMainActivity {</span></span></span>
@@ -2823,7 +2823,7 @@
 </ul>
 
 <p><span id="refheading1313401394789306" name="refheading1313401394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="25712">2.5.7.12. <span style="color: #4f81bd"><em>تنفيذ مدير الأجزاء</em></span></h4>
+<h4 id="25712">2.5.7.12. <span style="color: #4f81bd">تنفيذ مدير الأجزاء</span></h4>
 <p>في الفئة [<bdi dir="ltr" class="odt-ltr-term">AbstractActivity</bdi>]، يتم تنفيذ مدير الأجزاء على النحو التالي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
@@ -2877,7 +2877,7 @@
 </ul>
 
 <p><span id="refheading1313421394789306" name="refheading1313421394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="25713-onresume">2.5.7.13. <span style="color: #4f81bd"><em>الطريقة [<bdi dir="ltr" class="odt-ltr-term">onResume</bdi>]</em></span></h4>
+<h4 id="25713-onresume">2.5.7.13. <span style="color: #4f81bd">الطريقة [<bdi dir="ltr" class="odt-ltr-term">onResume</bdi>]</span></h4>
 <p>يتم تنفيذ الأسلوب [<bdi dir="ltr" class="odt-ltr-term">onResume</bdi>] قبل ظهور العرض المرتبط بالنشاط بقليل. ويُستخدم هنا لاختيار علامة تبويب بعد عملية حفظ/استعادة:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#646464">@</span><span style="color:#000000">Override</span></span></span>
@@ -2900,7 +2900,7 @@
 </ul>
 
 <p><span id="refheading1313441394789306" name="refheading1313441394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="25714-resume">2.5.7.14. <span style="color: #4f81bd"><em><bdi dir="ltr" class="odt-ltr-term">Résumé</bdi></em></span></h4>
+<h4 id="25714-resume">2.5.7.14. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">Résumé</bdi></span></h4>
 <p>ستكون الفئة المجردة [<bdi dir="ltr" class="odt-ltr-term">AbstractActivity</bdi>] هي الفئة الأم للنشاط الوحيد للتطبيق.</p>
 <p>يجب أن تنفذ النشاط الفرعي الطرق الست التالية:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -2931,7 +2931,7 @@
 </code></pre></div>
 
 <p><span id="refheading1313461394789306" name="refheading1313461394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="258-mainactivity">2.5.8. <span style="color: #4f81bd"><strong>النشاط [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>]</strong></span></h3>
+<h3 id="258-mainactivity">2.5.8. <span style="color: #4f81bd">النشاط [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>]</span></h3>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000CC00000093272BC873.png" width="143" height="103" style="display:inline-block; margin:4px;width:3.78cm;height:2.72cm;" class="odt-zoomable" data-zoom-src="images/10000000000000CC00000093272BC873.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">يمكن تسمية الفئة [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>] باسم مختلف. الشرط الوحيد لها هو تنفيذ واجهة [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>]. الفئة الأساسية المتوفرة هي التالية:</span></p>
@@ -3020,12 +3020,12 @@
 </ul>
 
 <p><span id="refheading1313481394789306" name="refheading1313481394789306" class="odt-bookmark-anchor"></span></p>
-<h2 id="26-dao">2.6. <span style="color: #4f81bd"><strong>الطبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]</strong></span></h2>
+<h2 id="26-dao">2.6. <span style="color: #4f81bd">الطبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]</span></h2>
 <p><img src="images/10000000000003A6000000B43B40F99C.png" width="680" height="131" style="width:17.999cm;height:3.468cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003A6000000B43B40F99C.png" /></p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000F0000000BBF6DFBD89.png" width="168" height="131" style="display:inline-block; margin:4px;width:4.45cm;height:3.461cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F0000000BBF6DFBD89.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span id="refheading1313501394789306" name="refheading1313501394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="261-idao">2.6.1. <span style="color: #4f81bd"><strong>الواجهة <bdi dir="ltr" class="odt-ltr-term">IDao</bdi></strong></span></h3>
+<h3 id="261-idao">2.6.1. <span style="color: #4f81bd">الواجهة <bdi dir="ltr" class="odt-ltr-term">IDao</bdi></span></h3>
 <p>تم عرضها في الفقرة<a href="#refheading102688620392366"><u><span style="color: #0563c1"> 2.5.5</span></u></a>:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.dao.service;</span></span></span>
@@ -3057,7 +3057,7 @@
 
 <p>سيضيف المطور أساليب طبقته [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>] بدءًا من السطر 24.</p>
 <p><span id="refheading1313521394789306" name="refheading1313521394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="262-webclient">2.6.2. <span style="color: #4f81bd"><strong>الواجهة [<bdi dir="ltr" class="odt-ltr-term">WebClient</bdi>]</strong></span></h3>
+<h3 id="262-webclient">2.6.2. <span style="color: #4f81bd">الواجهة [<bdi dir="ltr" class="odt-ltr-term">WebClient</bdi>]</span></h3>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000F0000000BB0EF9A1DD.png" width="168" height="131" style="display:inline-block; margin:4px;width:4.45cm;height:3.461cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F0000000BB0EF9A1DD.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p>الواجهة [<bdi dir="ltr" class="odt-ltr-term">WebClient</bdi>] هي كما يلي:</p>
@@ -3084,7 +3084,7 @@
 
 <p>سيقوم المطور بإضافة الطرق التي تتواصل مع <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المعروضة بواسطة الخادم <bdi dir="ltr" class="odt-ltr-term">jSON</bdi> بدءًا من السطر 17.</p>
 <p><span id="refheading117348727448062" name="refheading117348727448062" class="odt-bookmark-anchor"></span></p>
-<h3 id="263-myauthinterceptor">2.6.3. <span style="color: #4f81bd"><strong>معترض المصادقة [<bdi dir="ltr" class="odt-ltr-term">MyAuthInterceptor</bdi>]</strong></span></h3>
+<h3 id="263-myauthinterceptor">2.6.3. <span style="color: #4f81bd">معترض المصادقة [<bdi dir="ltr" class="odt-ltr-term">MyAuthInterceptor</bdi>]</span></h3>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000F0000000BB070F0511.png" width="168" height="131" style="display:inline-block; margin:4px;width:4.45cm;height:3.461cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F0000000BB070F0511.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p>الفئة [<bdi dir="ltr" class="odt-ltr-term">MyAuthInterceptor</bdi>] هي كما يلي:</p>
@@ -3135,7 +3135,7 @@
 <p>حيث [<bdi dir="ltr" class="odt-ltr-term">code</bdi>] هو رمز <bdi dir="ltr" class="odt-ltr-term">Base64</bdi> لسلسلة &#x27;<bdi dir="ltr" class="odt-ltr-term">user:mp</bdi>&#x27;. لا تُستخدم هذه الفئة إلا إذا كان الخادم <bdi dir="ltr" class="odt-ltr-term">jSON</bdi> يتوقع هذا النوع من المصادقة. وهناك أنواع أخرى.</p>
 <p><strong>ملاحظة</strong>: يوضح الفقرة<a href="drs-l---dr-lmwyd.html#refheading722231954521739"><u><span style="color: #0563c1"> 3.6.3.1</span></u></a> كيفية استخدام هذه الفئة.</p>
 <p><span id="refheading1313541394789306" name="refheading1313541394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="264-abstractdao">2.6.4. <span style="color: #4f81bd"><strong>الفئة [<bdi dir="ltr" class="odt-ltr-term">AbstractDao</bdi>]</strong></span></h3>
+<h3 id="264-abstractdao">2.6.4. <span style="color: #4f81bd">الفئة [<bdi dir="ltr" class="odt-ltr-term">AbstractDao</bdi>]</span></h3>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000F0000000BB584DE9C5.png" width="168" height="131" style="display:inline-block; margin:4px;width:4.45cm;height:3.461cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F0000000BB584DE9C5.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p>الفئة [<bdi dir="ltr" class="odt-ltr-term">AbstractDao</bdi>] هي كما يلي:</p>
@@ -3251,7 +3251,7 @@
 </ul>
 
 <p><span id="refheading1313561394789306" name="refheading1313561394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="265-dao">2.6.5. <span style="color: #4f81bd"><strong>الفئة [<bdi dir="ltr" class="odt-ltr-term">Dao</bdi>]</strong></span></h3>
+<h3 id="265-dao">2.6.5. <span style="color: #4f81bd">الفئة [<bdi dir="ltr" class="odt-ltr-term">Dao</bdi>]</span></h3>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000F0000000BB0ADB4C40.png" width="168" height="131" style="display:inline-block; margin:4px;width:4.45cm;height:3.461cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F0000000BB0ADB4C40.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p>الفئة [<bdi dir="ltr" class="odt-ltr-term">Dao</bdi>] هي كما يلي:</p>
@@ -3374,11 +3374,11 @@
 </ul>
 
 <p><span id="refheading1313581394789306" name="refheading1313581394789306" class="odt-bookmark-anchor"></span></p>
-<h2 id="27">2.7. <span style="color: #4f81bd"><strong>الأجزاء</strong></span></h2>
+<h2 id="27">2.7. <span style="color: #4f81bd">الأجزاء</span></h2>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000001060000015EB7DC621C.png" width="183" height="245" style="display:inline-block; margin:4px;width:4.851cm;height:6.481cm;" class="odt-zoomable" data-zoom-src="images/10000000000001060000015EB7DC621C.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span id="refheading118044727448062" name="refheading118044727448062" class="odt-bookmark-anchor"></span></p>
-<h3 id="271-menuitemstate">2.7.1. <span style="color: #4f81bd"><strong>الفئة [<bdi dir="ltr" class="odt-ltr-term">MenuItemState</bdi>]</strong></span></h3>
+<h3 id="271-menuitemstate">2.7.1. <span style="color: #4f81bd">الفئة [<bdi dir="ltr" class="odt-ltr-term">MenuItemState</bdi>]</span></h3>
 <p>تغلف الفئة [<bdi dir="ltr" class="odt-ltr-term">MenuItemState</bdi>] حالة خيار القائمة:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.architecture;</span></span></span>
@@ -3406,7 +3406,7 @@
 </code></pre></div>
 
 <p><span id="refheading118747727448062" name="refheading118747727448062" class="odt-bookmark-anchor"></span></p>
-<h3 id="272-utils">2.7.2. <span style="color: #4f81bd"><strong>الفئة [<bdi dir="ltr" class="odt-ltr-term">Utils</bdi>]</strong></span></h3>
+<h3 id="272-utils">2.7.2. <span style="color: #4f81bd">الفئة [<bdi dir="ltr" class="odt-ltr-term">Utils</bdi>]</span></h3>
 <p>تجمع الفئة [<bdi dir="ltr" class="odt-ltr-term">Utils</bdi>] بين طرق ثابتة مساعدة:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.architecture;</span></span></span>
@@ -3458,10 +3458,10 @@
 </code></pre></div>
 
 <p><span id="refheading1313601394789306" name="refheading1313601394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="273-abstractfragment">2.7.3. <span style="color: #4f81bd"><strong>الفئة الأصلية [<bdi dir="ltr" class="odt-ltr-term">AbstractFragment</bdi>]</strong></span></h3>
+<h3 id="273-abstractfragment">2.7.3. <span style="color: #4f81bd">الفئة الأصلية [<bdi dir="ltr" class="odt-ltr-term">AbstractFragment</bdi>]</span></h3>
 <p><span style="color: #000000">تجمع الفئة [<bdi dir="ltr" class="odt-ltr-term">AbstractFragment</bdi>] ما هو مشترك بين جميع أجزاء التطبيق. كما هو الحال في الفئة [<bdi dir="ltr" class="odt-ltr-term">AbstractActivity</bdi>]، فإن كودها معقد. سنقوم هنا أيضًا بتحليله على مراحل.</span></p>
 <p><span id="refheading1313621394789306" name="refheading1313621394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2731">2.7.3.1. <span style="color: #4f81bd"><em>الهيكل الأساسي</em></span></h4>
+<h4 id="2731">2.7.3.1. <span style="color: #4f81bd">الهيكل الأساسي</span></h4>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.architecture.core;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"></span></span>
@@ -3583,7 +3583,7 @@
 </ul>
 
 <p><span id="refheading1313641394789306" name="refheading1313641394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2732">2.7.3.2. <span style="color: #4f81bd"><em>المنشئ</em></span></h4>
+<h4 id="2732">2.7.3.2. <span style="color: #4f81bd">المنشئ</span></h4>
 <p><span style="color: #000000">منشئ الفئة هو كما يلي:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#3f7f5f">// اسم الفئة</span></span></span>
@@ -3611,7 +3611,7 @@
 </ul>
 
 <p><span id="refheading1313661394789306" name="refheading1313661394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2733">2.7.3.3. <span style="color: #4f81bd"><em>إدارة القائمة</em></span></h4>
+<h4 id="2733">2.7.3.3. <span style="color: #4f81bd">إدارة القائمة</span></h4>
 <p><span style="color: #000000">في بنيتنا، </span><strong>يجب أن يكون لكل جزء قائمة، حتى لو كانت فارغة</strong><span style="color: #000000">. فقد أظهرت السجلات أنه عندما يتم تنفيذ الطريقة [<bdi dir="ltr" class="odt-ltr-term">onCreateOptionsMenu</bdi>]، التي يتم تنفيذها عندما يكون للجزء قائمة، يكون الجزء قد تم ربطه بالفعل بنشاطه وعرضه وقائمته وسيصبح مرئيًا. لذلك، هذا هو الوقت الذي يمكن فيه تحديث الواجهة المرئية والقائمة. في هذه الطريقة [<bdi dir="ltr" class="odt-ltr-term">onCreateOptionsMenu</bdi>] نطلب من الجزء الفرعي أن يقوم بالتحديث.</span></p>
 <p><span style="color: #000000">تضم إدارة القائمة طرقًا مساعدة تسمح للجزء الفرعي بعرض عناصر القائمة أو عدم عرضها:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -3711,11 +3711,11 @@
 </ul>
 
 <p><span id="refheading1313681394789306" name="refheading1313681394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2734">2.7.3.4. <span style="color: #4f81bd"><em>إدارة انتظار انتهاء مهمة غير متزامنة</em></span></h4>
+<h4 id="2734">2.7.3.4. <span style="color: #4f81bd">إدارة انتظار انتهاء مهمة غير متزامنة</span></h4>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">   <span style="color:#000000">// اشتراكات المراقبة</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> List&lt;Subscription&gt; abonnements = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ArrayList&lt;&gt;();</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> <span style="color:#000000">// المهام غير المتزامنة</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// المهام غير المتزامنة</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">int</span><span style="color:#000000"> numberOfRunningTasks;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">boolean</span><span style="color:#000000"> tasksInBackgroundHaveBeenCanceled;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
@@ -3757,7 +3757,7 @@
 </ul>
 
 <p><span id="refheading1313701394789306" name="refheading1313701394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2735">2.7.3.5. <span style="color: #4f81bd"><em>إدارة الاستثناءات</em></span></h4>
+<h4 id="2735">2.7.3.5. <span style="color: #4f81bd">إدارة الاستثناءات</span></h4>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// إدارة الاستثناء -------------------------------------------------------------------</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"></span></span>
@@ -3784,7 +3784,7 @@
 </ul>
 
 <p><span id="refheading1313721394789306" name="refheading1313721394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2736">2.7.3.6. <span style="color: #4f81bd"><em>إدارة العمليات غير المتزامنة</em></span></h4>
+<h4 id="2736">2.7.3.6. <span style="color: #4f81bd">إدارة العمليات غير المتزامنة</span></h4>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// اشتراكات المراقبة</span></span></span>
@@ -3974,7 +3974,7 @@
 </ul>
 
 <p><span id="refheading1313741394789306" name="refheading1313741394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2737">2.7.3.7. <span style="color: #4f81bd"><em>إدارة دورة حياة الجزء</em></span></h4>
+<h4 id="2737">2.7.3.7. <span style="color: #4f81bd">إدارة دورة حياة الجزء</span></h4>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#3f7f5f">// دورة الحياة --------------------------------------------------------</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#646464">@</span><span style="color:#000000">Override</span></span></span>
@@ -4163,7 +4163,7 @@
 
 <p><span style="color: #000000">في دورة الحياة، يتم تنفيذ الطريقة [<bdi dir="ltr" class="odt-ltr-term">onActivityCreated</bdi>] مباشرة بعد الطريقة [<bdi dir="ltr" class="odt-ltr-term">onCreateView</bdi>]. يشير استدعاء هذه الطريقة الأخيرة إلى أنه يجب إعادة بناء العرض المرتبط بالجزء. نكتفي بتدوين ذلك في السطر 10.</span></p>
 <p><span id="refheading1313761394789306" name="refheading1313761394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2738">2.7.3.8. <span style="color: #4f81bd"><em>تحديث الجزء</em></span></h4>
+<h4 id="2738">2.7.3.8. <span style="color: #4f81bd">تحديث الجزء</span></h4>
 <p><span style="color: #000000">يعد تحديث الجزء آخر عملية يتم إجراؤها على الجزء قبل أن يصبح مرئيًا وينتظر إجراءات المستخدم. ويتم ذلك بواسطة الكود التالي:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#3f7f5f">// قائمة الجزء</span></span></span>
@@ -4555,7 +4555,7 @@
 </ul>
 
 <p><span id="refheading1313781394789306" name="refheading1313781394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="274">2.7.4. <span style="color: #4f81bd"><strong>مثال على جزء</strong></span></h3>
+<h3 id="274">2.7.4. <span style="color: #4f81bd">مثال على جزء</span></h3>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000145000001275C4856AC.png" width="228" height="206" style="display:inline-block; margin:4px;width:6.02cm;height:5.459cm;" class="odt-zoomable" data-zoom-src="images/1000000000000145000001275C4856AC.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">أدرجنا في المشروع [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>] مثالاً على جزء لإطلاع القارئ على البنية النموذجية لجزء من تطبيق قائم على هذا المشروع.</span></p>
@@ -4688,10 +4688,10 @@
 
 <p><span style="color: #000000">لتوضيح استخدام المشروع [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>]، سنستخدم أولاً أمثلة بسيطة قبل الانتقال إلى دراسة حالة أكثر شمولاً.</span></p>
 <p><span id="refheading1313801394789306" name="refheading1313801394789306" class="odt-bookmark-anchor"></span></p>
-<h2 id="28">2.8. <span style="color: #4f81bd"><strong>تمارين توضيحية</strong></span></h2>
+<h2 id="28">2.8. <span style="color: #4f81bd">تمارين توضيحية</span></h2>
 <p>سنبدأ بإعادة هيكلة أمثلة مكتوبة بالفعل.</p>
 <p><span id="refheading1313821394789306" name="refheading1313821394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="281-17b">2.8.1. <span style="color: #4f81bd"><strong>المثال 17B</strong></span></h3>
+<h3 id="281-17b">2.8.1. <span style="color: #4f81bd">المثال 17B</span></h3>
 <p>نعود إلى المثال 17 الذي تمت دراسته في الفقرة<a href="tlm-brmj-android.html#refheading379941563054364"><u><span style="color: #0563c1"> 1.18</span></u></a>. إنه تطبيق يحتوي على جزء واحد بدون مهام غير متزامنة وبدون علامات تبويب. ندرسه لنرى كيف يتصرف عند تدوير الجهاز. نقوم بإدخال البيانات التالية:</p>
 <p><img src="images/100000000000054D000003387179AE5C.png" width="670" height="407" style="width:17.729cm;height:10.765cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000054D000003387179AE5C.png" /></p>
 <p><span style="color: #000000">ثم في [1]، نقوم بتدوير الجهاز مرتين. وتكون العرض الجديد كما يلي:</span></p>
@@ -4707,7 +4707,7 @@
 </ul>
 
 <p><span id="refheading1313841394789306" name="refheading1313841394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2811-exemple-17b">2.8.1.1. <span style="color: #4f81bd"><em>المشروع [<bdi dir="ltr" class="odt-ltr-term">Exemple-17B</bdi>]</em></span></h4>
+<h4 id="2811-exemple-17b">2.8.1.1. <span style="color: #4f81bd">المشروع [<bdi dir="ltr" class="odt-ltr-term">Exemple-17B</bdi>]</span></h4>
 <p><span style="color: #000000">نقوم بنسخ المشروع [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>] في <bdi dir="ltr" class="odt-ltr-term">examples/Exemple-17B.</bdi> ثم نقوم بتحميل المشروع الجديد [1]:</span></p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000E40000011C1833F44F.png" width="159" height="199" style="display:inline-block; margin:4px;width:4.219cm;height:5.26cm;" class="odt-zoomable" data-zoom-src="images/10000000000000E40000011C1833F44F.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000011F000001222CD5CB8D.png" width="212" height="214" style="display:inline-block; margin:4px;width:5.611cm;height:5.669cm;" class="odt-zoomable" data-zoom-src="images/100000000000011F000001222CD5CB8D.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000014F0000013A50FBF037.png" width="219" height="206" style="display:inline-block; margin:4px;width:5.805cm;height:5.44cm;" class="odt-zoomable" data-zoom-src="images/100000000000014F0000013A50FBF037.png" /></td></tr></table>
 
@@ -4752,7 +4752,7 @@
 
 <p><span style="color: #000000">يجب حذف التعليق التوضيحي [@<bdi dir="ltr" class="odt-ltr-term">Override</bdi>] من السطر 135. لم تعد هناك أخطاء الآن. سنبدأ من هنا لتعديل المشروع.</span></p>
 <p><span id="refheading1313861394789306" name="refheading1313861394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2812-vue1fragment">2.8.1.2. <span style="color: #4f81bd"><em>حالة الجزء [<bdi dir="ltr" class="odt-ltr-term">Vue1Fragment</bdi>]</em></span></h4>
+<h4 id="2812-vue1fragment">2.8.1.2. <span style="color: #4f81bd">حالة الجزء [<bdi dir="ltr" class="odt-ltr-term">Vue1Fragment</bdi>]</span></h4>
 <p><span style="color: #000000">يحتاج الجزء [<bdi dir="ltr" class="odt-ltr-term">Vue1Fragment</bdi>] إلى حفظ المعلومات عند تدوير الجهاز حتى يمكن استعادته بالكامل. ننشئ فئة [<bdi dir="ltr" class="odt-ltr-term">Vue1FragmentState</bdi>] لهذا الغرض:</span></p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000F8000000943E649153.png" width="173" height="104" style="display:inline-block; margin:4px;width:4.59cm;height:2.739cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F8000000943E649153.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
@@ -4768,7 +4768,7 @@
 </code></pre></div>
 
 <p><span id="refheading1313881394789306" name="refheading1313881394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2813">2.8.1.3. <span style="color: #4f81bd"><em>تخصيص المشروع</em></span></h4>
+<h4 id="2813">2.8.1.3. <span style="color: #4f81bd">تخصيص المشروع</span></h4>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000012B00000171113658A7.png" width="209" height="258" style="display:inline-block; margin:4px;width:5.54cm;height:6.83cm;" class="odt-zoomable" data-zoom-src="images/100000000000012B00000171113658A7.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">يحتوي المجلد [<bdi dir="ltr" class="odt-ltr-term">custom</bdi>] على عناصر البنية التي يمكن للمطور تخصيصها.</span></p>
@@ -4879,7 +4879,7 @@
 </ul>
 
 <p><span id="refheading1313901394789306" name="refheading1313901394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2814-mainactivity">2.8.1.4. <span style="color: #4f81bd"><em>النشاط [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>]</em></span></h4>
+<h4 id="2814-mainactivity">2.8.1.4. <span style="color: #4f81bd">النشاط [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>]</span></h4>
 <p><span style="color: #000000">النشاط [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>] هو حاليًا كما يلي:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span> client.android.activity;</span></span>
@@ -5014,7 +5014,7 @@
 
 <p><span style="color: #000000">يجب تعديل الطريقة الواردة في الأسطر 41-44 فقط. يجب أن تعرض جدول أجزاء التطبيق. في السطر 43، </span><strong>لا تنسَ وضع شرطة سفلية بعد اسم الجزء</strong><span style="color: #000000">.</span></p>
 <p><span id="refheading1313921394789306" name="refheading1313921394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2815-fragmentstate">2.8.1.5. <span style="color: #4f81bd"><em>حالة الجزء [<bdi dir="ltr" class="odt-ltr-term">FragmentState</bdi>]</em></span></h4>
+<h4 id="2815-fragmentstate">2.8.1.5. <span style="color: #4f81bd">حالة الجزء [<bdi dir="ltr" class="odt-ltr-term">FragmentState</bdi>]</span></h4>
 <p>بعد إجراء اختبارات التناوب على المشروع [<bdi dir="ltr" class="odt-ltr-term">Exemple-17</bdi>]، تقرر حفظ العناصر التالية من الجزء:</p>
 <ul>
   <li>قائمة قيم القائمة المنسدلة؛
@@ -5050,7 +5050,7 @@
 </code></pre></div>
 
 <p><span id="refheading1313941394789306" name="refheading1313941394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2816-abstractfragment">2.8.1.6. <span style="color: #4f81bd"><em>الجزء [<bdi dir="ltr" class="odt-ltr-term">AbstractFragment</bdi>]</em></span></h4>
+<h4 id="2816-abstractfragment">2.8.1.6. <span style="color: #4f81bd">الجزء [<bdi dir="ltr" class="odt-ltr-term">AbstractFragment</bdi>]</span></h4>
 <p><span style="color: #000000">حاليًا، تتم إدارة دورة حياة الجزء بواسطة طريقتين (السطران 6 و 32):</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">// القائمة المنسدلة</span></span>
@@ -5273,10 +5273,10 @@
 </ul>
 
 <p><span id="refheading1313961394789306" name="refheading1313961394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2817-tests">2.8.1.7. <span style="color: #4f81bd"><em><bdi dir="ltr" class="odt-ltr-term">Tests</bdi></em></span></h4>
+<h4 id="2817-tests">2.8.1.7. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">Tests</bdi></span></h4>
 <p><span style="color: #000000">يُطلب من القارئ اختبار هذا المشروع والتحقق من أن المقتطف لا يزال محفوظًا بعد دورة أو عدة دورات متتالية.</span></p>
 <p><span id="refheading1313981394789306" name="refheading1313981394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="282-23">2.8.2. <span style="color: #4f81bd"><strong>مثال-23: عميل الطقس</strong></span></h3>
+<h3 id="282-23">2.8.2. <span style="color: #4f81bd">مثال-23: عميل الطقس</span></h3>
 <p><span style="color: #000000">تتيح بعض المواقع الحصول على معلومات الطقس في شكل سلاسل مثل <bdi dir="ltr" class="odt-ltr-term">jSON.</bdi> إليك مثال على ذلك:</span></p>
 <p><img src="images/10000000000003A6000000B3C89FB4C0.png" width="670" height="128" style="width:17.729cm;height:3.397cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003A6000000B3C89FB4C0.png" /></p>
 <p><span style="color: #000000">يكون شكل <bdi dir="ltr" class="odt-ltr-term">URL</bdi> كما يلي: <bdi dir="ltr" class="odt-ltr-term">http://api.openweathermap.org/data/2.5/weather</bdi>?q={</span><strong><bdi dir="ltr" class="odt-ltr-term">city</bdi></strong><span style="color: #000000">},{</span><strong><bdi dir="ltr" class="odt-ltr-term">country</bdi></strong><span style="color: #000000">}&amp;<bdi dir="ltr" class="odt-ltr-term">APPID</bdi>={</span><strong><bdi dir="ltr" class="odt-ltr-term">APPID</bdi></strong><span style="color: #000000">} حيث:</span></p>
@@ -5290,7 +5290,7 @@
 </ul>
 
 <p><span id="refheading1314001394789306" name="refheading1314001394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2821">2.8.2.1. <span style="color: #4f81bd"><em>المشروع</em></span></h4>
+<h4 id="2821">2.8.2.1. <span style="color: #4f81bd">المشروع</span></h4>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000010600000149138DFD37.png" width="183" height="230" style="display:inline-block; margin:4px;width:4.851cm;height:6.091cm;" class="odt-zoomable" data-zoom-src="images/100000000000010600000149138DFD37.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">تم إنشاء المشروع استنادًا إلى مشروع [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>]. ويتميز بالميزات التالية:</span></p>
@@ -5302,7 +5302,7 @@
 </ul>
 
 <p><span id="refheading1314021394789306" name="refheading1314021394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2822">2.8.2.2. <span style="color: #4f81bd"><em>تخصيص المشروع</em></span></h4>
+<h4 id="2822">2.8.2.2. <span style="color: #4f81bd">تخصيص المشروع</span></h4>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000F9000000F5A2D51545.png" width="174" height="172" style="display:inline-block; margin:4px;width:4.611cm;height:4.54cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F9000000F5A2D51545.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">تسمح واجهة [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>] بتحديد بعض خصائص المشروع:</span></p>
@@ -5409,7 +5409,7 @@
 
 <p><span style="color: #000000">وهي فارغة لأنه لا يوجد في هذا التطبيق اتصال بين الأجزاء.</span></p>
 <p><span id="refheading1314041394789306" name="refheading1314041394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2823-dao">2.8.2.3. <span style="color: #4f81bd"><em>الطبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]</em></span></h4>
+<h4 id="2823-dao">2.8.2.3. <span style="color: #4f81bd">الطبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]</span></h4>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000010500000120B52E6FCC.png" width="183" height="201" style="display:inline-block; margin:4px;width:4.83cm;height:5.33cm;" class="odt-zoomable" data-zoom-src="images/100000000000010500000120B52E6FCC.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p>في الطبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]، يجب تخصيص ثلاث فئات: </p>
@@ -5613,7 +5613,7 @@
 </ul>
 
 <p><span id="refheading1314061394789306" name="refheading1314061394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2824-mainactivity">2.8.2.4. <span style="color: #4f81bd"><em>النشاط [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>]</em></span></h4>
+<h4 id="2824-mainactivity">2.8.2.4. <span style="color: #4f81bd">النشاط [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>]</span></h4>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000D600000091685849C4.png" width="150" height="101" style="display:inline-block; margin:4px;width:3.96cm;height:2.679cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D600000091685849C4.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p>النشاط [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>] هو التالي:</p>
@@ -5698,7 +5698,7 @@
 </ul>
 
 <p><span id="refheading1314081394789306" name="refheading1314081394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2825-meteofragment">2.8.2.5. <span style="color: #4f81bd"><em>المقتطف [<bdi dir="ltr" class="odt-ltr-term">MeteoFragment</bdi>]</em></span></h4>
+<h4 id="2825-meteofragment">2.8.2.5. <span style="color: #4f81bd">المقتطف [<bdi dir="ltr" class="odt-ltr-term">MeteoFragment</bdi>]</span></h4>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000FF000000CF1ABC127E.png" width="178" height="145" style="display:inline-block; margin:4px;width:4.72cm;height:3.829cm;" class="odt-zoomable" data-zoom-src="images/10000000000000FF000000CF1ABC127E.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">يستعلم المقطع [<bdi dir="ltr" class="odt-ltr-term">MeteoFragment</bdi>] عن خدمة الويب / <bdi dir="ltr" class="odt-ltr-term">jSON</bdi> الخاصة بالطقس. وهيكلها كما يلي:</span></p>
@@ -6038,7 +6038,7 @@
 </ul>
 
 <p><span id="refheading1314101394789306" name="refheading1314101394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2826-tests">2.8.2.6. <span style="color: #4f81bd"><em><bdi dir="ltr" class="odt-ltr-term">Tests</bdi></em></span></h4>
+<h4 id="2826-tests">2.8.2.6. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">Tests</bdi></span></h4>
 <p>نقوم الآن بتنفيذ المثال:</p>
 <p><img src="images/10000000000005010000010BB084047E.png" width="670" height="140" style="width:17.729cm;height:3.694cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005010000010BB084047E.png" /></p>
 <p><img src="images/1000000000000402000002761FAB2C68.png" width="670" height="411" style="width:17.729cm;height:10.885cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000402000002761FAB2C68.png" /></p>
@@ -6080,7 +6080,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">07-23 13:24:45.035 2642-2959/client.android D/client.android.dao.service.Dao_: response={} sur thread [<span style="color:#ff0000">RxIoScheduler-2</span>]</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">07-23 13:24:45.035 2642-2962/client.android D/client.android.dao.service.Dao_: response={} sur thread [<span style="color:#ff0000">RxIoScheduler-5</span>]</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">07-23 13:24:45.036 2642-2960/client.android D/client.android.dao.service.Dao_: response={} sur thread [<span style="color:#ff0000">RxIoScheduler-3</span>]</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">07-23 13:24:45.039 2642-2642/client.android D/MeteoFragment_: thread=<span style="color:#ff0000">main</span>, response={<span style="color:#0000ff">&quot;coord&quot;:{&quot;lon&quot;:-1.55,&quot;lat&quot;:47.22},&quot;weather&quot;:[{&quot;id&quot;:800,&quot;main&quot;:&quot;Clear&quot;,&quot;description&quot;:&quot;clear sky&quot;,&quot;icon&quot;:&quot;01d&quot;}],&quot;base&quot;:&quot;cmc stations&quot;,&quot;main&quot;:</span><span style="color:#0000ff">{&quot;temp&quot;:298.05,&quot;pressure&quot;:1022,&quot;humidity&quot;:47,&quot;temp_min&quot;:297.15,&quot;temp_max&quot;:299.15},&quot;wind&quot;:{&quot;speed&quot;:2.6,&quot;deg&quot;:310},&quot;clouds&quot;:{&quot;all&quot;:0},&quot;dt&quot;:1469277000,&quot;sys&quot;:{&quot;type&quot;:1,&quot;id&quot;:5641,&quot;message&quot;:0.0032,&quot;country&quot;:&quot;FR&quot;,&quot;sunrise&quot;:1469248505,&quot;sunset&quot;:1469303378},&quot;id&quot;:2990969,&quot;name&quot;:&quot;Nantes&quot;,&quot;cod&quot;:200</span>}</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">07-23 13:24:45.039 2642-2642/client.android D/MeteoFragment_: thread=<span style="color:#ff0000">main</span>, response={<span style="color:#0000ff">&quot;coord&quot;:{&quot;lon&quot;:-1.55,&quot;lat&quot;:47.22},&quot;weather&quot;:[{&quot;id&quot;:800,&quot;main&quot;:&quot;Clear&quot;,&quot;description&quot;:&quot;clear sky&quot;,&quot;icon&quot;:&quot;01d&quot;}],&quot;base&quot;:&quot;cmc stations&quot;,&quot;main&quot;:{&quot;temp&quot;:298.05,&quot;pressure&quot;:1022,&quot;humidity&quot;:47,&quot;temp_min&quot;:297.15,&quot;temp_max&quot;:299.15},&quot;wind&quot;:{&quot;speed&quot;:2.6,&quot;deg&quot;:310},&quot;clouds&quot;:{&quot;all&quot;:0},&quot;dt&quot;:1469277000,&quot;sys&quot;:{&quot;type&quot;:1,&quot;id&quot;:5641,&quot;message&quot;:0.0032,&quot;country&quot;:&quot;FR&quot;,&quot;sunrise&quot;:1469248505,&quot;sunset&quot;:1469303378},&quot;id&quot;:2990969,&quot;name&quot;:&quot;Nantes&quot;,&quot;cod&quot;:200</span>}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">07-23 13:24:45.039 2642-2642/client.android D/MeteoFragment_: thread=<span style="color:#ff0000">main</span>, response={}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">07-23 13:24:45.039 2642-2642/client.android D/MeteoFragment_: thread=<span style="color:#ff0000">main</span>, response={}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">07-23 13:24:45.039 2642-2642/client.android D/MeteoFragment_: thread=<span style="color:#ff0000">main</span>, response={}</span></span>
@@ -6146,7 +6146,7 @@
 </ul>
 
 <p><span id="refheading1314121394789306" name="refheading1314121394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="283-16b">2.8.3. <span style="color: #4f81bd"><strong>مثال-16B</strong></span></h3>
+<h3 id="283-16b">2.8.3. <span style="color: #4f81bd">مثال-16B</span></h3>
 <p>نقوم هنا بإعادة هيكلة المثال 16 من الفقرة<a href="tlm-brmj-android.html#refheading949421723138940"><u><span style="color: #0563c1"> 1.17</span></u></a>. يعرض هذا المثال جزءًا يقوم بإجراء مكالمات غير متزامنة إلى خادم أرقام عشوائية. لنرى كيف يتصرف أثناء دوران الجهاز:</p>
 <p><img src="images/100000000000044C0000029E7F10224F.png" width="670" height="408" style="width:17.729cm;height:10.799cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000044C0000029E7F10224F.png" /></p>
 <ul>
@@ -6157,7 +6157,7 @@
 <p><img src="images/1000000000000402000002A0B58CBBF6.png" width="670" height="437" style="width:17.729cm;height:11.561cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000402000002A0B58CBBF6.png" /></p>
 <p>نلاحظ أننا فقدنا جميع رسائل الخطأ. سنحاول تحسين ذلك.</p>
 <p><span id="refheading1314141394789306" name="refheading1314141394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2831-example-16b">2.8.3.1. <span style="color: #4f81bd"><em>المشروع <bdi dir="ltr" class="odt-ltr-term">Example-16B</bdi></em></span></h4>
+<h4 id="2831-example-16b">2.8.3.1. <span style="color: #4f81bd">المشروع <bdi dir="ltr" class="odt-ltr-term">Example-16B</bdi></span></h4>
 <p>نقوم بنسخ المشروع [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>] إلى المشروع [<bdi dir="ltr" class="odt-ltr-term">exemples/Exemple-16B</bdi>] ثم نقوم بتحميل المشروع الجديد:</p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000F10000010E7C7C92B1.png" width="169" height="189" style="display:inline-block; margin:4px;width:4.461cm;height:5.001cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F10000010E7C7C92B1.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
@@ -6209,7 +6209,7 @@
 </ul>
 
 <p><span id="refheading1314161394789306" name="refheading1314161394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2832-vue1fragment">2.8.3.2. <span style="color: #4f81bd"><em>إنشاء حالة للجزء [<bdi dir="ltr" class="odt-ltr-term">Vue1Fragment</bdi>]</em></span></h4>
+<h4 id="2832-vue1fragment">2.8.3.2. <span style="color: #4f81bd">إنشاء حالة للجزء [<bdi dir="ltr" class="odt-ltr-term">Vue1Fragment</bdi>]</span></h4>
 <p>لقد رأينا أن بعض معلومات الجزء يجب حفظها أثناء الدوران من أجل استعادة الجزء كما كان قبل الدوران. لذلك نقوم بإنشاء حالة [<bdi dir="ltr" class="odt-ltr-term">Vue1FragmentState</bdi>] فارغة في الوقت الحالي:</p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000EF0000006ADCF83B4A.png" width="167" height="74" style="display:inline-block; margin:4px;width:4.431cm;height:1.96cm;" class="odt-zoomable" data-zoom-src="images/10000000000000EF0000006ADCF83B4A.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
@@ -6224,7 +6224,7 @@
 </code></pre></div>
 
 <p><span id="refheading1314181394789306" name="refheading1314181394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2833">2.8.3.3. <span style="color: #4f81bd"><em>تخصيص المشروع</em></span></h4>
+<h4 id="2833">2.8.3.3. <span style="color: #4f81bd">تخصيص المشروع</span></h4>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000F9000000F5A2D51545.png" width="174" height="172" style="display:inline-block; margin:4px;width:4.611cm;height:4.54cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F9000000F5A2D51545.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">تسمح واجهة [<bdi dir="ltr" class="odt-ltr-term">IMainActivity</bdi>] بتحديد بعض خصائص المشروع:</span></p>
@@ -6331,7 +6331,7 @@
 
 <p>وهي فارغة لأنه لا يوجد في هذا التطبيق اتصال بين الأجزاء.</p>
 <p><span id="refheading1314201394789306" name="refheading1314201394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2834-dao">2.8.3.4. <span style="color: #4f81bd"><em>الطبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]</em></span></h4>
+<h4 id="2834-dao">2.8.3.4. <span style="color: #4f81bd">الطبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]</span></h4>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000012C000000CDE37E4DC5.png" width="210" height="144" style="display:inline-block; margin:4px;width:5.549cm;height:3.799cm;" class="odt-zoomable" data-zoom-src="images/100000000000012C000000CDE37E4DC5.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p>في الطبقة [<bdi dir="ltr" class="odt-ltr-term">DAO</bdi>]، يجب تخصيص ثلاث فئات: </p>
@@ -6561,7 +6561,7 @@
 </ul>
 
 <p><span id="refheading1314221394789306" name="refheading1314221394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2835-mainactivity">2.8.3.5. <span style="color: #4f81bd"><em>النشاط [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>]</em></span></h4>
+<h4 id="2835-mainactivity">2.8.3.5. <span style="color: #4f81bd">النشاط [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>]</span></h4>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000D600000091685849C4.png" width="150" height="101" style="display:inline-block; margin:4px;width:3.96cm;height:2.679cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D600000091685849C4.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p>النشاط [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>] هو التالي:</p>
@@ -6653,7 +6653,7 @@
 </ul>
 
 <p><span id="refheading1314241394789306" name="refheading1314241394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2836-vue1fragment">2.8.3.6. <span style="color: #4f81bd"><em>حالة الجزء [<bdi dir="ltr" class="odt-ltr-term">Vue1Fragment</bdi>]</em></span></h4>
+<h4 id="2836-vue1fragment">2.8.3.6. <span style="color: #4f81bd">حالة الجزء [<bdi dir="ltr" class="odt-ltr-term">Vue1Fragment</bdi>]</span></h4>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000013700000123E27F825A.png" width="218" height="204" style="display:inline-block; margin:4px;width:5.761cm;height:5.39cm;" class="odt-zoomable" data-zoom-src="images/100000000000013700000123E27F825A.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p>ستكون الفئة [<bdi dir="ltr" class="odt-ltr-term">Vue1FragmentState</bdi>] كما يلي:</p>
@@ -6689,7 +6689,7 @@
 
 <p>للحصول على ما يجب تخزينه في الجزء، قمنا بإجراء دورات على الجهاز في مواقف مختلفة وراقبنا ما اختفى عند الاستعادة. توصلنا إلى استنتاج مفاده أنه يجب تخزين المعلومات الموجودة في الأسطر 10-23.</p>
 <p><span id="refheading1314261394789306" name="refheading1314261394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2837-vue1fragment">2.8.3.7. <span style="color: #4f81bd"><em>الجزء [<bdi dir="ltr" class="odt-ltr-term">Vue1Fragment</bdi>]</em></span></h4>
+<h4 id="2837-vue1fragment">2.8.3.7. <span style="color: #4f81bd">الجزء [<bdi dir="ltr" class="odt-ltr-term">Vue1Fragment</bdi>]</span></h4>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000001210000012352B44924.png" width="202" height="204" style="display:inline-block; margin:4px;width:5.35cm;height:5.39cm;" class="odt-zoomable" data-zoom-src="images/10000000000001210000012352B44924.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">تحتوي طريقة العرض [<bdi dir="ltr" class="odt-ltr-term">Vue1Fragment</bdi>] حاليًا على أخطاء متنوعة بسبب تغيير الفئة الأصلية [<bdi dir="ltr" class="odt-ltr-term">AbstractFragment</bdi>] التي تنحدر منها. بدلاً من وصف التغييرات المطلوبة واحدة تلو الأخرى، سنعلق مباشرةً على النسخة النهائية.</span></p>
@@ -6733,7 +6733,7 @@
 </ul>
 
 <p><span id="refheading1314281394789306" name="refheading1314281394789306" class="odt-bookmark-anchor"></span></p>
-<h5 id="28371-executer">2.8.3.7.1. <span style="color: #243f60"><em>إدارة النقر على الزر [<bdi dir="ltr" class="odt-ltr-term">Exécuter</bdi>]</em></span></h5>
+<h5 id="28371-executer">2.8.3.7.1. <span style="color: #243f60">إدارة النقر على الزر [<bdi dir="ltr" class="odt-ltr-term">Exécuter</bdi>]</span></h5>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#646464">@</span>Click(R.id.btn_Executer)</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">protected</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> doExecuter() {</span></span></span>
@@ -6864,7 +6864,7 @@
 </ul>
 
 <p><span id="refheading1314301394789306" name="refheading1314301394789306" class="odt-bookmark-anchor"></span></p>
-<h5 id="28372">2.8.3.7.2. <span style="color: #243f60"><em>دورة حياة الجزء</em></span></h5>
+<h5 id="28372">2.8.3.7.2. <span style="color: #243f60">دورة حياة الجزء</span></h5>
 <p><span style="color: #000000">يتم ضمان دورة حياة الجزء من خلال الطرق التالية:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#3f7f5f">// البيانات المحلية</span></span></span>
@@ -7008,7 +7008,7 @@
 </ul>
 
 <p><span id="refheading1314321394789306" name="refheading1314321394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2838">2.8.3.8. <span style="color: #4f81bd"><em>الاختبارات</em></span></h4>
+<h4 id="2838">2.8.3.8. <span style="color: #4f81bd">الاختبارات</span></h4>
 <p>يُطلب من القارئ إجراء الاختبارات التالية:</p>
 <ul>
   <li>إنشاء أخطاء وتشغيل الجهاز: يجب الاحتفاظ برسائل الخطأ؛
@@ -7020,7 +7020,7 @@
 </ul>
 
 <p><span id="refheading1314341394789306" name="refheading1314341394789306" class="odt-bookmark-anchor"></span></p>
-<h3 id="284-22b">2.8.4. <span style="color: #4f81bd"><strong>مثال-22B</strong></span></h3>
+<h3 id="284-22b">2.8.4. <span style="color: #4f81bd">مثال-22B</span></h3>
 <p><span style="color: #000000">نستأنف هنا المثال 22 لإعادة هيكلته وفقًا لنموذج المشروع [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>]. نذكر أن مشروع [<bdi dir="ltr" class="odt-ltr-term">Exemple-22</bdi>] يدير بشكل صحيح دورة الحفظ/الاستعادة للأجزاء أثناء الدوران وأنه هو الذي استخدم كأساس لمشروع [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>].</span></p>
 <p><span style="color: #000000">نقوم بنسخ المشروع [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>] إلى [<bdi dir="ltr" class="odt-ltr-term">exemples/Exemple-22B</bdi>] ونقوم بتحميل هذا المشروع الأخير:</span></p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000D30000010E621B2D6E.png" width="148" height="189" style="display:inline-block; margin:4px;width:3.911cm;height:5.001cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D30000010E621B2D6E.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
@@ -7065,7 +7065,7 @@
 <p><span style="color: #000000">في هذه المرحلة، يمكننا محاولة إجراء التجميع الأول. يظهر النوع الأول من الأخطاء: أخطاء </span><em><bdi dir="ltr" class="odt-ltr-term">imports</bdi></em> <span style="color: #000000">غير الصحيحة لأن الفئات قد تغيرت من الحزمة. نقوم بتصحيح هذه الأخطاء </span><em><bdi dir="ltr" class="odt-ltr-term">imports</bdi></em><span style="color: #000000">. هناك نوع ثانٍ من الأخطاء يرجع إلى أن الأجزاء لا تنفذ جميع طرق فئتها الأم [<bdi dir="ltr" class="odt-ltr-term">AbstractFragment</bdi>]. نقوم بالتصحيح عن طريق (<bdi dir="ltr" class="odt-ltr-term">Alt+Enter</bdi>).</span></p>
 <p><span style="color: #000000">الأخطاء المتبقية ناتجة عن الاختلافات الموجودة بين الفئة القديمة والجديدة [<bdi dir="ltr" class="odt-ltr-term">AbstractFragment</bdi>]. في الوقت الحالي، يتم تجاهلها.</span></p>
 <p><span id="refheading1314361394789306" name="refheading1314361394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2841">2.8.4.1. <span style="color: #4f81bd"><em>تخصيص المشروع</em></span></h4>
+<h4 id="2841">2.8.4.1. <span style="color: #4f81bd">تخصيص المشروع</span></h4>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000130000001510FD6177A.png" width="213" height="236" style="display:inline-block; margin:4px;width:5.63cm;height:6.241cm;" class="odt-zoomable" data-zoom-src="images/1000000000000130000001510FD6177A.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">يوجد في المجلد [<bdi dir="ltr" class="odt-ltr-term">custom</bdi>] عناصر البنية التي يمكن للمطور تخصيصها.</span></p>
@@ -7181,7 +7181,7 @@
 
 <p>هذه هي جلسة مشروع [<bdi dir="ltr" class="odt-ltr-term">Exemple-22</bdi>].</p>
 <p><span id="refheading1314381394789306" name="refheading1314381394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2842-mainactivity">2.8.4.2. <span style="color: #4f81bd"><em>النشاط [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>]</em></span></h4>
+<h4 id="2842-mainactivity">2.8.4.2. <span style="color: #4f81bd">النشاط [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>]</span></h4>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000D600000091685849C4.png" width="150" height="101" style="display:inline-block; margin:4px;width:3.96cm;height:2.679cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D600000091685849C4.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
 <p>النشاط [<bdi dir="ltr" class="odt-ltr-term">MainActivity</bdi>] هو التالي:</p>
@@ -7240,7 +7240,7 @@
 </ul>
 
 <p><span id="refheading1314401394789306" name="refheading1314401394789306" class="odt-bookmark-anchor"></span></p>
-<h5 id="28421">2.8.4.2.1. <span style="color: #243f60"><em>تنفيذ أساليب الفئة الأم</em></span></h5>
+<h5 id="28421">2.8.4.2.1. <span style="color: #243f60">تنفيذ أساليب الفئة الأم</span></h5>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content">// طرق الفئة الأصلية -----------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#646464">@</span><span style="color:#000000">Override</span></span></span>
@@ -7315,7 +7315,7 @@
 </ul>
 
 <p><span id="refheading1314421394789306" name="refheading1314421394789306" class="odt-bookmark-anchor"></span></p>
-<h5 id="28422">2.8.4.2.2. <span style="color: #243f60"><em>إدارة علامات التبويب</em></span></h5>
+<h5 id="28422">2.8.4.2.2. <span style="color: #243f60">إدارة علامات التبويب</span></h5>
 <p>تتم إدارة علامات التبويب من خلال الطرق التالية:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#646464">@</span><span style="color:#000000">Override</span></span></span>
@@ -7381,7 +7381,7 @@
 </ul>
 
 <p><span id="refheading1314441394789306" name="refheading1314441394789306" class="odt-bookmark-anchor"></span></p>
-<h5 id="28423">2.8.4.2.3. <span style="color: #243f60"><em>إدارة القائمة</em></span></h5>
+<h5 id="28423">2.8.4.2.3. <span style="color: #243f60">إدارة القائمة</span></h5>
 <p>يرتبط النشاط بالقائمة التالية: [<bdi dir="ltr" class="odt-ltr-term">menu</bdi>_main.xml]</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">menu</span> <span style="color:#7f007f">xmlns:android</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://schemas.android.com/apk/res/android&quot;</span></span></span>
@@ -7493,7 +7493,7 @@
 </ul>
 
 <p><span id="refheading1314461394789306" name="refheading1314461394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2843-vue1fragment">2.8.4.3. <span style="color: #4f81bd"><em>الجزء [<bdi dir="ltr" class="odt-ltr-term">Vue1Fragment</bdi>]</em></span></h4>
+<h4 id="2843-vue1fragment">2.8.4.3. <span style="color: #4f81bd">الجزء [<bdi dir="ltr" class="odt-ltr-term">Vue1Fragment</bdi>]</span></h4>
 <p>نقدم هنا النسخة النهائية للمقتطف:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.fragments.behavior;</span></span></span>
@@ -7614,7 +7614,7 @@
 </ul>
 
 <p><span id="refheading1314481394789306" name="refheading1314481394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2844-placeholderfragmentstate">2.8.4.4. <span style="color: #4f81bd"><em>الحالة [<bdi dir="ltr" class="odt-ltr-term">PlaceHolderFragmentState</bdi>]</em></span></h4>
+<h4 id="2844-placeholderfragmentstate">2.8.4.4. <span style="color: #4f81bd">الحالة [<bdi dir="ltr" class="odt-ltr-term">PlaceHolderFragmentState</bdi>]</span></h4>
 <p>ستكون حالة الجزء [<bdi dir="ltr" class="odt-ltr-term">PlaceHolderFragment</bdi>] كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.fragments.state;</span></span></span>
@@ -7646,7 +7646,7 @@
 </ul>
 
 <p><span id="refheading1314501394789306" name="refheading1314501394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2845-placeholderfragment">2.8.4.5. <span style="color: #4f81bd"><em>الجزء [<bdi dir="ltr" class="odt-ltr-term">PlaceHolderFragment</bdi>]</em></span></h4>
+<h4 id="2845-placeholderfragment">2.8.4.5. <span style="color: #4f81bd">الجزء [<bdi dir="ltr" class="odt-ltr-term">PlaceHolderFragment</bdi>]</span></h4>
 <p>سيكون المقطع [<bdi dir="ltr" class="odt-ltr-term">PlaceHolderFragment</bdi>] كما يلي:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> client.android.fragments.behavior;</span></span></span>
@@ -7761,10 +7761,10 @@
 </ul>
 
 <p><span id="refheading1314521394789306" name="refheading1314521394789306" class="odt-bookmark-anchor"></span></p>
-<h4 id="2846-tests">2.8.4.6. <span style="color: #4f81bd"><em><bdi dir="ltr" class="odt-ltr-term">Tests</bdi></em></span></h4>
+<h4 id="2846-tests">2.8.4.6. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">Tests</bdi></span></h4>
 <p>يُطلب من القارئ اختبار التطبيق عن طريق تدوير الجهاز للتحقق من أن الجزء المعروض لا يفقد حالته. سنلقي نظرة أيضًا على السجلات.</p>
 <p><span id="refheading1314541394789306" name="refheading1314541394789306" class="odt-bookmark-anchor"></span></p>
-<h2 id="29-conclusion">2.9. <span style="color: #4f81bd"><strong><bdi dir="ltr" class="odt-ltr-term">Conclusion</bdi></strong></span></h2>
+<h2 id="29-conclusion">2.9. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">Conclusion</bdi></span></h2>
 <p>في نهاية هذا الفصل، لدينا مشروع نموذجي [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>] لعميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> يتواصل مع خدمة ويب / <bdi dir="ltr" class="odt-ltr-term">jSON</bdi> بالخصائص التالية:</p>
 <ul>
   <li><span style="color: #000000">يتم الاتصال غير المتزامن مع خادم الويب / <bdi dir="ltr" class="odt-ltr-term">jSON</bdi> باستخدام مكتبة <bdi dir="ltr" class="odt-ltr-term">RxJava</bdi>؛</span>

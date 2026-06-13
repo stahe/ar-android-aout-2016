@@ -658,9 +658,9 @@
 
 
 <p><span id="refheading1646501704398319" name="refheading1646501704398319" class="odt-bookmark-anchor"></span></p>
-<h1 id="4-tp-1">4. <span style="color: #365f91"><strong><bdi dir="ltr" class="odt-ltr-term">TP</bdi> 1: الإدارة الأساسية لبيانات الراتب</strong></span></h1>
+<h1 id="4-tp-1">4. <span style="color: #365f91"><bdi dir="ltr" class="odt-ltr-term">TP</bdi> 1: الإدارة الأساسية لبيانات الراتب</span></h1>
 <p><span id="refheading61956428607977" name="refheading61956428607977" class="odt-bookmark-anchor"></span></p>
-<h2 id="41-introduction">4.1. <span style="color: #4f81bd"><strong><bdi dir="ltr" class="odt-ltr-term">Introduction</bdi></strong></span></h2>
+<h2 id="41-introduction">4.1. <span style="color: #4f81bd"><bdi dir="ltr" class="odt-ltr-term">Introduction</bdi></span></h2>
 <p>لتطبيق ما تمت دراسته سابقًا، نقترح الآن مشروعًا يتمثل في كتابة عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> للأجهزة اللوحية، يسمح بمحاكاة حسابات كشوف رواتب موظفي إحدى الجمعيات.</p>
 <p>سيكون للتطبيق بنية عميل/خادم:</p>
 <p><img src="images/100000000000035C0000026E84D169AC.png" width="602" height="435" style="width:15.921cm;height:11.52cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000035C0000026E84D169AC.png" /></p>
@@ -672,9 +672,9 @@
 </ul>
 
 <p><span id="refheading154461029747953" name="refheading154461029747953" class="odt-bookmark-anchor"></span></p>
-<h2 id="42">4.2. <span style="color: #4f81bd"><strong>قاعدة البيانات</strong></span></h2>
+<h2 id="42">4.2. <span style="color: #4f81bd">قاعدة البيانات</span></h2>
 <p><span id="refheading154481029747953" name="refheading154481029747953" class="odt-bookmark-anchor"></span></p>
-<h3 id="421">4.2.1. <span style="color: #4f81bd"><strong>التعريف</strong></span></h3>
+<h3 id="421">4.2.1. <span style="color: #4f81bd">التعريف</span></h3>
 <p>سيتم وضع البيانات الثابتة المفيدة لإنشاء كشف الراتب في قاعدة بيانات سنسميها لاحقًا<span id="dbpam" name="dbpam" class="odt-bookmark-anchor"></span> <strong><bdi dir="ltr" class="odt-ltr-term">dbpam</bdi></strong>. تحتوي قاعدة البيانات هذه على الجداول التالية:</p>
 <div style="margin:0 0 0.75em 0; background-color:#cccccc; padding:0.35em 0.6em">الجدول <b><bdi dir="ltr" class="odt-ltr-term">EMPLOYES</bdi></b>: يجمع معلومات عن مختلف المربيات</div>
 
@@ -765,7 +765,7 @@
 <p><img src="images/10000000000002B900000058BF2B5FE8.png" width="488" height="62" style="width:12.91cm;height:1.63cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002B900000058BF2B5FE8.png" /></p>
 <p>تجدر الإشارة إلى أن البدلات قد تختلف من مربية أطفال إلى أخرى. فهي مرتبطة بمربية أطفال معينة من خلال مؤشر راتبها. وبالتالي، فإن السيدة ماري جوفينال التي لديها مؤشر راتب يبلغ 2 (الجدول <bdi dir="ltr" class="odt-ltr-term">EMPLOYES</bdi>) تحصل على أجر ساعي قدره 2,1 يورو (الجدول <bdi dir="ltr" class="odt-ltr-term">INDEMNITES</bdi>).</p>
 <p><span id="refheading154501029747953" name="refheading154501029747953" class="odt-bookmark-anchor"></span></p>
-<h3 id="422">4.2.2. <span style="color: #4f81bd"><strong>إنشاء</strong></span></h3>
+<h3 id="422">4.2.2. <span style="color: #4f81bd">إنشاء</span></h3>
 <p>يتم توفير البرنامج النصي [<bdi dir="ltr" class="odt-ltr-term">dbpam</bdi>_hibernate.sql] لإنشاء قاعدة البيانات:</p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000BF000000932F0E0E55.png" width="134" height="103" style="display:inline-block; margin:4px;width:3.54cm;height:2.72cm;" class="odt-zoomable" data-zoom-src="images/10000000000000BF000000932F0E0E55.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
@@ -779,9 +779,9 @@
 </ul>
 
 <p><span id="refheading154521029747953" name="refheading154521029747953" class="odt-bookmark-anchor"></span></p>
-<h3 id="423-java">4.2.3. <span style="color: #4f81bd"><strong>نمذجة قاعدة البيانات بلغة <bdi dir="ltr" class="odt-ltr-term">Java</bdi></strong></span></h3>
+<h3 id="423-java">4.2.3. <span style="color: #4f81bd">نمذجة قاعدة البيانات بلغة <bdi dir="ltr" class="odt-ltr-term">Java</bdi></span></h3>
 <p>يتم نمذجة عناصر الجداول [<bdi dir="ltr" class="odt-ltr-term">EMPLOYES</bdi>] و [<bdi dir="ltr" class="odt-ltr-term">INDEMNITES</bdi>] و [<bdi dir="ltr" class="odt-ltr-term">COTISATIONS</bdi>] بواسطة الفئات التالية:</p>
-<p><u><strong>[<bdi dir="ltr" class="odt-ltr-term">Employe</bdi>]</strong></u><span id="employe" name="employe" class="odt-bookmark-anchor"></span></p>
+<p><u><strong>[<bdi dir="ltr" class="odt-ltr-term">Employe</bdi>]<span id="employe" name="employe" class="odt-bookmark-anchor"></span></strong></u></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> pam.entities;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"></span></span>
@@ -807,7 +807,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Employe(String SS, String nom, String prenom, String adresse, String ville, String codePostal, Indemnite indemnite) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    ...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    // مُستردات ومُعيّنات</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">   // مُستردات ومُعيّنات</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">....</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
@@ -851,7 +851,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">        ...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">        // الوصول والضبط</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">     // الوصول والضبط</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">   ....</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
@@ -883,7 +883,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Cotisation(</span><span style="font-weight:bold;color:#7f0055">double</span><span style="color:#000000"> csgrds, </span><span style="font-weight:bold;color:#7f0055">double</span><span style="color:#000000"> csgd, </span><span style="font-weight:bold;color:#7f0055">double</span><span style="color:#000000"> secu, </span><span style="font-weight:bold;color:#7f0055">double</span><span style="color:#000000"> retraite) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        ...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      // الوصول والتعيين</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    // الوصول والتعيين</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">   ...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
@@ -894,11 +894,11 @@
 </ul>
 
 <p><span id="refheading61958428607977" name="refheading61958428607977" class="odt-bookmark-anchor"></span></p>
-<h2 id="43-json">4.3. <span style="color: #4f81bd"><strong>تثبيت خادم الويب / <bdi dir="ltr" class="odt-ltr-term">jSON</bdi></strong></span></h2>
+<h2 id="43-json">4.3. <span style="color: #4f81bd">تثبيت خادم الويب / <bdi dir="ltr" class="odt-ltr-term">jSON</bdi></span></h2>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000004BE0000018FD9EFE949.png" width="607" height="200" style="display:inline-block; margin:4px;width:16.06cm;height:5.279cm;" class="odt-zoomable" data-zoom-src="images/10000000000004BE0000018FD9EFE949.png" /></td></tr></table>
 
 <p><span id="refheading154541029747953" name="refheading154541029747953" class="odt-bookmark-anchor"></span></p>
-<h3 id="431">4.3.1. <span style="color: #4f81bd"><strong>التثبيت</strong></span></h3>
+<h3 id="431">4.3.1. <span style="color: #4f81bd">التثبيت</span></h3>
 <p>يتم توفير ملف <bdi dir="ltr" class="odt-ltr-term">Java</bdi> الثنائي لخادم الويب / <bdi dir="ltr" class="odt-ltr-term">jSON</bdi> لك:</p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000DA0000007B701CC163.png" width="153" height="86" style="display:inline-block; margin:4px;width:4.039cm;height:2.281cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DA0000007B701CC163.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
@@ -1014,7 +1014,7 @@
 <p>نطلب راتب شخص غير موجود:</p>
 <p><img src="images/1000000000000234000000681AB9AB40.png" width="395" height="73" style="width:10.44cm;height:1.93cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000234000000681AB9AB40.png" /></p>
 <p><span id="refheading8099921530162" name="refheading8099921530162" class="odt-bookmark-anchor"></span></p>
-<h3 id="433-json-json">4.3.3. <span style="color: #4f81bd"><strong>الردود <bdi dir="ltr" class="odt-ltr-term">jSON</bdi> من خدمة الويب/<bdi dir="ltr" class="odt-ltr-term">jSON</bdi></strong></span></h3>
+<h3 id="433-json-json">4.3.3. <span style="color: #4f81bd">الردود <bdi dir="ltr" class="odt-ltr-term">jSON</bdi> من خدمة الويب/<bdi dir="ltr" class="odt-ltr-term">jSON</bdi></span></h3>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000047300000176CA966EB5.png" width="570" height="187" style="display:inline-block; margin:4px;width:15.069cm;height:4.948cm;" class="odt-zoomable" data-zoom-src="images/100000000000047300000176CA966EB5.png" /></td></tr></table>
 
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000C6000000A518D396C1.png" width="139" height="116" style="display:inline-block; margin:4px;width:3.671cm;height:3.06cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C6000000A518D396C1.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
@@ -1123,7 +1123,7 @@
 </code></pre></div>
 
 <p><span id="refheading61960428607977" name="refheading61960428607977" class="odt-bookmark-anchor"></span></p>
-<h2 id="44-android">4.4. <span style="color: #4f81bd"><strong>اختبارات عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi></strong></span></h2>
+<h2 id="44-android">4.4. <span style="color: #4f81bd">اختبارات عميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi></span></h2>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000061700000116321EEDE2.png" width="680" height="121" style="display:inline-block; margin:4px;width:17.999cm;height:3.209cm;" class="odt-zoomable" data-zoom-src="images/100000000000061700000116321EEDE2.png" /></td></tr></table>
 
 <p>فيما يلي الملف الثنائي القابل للتنفيذ للعميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> النهائي:</p>
@@ -1192,7 +1192,7 @@
 </ul>
 
 <p><span id="refheading61962428607977" name="refheading61962428607977" class="odt-bookmark-anchor"></span></p>
-<h2 id="45">4.5. <span style="color: #4f81bd"><strong>المهمة المطلوبة</strong></span></h2>
+<h2 id="45">4.5. <span style="color: #4f81bd">المهمة المطلوبة</span></h2>
 <p>يتم تزويدك بهيكل العميل <bdi dir="ltr" class="odt-ltr-term">Android</bdi> المقدم سابقًا. وقد تم إنشاؤه استنادًا إلى المشروع [<bdi dir="ltr" class="odt-ltr-term">client-android-skel</bdi>] الموصوف في الفقرة<a href="hykl-myl-android-ytl-bkhdm-wyb--json.html#refheading1083471369936500"><u><span style="color: #0563c1"> 2</span></u></a>.</p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000C60000009F32DA1ED2.png" width="139" height="111" style="display:inline-block; margin:4px;width:3.671cm;height:2.94cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C60000009F32DA1ED2.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;">&nbsp;</td></tr></table>
 
